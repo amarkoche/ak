@@ -1,2 +1,3 @@
 # ak
-website development 
+website development project by me
+Author: Amar Koche
