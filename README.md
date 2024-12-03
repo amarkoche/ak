@@ -1,3 +1,3 @@
 # ak
 website development project by me <br>
-Author: Amar Koche
+Author: Amar pandhari Koche
