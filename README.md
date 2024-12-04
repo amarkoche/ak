@@ -25,6 +25,7 @@ git push origin main "push to github to upload local repo content to remote repo
 
 git push origin main  <br>
 
+<<<<<<< HEAD
 *************Init Command************** <br>
 
 init - used to create a new git repo in local maching <br>
@@ -99,5 +100,10 @@ git reset --hard <-commit hash -><br>
 
 
 
+=======
+ls -a <br>
+
+git init " to make new repositer in local machine " <br>
+>>>>>>> a5f5b16af0da7ba561f82cadcaaf0d0643c1c895
 
 
