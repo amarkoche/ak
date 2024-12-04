@@ -25,78 +25,75 @@ git push origin main "push to github to upload local repo content to remote repo
 
 git push origin main  <br>
 
+*************Init Command************** <br>
+
+init - used to create a new git repo in local maching <br>
+git init <br>
+ 
+git remote add origin <--link--><br>
+
+git remote-v (to veify remote) <br>
+ 
+git branch (to check branch)<br>
+
+git branch -M min (to rename branch) <br>
+
+git push origin main <br>
 
 
-*************Init Command**************
+*************To Create Branch *************** <br>
 
-init - used to create a new git repo in local maching
-git init
+git branch (To check which branch is you are) <br> 
 
-git remote add origin <--link-->
+git branch -M branch namne (to rename branch name)<br> 
 
-git remote-v (to veify remote)
+git checkout <-branch name-> (to checkout from one branch to another ) <br>
 
-git branch (to check branch)
-
-git branch -M min (to rename branch)
-
-git push origin main
+git checkout -b <-branhc name-> (To create new branch)<br>
 
 
-*************To Create Branch ***************
+git checkout <-branch name-> (to checkout from one branch to another )<br>
 
-git branch (To check which branch is you are)
+git branch -d <-branch name-> (To Delete Branch)<br>
 
-git branch -M branch namne (to rename branch name)
-
-git checkout <-branch name-> (to checkout from one branch to another )
-
-git checkout -b <-branhc name-> (To create new branch)
-
-
-git checkout <-branch name-> (to checkout from one branch to another )
-
-git branch -d <-branch name-> (To Delete Branch)
-
-******************Merging Code *******************
+******************Merging Code *******************<br>
 
 Way 1
-git diff <-branch name-> (to compare commits, branches, files & more)
+git diff <-branch name-> (to compare commits, branches, files & more)<br>
 
-git megre <-branch name -> (to merge 2 branches)
+git megre <-branch name -> (to merge 2 branches)<br>
 
-Way 2
-Create a PR
+Way 2<br>
+Create a PR<br>
 
-****************Pull Command ****************
-git pull origin main
+****************Pull Command ****************<br>
+git pull origin main<br>
 
-used to feth and download content from a remote repo and immediately update the local repo to atch that content.
+used to feth and download content from a remote repo and immediately update the local repo to atch that content.<br>
 
-****************Resolving Merge Conflicts *****************
+****************Resolving Merge Conflicts *****************<br>
 
-An event that takes place when Git is unable to untomaticlly resolve difference in code between tow commits .
+An event that takes place when Git is unable to untomaticlly resolve difference in code between tow commits .<br>
 
-git diff (IN which file we have to change in brach)
+git diff (IN which file we have to change in brach)<br>
 
-git merge <-branch name->
+git merge <-branch name-><br>
 
 
-****************Undoing Chnges *****************
+****************Undoing Chnges *****************<br>
 
-Case 1 : staged changes
-git reset <-file name ->
+Case 1 : staged changes<br>
+git reset <-file name -><br>
 
-git reset
+git reset<br>
+Case 2 : commited changes (for one commit)<br>
 
-Case 2 : commited changes (for one commit)
+git reset HEAD ~1<br>
 
-git reset HEAD ~1
+Case 3 : commited changes (for many ommits)<br>
 
-Case 3 : commited changes (for many ommits)
-
-git reset <-commit hash->
-git reset --hard <-commit hash ->
+git reset <-commit hash-><br>
+git reset --hard <-commit hash -><br>
 
 
 
