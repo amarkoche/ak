@@ -1,0 +1,251 @@
+
+
+/* Start elements.scss */
+
+@import "_common-style.scss";
+
+/* Emd elements.scss */
+
+/* Start Key-frame.scss */
+
+@import "_key-frame.scss";
+
+/* Emd Key-frame.scss */
+
+/* Start Header Section */
+
+@import "_header.scss";
+
+/* End Header Section */
+
+/* Start Footer Section */
+
+@import "_footer.scss";
+
+/* End Footer Section */
+
+/* Start Hero-banner Section */
+
+@import "_hero-banner.scss";
+
+/* End Hero-banner Section */
+
+/* Start We Have Section */
+
+@import "_we-have.scss";
+
+/* End  We Have Section Section */
+
+
+/* Start About-us-section Section */
+
+@import "_about-us.scss";
+
+/* End  About-us-section Section */
+
+
+/* Start Why-chose-us Section */
+
+@import "_why-choose-us.scss";
+
+/* End Why-Chose-Us Section */
+
+
+/* Start Features Section */
+
+@import "_features.scss";
+
+/* End Features Section */
+
+/* Start Working-process Section */
+
+@import "_working-proces.scss";
+
+/* End Working-process Section */
+
+/* Start work-process Section */
+
+@import "_work-process.scss";
+
+/* End work-process Section */
+
+
+/* Start Services-Section Section */
+
+@import "_services-section.scss";
+
+/* End Services-Section Section */
+
+/* Start Video Banner Section */
+
+@import "_video-banner.scss";
+
+/* End  Video Banner Section */
+
+
+/* Start Consultations Section */
+
+@import "_consultation.scss";
+
+/* End Consultation Section */
+
+/* Start Counter Section */
+@import "_counter.scss";
+/* End Counter Section */
+
+/* Start Counter Section */
+@import "_faqs.scss";
+/* End Counter Section */
+
+/* Start Counter Section */
+@import "_responsive.scss";
+/* End Counter Section */
+
+
+
+@keyframes movebounce{
+    0% {
+        -webkit-transform: translateY(0px);
+        transform: translateY(0px);
+    }
+    
+    50% {
+        -webkit-transform: translateY(20px);
+        transform: translateY(20px);
+    }
+    100% {
+        -webkit-transform: translateY(0px);
+        transform: translateY(0px);
+    }
+}
+
+
+
+.contact-section{
+    padding: 10% 0 0;
+    h4.sub-head {
+        margin-bottom:40px;
+    }
+  .contnet-details{
+    padding-right: 50px;
+  }
+  .contnet-form-area{
+    padding-left: 50px;
+  }
+    .contact-info-box{       
+        display: flex;
+        align-items: center;
+        transition: 0.5s;
+        position: relative;
+        z-index: 1;
+        overflow: hidden;
+        gap: 14px;
+        margin-bottom: 50px;
+        .contact-info-icon{
+            i{
+                display: inline-block;
+                background-color: #0c5adb;
+                color: #fff;
+                border: 1px solid #0c5adb;
+                width: 70px;
+                height: 70px;
+                border-radius: 5px;
+                text-align: center;
+                line-height: 70px;
+                font-size:30px;
+                transition: 0.5s;
+            }
+        }
+        .contact-info-content{
+            h4 {
+                font-size: 16px;
+                font-weight:800;
+                margin: 0;
+                padding: 0 0 8px 0;
+                transition: 0.5s;
+            }
+            p{
+                font-size: 22px;
+                color: #0c59d7;
+                font-weight: 600;
+                font-family: "Rajdhani";
+                margin: 0;
+                padding: 0;
+                transition: 0.5s;
+            }
+            
+        }
+    }
+
+    .contact-inner-box{        
+        .sub-title{margin-bottom: 5px;}
+        .input-box{
+            h4{
+                color: #fff;
+                font-size: 38px;
+                margin: 0 0 27px;  
+            }
+            input{           
+                background: #d9e7ff;
+                border: 1px solid #bcd6ff;
+                outline: 0;
+                width: 100%;
+                height: 50px;
+                color: #000;
+                margin-bottom: 16px;
+                padding: 0 19px;
+                border-radius: 5px; 
+            }
+            input::placeholder, textarea::placeholder{
+                color:#000;
+            }
+            textarea{
+                background: #d9e7ff;
+                border: 1px solid #bcd6ff;
+                outline: 0;
+                width: 100%;
+                height: 120px;
+                color: #fff;
+                margin-bottom: 16px;
+                padding: 10px 19px;
+                border-radius: 5px;  
+            }
+            button {
+                padding: 13px 15px;
+                /* background: transparent; */
+                background-color: #0B59D7;
+                display: block;
+                color: #fff;
+                border-radius: 7px;
+                width: 100%;
+                /* font-family: 'Fira Sans'; */
+                cursor: pointer;
+                text-align: center;
+                transition: .5s;
+                border: 1px solid #0B59D7;
+            }
+        }
+    }
+
+    .get-touch-img{
+        margin-bottom: 40px;
+        a{
+            display: block;
+            color: #4069FF;
+            font-size: 24px;
+            line-height: 36px;
+            font-weight: 600;
+            span{
+                font-weight: 400;
+            }
+            &:hover{
+                color: #4991e2;
+            }
+        }
+    }
+   
+}
+.google-map {
+    padding:5% 0 0;
+    position: relative;   
+}

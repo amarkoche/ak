@@ -1,0 +1,118 @@
+.working-proces-section {
+    background: #021533;
+    padding: 100px 0 90px;
+  
+    .title-section{
+        text-align: center;
+        margin-bottom: 50px;
+        .float-text{
+            -webkit-text-stroke-color: #0c59db82;
+        }
+        .sub-title{
+            margin: auto;
+            width: fit-content;
+            color: #fff;
+            &::before{
+                filter: invert(10);
+            }
+        }
+        h2 {
+            color: #fff;
+        }
+    }
+  }
+  
+  .working-process-box {
+    text-align: center;
+    padding: 0 19px 0;
+    position: relative;
+    margin-bottom: 30px;
+  
+    &:before {
+      position: absolute;
+      content: "";
+      width: 100%;
+      height: 100%;
+      left: -81px;
+      top: 73px;
+      background: url(../images/porcess-shape1.png);
+      background-repeat: no-repeat;
+    }
+  
+    &:after {
+      position: absolute;
+      content: "";
+      width: 100%;
+      height: 100%;
+      left: -81px;
+      top: 73px;
+      background: url(../images/porcess-shape2.png);
+      background-repeat: no-repeat;
+    }
+  
+    &.after-transprent:after, &.before-transprent:before {
+      background: transparent;
+    }
+  }
+  
+  .process-content {
+    h4 {
+      font-size: 23px;
+      margin: 30px 0 10px;
+      font-size: 23px;
+      color: #fff;
+      margin: 20px 0 10px;
+      transition: .5s;
+    }
+  
+    p {
+      opacity: 0.502;
+      font-size: 16px;
+      color: #ffffff;
+      font-weight: 400;
+      font-family: "Nunito";
+      text-align: center;
+      transition: .5s;
+    }   
+  }
+  
+  .process-thumb {
+    position: relative;
+    margin-bottom: 44px;
+  
+    &:before {
+      position: absolute;
+      content: "";
+      width: 244px;
+      height: 244px;
+      left: 47px;
+      top: -13px;
+      border: 2px dashed #0c5adb;
+      border-radius: 50%;
+      animation: rotateme 20s linear infinite;
+    }
+  }
+  
+  .process-number {
+    span {
+      position: absolute;
+      left: 12%;
+      top: 13%;
+      z-index: 1;
+      width: 45px;
+      height: 45px;
+      line-height: 45px;
+      border-radius: 50px;
+      display: inline-block;
+      font-size: 18px;
+      color: #fff;
+      background-color: #0c5adb;
+      transition: .5s;
+    }
+  
+    &.two span {
+      left: 11%;
+      top: 69%;
+    }
+  }
+  

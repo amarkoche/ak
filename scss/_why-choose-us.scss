@@ -1,0 +1,44 @@
+.why-choose-section {
+    padding:10% 0;   
+    background: #f2f6fd;
+    .choose-us-thumb img {
+        position: relative;       
+      }
+
+    .contnet-area{
+        position: relative;
+        .icon-box{
+            display: flex;
+            align-items: center;
+            gap: 22px;
+            margin-bottom: 29px;
+            .icon {
+                line-height: 60px;
+                text-align: center;
+                width: 70px;
+                min-width: 70px;
+                height: 60px;
+                border-radius: 10px;
+                transition: 0.5s;
+                filter: drop-shadow(0px 10px 10px rgba(207, 218, 235, 0.2));
+                background-color: rgb(12 89 219 / 7%);
+            }
+            .content{
+                h4{
+                    margin: 0;
+                    font-size: 18px;
+                    font-weight: 600;
+                }
+            }
+        }
+        .shape-two{
+            bottom: 20px;
+            left: 70px;
+        }
+    }
+     
+
+   
+  }
+
+  
