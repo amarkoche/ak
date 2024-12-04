@@ -24,3 +24,9 @@ git commit -m "write your massage relative " <br>
 git push origin main "push to github to upload local repo content to remote repo" <br>
 
 git push origin main  <br>
+
+ls -a <br>
+
+git init " to make new repositer in local machine " <br>
+
+
