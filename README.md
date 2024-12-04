@@ -19,4 +19,6 @@ git status "to show the status of file " <br>
 
 git add . " add all file at a time" <br>
 
+git commit -m "write your massage relative "
+
 git push origin main  <br>
