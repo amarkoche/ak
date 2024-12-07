@@ -66,23 +66,35 @@ img {
       animation-duration: 1000ms;
       animation-delay: 0ms;
       animation-name: fadeInUp;
-      span {
-        color: #fff;			
-        font-size: 18px;
-        font-weight: 700;
-        padding-bottom: 10px;
-              display: flex;
-              justify-content: center;
-      }
+      // span {
+      //   color: #fff;			
+      //   font-size: 18px;
+      //   font-weight: 700;
+      //   padding-bottom: 10px;
+      //         display: flex;
+      //         justify-content: center;
+      // }
       h1 {
-        color: #fff;
-        font-size: 72px;
+        color: #fff;      
         font-weight: 700;
         font-family: Poppins;
+        padding-bottom: 30px;
               span.zero-cost{
                   display: inline-block;
-                  font-size: 80px;              
+                  font-size:5rem;              
                   position: relative;
+                  &:after{
+                    position: absolute;
+                    content: "";
+                    background-image: url(../images/zerocost-border.png);
+                    width: 100%;
+                    height: auto;
+                    left: 0;
+                    bottom: -18px;
+                    min-height: 25px;
+                    background-size: cover;
+                    background-repeat: no-repeat;
+                    }
           // &::after{
           // 	position: absolute;
           // 	content: " ";
@@ -97,7 +109,7 @@ img {
       }
       p {
         color: #fff;
-        font-size: 22px;
+        font-size: 1.5rem;
       }
     }
     .banner-buttons{
@@ -137,7 +149,7 @@ img {
           border: 2px solid #fff;
           transition: 0.3s all ease-in-out;
           &:hover {
-            background-color: #002d78;
+            background-color:$info;
             border: 1px solid #003a6c;
           }
         }
