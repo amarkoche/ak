@@ -2275,6 +2275,7 @@ header#sticky-header {
   padding: 10% 0;
   min-height: 250px;
   background: #0092e4;
+  z-index: 0;
 }
 .breadcumb-section::before {
   position: absolute;
@@ -2340,6 +2341,9 @@ header#sticky-header {
 }
 
 /* End  Video Banner Section */
+.vision-mission {
+  background-color: red;
+}
 .vision-mission .build-website-section {
   padding-top: 10%;
 }

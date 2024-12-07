@@ -6,6 +6,8 @@
     padding: 10% 0;
     min-height: 250px;
     background: #0092e4;
+    z-index: 0;
+    
     &::before{
       position: absolute;
       left: 0;
