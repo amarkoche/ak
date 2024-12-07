@@ -12,18 +12,49 @@
 @import "_header.scss";
 /* End Header Section */
 
+/* Start Key-frame.scss */
+@import "_video-banner.scss";
+/* Emd Key-frame.scss */
+
+
 /* Start Footer Section */
 @import "_footer.scss";
 /* End Footer Section */
 
-/* Start About-us-section Section */
-@import "_about-us.scss";
-/* End  About-us-section Section */
-
-
 /* Start Video Banner Section */
 @import "_breadcumb-section";
 /* End  Video Banner Section */
+
+.about-us-section{
+padding-top:5%;
+    .about-check{
+        button{
+            margin: 5px;
+            padding: 10px;
+            border: 1px solid $dark;
+            color: $dark;
+            .inner{
+                display: flex;
+                align-items: center;
+                flex-wrap: nowrap;
+                i {
+                    font-size: 20px;
+                    color: $secondary;
+                    margin-right: 5px;
+                }
+            }
+            &:hover{
+                background-color: $info;
+                color: white;
+                i {
+                   
+                    color: white;
+                    
+                }
+            }
+        }
+    }
+}
 
 .vision-mission{
     .build-website-section{
@@ -32,13 +63,20 @@
     ul.custome-list{
         padding-top: 5%;
         li{
-            display: flex;
-            align-items: center;
-            margin-bottom: 30px;
+            p{
+                display: flex;
+                align-items: center;
+                margin-bottom: 30px;
+            }
+           
             i {
-                font-size: 40px;
-                color: #0160e7;
+                font-size: 12px;
+                color: #fff;
                 margin-right: 15px;
+                background: red;
+                background: #0a53bf;
+                padding: 10px;
+                border-radius: 50%;
             }
         }
     }

@@ -1,33 +1,23 @@
 
 
 /* Start elements.scss */
-
 @import "_common-style.scss";
-
 /* Emd elements.scss */
 
 /* Start Key-frame.scss */
-
 @import "_key-frame.scss";
-
 /* Emd Key-frame.scss */
 
 /* Start Header Section */
-
 @import "_header.scss";
-
 /* End Header Section */
 
 /* Start Footer Section */
-
 @import "_footer.scss";
-
 /* End Footer Section */
 
 /* Start Hero-banner Section */
-
 @import "_hero-banner.scss";
-
 /* End Hero-banner Section */
 
 
@@ -45,16 +35,14 @@
 
 
 /* Start Features Section */
-
 @import "_features.scss";
-
 /* End Features Section */
 
 /* Start Counter Section */
 @import "_responsive.scss";
 /* End Counter Section */
 
-.intership-section{
+/* .intership-section{
     padding: 119px 0 95px;
     background: #F5F8FD;
     .title{
@@ -147,7 +135,7 @@
             }
         }
     }
-}
+}*/
 .why-choose-section{
     .contnet-area{
         padding-left: 10%;
@@ -201,12 +189,14 @@
             transform: translateX(100px);
         }
     }
+
     .images-area{
         float: right;
         position: relative;
         display: flex;
         align-items: baseline;
         padding: 10% 10% 0;
+       
         &::before{          
             content: "";
             top: 0;
@@ -216,10 +206,11 @@
             height: 100%;
             position: absolute;
             /* background: linear-gradient(45deg, #0160e7 0%, #04bdef 100%); */
-            border-radius: 50%;
+            /* border-radius: 50%; */
             background-image: url(../images/s-shape6.png);
             min-height: 500px
         }
+
         &::after{
             content: "";
     top: -18px;
@@ -231,5 +222,24 @@
     animation: spining 10s linear infinite;
     background-image: url(../images/s-shape5.png);
            }
+    }
+} 
+
+.services-section.services-page{
+    padding: 10% 0 0;
+    .contnet-box{
+        margin: 0;
+        display: block;
+        flex-direction: initial;
+        .service-block{
+            width: 49%;
+            float: left;
+            margin: 0;
+            .inner-box {
+                max-width: 100%;
+                margin: 15px;
+            }
+           
+        }
     }
 }

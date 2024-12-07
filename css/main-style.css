@@ -10,7 +10,7 @@ body {
 body {
   font-size: 16px;
   line-height: 26px;
-  color: #686868;
+  color: #343a40;
   font-weight: 400;
   text-align: left;
   font-family: "Nunito", sans-serif;
@@ -2336,6 +2336,12 @@ img {
   -webkit-animation: ripple-white 1s linear infinite;
   animation: ripple-blue 1s linear infinite;
   -webkit-transition: 0.5s;
+}
+.video-setion.video-bnner {
+  padding: 6% 0;
+}
+.video-setion.video-bnner h1 {
+  color: white;
 }
 
 @media (max-width: 768px) {
