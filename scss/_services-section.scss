@@ -82,8 +82,8 @@
                             /* background: linear-gradient(45deg, #0160e7 0%, #04bdef 100%); */
                         }
                         .inner-content{
-                            h4, p, .text {color: #fff;} 
-                        }
+                            h5, p, .text, .title a {color: #fff;} 
+                         }
                     }
                     .inner-content{
                         position: relative;
@@ -102,17 +102,18 @@
                                 height: auto;
                             }
                         }
-                        .title{
-                            margin-bottom: 5px;
-                            font-weight: 600;
+                        h5.title{
+                            margin: 0;                         
+                            
                         }
-                        .text {
-                            position: relative;
-                            line-height: 28px;
-                            color: #67687a;
+
+                        p.text {
+                            position: relative;                          
+                            color: $dark;
                             max-width: 300px;
                             -webkit-transition: all 300ms ease;
-                            transition: all 300ms ease;    
+                            transition: all 300ms ease;  
+                            margin: 10px 0 0;  
                         }
                         .read-more {
                             position: absolute;

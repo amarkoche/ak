@@ -38,6 +38,12 @@
             -webkit-transition: 0.5s;
         }
       }
+      &.video-bnner{
+        padding: 6% 0;
+        h1 {
+          color: white;
+        }
+      }
 }
 
 @media (max-width:768px){

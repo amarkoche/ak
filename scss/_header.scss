@@ -22,7 +22,7 @@
 					color: #fff;
 				}
 				&.tech{
-					color: #020095;
+					color: $info;
 				}
 			}
 		}	
@@ -53,13 +53,21 @@
 				a.nav-link {
 					display: inline-block;
 					font-weight: 600;
-					font-size: 17px;
+					font-size: 1.1rem;
 					padding:20px 0;
 					text-transform: capitalize;
 					color: #fff;
 					transition: 0.5s;
+					&:hover {
+						color: $info;
+					}
 				}
 			}
+		}
+		button {
+			border: none;
+			background-color: $info;
+			padding: .5rem;
 		}
 		
 		&.collapse.show{
@@ -116,7 +124,7 @@
 				a {
 					display: inline-block;
 					font-weight: 600;
-					font-size: 17px;
+					font-size: 1rem;
 					padding: 20px 0;
 					text-transform: capitalize;
 					color: #fff;

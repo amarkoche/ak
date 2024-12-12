@@ -4,7 +4,7 @@
         margin-bottom: 40px;
         a{
             display: block;
-            color: #4069FF;
+            color:$secondary;
             font-size: 24px;
             line-height: 36px;
             font-weight: 600;
@@ -58,6 +58,7 @@
             }
         }
         .contact-info-content{
+            h5 {margin: 0;}
             h4 {
                 font-size: 16px;
                 font-weight: 600;
@@ -66,13 +67,12 @@
                 transition: 0.5s;
             }
             p{
-                font-size: 22px;
-                color: #0c59d7;
-                font-weight: 600;
-                font-family: "Rajdhani";
-                margin: 0;
+                font-size: 1.3rem;
+                color:$secondary;
+                 margin: 0;
                 padding: 0;
                 transition: 0.5s;
+                font-weight: 600;
             }
             
         }
@@ -91,7 +91,7 @@
             }
             input{
                 /* background: #3a7ae4; */
-                border: 1px solid #0B59D7;
+                border: 1px solid $secondary;
                 outline: 0;
                 width: 100%;
                 height: 50px;
@@ -105,7 +105,7 @@
             }
             textarea{
                 /* background: #3a7ae4; */
-                border: 1px solid #0B59D7;
+                border: 1px solid $secondary;
                 outline: 0;
                 width: 100%;
                 height: 120px;
@@ -117,7 +117,7 @@
             button {
                 padding: 13px 15px;
                 /* background: transparent; */
-                background-color: #0B59D7;
+                background-color: $secondary;
                 display: block;
                 color: #fff;
                 border-radius: 7px;
