@@ -23,7 +23,7 @@
   text-transform: uppercase;
   font-weight: 600;
 }
-.get-forfree-section .contact-inner-box input {
+.get-forfree-section .contact-inner-box input, .get-forfree-section .contact-inner-box select {
   border: 1px solid #bcd6ff;
   outline: 0;
   width: 100%;
