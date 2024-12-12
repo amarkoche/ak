@@ -43,7 +43,7 @@
 /* End Counter Section */
 
 .services-section{   
-    &.services-page{
+    &.our-services{
         padding: 10% 0 0;
         .contnet-box{
             margin: 0;
@@ -61,19 +61,41 @@
             }
         }
     }
-    &.why-choose-sectio{  
-        background-color: blue; 
+    &.why-choose-section{  
+        padding-top: 0; 
+        .title-section{
+            text-align: left;
+            .sub-title{
+                width: inherit;
+            }
+        }      
         .contnet-box{
             margin: 0;
             display: block;
             flex-direction: initial;
             .service-block{
-                width: 49%;
+                width: 100%;
                 float: left;
                 margin: 0;
                 .inner-box {
+                    
                     max-width: 100%;
                     margin: 15px;
+                    .inner-content{
+                        display: flex;
+                        align-items: center;
+                        padding-left: 0;
+                        .icon{
+                            position: relative;
+                            padding-right: 20px;
+                            img {
+
+                                height: auto;
+                                width: 100%;
+                                max-width: 70px;
+                            }
+                        }
+                    }
                 }
                
             }
