@@ -39,101 +39,85 @@
 
 
 
+
 /* Start Counter Section */
 @import "_responsive.scss";
 /* End Counter Section */
 
 .intership-section{
-    padding: 119px 0 95px;
-    background: #F5F8FD;
-    .title{
-        margin-bottom: 84px;
-        .careers-content{
-            h4 {
-                color: #041424;
-                font-size: 24px;
-                margin: 0;
-                font-weight: 600;
-            }
-            a {
-                display: inline-block;
-                color: #0c5adb;
-                font-weight: 600;
-                font-family: "Rajdhani";
-            }
-        }
-        .careers-desc{
-            p {
-                width: 67%;
-                float: right;
-                margin: 0;
-            }
-            a {
-                display: inline-block;
-                color: #0c5adb;
-                font-weight: 600;
-                font-family: "Rajdhani";
-            }
-        }
-    }
+    padding: 5% 0;
+    
+    // .title{
+    //     margin-bottom: 84px;
+    //     .careers-content{
+    //         h4 {
+    //             color: #041424;
+    //             font-size: 24px;
+    //             margin: 0;
+    //             font-weight: 600;
+    //         }
+    //         a {
+    //             display: inline-block;
+    //             color: #0c5adb;
+    //             font-weight: 600;
+    //             font-family: "Rajdhani";
+    //         }
+    //     }
+    //     .careers-desc{
+    //         p {
+    //             width: 67%;
+    //             float: right;
+    //             margin: 0;
+    //         }
+    //         a {
+    //             display: inline-block;
+    //             color: #0c5adb;
+    //             font-weight: 600;
+    //             font-family: "Rajdhani";
+    //         }
+    //     }
+    // }
     .add-border {
         border-top: 2px solid #E7E7E7;
-        padding-top: 82px;
-        padding-bottom: 73px;
+        padding: 5% 0 4%;      
     }
     .job-item{
         .job-item-content {
-            span{
-                border-radius: 15px;
-                background-color: #0c5adb;
+            span:first-child{
+                border-radius: 6px;
+                background-color:$secondary;
                 display: inline-block;
                 color: #fff;
-                padding: 2px 25px;
+                padding: 2px 15px;
             }
-            .location{
-                background: transparent !important;
-                font-size: 14px;
-                color: #686868 !important;
-                font-weight: 400;
-                font-family: "Nunito";
-                padding: 0 !important;
-                margin-left: 18px;
-            }
-            h4 {
-                font-size: 26px;
-                color: #041424;
-                font-weight: 600;
-                font-family: "Rajdhani";
-                margin: 19px 0 0;
-            }
+            .location{              
+                margin-left:1rem;
+            }         
            
         }
     }
-    .job-desc{
-        font-size: 16px;
-        line-height: 26px;
-        color: #686868;
-        font-weight: 400;
-        font-family: "Nunito", sans-serif;
-        transition: 0.5s;
-        margin: 0;
-        width: 100%;
-    }
+    // .job-desc{     
+    //     line-height: 26px;
+    //     color:$dark;
+    //     font-weight: 400;
+    //     transition: 0.5s;
+    //     margin: 0;
+    //     width: 100%;
+    // }
     .job-apply-button{
         text-align: right;
-        a {
-            display: inline-block;
-            border: 2px solid #2222;
-            padding: 14px 58px;
-            border-radius: 30px;
-            color: #041424;
-            font-weight: 500;
-            transition: 0.5s;
-            &:hover{
-                border: 2px solid #0C5ADB;
-                background: #0C5ADB;
+        button {
+            border: none;
+            background-color: #00305c;
+            padding: 0.5rem;
+            font-weight: 600;
+            &:hover{              
+                background:  $secondary;
                 color: #fff;
             }
         }
     }
 }
+
+/*form section */
+

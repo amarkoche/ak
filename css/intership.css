@@ -424,6 +424,78 @@ li {
   list-style-type: none;
 }
 
+.contnet-form-area h4 {
+  color: #072ba7;
+  font-size: 20px;
+  margin: 0 0 27px;
+  text-transform: uppercase;
+  font-weight: 600;
+}
+.contnet-form-area input, .contnet-form-area select {
+  border: 1px solid #bcd6ff;
+  outline: 0;
+  width: 100%;
+  height: 50px;
+  color: #000;
+  margin-bottom: 16px;
+  display: inline-block;
+  padding: 0 19px;
+  border-radius: 5px;
+}
+.contnet-form-area textarea {
+  background: #d9e7ff;
+  border: 1px solid #bcd6ff;
+  outline: 0;
+  width: 100%;
+  height: 120px;
+  color: #fff;
+  margin-bottom: 16px;
+  padding: 10px 19px;
+  border-radius: 5px;
+}
+.contnet-form-area button {
+  padding: 13px 15px;
+  background-color: #0a53bf;
+  display: block;
+  color: #fff;
+  border-radius: 7px;
+  width: 100%;
+  cursor: pointer;
+  text-align: center;
+  transition: 0.5s;
+  border: 1px solid #0a53bf;
+}
+.contnet-form-area input::placeholder,
+.contnet-form-area textarea::placeholder {
+  color: #343a40;
+}
+
+.modal-header {
+  position: relative;
+}
+.modal-header h5 {
+  margin: 0;
+}
+.modal-header button {
+  position: absolute;
+  top: -7px;
+  right: -7px;
+  border: none;
+  background: transparent;
+  background-color: #0a53bf;
+  border-radius: 5px;
+  box-shadow: -1px 0px 1px 1px white;
+}
+.modal-header button span {
+  display: flex;
+  align-items: center;
+  padding: 6px;
+}
+.modal-header button span i {
+  font-size: 20px;
+  color: #fff;
+}
+
 /* Emd elements.scss */
 /* Start Key-frame.scss */
 /* Start key Frame */
@@ -650,6 +722,7 @@ li {
   transition: 0.3s all ease-in-out;
   box-shadow: 0px 0px 18px 1px rgba(0, 0, 0, 0.1);
   background: linear-gradient(45deg, #0160e7 0%, #04bdef 100%);
+  z-index: 999;
 }
 .ak-softtech .header-menu {
   text-align: right;
@@ -1526,89 +1599,36 @@ img {
 }
 /* End Counter Section */
 .intership-section {
-  padding: 119px 0 95px;
-  background: #F5F8FD;
-}
-.intership-section .title {
-  margin-bottom: 84px;
-}
-.intership-section .title .careers-content h4 {
-  color: #041424;
-  font-size: 24px;
-  margin: 0;
-  font-weight: 600;
-}
-.intership-section .title .careers-content a {
-  display: inline-block;
-  color: #0c5adb;
-  font-weight: 600;
-  font-family: "Rajdhani";
-}
-.intership-section .title .careers-desc p {
-  width: 67%;
-  float: right;
-  margin: 0;
-}
-.intership-section .title .careers-desc a {
-  display: inline-block;
-  color: #0c5adb;
-  font-weight: 600;
-  font-family: "Rajdhani";
+  padding: 5% 0;
 }
 .intership-section .add-border {
   border-top: 2px solid #E7E7E7;
-  padding-top: 82px;
-  padding-bottom: 73px;
+  padding: 5% 0 4%;
 }
-.intership-section .job-item .job-item-content span {
-  border-radius: 15px;
-  background-color: #0c5adb;
+.intership-section .job-item .job-item-content span:first-child {
+  border-radius: 6px;
+  background-color: #0a53bf;
   display: inline-block;
   color: #fff;
-  padding: 2px 25px;
+  padding: 2px 15px;
 }
 .intership-section .job-item .job-item-content .location {
-  background: transparent !important;
-  font-size: 14px;
-  color: #686868 !important;
-  font-weight: 400;
-  font-family: "Nunito";
-  padding: 0 !important;
-  margin-left: 18px;
-}
-.intership-section .job-item .job-item-content h4 {
-  font-size: 26px;
-  color: #041424;
-  font-weight: 600;
-  font-family: "Rajdhani";
-  margin: 19px 0 0;
-}
-.intership-section .job-desc {
-  font-size: 16px;
-  line-height: 26px;
-  color: #686868;
-  font-weight: 400;
-  font-family: "Nunito", sans-serif;
-  transition: 0.5s;
-  margin: 0;
-  width: 100%;
+  margin-left: 1rem;
 }
 .intership-section .job-apply-button {
   text-align: right;
 }
-.intership-section .job-apply-button a {
-  display: inline-block;
-  border: 2px solid rgba(34, 34, 34, 0.1333333333);
-  padding: 14px 58px;
-  border-radius: 30px;
-  color: #041424;
-  font-weight: 500;
-  transition: 0.5s;
+.intership-section .job-apply-button button {
+  border: none;
+  background-color: #00305c;
+  padding: 0.5rem;
+  font-weight: 600;
 }
-.intership-section .job-apply-button a:hover {
-  border: 2px solid #0C5ADB;
-  background: #0C5ADB;
+.intership-section .job-apply-button button:hover {
+  background: #0a53bf;
   color: #fff;
 }
+
+/*form section */
 
 /*# sourceMappingURL=intership.css.map */
