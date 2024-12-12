@@ -89,13 +89,16 @@ hr {
   border-bottom: 1px solid #eceff8;
   border-top: 0px;
 }
+
 hr.style-2 {
   border-bottom: 1px dashed #f10;
 }
+
 hr.mp-0 {
   margin: 0;
   border-bottom: 1px solid #eceff8;
 }
+
 hr.mtb-40 {
   margin: 40px 0;
   border-bottom: 1px solid #eceff8;
@@ -156,23 +159,29 @@ hr.mtb-40 {
   color: #001d23;
   text-shadow: none;
 }
+
 .contact_area ::selection {
   color: #001d23;
   text-shadow: none;
 }
+
 .contact_area ::placeholder {
   color: #001d23;
   font-size: 16px;
 }
+
 .contact_area ::-webkit-input-placeholder {
   color: #001d23;
 }
+
 .contact_area ::-moz-placeholder {
   color: #001d23;
 }
+
 .contact_area :-ms-input-placeholder {
   color: #001d23;
 }
+
 .contact_area :-moz-placeholder {
   color: #001d23;
 }
@@ -181,21 +190,27 @@ hr.mtb-40 {
   color: #151948;
   color: #151948;
 }
+
 .blog_reply ::selection {
   color: #151948;
 }
+
 .blog_reply::placeholder {
   color: #151948;
 }
+
 .blog_reply ::-webkit-input-placeholder {
   color: #151948;
 }
+
 .blog_reply ::-moz-placeholder {
   color: #151948;
 }
+
 .blog_reply :-ms-input-placeholder {
   color: #151948;
 }
+
 .blog_reply :-moz-placeholder {
   color: #151948;
 }
@@ -214,6 +229,7 @@ img {
   display: flex;
   justify-items: center;
 }
+
 .sub-title::before {
   position: absolute;
   left: 0;
@@ -268,6 +284,7 @@ img {
 .shape-two {
   position: relative;
 }
+
 .shape-two::before {
   position: absolute;
   content: url(../images/shape-2.png);
@@ -286,6 +303,7 @@ img {
   animation-range-start: normal;
   animation-range-end: normal;
 }
+
 .shape-two img {
   max-width: 100%;
   height: auto;
@@ -297,6 +315,7 @@ button a {
   overflow: hidden;
   transition: 0.5s;
 }
+
 button a::before {
   position: absolute;
   content: "";
@@ -308,6 +327,7 @@ button a::before {
   z-index: -1;
   transition: 0.5s;
 }
+
 button a i {
   display: inline-block;
   color: #fff;
@@ -333,10 +353,12 @@ button.custome-button {
   transition: 0.3s all ease-in-out;
   cursor: pointer;
 }
+
 button.custome-button:hover {
   background-color: #00305c;
   border: 1px solid #003a6c;
 }
+
 button.custome-button a {
   color: #fff;
   font-weight: 700;
@@ -359,11 +381,13 @@ button.custome-button a {
   transform: translateY(15px) !important;
   transition: all 200ms linear !important;
 }
+
 .prgoress_indicator.active-progress {
   opacity: 1;
   visibility: visible;
   transform: translateY(0) !important;
 }
+
 .prgoress_indicator::after {
   position: absolute;
   content: "\f106";
@@ -382,6 +406,7 @@ button.custome-button a {
   z-index: 1;
   transition: all 200ms linear !important;
 }
+
 .prgoress_indicator::before {
   position: absolute;
   content: "\f106";
@@ -403,15 +428,19 @@ button.custome-button a {
   z-index: 2;
   transition: all 200ms linear !important;
 }
+
 .prgoress_indicator:hover ::after {
   color: #0c5adb;
 }
+
 .prgoress_indicator:hover ::before {
   opacity: 1;
 }
+
 .prgoress_indicator svg path {
   fill: none;
 }
+
 .prgoress_indicator svg.progress-circle path {
   stroke: #0c5adb;
   stroke-width: 4;
@@ -557,46 +586,58 @@ li {
   width: 100%;
   z-index: 9;
 }
+
 .ak-softtech.header-area .navbar-brand.ak-softtech-logo {
   display: flex;
   align-items: center;
 }
+
 .ak-softtech.header-area .navbar-brand.ak-softtech-logo img.brand-logo {
   width: 60px;
   border-radius: 5px;
   margin-right: 5px;
 }
+
 .ak-softtech.header-area .navbar-brand.ak-softtech-logo span {
   font-size: 1.8em;
   font-weight: 800;
 }
+
 .ak-softtech.header-area .navbar-brand.ak-softtech-logo span.soft {
   color: #fff;
 }
+
 .ak-softtech.header-area .navbar-brand.ak-softtech-logo span.tech {
   color: #00305c;
 }
+
 .ak-softtech.header-area .header-logo img {
   max-width: 200px;
 }
+
 .ak-softtech.header-area .navbar-toggler {
   color: #fff;
   border: 1px solid #fff;
   border: 1px solid #fff;
   align-items: center;
 }
+
 .ak-softtech.header-area .navbar-toggler i.fa-bars {
   color: #fff;
 }
+
 .ak-softtech.header-area .navbar-toggler:focus {
   box-shadow: none;
 }
+
 .ak-softtech.header-area .navbar-menu-area {
   justify-content: end;
 }
+
 .ak-softtech.header-area .navbar-menu-area .navbar-nav .nav-item.ak-nav-item {
   margin-right: 35px;
 }
+
 .ak-softtech.header-area .navbar-menu-area .navbar-nav .nav-item.ak-nav-item a.nav-link {
   display: inline-block;
   font-weight: 600;
@@ -606,38 +647,47 @@ li {
   color: #fff;
   transition: 0.5s;
 }
+
 .ak-softtech.header-area .navbar-menu-area .navbar-nav .nav-item.ak-nav-item a.nav-link:hover {
   color: #00305c;
 }
+
 .ak-softtech.header-area .navbar-menu-area button {
   border: none;
   background-color: #00305c;
   padding: 0.5rem;
 }
+
 .ak-softtech.header-area .navbar-menu-area.collapse.show {
   background: #03a1ec;
   padding: 0px;
   border-radius: 10px;
 }
+
 .ak-softtech.header-area .navbar-menu-area.collapse.show .navbar-nav {
   padding: 0;
 }
+
 .ak-softtech.header-area .navbar-menu-area.collapse.show .navbar-nav li.nav-item.ak-nav-item {
   border-bottom: 1px solid #0160e7;
   margin-right: 0;
 }
+
 .ak-softtech.header-area .navbar-menu-area.collapse.show .navbar-nav li.nav-item.ak-nav-item a {
   width: 100%;
   padding: 10px 15px;
 }
+
 .ak-softtech.header-area .navbar-menu-area.collapse.show .custome-button {
   width: 100%;
   padding: 6px;
   margin: 0;
 }
+
 .ak-softtech.header-area .header-menu ul li a {
   padding: 5px 0;
 }
+
 .ak-softtech.header-area.sticky {
   top: 0px;
   position: fixed;
@@ -650,16 +700,20 @@ li {
   box-shadow: 0px 0px 18px 1px rgba(0, 0, 0, 0.1);
   background: linear-gradient(45deg, #0160e7 0%, #04bdef 100%);
 }
+
 .ak-softtech .header-menu {
   text-align: right;
 }
+
 .ak-softtech .header-menu ul {
   display: inline-block;
 }
+
 .ak-softtech .header-menu ul li {
   display: inline-block;
   margin-right: 35px;
 }
+
 .ak-softtech .header-menu ul li a {
   display: inline-block;
   font-weight: 600;
@@ -669,6 +723,7 @@ li {
   color: #fff;
   transition: 0.5s;
 }
+
 .ak-softtech .header-menu ul li i {
   font-size: 12px;
   color: #fff;
@@ -677,9 +732,11 @@ li {
   top: -1px;
   transition: 0.5s;
 }
+
 .ak-softtech .header-menu ul li.menu-item-has-children {
   position: relative;
 }
+
 .ak-softtech .header-menu ul li .sub-menu {
   position: absolute;
   width: 200px;
@@ -695,6 +752,7 @@ li {
   border-top: 5px solid #0c5adb;
   border-radius: 3px 3px 0 0;
 }
+
 .ak-softtech .header-menu ul li .sub-menu li a {
   display: block;
   padding: 8px 19px !important;
@@ -707,13 +765,16 @@ li {
   position: relative;
   z-index: 1;
 }
+
 .ak-softtech .header-menu ul li .sub-menu li a:hover {
   color: #fff !important;
 }
+
 .ak-softtech .header-menu ul li .sub-menu li a:hover:before {
   height: 100%;
   top: 0;
 }
+
 .ak-softtech .header-menu ul li .sub-menu li a:before {
   position: absolute;
   content: "";
@@ -725,14 +786,17 @@ li {
   z-index: -1;
   transition: 0.5s;
 }
+
 .ak-softtech .header-menu ul li:hover .sub-menu {
   opacity: 1;
   top: 100%;
   visibility: visible;
 }
+
 .ak-softtech .header-button {
   display: inline-block;
 }
+
 .ak-softtech .header-button a {
   padding: 14px 34px;
   color: #fff;
@@ -746,19 +810,23 @@ li {
   text-transform: capitalize;
   font-weight: 600;
 }
+
 .ak-softtech .header-button a:hover {
   background-color: #003a6c;
   border: 1px solid #003a6c;
 }
+
 .ak-softtech .header-search-icon {
   display: inline-block;
   margin-right: 34px;
 }
+
 .ak-softtech .header-search-icon i {
   display: inline-block;
   color: white;
   transition: 0.5s;
 }
+
 .ak-softtech .header-search-icon i:hover {
   background-color: #003a6c;
   border: 2px solid #003a6c;
@@ -775,6 +843,7 @@ header#sticky-header {
   margin: 0 auto;
   position: relative !important;
 }
+
 .ak-softtech.header-area .navbar-brand.ak-softtech-logo::before {
   top: 0;
   left: 3px;
@@ -821,27 +890,34 @@ header#sticky-header {
   background-repeat: no-repeat;
   background-size: cover;
 }
+
 .video-setion .title-section {
   margin-bottom: 50px;
 }
+
 .video-setion .title-section .float-text {
   -webkit-text-stroke-color: rgba(255, 255, 255, 0.15);
 }
+
 .video-setion .title-section .sub-title {
   margin: auto;
   width: fit-content;
   color: #679fef;
 }
+
 .video-setion .title-section .sub-title::before {
   filter: invert(1);
 }
+
 .video-setion .title-section h2 {
   color: #fff;
   padding-bottom: 15px;
 }
+
 .video-setion .video-button {
   text-align: center;
 }
+
 .video-setion .video-button i {
   display: inline-block;
   background: #0B59D7;
@@ -856,9 +932,11 @@ header#sticky-header {
   animation: ripple-blue 1s linear infinite;
   -webkit-transition: 0.5s;
 }
+
 .video-setion.video-bnner {
   padding: 6% 0;
 }
+
 .video-setion.video-bnner h1 {
   color: white;
 }
@@ -880,47 +958,58 @@ header#sticky-header {
   position: relative;
   margin-top: 10%;
 }
+
 .footer-area-section .aksofttech-barnd.ak-softtech-logo {
   display: flex;
   align-items: center;
 }
+
 .footer-area-section .aksofttech-barnd.ak-softtech-logo img.brand-logo {
   width: 50px;
   border-radius: 5px;
   margin-right: 5px;
 }
+
 .footer-area-section .aksofttech-barnd.ak-softtech-logo span.text-logo {
   color: #fff;
   font-size: 2em;
   font-weight: 800;
 }
+
 .footer-area-section .aksofttech-barnd.ak-softtech-logo span.text-logo .soft {
   color: #fff;
 }
+
 .footer-area-section .aksofttech-barnd.ak-softtech-logo span.text-logo .tech {
   color: #3078fb;
 }
+
 .footer-area-section .footer-about-desc p {
   color: #fff;
   opacity: 0.8;
   width: 70%;
   margin: 28px 0 0;
 }
+
 .footer-area-section .footer-botton-social-icon {
   margin-top: 25px;
 }
+
 .footer-area-section .footer-botton-social-icon h4 {
   color: #fff;
   font-size: 16px;
   margin-bottom: 15px;
 }
+
 .footer-area-section .footer-botton-social-icon ul {
   gap: 15px;
   display: flex;
 }
+
 .footer-area-section .footer-botton-social-icon ul li {
   display: inline-block;
 }
+
 .footer-area-section .footer-botton-social-icon ul li a {
   color: #fff;
   display: block;
@@ -935,11 +1024,13 @@ header#sticky-header {
   background: #3078fb;
   transition: 0.4s;
 }
+
 .footer-area-section .footer-botton-social-icon ul li a:hover {
   color: #3078fb;
   background: #fff;
   transition: 0.4s;
 }
+
 .footer-area-section .footer-botton-social-icon ul li i {
   display: inline-block;
   font: normal normal normal 14px/1 FontAwesome;
@@ -948,6 +1039,7 @@ header#sticky-header {
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
 }
+
 .footer-area-section .footer-button a {
   display: inline-block;
   background: #0c5adb;
@@ -962,9 +1054,11 @@ header#sticky-header {
   transition: 0.5s;
   z-index: 1;
 }
+
 .footer-area-section .footer-button a:hover {
   color: #0c5adb;
 }
+
 .footer-area-section .footer-button a:before {
   position: absolute;
   content: "";
@@ -977,10 +1071,12 @@ header#sticky-header {
   transition: 0.5s;
   border-radius: 5px;
 }
+
 .footer-area-section .footer-button a:hover:before {
   width: 100%;
   left: 0;
 }
+
 .footer-area-section .footer-button i {
   display: inline-block;
   color: #fff;
@@ -990,9 +1086,11 @@ header#sticky-header {
   left: 3px;
   transition: 0.5s;
 }
+
 .footer-area-section .footer-button a:hover i {
   color: #0c5adb;
 }
+
 .footer-area-section .footer-content p {
   font-size: 16px;
   line-height: 28px;
@@ -1002,18 +1100,21 @@ header#sticky-header {
   margin: 0;
   margin-bottom: 39px;
 }
+
 .footer-area-section .footer-content .footer-title h4 {
   color: #fff;
   font-size: 28px;
   font-weight: 600;
   margin: 0 0 26px;
 }
+
 .footer-area-section .footer-content .footer-menu ul li i {
   display: inline-block;
   color: #0D58D5;
   font-size: 16px;
   margin-right: 10px;
 }
+
 .footer-area-section .footer-content .footer-menu ul li a {
   display: inline-block;
   color: #fff;
@@ -1021,9 +1122,11 @@ header#sticky-header {
   font-family: "Nunito";
   transition: 0.5s;
 }
+
 .footer-area-section .footer-content .footer-menu ul li a:hover {
   color: #0c5adb;
 }
+
 .footer-area-section .footer-newslatter-box input {
   background: transparent;
   border: 1px solid rgba(255, 255, 255, 0.3215686275);
@@ -1034,11 +1137,13 @@ header#sticky-header {
   border-radius: 3px;
   outline: 0;
 }
+
 .footer-area-section .footer-newslatter-box input::placeholder {
   color: #fff;
   font-family: "Nunito";
   opacity: 0.5;
 }
+
 .footer-area-section .footer-newslatter-box button {
   background: #0C59DB;
   color: #fff;
@@ -1048,12 +1153,14 @@ header#sticky-header {
   border-radius: 3px;
   margin-top: 21px;
 }
+
 .footer-area-section .footer-contact-info-box .contact-info-box {
   display: flex;
   align-items: center;
   gap: 17px;
   margin-bottom: 12px;
 }
+
 .footer-area-section .footer-contact-info-box .contact-info-icon {
   color: #fff;
   display: block;
@@ -1068,11 +1175,13 @@ header#sticky-header {
   /* background: #3078fb; */
   transition: 0.4s;
 }
+
 .footer-area-section .footer-contact-info-box .contact-info-icon:hover {
   color: #3078fb;
   background: #fff;
   transition: 0.4s;
 }
+
 .footer-area-section .footer-contact-info-box .contact-info-icon i {
   display: inline-block;
   font: normal normal normal 14px/1 FontAwesome;
@@ -1082,6 +1191,7 @@ header#sticky-header {
   -moz-osx-font-smoothing: grayscale;
   color: #3078fb;
 }
+
 .footer-area-section .footer-contact-info-box .contact-info-content p {
   font-size: 12px;
   color: #ffffff;
@@ -1089,6 +1199,7 @@ header#sticky-header {
   margin: 0;
   line-height: 18px;
 }
+
 .footer-area-section .footer-contact-info-box .contact-info-content h4 {
   font-size: 16px;
   font-weight: 600;
@@ -1104,11 +1215,13 @@ header#sticky-header {
   margin-top: 60px;
   padding-top: 30px;
 }
+
 .footer-bottom-area .footer-bottom-content p {
   color: #fff;
   margin: auto;
   text-align: left;
 }
+
 .footer-bottom-area .footer-menu {
   color: #fff;
   display: flex;
@@ -1116,6 +1229,7 @@ header#sticky-header {
   justify-content: flex-end;
   gap: 15px;
 }
+
 .footer-bottom-area .footer-menu a {
   color: #fff;
 }
@@ -1135,17 +1249,20 @@ header#sticky-header {
   transform: translate(-50%);
   border-radius: 10px;
 }
+
 .small-business h4 {
   color: #fff;
   margin: 0;
   font-weight: 800;
 }
+
 .small-business .form-subscribe {
   position: relative;
   display: flex;
   align-items: center;
   justify-content: flex-start;
 }
+
 .small-business .form-subscribe input {
   height: 62px;
   width: 100%;
@@ -1154,6 +1271,7 @@ header#sticky-header {
   padding-left: 30px;
   border-radius: 5px;
 }
+
 .small-business .form-subscribe button {
   border: none;
   height: 62px;
@@ -1165,10 +1283,12 @@ header#sticky-header {
   top: 0;
   right: 0;
 }
+
 .small-business .content-box {
   position: relative;
   overflow: hidden;
 }
+
 .small-business .content-box::after {
   top: 0px;
   z-index: -1;
@@ -1209,9 +1329,6 @@ header#sticky-header {
   }
 }
 /* End Footer Section */
-/* Start About-us-section Section */
-/* @import "_about-us.scss"; */
-/* End  About-us-section Section */
 /* Start Video Banner Section */
 .breadcumb-section {
   position: relative;
@@ -1221,8 +1338,8 @@ header#sticky-header {
   padding: 10% 0;
   min-height: 250px;
   background: #0092e4;
-  z-index: 0;
 }
+
 .breadcumb-section::before {
   position: absolute;
   left: 0;
@@ -1233,24 +1350,29 @@ header#sticky-header {
   opacity: 0.8;
   content: "";
 }
+
 .breadcumb-section .banner-title {
   text-align: center;
   position: relative;
   z-index: 9;
 }
+
 .breadcumb-section .banner-title .title {
   font-size: 64px;
   color: #ffffff;
   margin-bottom: 17px;
 }
+
 .breadcumb-section .banner-title .title span {
   display: block;
   font-weight: 100;
 }
+
 .breadcumb-section .page-breadcrumb ul.breadcrumb {
   position: relative;
   margin-top: 5px;
 }
+
 .breadcumb-section .page-breadcrumb li {
   position: relative;
   display: inline-block;
@@ -1261,6 +1383,7 @@ header#sticky-header {
   font-weight: 400;
   text-transform: capitalize;
 }
+
 .breadcumb-section .page-breadcrumb li a {
   color: #186ef2;
   font-weight: 500;
@@ -1271,6 +1394,7 @@ header#sticky-header {
   -ms-transition: all 0.3s ease;
   -o-transition: all 0.3s ease;
 }
+
 .breadcumb-section .page-breadcrumb li a::after {
   position: absolute;
   content: "\f105";
@@ -1282,55 +1406,58 @@ header#sticky-header {
   font-family: "Font Awesome 6 Pro";
   color: #ffffff;
 }
+
 .breadcumb-section.about-banner {
   /* background: url(../images/about-page.jpg); */
 }
 
 /* End  Video Banner Section */
-<<<<<<< HEAD
-.vision-mission {
-  background-color: red;
-}
-=======
 .about-us-section {
   padding-top: 5%;
 }
+
 .about-us-section .about-check button {
   margin: 5px;
   padding: 10px;
   border: 1px solid #343a40;
   color: #343a40;
 }
+
 .about-us-section .about-check button .inner {
   display: flex;
   align-items: center;
   flex-wrap: nowrap;
 }
+
 .about-us-section .about-check button .inner i {
   font-size: 20px;
   color: #0a53bf;
   margin-right: 5px;
 }
+
 .about-us-section .about-check button:hover {
   background-color: #00305c;
   color: white;
 }
+
 .about-us-section .about-check button:hover i {
   color: white;
 }
 
->>>>>>> a9262a6008479768866650f1b019a245e2a268ed
 .vision-mission .build-website-section {
   padding-top: 10%;
 }
+
 .vision-mission ul.custome-list {
   padding-top: 5%;
 }
+
 .vision-mission ul.custome-list li p {
   display: flex;
   align-items: center;
   margin-bottom: 30px;
 }
+
 .vision-mission ul.custome-list li i {
   font-size: 12px;
   color: #fff;
@@ -1340,5 +1467,7 @@ header#sticky-header {
   padding: 10px;
   border-radius: 50%;
 }
+
+
 
 /*# sourceMappingURL=about.css.map */

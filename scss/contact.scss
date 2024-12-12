@@ -122,7 +122,7 @@
 
 
 .contact-section{
-    padding: 10% 0 0;
+    padding: 5% 0 0;
     h4.sub-head {
         margin-bottom:40px;
     }
@@ -144,9 +144,9 @@
         .contact-info-icon{
             i{
                 display: inline-block;
-                background-color: #0c5adb;
+                background-color: $secondary;
                 color: #fff;
-                border: 1px solid #0c5adb;
+                border: 1px solid $primary;
                 width: 70px;
                 height: 70px;
                 border-radius: 5px;
@@ -156,23 +156,10 @@
                 transition: 0.5s;
             }
         }
-        .contact-info-content{
-            h4 {
-                font-size: 16px;
-                font-weight:800;
-                margin: 0;
-                padding: 0 0 8px 0;
-                transition: 0.5s;
-            }
-            p{
-                font-size: 22px;
-                color: #0c59d7;
-                font-weight: 600;
-                font-family: "Rajdhani";
-                margin: 0;
-                padding: 0;
-                transition: 0.5s;
-            }
+        .contact-info-content{           
+            h5, p {
+            margin: 0;
+            }           
             
         }
     }
@@ -186,7 +173,7 @@
                 margin: 0 0 27px;  
             }
             input{           
-                background: #d9e7ff;
+                background:$input-bg;
                 border: 1px solid #bcd6ff;
                 outline: 0;
                 width: 100%;
@@ -200,7 +187,7 @@
                 color:#000;
             }
             textarea{
-                background: #d9e7ff;
+                background: $input-bg;
                 border: 1px solid #bcd6ff;
                 outline: 0;
                 width: 100%;

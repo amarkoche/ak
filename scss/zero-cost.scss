@@ -100,10 +100,24 @@
 /* Start Counter Section */
 @import "_responsive.scss";
 /* End Counter Section */
-
+/* 
 .ak-softtech.header-area{
     background: linear-gradient(45deg, #0160e7 0%, #04bdef 100%);
-}
+} */
+ .video-setion.video-bnner{
+    &.zero-cost-banner{      
+    .left-text{
+        text-align: left;
+        h1 {
+            text-align: left;
+            font-size: 4.2rem;
+        
+        }
+        p {color: #fff;     font-size: 1.3rem;}
+    }     
+    }
+
+ }
 
 .build-website-section{
     padding: 10% 0 0;
