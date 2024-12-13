@@ -71,18 +71,6 @@ ul {
   padding: 0;
 }
 
-input:focus,
-button:focus {
-  border-color: #C19E68;
-  outline-color: #C19E68;
-  border: 1px solid #C19E68;
-}
-
-textarea:focus {
-  border-color: #F16722;
-  outline-color: #F16722;
-}
-
 hr {
   margin: 60px 0;
   padding: 0px;
@@ -103,12 +91,6 @@ hr.mtb-40 {
   margin: 40px 0;
   border-bottom: 1px solid #eceff8;
   border-top: 0px;
-}
-
-.nagative_mb {
-  position: relative;
-  margin-bottom: -180px;
-  z-index: 1;
 }
 
 *::-moz-selection {
@@ -228,6 +210,10 @@ img {
   color: #0a53bf;
   display: flex;
   justify-items: center;
+  text-transform: uppercase;
+}
+.sub-title.sub-title-regular {
+  text-transform: inherit;
 }
 
 .sub-title::before {
@@ -357,6 +343,7 @@ button.custome-button {
 button.custome-button:hover {
   background-color: #00305c;
   border: 1px solid #003a6c;
+  color: #fff;
 }
 
 button.custome-button a {
@@ -452,6 +439,70 @@ li {
   list-style-type: none;
 }
 
+<<<<<<< HEAD
+=======
+.contnet-form-area h4 {
+  color: #072ba7;
+  font-size: 20px;
+  margin: 0 0 27px;
+  text-transform: uppercase;
+  font-weight: 600;
+}
+.contnet-form-area input, .contnet-form-area select, .contnet-form-area textarea {
+  border: 1px solid #bcd6ff;
+  outline: 0;
+  width: 100%;
+  height: 50px;
+  color: #000;
+  margin-bottom: 16px;
+  display: inline-block;
+  padding: 0 19px;
+  border-radius: 5px;
+}
+.contnet-form-area button {
+  padding: 13px 15px;
+  background-color: #0a53bf;
+  display: block;
+  color: #fff;
+  border-radius: 7px;
+  width: 100%;
+  cursor: pointer;
+  text-align: center;
+  transition: 0.5s;
+  border: 1px solid #0a53bf;
+}
+.contnet-form-area input::placeholder,
+.contnet-form-area textarea::placeholder {
+  color: #343a40;
+}
+
+.modal-header {
+  position: relative;
+}
+.modal-header h5 {
+  margin: 0;
+}
+.modal-header button {
+  position: absolute;
+  top: -7px;
+  right: -7px;
+  border: none;
+  background: transparent;
+  background-color: #0a53bf;
+  border-radius: 5px;
+  box-shadow: -1px 0px 1px 1px white;
+}
+.modal-header button span {
+  display: flex;
+  align-items: center;
+  padding: 6px;
+}
+.modal-header button span i {
+  font-size: 20px;
+  color: #fff;
+}
+
+>>>>>>> a9893c256101652ce982fa271fd7088cf4078edb
 /* Emd elements.scss */
 /* Start Key-frame.scss */
 /* Start key Frame */
