@@ -105,9 +105,13 @@
     background: linear-gradient(45deg, #0160e7 0%, #04bdef 100%);
 } */
  .video-setion.video-bnner{
-    &.zero-cost-banner{      
+    &.zero-cost-banner{ 
+        padding: 6% 0 0;     
     .left-text{
-        text-align: left;
+            display: flex;        ;
+            align-items: flex-start;
+            justify-content: center;
+            flex-direction: column;
         h1 {
             text-align: left;
             font-size: 4.2rem;
