@@ -1212,7 +1212,7 @@ img {
 
 .hero-banner-section {
   overflow: visible;
-  /* background-image: url(../images/hero-banner/bn-bg.png); */
+  background-image: url(../images/hero-banner/bn-bg.png);
   position: relative;
   background: linear-gradient(45deg, #0160e7 0%, #04bdef 100%);
   padding-bottom: 50%;

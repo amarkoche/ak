@@ -1212,7 +1212,7 @@ img {
 
 .hero-banner-section {
   overflow: visible;
-  /* background-image: url(../images/hero-banner/bn-bg.png); */
+  background-image: url(../images/hero-banner/bn-bg.png);
   position: relative;
   background: linear-gradient(45deg, #0160e7 0%, #04bdef 100%);
   padding-bottom: 50%;
@@ -2716,6 +2716,137 @@ img {
 .ak-softtech.header-area{
     background: linear-gradient(45deg, #0160e7 0%, #04bdef 100%);
 } */
+.zero-cost-banner {
+  overflow: visible;
+  /* background-image: url(../images/hero-banner/bn-bg.png); */
+  position: relative;
+  background: linear-gradient(45deg, #0160e7 0%, #04bdef 100%);
+  padding-bottom: 50%;
+  height: 100vh;
+}
+.zero-cost-banner::before {
+  position: absolute;
+  content: "";
+  top: -10%;
+  left: -20%;
+  height: 88%;
+  width: 76%;
+  border-radius: 100%/7% 20% 163% 150%;
+  background: linear-gradient(75deg, #0166e7 0%, #0396ec 100%);
+  animation: floatY 3s ease-in-out infinite;
+}
+.zero-cost-banner::after {
+  position: absolute;
+  content: "";
+  top: -20%;
+  right: 20%;
+  height: 80%;
+  width: 66%;
+  border-radius: 100%/22% 20% 200% 200%;
+  background: linear-gradient(217deg, #04b4ee 0%, #0276e9 100%);
+  animation: floatX 10s ease-in-out infinite;
+}
+.zero-cost-banner .aksosttech-banner-vector {
+  right: 0;
+  left: 120px;
+  bottom: -180px;
+  position: absolute;
+  animation: man-updown 2s infinite alternate;
+}
+.zero-cost-banner .banner-shape {
+  top: 0;
+  left: 0;
+  position: absolute;
+}
+.zero-cost-banner .banner-shape.shape1 {
+  animation: floatY 3s ease-in-out infinite;
+}
+.zero-cost-banner .banner-shape.shape2 {
+  left: 150px;
+  animation: floatX 10s ease-in-out infinite;
+}
+.zero-cost-banner .banner-content {
+  z-index: 1;
+  margin: 0 auto;
+  max-width: 85%;
+  position: relative;
+  padding: 150px 0% 10%;
+}
+.zero-cost-banner .banner-content .banner-text {
+  visibility: visible;
+  animation-duration: 1000ms;
+  animation-delay: 0ms;
+  animation-name: fadeInUp;
+}
+.zero-cost-banner .banner-content .banner-text h1 {
+  color: #fff;
+  font-weight: 700;
+  font-family: Poppins;
+  padding-bottom: 30px;
+}
+.zero-cost-banner .banner-content .banner-text h1 span.zero-cost {
+  display: inline-block;
+  font-size: 5rem;
+  position: relative;
+}
+.zero-cost-banner .banner-content .banner-text h1 span.zero-cost:after {
+  position: absolute;
+  content: "";
+  background-image: url(../images/zerocost-border.png);
+  width: 100%;
+  height: auto;
+  left: 0;
+  bottom: -18px;
+  min-height: 25px;
+  background-size: cover;
+  background-repeat: no-repeat;
+}
+.zero-cost-banner .banner-content .banner-text p {
+  color: #fff;
+  font-size: 1.5rem;
+}
+.zero-cost-banner .banner-content .banner-buttons .banner-input-field {
+  margin-top: 25px;
+  justify-content: center;
+}
+.zero-cost-banner .banner-content .banner-buttons .banner-input-field .aksosttech-form-input {
+  margin: 0px 8px;
+}
+.zero-cost-banner .banner-content .banner-buttons .banner-input-field .aksosttech-form-input span {
+  top: 23px;
+  left: 35px;
+  color: #fff;
+  position: absolute;
+}
+.zero-cost-banner .banner-content .banner-buttons .banner-input-field .aksosttech-form-input input {
+  border: none;
+  height: 70px;
+  width: 290px;
+  color: #fff;
+  padding-left: 65px;
+  border-radius: 35px;
+  background-color: #35a3ec;
+}
+.zero-cost-banner .banner-content .banner-buttons .banner-input-field .aksosttech-form-input input::placeholder {
+  color: #a3daff;
+}
+.zero-cost-banner .banner-content .banner-buttons .banner-input-field button {
+  color: #fff;
+  width: 200px;
+  height: 70px;
+  border: none;
+  margin-left: 8px;
+  font-weight: 700;
+  border-radius: 5px;
+  background-color: transparent;
+  border: 2px solid #fff;
+  transition: 0.3s all ease-in-out;
+}
+.zero-cost-banner .banner-content .banner-buttons .banner-input-field button:hover {
+  background-color: #00305c;
+  border: 1px solid #003a6c;
+}
+
 .video-setion.video-bnner.zero-cost-banner {
   padding: 6% 0 0;
 }
@@ -2729,9 +2860,27 @@ img {
   text-align: left;
   font-size: 4.2rem;
 }
+.video-setion.video-bnner.zero-cost-banner .left-text h1 span.zero-cost {
+  display: inline-block;
+  font-size: 5rem;
+  position: relative;
+}
+.video-setion.video-bnner.zero-cost-banner .left-text h1 span.zero-cost:after {
+  position: absolute;
+  content: "";
+  background-image: url(../images/zerocost-border.png);
+  width: 100%;
+  height: auto;
+  left: 0;
+  bottom: -18px;
+  min-height: 25px;
+  background-size: cover;
+  background-repeat: no-repeat;
+}
 .video-setion.video-bnner.zero-cost-banner .left-text p {
   color: #fff;
   font-size: 1.3rem;
+  text-align: left;
 }
 
 .build-website-section {
