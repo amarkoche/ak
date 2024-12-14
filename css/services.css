@@ -21,6 +21,8 @@ body {
 p {
   color: #343a40;
   transition: 0.5s;
+  font-size: 1.25rem;
+  font-weight: 300;
 }
 
 h1,
@@ -305,7 +307,7 @@ button a i {
   transition: 0.5s;
 }
 
-button.custome-button {
+button.custome-button, a.custome-button {
   color: #fff;
   width: auto;
   min-width: 150px;
@@ -320,14 +322,49 @@ button.custome-button {
   transition: 0.3s all ease-in-out;
   cursor: pointer;
 }
-button.custome-button:hover {
+button.custome-button:hover, a.custome-button:hover {
   background-color: #00305c;
   border: 1px solid #003a6c;
   color: #fff;
 }
-button.custome-button a {
+button.custome-button a, a.custome-button a {
   color: #fff;
   font-weight: 700;
+}
+
+.more-details-btn a {
+  padding: 12px 27px 12px 27px;
+  font-weight: 600;
+  color: #fff;
+  background: #0a53bf;
+  display: inline-block;
+  border-radius: 4px;
+  border: 1px solid #0a53bf;
+  position: relative;
+  z-index: 1;
+  overflow: hidden;
+  margin-top: 12px;
+  transition: 0.5s;
+}
+.more-details-btn a::before {
+  position: absolute;
+  content: "";
+  width: 0;
+  height: 100%;
+  right: 0;
+  top: 0;
+  background: #fff;
+  z-index: -1;
+  transition: 0.5s;
+}
+.more-details-btn a i {
+  display: inline-block;
+  color: #fff;
+  font-size: 21px;
+  margin-left: 12px;
+  position: relative;
+  top: 2px;
+  transition: 0.5s;
 }
 
 .prgoress_indicator {
@@ -1205,6 +1242,23 @@ header#sticky-header {
 }
 /* End Footer Section */
 /* Start Hero-banner Section */
+:root {
+  --cta-background-color: #ffe01b;
+  --cta-background-color-disabled: #dbd9d2;
+  --cta-stroke-color: #241c15;
+  --cta-stroke-width: calc(1* .0625rem);
+  --cta-depth-color: #241c15;
+  --cta-text-color: #241c15;
+  --cta-text-size: var(--copy-info-size);
+  --cta-line-height: 1.5;
+  --cta-text-weight: 500;
+  --cta-border-radius: 2em;
+  --link-color: #241c15;
+  --link-color-hovered: #241c15;
+  --link-background-hovered: rgba(255, 224, 27, .65);
+  --selection-background-color: rgba(255, 224, 27, .15);
+}
+
 img {
   max-width: 100%;
   height: auto;
@@ -1341,6 +1395,88 @@ img {
   border: 1px solid #003a6c;
 }
 
+.home-page-banne {
+  padding: 6% 0;
+  background: url(../images/video-bg.jpg);
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+.home-page-banne .title-section {
+  align-items: center;
+}
+.home-page-banne .title-section h1, .home-page-banne .title-section p {
+  color: #fff;
+}
+.home-page-banne .title-section h1 {
+  font-size: 3.5rem;
+}
+.home-page-banne .title-section p {
+  font-size: 1.5rem;
+}
+.home-page-banne .custome-button {
+  background: #0a53bf;
+}
+.home-page-banne .zerocost-button {
+  color: #fff;
+}
+.home-page-banne .zerocost-button span {
+  background: #0a53bf;
+  padding: 5px 10px;
+  border-radius: 50px;
+}
+
+.arrow-btn {
+  z-index: 1;
+  padding-right: 2.5rem;
+  transform: translate(0);
+  --shift-distance: calc(4* .0625rem);
+  color: #fff;
+}
+.arrow-btn:before {
+  content: "";
+  z-index: -1;
+  background-color: #0a53bf;
+  background-image: url(../images/arrow.svg);
+  background-position: calc(100% - 0.4375rem) calc(100% - 0.4375rem);
+  background-repeat: no-repeat;
+  background-size: 1.125rem;
+  border-radius: 1rem;
+  height: 2rem;
+  transition: left 0.3s cubic-bezier(0.34, 1.2, 0.64, 1), right 0.3s, background-position 0.3s;
+  display: block;
+  position: absolute;
+  bottom: 0;
+  left: calc(100% - 2rem);
+  right: 0;
+}
+.arrow-btn:hover {
+  color: #fff;
+  transform: translateX(var(--shift-distance));
+}
+.arrow-btn:hover::before {
+  height: 100%;
+  transition: right 0.3s, background-position 0.3s;
+  animation: 0.3s ease-in-out fakebounce;
+  left: -1rem;
+}
+
+@keyframes fakebounce {
+  0% {
+    left: calc(100% - 2rem);
+  }
+  50% {
+    left: -1.5rem;
+  }
+  75% {
+    left: -0.5rem;
+  }
+  88% {
+    left: -1.125rem;
+  }
+  100% {
+    left: -1rem;
+  }
+}
 /*---------------------------------------------------- */
 /*responsive area*/
 /*----------------------------------------------------*/
@@ -1906,6 +2042,9 @@ img {
     font-size: 30px;
     margin: 0;
     text-align: left;
+  }
+  .ak-softtech.header-area .navbar-brand.ak-softtech-logo {
+    margin: initial;
   }
 }
 /* End Counter Section */
