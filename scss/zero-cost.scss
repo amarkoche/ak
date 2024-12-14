@@ -100,35 +100,21 @@
 /* Start Counter Section */
 @import "_responsive.scss";
 /* End Counter Section */
-/* 
-.ak-softtech.header-area{
-    background: linear-gradient(45deg, #0160e7 0%, #04bdef 100%);
-} */
- .video-setion.video-bnner{
-    &.zero-cost-banner{ 
-        padding: 6% 0 0;     
-    .left-text{
-            display: flex;        ;
-            align-items: flex-start;
-            justify-content: center;
-            flex-direction: column;
-        h1 {
-            text-align: left;
-            font-size: 4.2rem;
-        
-        }
-        p {color: #fff;     font-size: 1.3rem;}
-    }     
-    }
-
- }
 
 .build-website-section{
     padding: 10% 0 0;
-    &.section-4{
+    &.section-5{
       padding-bottom: 10%;  
     }
+    .content-box {
+        width: 80%;
+    }    
 }
+.zerocost-video-sec{
+    p{color:#fff;}
+    
+}
+
 .fa-square-check{
     font-size: 26px;
     color: #0160e7;
@@ -136,9 +122,28 @@
 }
 .expand-service-list{
     li{
-        display: flex;
-    align-items: center;
-    margin-bottom: 10px;
+        margin-bottom: 10px;       
+        padding: 10px;
+        border: 1px solid $dark;
+        color: $dark;
+        margin: 5px;
+        .inner{
+            display: flex;
+            align-items: center;
+            flex-wrap: nowrap;
+           i {
+                font-size: 20px;
+                color: #0a53bf;
+                margin-right: 5px;
+            }
+        }
+        &:hover{
+            background-color: #00305c;
+            color: white;
+            i{
+                color: white;
+            }
+        }
     }
 }
 
@@ -171,7 +176,6 @@
     p {
         color: #fff;
         text-align: left;
-
     }
    }
    .faqs-section{
