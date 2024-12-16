@@ -1,0 +1,72 @@
+.get-forfree-section {
+  background-color: #e2faff;
+  height: 100vh;
+  padding: 5% 0;
+  max-height: 100%;
+  background-image: url(../images/global-map.png);
+  background-size: cover;
+  background-repeat: no-repeat;
+  max-height: 100%;
+}
+
+.get-forfree-section .contact-inner-box {
+  width: 100%;
+  margin: auto;
+  background: #ffffff;
+  padding: 20px;
+  border-radius: 10px;
+  max-width: 400px;
+}
+
+.get-forfree-section .contact-inner-box h4 {
+  color: #072ba7;
+  font-size: 20px;
+  margin: 0 0 27px;
+  text-transform: uppercase;
+  font-weight: 600;
+}
+
+.get-forfree-section .contact-inner-box input {
+  border: 1px solid #bcd6ff;
+  outline: 0;
+  width: 100%;
+  height: 50px;
+  color: #000;
+  margin-bottom: 16px;
+  padding: 0 19px;
+  border-radius: 5px;
+}
+
+.get-forfree-section .contact-inner-box textarea {
+  background: #d9e7ff;
+  border: 1px solid #bcd6ff;
+  outline: 0;
+  width: 100%;
+  height: 120px;
+  color: #fff;
+  margin-bottom: 16px;
+  padding: 10px 19px;
+  border-radius: 5px;
+}
+
+.get-forfree-section .contact-inner-box button {
+  padding: 13px 15px;
+  background-color: #0b59d7;
+  display: block;
+  color: #fff;
+  border-radius: 7px;
+  width: 100%;
+  cursor: pointer;
+  text-align: center;
+  transition: 0.5s;
+  border: 1px solid #0b59d7;
+}
+
+.get-forfree-section .contact-inner-box input::placeholder,
+.get-forfree-section .contact-inner-box textarea::placeholder {
+  color: #000;
+}
+
+
+
+/*# sourceMappingURL=get-for-free.css.map */

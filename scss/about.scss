@@ -31,12 +31,13 @@ padding-top:5%;
         button{
             margin: 5px;
             padding: 10px;
-            border: 1px solid $dark;
-            color: $dark;
+            border: 2px solid $info;
+            color: $info;
             .inner{
                 display: flex;
                 align-items: center;
                 flex-wrap: nowrap;
+                font-weight: 700;
                 i {
                     font-size: 20px;
                     color: $secondary;
@@ -57,6 +58,7 @@ padding-top:5%;
 }
 
 .vision-mission{
+   
     .build-website-section{
         padding-top: 10%;
     }
