@@ -1376,13 +1376,14 @@ header#sticky-header {
 .about-us-section .about-check button {
   margin: 5px;
   padding: 10px;
-  border: 1px solid #343a40;
-  color: #343a40;
+  border: 2px solid #00305c;
+  color: #00305c;
 }
 .about-us-section .about-check button .inner {
   display: flex;
   align-items: center;
   flex-wrap: nowrap;
+  font-weight: 700;
 }
 .about-us-section .about-check button .inner i {
   font-size: 20px;
