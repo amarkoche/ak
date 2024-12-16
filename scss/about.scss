@@ -28,32 +28,32 @@
 .about-us-section{
 padding-top:5%;
     .about-check{
-        button{
-            margin: 5px;
-            padding: 10px;
-            border: 2px solid $info;
-            color: $info;
-            .inner{
-                display: flex;
-                align-items: center;
-                flex-wrap: nowrap;
-                font-weight: 700;
-                i {
-                    font-size: 20px;
-                    color: $secondary;
-                    margin-right: 5px;
-                }
-            }
-            &:hover{
-                background-color: $info;
-                color: white;
-                i {
+        // button{
+        //     margin: 5px;
+        //     padding: 10px;
+        //     border: 2px solid $info;
+        //     color: $info;
+        //     .inner{
+        //         display: flex;
+        //         align-items: center;
+        //         flex-wrap: nowrap;
+        //         font-weight: 700;
+        //         i {
+        //             font-size: 20px;
+        //             color: $secondary;
+        //             margin-right: 5px;
+        //         }
+        //     }
+        //     &:hover{
+        //         background-color: $info;
+        //         color: white;
+        //         i {
                    
-                    color: white;
+        //             color: white;
                     
-                }
-            }
-        }
+        //         }
+        //     }
+        // }
     }
 }
 

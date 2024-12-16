@@ -483,6 +483,32 @@ li {
   color: #343a40;
 }
 
+.service-list li {
+  margin-bottom: 10px;
+  padding: 10px;
+  border: 2px solid #343a40;
+  color: #343a40;
+  margin: 5px;
+  font-weight: 700;
+}
+.service-list li .inner {
+  display: flex;
+  align-items: center;
+  flex-wrap: nowrap;
+}
+.service-list li .inner i {
+  font-size: 20px;
+  color: #0a53bf;
+  margin-right: 5px;
+}
+.service-list li:hover {
+  background-color: #00305c;
+  color: white;
+}
+.service-list li:hover i {
+  color: white;
+}
+
 .modal-header {
   position: relative;
 }
@@ -2869,59 +2895,6 @@ img {
   font-size: 26px;
   color: #0160e7;
   margin-right: 15px;
-}
-
-.expand-service-list li {
-  margin-bottom: 10px;
-  padding: 10px;
-  border: 1px solid #343a40;
-  color: #343a40;
-  margin: 5px;
-}
-.expand-service-list li .inner {
-  display: flex;
-  align-items: center;
-  flex-wrap: nowrap;
-}
-.expand-service-list li .inner i {
-  font-size: 20px;
-  color: #0a53bf;
-  margin-right: 5px;
-}
-.expand-service-list li:hover {
-  background-color: #00305c;
-  color: white;
-}
-.expand-service-list li:hover i {
-  color: white;
-}
-
-@media (max-width: 768px) {
-  .build-website-section.section-1 {
-    padding-top: 100px;
-  }
-  .build-website-section.section-1 .image-area {
-    padding-top: 20px;
-  }
-  .build-website-section.section-1 .upper-box {
-    display: none;
-  }
-  .build-website-section.section-1 > row {
-    order: 2;
-  }
-  .build-website-section.section-2 .image-area {
-    order: 2;
-  }
-  .build-website-section.section-4 .image-area {
-    order: 2;
-  }
-  .video-setion p {
-    color: #fff;
-    text-align: left;
-  }
-  .faqs-section .faq-area {
-    order: 2;
-  }
 }
 
 /*# sourceMappingURL=zero-cost.css.map */

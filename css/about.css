@@ -482,6 +482,32 @@ li {
   color: #343a40;
 }
 
+.service-list li {
+  margin-bottom: 10px;
+  padding: 10px;
+  border: 2px solid #343a40;
+  color: #343a40;
+  margin: 5px;
+  font-weight: 700;
+}
+.service-list li .inner {
+  display: flex;
+  align-items: center;
+  flex-wrap: nowrap;
+}
+.service-list li .inner i {
+  font-size: 20px;
+  color: #0a53bf;
+  margin-right: 5px;
+}
+.service-list li:hover {
+  background-color: #00305c;
+  color: white;
+}
+.service-list li:hover i {
+  color: white;
+}
+
 .modal-header {
   position: relative;
 }
@@ -1373,31 +1399,6 @@ header#sticky-header {
 .about-us-section {
   padding-top: 5%;
 }
-.about-us-section .about-check button {
-  margin: 5px;
-  padding: 10px;
-  border: 2px solid #00305c;
-  color: #00305c;
-}
-.about-us-section .about-check button .inner {
-  display: flex;
-  align-items: center;
-  flex-wrap: nowrap;
-  font-weight: 700;
-}
-.about-us-section .about-check button .inner i {
-  font-size: 20px;
-  color: #0a53bf;
-  margin-right: 5px;
-}
-.about-us-section .about-check button:hover {
-  background-color: #00305c;
-  color: white;
-}
-.about-us-section .about-check button:hover i {
-  color: white;
-}
-
 .vision-mission .build-website-section {
   padding-top: 10%;
 }
