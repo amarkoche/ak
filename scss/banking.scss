@@ -43,6 +43,87 @@
 /* Start Counter Section */
 @import "_responsive.scss";
 /* End Counter Section */
+section {
+    padding: 5% 0 ; 
+    &.banking-section{   
+        .tab-section{
+          
+            .nav-tabs {
+                display: flex;
+                    justify-content: space-between;
+                    /* justify-content: stretch; */
+                    width: 100%;
+                    flex-wrap: nowrap;
+                    border: 0;
+              
+                .nav-item{
+                    width: 100%;
+                    border:none;
+                    justify-content: center;
+                    margin: 5px;
+                    text-align: center;
+                    border-radius: 5px;
+                   
+
+                    .nav-link {
+                        display: flex;
+                        align-items: center;
+                        justify-content: center;
+                        border: 1px solid $secondary;
+                        border-radius: 5px;
+                        padding:1rem;
+                        img, i {
+                            width: 50px;
+                            font-size: 3rem;
+                        }
+                        
+                        h5 {
+                            margin: 0;
+                            padding-left: 15px;
+                        }
+                        &.active {
+                            background-color: $secondary;    
+                            color: #fff;                       
+                            h5 {
+                                color: #fff;
+                            }
+                        }
+                        
+                    }
+                }
+            }
+        }
+    }  
+    &.request-call{
+      
+        background-image: url(/images/video-bg.jpg);
+        background-position: 100%;
+        background-repeat: no-repeat;
+        background-size: cover;
+        height: fit-content;     
+        .title-section{
+
+            .sub-title{
+                color: #fff;
+                &::before{
+                    filter: invert(1);
+                }
+            }
+            p, h2{
+                color: #fff;
+            }
+           
+        }
+        .bankcall{
+            float: right;
+            padding: 50px;
+            color: #fff;
+            background: rgb(0 48 92 / 48%);
+            h4, h5 { color: #fff;}
+           
+        }
+    }
+}
 
 .intership-section{
     padding: 5% 0;

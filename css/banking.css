@@ -366,6 +366,9 @@ button.custome-button a, a.custome-button a {
   top: 2px;
   transition: 0.5s;
 }
+.more-details-btn a:hover {
+  background: #00305c;
+}
 
 .prgoress_indicator {
   position: fixed;
@@ -481,6 +484,28 @@ li {
 .contnet-form-area input::placeholder,
 .contnet-form-area textarea::placeholder {
   color: #343a40;
+}
+
+ul.ul-list li {
+  transition: 0.5s;
+  font-size: 1.25rem;
+  font-weight: 300;
+  color: #fff;
+  margin-bottom: 5px;
+}
+ul.ul-list li span {
+  background: #3078fb;
+  display: inline-block;
+  border-radius: 50%;
+  padding: 6px;
+  text-align: center;
+  margin-right: 6px;
+}
+ul.ul-list li span i {
+  display: inline-block;
+  color: #fff;
+  display: flex;
+  font-size: 12px;
 }
 
 .service-list li {
@@ -1739,6 +1764,74 @@ img {
   }
 }
 /* End Counter Section */
+section {
+  padding: 5% 0;
+}
+section.banking-section .tab-section .nav-tabs {
+  display: flex;
+  justify-content: space-between;
+  /* justify-content: stretch; */
+  width: 100%;
+  flex-wrap: nowrap;
+  border: 0;
+}
+section.banking-section .tab-section .nav-tabs .nav-item {
+  width: 100%;
+  border: none;
+  justify-content: center;
+  margin: 5px;
+  text-align: center;
+  border-radius: 5px;
+}
+section.banking-section .tab-section .nav-tabs .nav-item .nav-link {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border: 1px solid #0a53bf;
+  border-radius: 5px;
+  padding: 1rem;
+}
+section.banking-section .tab-section .nav-tabs .nav-item .nav-link img, section.banking-section .tab-section .nav-tabs .nav-item .nav-link i {
+  width: 50px;
+  font-size: 3rem;
+}
+section.banking-section .tab-section .nav-tabs .nav-item .nav-link h5 {
+  margin: 0;
+  padding-left: 15px;
+}
+section.banking-section .tab-section .nav-tabs .nav-item .nav-link.active {
+  background-color: #0a53bf;
+  color: #fff;
+}
+section.banking-section .tab-section .nav-tabs .nav-item .nav-link.active h5 {
+  color: #fff;
+}
+section.request-call {
+  background-image: url(/images/video-bg.jpg);
+  background-position: 100%;
+  background-repeat: no-repeat;
+  background-size: cover;
+  height: fit-content;
+}
+section.request-call .title-section .sub-title {
+  color: #fff;
+}
+section.request-call .title-section .sub-title::before {
+  filter: invert(1);
+}
+section.request-call .title-section p, section.request-call .title-section h2 {
+  color: #fff;
+}
+section.request-call .bankcall {
+  float: right;
+  padding: 50px;
+  color: #fff;
+  background: rgba(0, 48, 92, 0.48);
+}
+section.request-call .bankcall h4, section.request-call .bankcall h5 {
+  color: #fff;
+}
+
 .intership-section {
   padding: 5% 0;
 }
