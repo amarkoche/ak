@@ -366,6 +366,9 @@ button.custome-button a, a.custome-button a {
   top: 2px;
   transition: 0.5s;
 }
+.more-details-btn a:hover {
+  background: #00305c;
+}
 
 .prgoress_indicator {
   position: fixed;
@@ -481,6 +484,28 @@ li {
 .contnet-form-area input::placeholder,
 .contnet-form-area textarea::placeholder {
   color: #343a40;
+}
+
+ul.ul-list li {
+  transition: 0.5s;
+  font-size: 1.25rem;
+  font-weight: 300;
+  color: #fff;
+  margin-bottom: 5px;
+}
+ul.ul-list li span {
+  background: #3078fb;
+  display: inline-block;
+  border-radius: 50%;
+  padding: 6px;
+  text-align: center;
+  margin-right: 6px;
+}
+ul.ul-list li span i {
+  display: inline-block;
+  color: #fff;
+  display: flex;
+  font-size: 12px;
 }
 
 .service-list li {
