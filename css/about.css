@@ -559,6 +559,26 @@ ul.ul-list li span i {
   color: #fff;
 }
 
+.ak-softtech-logo {
+  display: flex;
+  align-items: center;
+}
+.ak-softtech-logo img.brand-logo {
+  width: 60px;
+  border-radius: 5px;
+  margin-right: 5px;
+}
+.ak-softtech-logo span {
+  font-size: 1.8em;
+  font-weight: 800;
+}
+.ak-softtech-logo span.soft {
+  color: #fff;
+}
+.ak-softtech-logo span.tech {
+  color: #00305c;
+}
+
 /* Emd elements.scss */
 /* Start Key-frame.scss */
 /* Start key Frame */
