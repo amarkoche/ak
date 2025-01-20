@@ -560,26 +560,6 @@ ul.ul-list li span i {
   color: #fff;
 }
 
-.ak-softtech-logo {
-  display: flex;
-  align-items: center;
-}
-.ak-softtech-logo img.brand-logo {
-  width: 60px;
-  border-radius: 5px;
-  margin-right: 5px;
-}
-.ak-softtech-logo span {
-  font-size: 1.8em;
-  font-weight: 800;
-}
-.ak-softtech-logo span.soft {
-  color: #fff;
-}
-.ak-softtech-logo span.tech {
-  color: #00305c;
-}
-
 /* Emd elements.scss */
 /* Start Key-frame.scss */
 /* Start key Frame */
@@ -719,9 +699,11 @@ ul.ul-list li span i {
   align-items: center;
 }
 .ak-softtech.header-area .navbar-brand.ak-softtech-logo img.brand-logo {
-  width: 60px;
-  border-radius: 5px;
-  margin-right: 5px;
+  width: 54px;
+  border-radius: 8px;
+  margin-right: 10px;
+  background: #04baef;
+  padding: 8px;
 }
 .ak-softtech.header-area .navbar-brand.ak-softtech-logo span {
   font-size: 1.8em;
@@ -731,7 +713,7 @@ ul.ul-list li span i {
   color: #fff;
 }
 .ak-softtech.header-area .navbar-brand.ak-softtech-logo span.tech {
-  color: #00305c;
+  color: #04baef;
 }
 .ak-softtech.header-area .header-logo img {
   max-width: 200px;
@@ -928,24 +910,33 @@ header#sticky-header {
 
 .ak-softtech.header-area .navbar-brand.ak-softtech-logo {
   z-index: 1;
-  width: 60px;
   height: auto;
   margin: 0 auto;
   position: relative !important;
+  /*
+     &::before{  
+         top: 0;
+         left: 3px;
+         content: "";
+         z-index: -2;
+         width: 50px;
+         height: 55px;
+         position: absolute;
+         border-radius: 100%;
+         -webkit-animation: border-transform 10s linear infinite alternate forwards;
+         animation: border-transform 10s ease-in-out infinite alternate forwards;
+         background-image: -webkit-gradient(linear, left top, right top, from(#01356a), to(#0d57f3));
+         background-image: linear-gradient(275deg, #01356a 0%, #0d57f3 100%);
+
+     } */
 }
-.ak-softtech.header-area .navbar-brand.ak-softtech-logo::before {
-  top: 0;
-  left: 3px;
-  content: "";
-  z-index: -2;
-  width: 50px;
-  height: 55px;
+.ak-softtech.header-area .navbar-brand.ak-softtech-logo::after {
+  right: 3px;
+  bottom: -4px;
+  content: "Consultancy Services";
   position: absolute;
-  border-radius: 100%;
-  -webkit-animation: border-transform 10s linear infinite alternate forwards;
-  animation: border-transform 10s ease-in-out infinite alternate forwards;
-  background-image: -webkit-gradient(linear, left top, right top, from(#01356a), to(#0d57f3));
-  background-image: linear-gradient(275deg, #01356a 0%, #0d57f3 100%);
+  font-size: 12px;
+  color: #00305c;
 }
 
 @keyframes border-transform {

@@ -570,24 +570,3 @@ ul.ul-list{
         }
     }
  }
-
-.ak-softtech-logo{
-	display: flex;
-	align-items: center;
-	img.brand-logo {
-		width:60px;
-		// box-shadow: 0px 0px 10px 3px #ffffff;
-		border-radius: 5px;
-		margin-right: 5px;
-	}
-	span{
-		font-size: 1.8em;				
-		font-weight: 800;
-		&.soft{
-			color: #fff;
-		}
-		&.tech{
-			color: $info;
-		}
-	}
-}	
