@@ -701,7 +701,7 @@ ul.ul-list li span i {
   width: 54px;
   border-radius: 8px;
   margin-right: 10px;
-  background: #04baef;
+  background: #0a53bf;
   padding: 8px;
 }
 .ak-softtech.header-area .navbar-brand.ak-softtech-logo span {
@@ -712,7 +712,7 @@ ul.ul-list li span i {
   color: #fff;
 }
 .ak-softtech.header-area .navbar-brand.ak-softtech-logo span.tech {
-  color: #04baef;
+  color: #0a53bf;
 }
 .ak-softtech.header-area .header-logo img {
   max-width: 200px;
@@ -733,7 +733,7 @@ ul.ul-list li span i {
   justify-content: end;
 }
 .ak-softtech.header-area .navbar-menu-area .navbar-nav .nav-item.ak-nav-item {
-  margin-right: 35px;
+  margin-right: 1.5rem;
 }
 .ak-softtech.header-area .navbar-menu-area .navbar-nav .nav-item.ak-nav-item a.nav-link {
   display: inline-block;
@@ -741,7 +741,7 @@ ul.ul-list li span i {
   font-size: 1.1rem;
   padding: 20px 0;
   text-transform: capitalize;
-  color: #fff;
+  color: #00305c;
   transition: 0.5s;
 }
 .ak-softtech.header-area .navbar-menu-area .navbar-nav .nav-item.ak-nav-item a.nav-link:hover {
@@ -786,8 +786,7 @@ ul.ul-list li span i {
   animation-timing-function: ease;
   transition: 0.3s all ease-in-out;
   box-shadow: 0px 0px 18px 1px rgba(0, 0, 0, 0.1);
-  background: linear-gradient(45deg, #0160e7 0%, #04bdef 100%);
-  z-index: 999;
+  background: radial-gradient(circle, rgb(137, 223, 255) 38%, rgb(52, 145, 255) 100%);
 }
 .ak-softtech .header-menu {
   text-align: right;
@@ -935,7 +934,8 @@ header#sticky-header {
   content: "Consultancy Services";
   position: absolute;
   font-size: 12px;
-  color: #00305c;
+  font-weight: bold;
+  color: #343a40;
 }
 
 @keyframes border-transform {
