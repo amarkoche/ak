@@ -18,6 +18,7 @@
   --selection-background-color: rgba(255, 224, 27, .15);
 
 }
+
 img {
   max-width: 100%;
     height: auto;
@@ -180,13 +181,15 @@ img {
 
 .home-page-banne {
   padding:6% 0;
-  background: url(../images/video-bg.jpg);
-  background-repeat: no-repeat;
-  background-size: cover; 
+  // background: url(../images/video-bg.jpg);
+  // background-repeat: no-repeat;
+  // background-size: cover; 
+  background: rgb(137,223,255);
+background: radial-gradient(circle, rgba(137,223,255,1) 38%, rgba(52,145,255,1) 100%);
   .title-section{
     align-items: center;
    h1, p {
-    color: #fff;
+    color: $secondary;
    }
    h1 {
     font-size: 3.5rem;
@@ -219,7 +222,8 @@ img {
     padding-right: 2.5rem; 
     transform: translate(0);
     --shift-distance: calc(4* .0625rem);
-    color: #fff;
+    color:$secondary;
+    font-weight: 600;
     &:before {
       content: "";
       z-index: -1;
