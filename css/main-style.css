@@ -236,7 +236,7 @@ img {
 .shape-one {
   position: absolute;
   right: 76px;
-  bottom: 27px;
+  bottom: -50px;
   animation: bounceleft 4s linear infinite;
   animation-duration: 4s;
   animation-timing-function: linear;
@@ -1722,7 +1722,7 @@ img {
 
 .we-have-section .inner-box .icon-img {
   z-index: 1;
-  width: 60px;
+  width: 80px;
   height: auto;
   margin: 0 auto;
   position: relative !important;
@@ -1809,6 +1809,9 @@ img {
   filter: drop-shadow(0px 10px 10px rgba(207, 218, 235, 0.2));
   background-color: rgba(12, 89, 219, 0.07);
 }
+.about-us-section .about-left .icon-box .icon img {
+  max-width: 50px;
+}
 .about-us-section .about-left .icon-box .content h5 {
   margin: 0;
   width: auto;
@@ -1850,16 +1853,21 @@ img {
 .about-us-section .about-right {
   position: relative;
 }
+.about-us-section .about-right .about-thumb {
+  display: flex;
+  justify-content: flex-end;
+}
 .about-us-section .about-right .about-thumb img {
   width: 100%;
+  max-width: 430px;
 }
 .about-us-section .about-right .about-conter-box {
   background: #0a53bf;
   display: inline-block;
   text-align: center;
-  padding: 16px 40px;
+  padding: 10px 30px;
   position: absolute;
-  top: 3px;
+  top: 0;
   left: 5px;
   border-radius: 10px;
   overflow: hidden;
@@ -1868,10 +1876,10 @@ img {
 .about-us-section .about-right .about-conter-box::before {
   position: absolute;
   content: "";
-  width: 170px;
-  height: 170px;
-  left: -2px;
-  top: -57px;
+  width: 130px;
+  height: 142px;
+  left: -10px;
+  top: -40px;
   background: #007bff;
   border-radius: 50%;
   z-index: -1;
@@ -1885,22 +1893,23 @@ img {
   display: inline-block;
 }
 .about-us-section .about-right .about-conter-box .about-counter-title p {
-  line-height: 24px;
+  line-height: 1rem;
   color: #ffffff;
   font-weight: 700;
   text-align: center;
-  margin: 10px 0 0 0;
+  margin: 15px 0 0 0;
+  font-size: 1rem;
 }
 .about-us-section .about-right .about-conter-box i {
-  margin-top: 10px;
+  margin-top: 5px;
   display: inline-block;
-  background: #0B59D7;
+  background: #0a53bf;
   color: #fff;
-  width: 70px;
-  height: 70px;
+  width: 50px;
+  height: 50px;
   text-align: center;
-  line-height: 72px;
-  font-size: 35px;
+  line-height: 50px;
+  font-size: 28px;
   border-radius: 50%;
   -webkit-animation: ripple-white 1s linear infinite;
   animation: ripple-blue 1s linear infinite;

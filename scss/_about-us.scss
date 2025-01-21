@@ -27,6 +27,9 @@
                 transition: 0.5s;
                 filter: drop-shadow(0px 10px 10px rgba(207, 218, 235, 0.2));
                 background-color: rgb(12 89 219 / 7%);
+                img {
+                    max-width: 50px;
+                }
             }
             .content{
                 h5{
@@ -79,18 +82,21 @@
     .about-right{
         position: relative;
         .about-thumb {
+            display: flex;
+            justify-content: flex-end;
             img {
                 width: 100%;
+                max-width: 430px;
             }
         }
        
         .about-conter-box {
-            background: $secondary;
+               background: $secondary;
             display: inline-block;
             text-align: center;
-            padding: 16px 40px;
+            padding: 10px 30px;
             position: absolute;
-            top: 3px;
+            top: 0;
             left: 5px;
             border-radius: 10px;
             overflow: hidden;
@@ -98,11 +104,11 @@
             &::before{
                 position: absolute;
                 content: "";
-                width: 170px;
-                height: 170px;
-                left: -2px;
-                top: -57px;
-                background: $primary;
+                width: 130px;
+                height: 142px;
+                left: -10px;
+                top: -40px;
+                background: #007bff;
                 border-radius: 50%;
                 z-index: -1;
             }
@@ -118,24 +124,26 @@
                     }
                 p{
                   
-                    line-height: 24px;
+                    line-height: 1rem;
                     color: #ffffff;
-                    font-weight: 700;                  
+                    font-weight: 700;
                     text-align: center;
-                    margin: 10px 0 0 0;
+                    margin: 15px 0 0 0;
+                    font-size: 1rem;
                 }
             }
 
             i{
-                margin-top: 10px;
+             
+                margin-top: 5px;
                 display: inline-block;
-                background: #0B59D7;
+                background: #0a53bf;
                 color: #fff;
-                width: 70px;
-                height: 70px;
+                width: 50px;
+                height: 50px;
                 text-align: center;
-                line-height: 72px;
-                font-size: 35px;
+                line-height: 50px;
+                font-size: 28px;
                 border-radius: 50%;
                 -webkit-animation: ripple-white 1s linear infinite;
                 animation: ripple-blue 1s linear infinite;
