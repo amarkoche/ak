@@ -236,7 +236,7 @@ img {
 .shape-one {
   position: absolute;
   right: 76px;
-  bottom: 27px;
+  bottom: -50px;
   animation: bounceleft 4s linear infinite;
   animation-duration: 4s;
   animation-timing-function: linear;
