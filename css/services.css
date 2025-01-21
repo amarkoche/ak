@@ -1985,8 +1985,8 @@ img {
 .features-section .images-box::before {
   position: absolute;
   left: 0px;
-  top: 40px;
-  width: 332px;
+  top: 10px;
+  width: 200px;
   height: 472px;
   background-image: url(../images/dotted-line.svg);
   content: "";
