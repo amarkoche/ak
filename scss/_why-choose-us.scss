@@ -2,7 +2,8 @@
     padding:10% 0;   
     background: #f2f6fd;
     .choose-us-thumb img {
-        position: relative;       
+        position: relative; 
+        max-width: 430px;      
       }
 
     .contnet-area{
@@ -22,6 +23,9 @@
                 transition: 0.5s;
                 filter: drop-shadow(0px 10px 10px rgba(207, 218, 235, 0.2));
                 background-color: rgb(12 89 219 / 7%);
+                img {
+                    max-width: 50px;
+                }
             }
             .content{
                 h5{
