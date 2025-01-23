@@ -1805,13 +1805,15 @@ img {
   width: 70px;
   min-width: 70px;
   height: 60px;
-  border-radius: 10px;
+  border-radius: 6px;
   transition: 0.5s;
-  filter: drop-shadow(0px 10px 10px rgba(207, 218, 235, 0.2));
-  background-color: rgba(12, 89, 219, 0.07);
+  box-shadow: 0px 1px 3px 0px #6c757d;
 }
 .about-us-section .about-left .icon-box .icon img {
   max-width: 50px;
+}
+.about-us-section .about-left .icon-box .icon:hover {
+  box-shadow: 0px 1px 3px 1px #6c757d;
 }
 .about-us-section .about-left .icon-box .content h5 {
   margin: 0;
@@ -1971,13 +1973,15 @@ img {
   width: 70px;
   min-width: 70px;
   height: 60px;
-  border-radius: 10px;
+  border-radius: 6px;
   transition: 0.5s;
-  filter: drop-shadow(0px 10px 10px rgba(207, 218, 235, 0.2));
-  background-color: rgba(12, 89, 219, 0.07);
+  box-shadow: 0px 1px 3px 0px #6c757d;
 }
 .why-choose-section .contnet-area .icon-box .icon img {
   max-width: 50px;
+}
+.why-choose-section .contnet-area .icon-box .icon:hover {
+  box-shadow: 0px 1px 3px 1px #6c757d;
 }
 .why-choose-section .contnet-area .icon-box .content h5 {
   margin: 0;
