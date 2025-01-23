@@ -1701,7 +1701,7 @@ img {
 /* End Hero-banner Section */
 /* Start We Have Section */
 .we-have-section {
-  padding: 5% 0;
+  padding: 6rem 0;
 }
 .we-have-section .inner-box {
   position: relative;
@@ -1779,7 +1779,7 @@ img {
 /* Start About-us-section Section */
 .about-us-section {
   background: #f2f6fd;
-  padding: 10% 0;
+  padding: 6rem 0;
 }
 .about-us-section .about-left {
   position: relative;
@@ -1951,7 +1951,7 @@ img {
 /* End  About-us-section Section */
 /* Start Why-chose-us Section */
 .why-choose-section {
-  padding: 10% 0;
+  padding: 6rem 0;
   background: #f2f6fd;
 }
 .why-choose-section .choose-us-thumb img {
@@ -1995,7 +1995,7 @@ img {
 /* Start Features Section */
 .features-section {
   position: relative;
-  padding: 10% 0;
+  padding: 6rem 0;
   z-index: 2;
 }
 .features-section .images-box {
@@ -2496,6 +2496,61 @@ img {
   visibility: visible;
   animation-delay: 1200ms;
   animation-name: fadeInRight;
+}
+
+.services-section.our-services {
+  padding: 6rem 0 0;
+}
+.services-section.our-services .contnet-box {
+  margin: 0;
+  display: block;
+  flex-direction: initial;
+}
+.services-section.our-services .contnet-box .service-block {
+  width: 49%;
+  float: left;
+  margin: 0;
+}
+.services-section.our-services .contnet-box .service-block .inner-box {
+  max-width: 100%;
+  margin: 15px;
+}
+.services-section.why-choose-section {
+  padding-top: 0;
+}
+.services-section.why-choose-section .title-section {
+  text-align: left;
+}
+.services-section.why-choose-section .title-section .sub-title {
+  width: inherit;
+}
+.services-section.why-choose-section .contnet-box {
+  margin: 0;
+  display: block;
+  flex-direction: initial;
+}
+.services-section.why-choose-section .contnet-box .service-block {
+  width: 100%;
+  float: left;
+  margin: 0;
+}
+.services-section.why-choose-section .contnet-box .service-block .inner-box {
+  max-width: 100%;
+  margin: 15px;
+}
+.services-section.why-choose-section .contnet-box .service-block .inner-box .inner-content {
+  display: flex;
+  align-items: center;
+  padding-left: 0;
+}
+.services-section.why-choose-section .contnet-box .service-block .inner-box .inner-content .icon {
+  position: relative;
+  padding-right: 20px;
+}
+.services-section.why-choose-section .contnet-box .service-block .inner-box .inner-content .icon img {
+  height: auto;
+  width: 100%;
+  max-width: 70px;
 }
 
 .zoom-two {
