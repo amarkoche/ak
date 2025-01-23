@@ -1843,7 +1843,7 @@ img {
 }
 .services-section .contnet-box .service-block .inner-box .inner-content {
   position: relative;
-  padding-left: 95px;
+  padding-left: 70px;
   padding-right: 70px;
   min-height: 70px;
 }
@@ -1856,7 +1856,7 @@ img {
 }
 .services-section .contnet-box .service-block .inner-box .inner-content .icon img {
   display: inline-block;
-  max-width: 100%;
+  max-width: 50px;
   height: auto;
 }
 .services-section .contnet-box .service-block .inner-box .inner-content h5.title {
