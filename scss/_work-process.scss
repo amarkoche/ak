@@ -1,7 +1,7 @@
 
     .working-process-section {
       background: #f2f6fd;
-      padding: 10% 0;
+      padding: 6rem 0;
       .title-section{
         margin-bottom: 50px;
         .sub-title{
@@ -116,26 +116,14 @@
         &:hover img {
           transform: scaleX(-1);
         }
-        // .process-content {
-        //   // h4 {
-        //   //   font-size: 23px;
-        //   //   margin: 30px 0 10px;
-        //   //   font-size: 23px;
-        //   //   color: #041424;
-        //   //   margin: 20px 0 10px;
-        //   //   transition: .5s;
-        //   // }
-        
-        //   // p {
-        //   //   opacity: 0.502;
-        //   //   font-size: 16px;
-        //   //   color: #041424;
-        //   //   font-weight: 400;
-        //   //   font-family: "Nunito";
-        //   //   text-align: center;
-        //   //   transition: .5s;
-        //   // }   
-        // }
+        .process-content {  
+          p {           
+            color:$info;
+            font-weight: 400;          
+            text-align: center;
+            transition: .5s;
+          }   
+        }
       }
     }
   

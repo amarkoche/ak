@@ -1757,7 +1757,7 @@ img {
 /* Start Services-Section Section */
 .services-section {
   position: relative;
-  padding: 10% 0;
+  padding: 6rem 0;
   z-index: 2;
 }
 .services-section .title-section {
@@ -1922,9 +1922,6 @@ img {
   animation-name: fadeInRight;
 }
 
-.services-section.our-services {
-  padding: 6rem 0 0;
-}
 .services-section.our-services .contnet-box {
   margin: 0;
   display: block;
