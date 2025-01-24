@@ -975,6 +975,9 @@ header#sticky-header {
   position: relative;
   margin-top: 6rem;
 }
+.footer-area-section .footer-logo img {
+  max-width: 200px;
+}
 .footer-area-section .aksofttech-barnd.ak-softtech-logo {
   display: flex;
   align-items: center;
