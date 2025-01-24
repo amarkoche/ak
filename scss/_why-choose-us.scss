@@ -1,10 +1,18 @@
 .why-choose-section {
     padding:6rem 0;   
     background: #f2f6fd;
-    .choose-us-thumb img {
-        position: relative; 
-        max-width: 430px;      
-      }
+    .images-area{
+        position: relative;
+        .choose-us-thumb {
+            display: flex;
+            justify-content: end;
+            img {
+                position: relative; 
+                max-width: 430px;      
+              }
+        }
+    }
+    
 
     .contnet-area{
         position: relative;
@@ -41,10 +49,8 @@
             bottom: 20px;
             left: 70px;
         }
-    }
-     
-
-   
+    }   
+  
   }
 
   

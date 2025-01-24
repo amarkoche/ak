@@ -117,11 +117,12 @@
           transform: scaleX(-1);
         }
         .process-content {  
-          p {           
-            color:$info;
-            font-weight: 400;          
-            text-align: center;
-            transition: .5s;
+          p {   
+            opacity: 0.8;        
+            // color:$info;
+            // font-weight: 400;          
+            // text-align: center;
+            // transition: .5s;
           }   
         }
       }

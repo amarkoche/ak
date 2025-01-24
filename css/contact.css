@@ -973,7 +973,7 @@ header#sticky-header {
   background-position: center center;
   padding: 150px 0 32px;
   position: relative;
-  margin-top: 10%;
+  margin-top: 6rem;
 }
 .footer-area-section .aksofttech-barnd.ak-softtech-logo {
   display: flex;
@@ -1099,7 +1099,7 @@ header#sticky-header {
 }
 .footer-area-section .footer-content .footer-title h4 {
   color: #fff;
-  font-size: 28px;
+  font-size: 22px;
   font-weight: 600;
   margin: 0 0 26px;
 }
@@ -1203,6 +1203,7 @@ header#sticky-header {
   color: #fff;
   margin: auto;
   text-align: left;
+  font-size: 1rem;
 }
 .footer-bottom-area .footer-menu {
   color: #fff;
@@ -1221,7 +1222,7 @@ header#sticky-header {
 }
 
 .small-business {
-  background: #0b59d7;
+  background: #021438;
   padding: 50px;
   z-index: 9;
   position: absolute;
@@ -1229,11 +1230,12 @@ header#sticky-header {
   left: 50%;
   transform: translate(-50%);
   border-radius: 10px;
+  box-shadow: 0px 1px 3px 0px #ffffff;
 }
 .small-business h4 {
   color: #fff;
   margin: 0;
-  font-weight: 800;
+  font-weight: bold;
 }
 .small-business .form-subscribe {
   position: relative;
@@ -1254,8 +1256,8 @@ header#sticky-header {
   height: 62px;
   width: 155px;
   color: #fff;
-  border-radius: 5px;
-  background-color: #151948;
+  border-radius: 0 5px 5px 0;
+  background-color: #0a53bf;
   position: absolute;
   top: 0;
   right: 0;
@@ -1263,21 +1265,6 @@ header#sticky-header {
 .small-business .content-box {
   position: relative;
   overflow: hidden;
-}
-.small-business .content-box::after {
-  top: 0px;
-  z-index: -1;
-  content: "";
-  right: 497px;
-  width: 100px;
-  height: 100px;
-  position: absolute;
-  background-repeat: no-repeat;
-  background-image: url(/images/cta-arrow.png);
-  animation-duration: 3s;
-  animation-name: movebounce;
-  animation-iteration-count: infinite;
-  animation-timing-function: ease-in-out;
 }
 
 @media (max-width: 768px) {
@@ -1954,7 +1941,14 @@ img {
   padding: 6rem 0;
   background: #f2f6fd;
 }
-.why-choose-section .choose-us-thumb img {
+.why-choose-section .images-area {
+  position: relative;
+}
+.why-choose-section .images-area .choose-us-thumb {
+  display: flex;
+  justify-content: end;
+}
+.why-choose-section .images-area .choose-us-thumb img {
   position: relative;
   max-width: 430px;
 }
@@ -2165,21 +2159,23 @@ img {
   background: transparent;
 }
 
+.process-content {
+  /* p {
+    opacity: 0.502;
+    font-size: 16px;
+    color: #ffffff;
+    font-weight: 400;
+    font-family: "Nunito";
+    text-align: center;
+    transition: .5s;
+  }    */
+}
 .process-content h4 {
   font-size: 23px;
   margin: 30px 0 10px;
   font-size: 23px;
   color: #fff;
   margin: 20px 0 10px;
-  transition: 0.5s;
-}
-.process-content p {
-  opacity: 0.502;
-  font-size: 16px;
-  color: #ffffff;
-  font-weight: 400;
-  font-family: "Nunito";
-  text-align: center;
   transition: 0.5s;
 }
 
@@ -2321,10 +2317,7 @@ img {
   transform: scaleX(-1);
 }
 .working-process-section .process-box .process-content p {
-  color: #00305c;
-  font-weight: 400;
-  text-align: center;
-  transition: 0.5s;
+  opacity: 0.8;
 }
 
 @media (max-width: 768px) {
@@ -2425,7 +2418,7 @@ img {
 }
 .services-section .contnet-box .service-block .inner-box .inner-content {
   position: relative;
-  padding-left: 70px;
+  padding-left: 75px;
   padding-right: 70px;
   min-height: 70px;
 }
@@ -2438,7 +2431,7 @@ img {
 }
 .services-section .contnet-box .service-block .inner-box .inner-content .icon img {
   display: inline-block;
-  max-width: 50px;
+  max-width: 60px;
   height: auto;
 }
 .services-section .contnet-box .service-block .inner-box .inner-content h5.title {
@@ -2610,10 +2603,59 @@ img {
 /* End Services-Section Section */
 /* Start Video Banner Section */
 .video-setion {
-  padding: 10% 0;
-  background: url(../images/video-bg.jpg);
+  position: relative;
+  padding: 6rem 0;
+}
+.video-setion::before {
+  background: url(../images/banner/video-bg.png);
   background-repeat: no-repeat;
   background-size: cover;
+  position: relative;
+  height: 100%;
+  width: 100%;
+  padding: 6rem 0;
+  background-position: bottom;
+  opacity: 0.5;
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  border: 0;
+  z-index: 2;
+}
+.video-setion::after {
+  background-color: rgba(10, 83, 191, 0.68);
+  width: 100%;
+  height: 100%;
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  bottom: 0;
+  right: 0;
+  z-index: 2;
+}
+.video-setion .bg-img::after {
+  content: "";
+  position: absolute;
+  background: url(../images/banner/video-bg1.png);
+  background-repeat: no-repeat;
+  background-size: 100%;
+  bottom: 0;
+  background-position: center bottom;
+  height: 100%;
+  width: 100%;
+  z-index: 1;
+  max-width: 500px;
+  left: 50%;
+  transform: translateX(-50%);
+  z-index: 4;
+  opacity: 0.3;
+}
+.video-setion .content {
+  position: relative;
+  z-index: 4;
 }
 .video-setion .title-section {
   margin-bottom: 50px;
@@ -2624,7 +2666,7 @@ img {
 .video-setion .title-section .sub-title {
   margin: auto;
   width: fit-content;
-  color: #679fef;
+  color: #fff;
 }
 .video-setion .title-section .sub-title::before {
   filter: invert(1);
@@ -2632,6 +2674,12 @@ img {
 .video-setion .title-section h2 {
   color: #fff;
   padding-bottom: 15px;
+}
+.video-setion .title-section p {
+  color: #fff;
+  width: 80%;
+  margin: auto;
+  font-size: 1.25rem;
 }
 .video-setion .video-button {
   text-align: center;
@@ -2665,7 +2713,7 @@ img {
 /* End  Video Banner Section */
 /* Start Consultations Section */
 .consultation-section {
-  padding: 10% 0;
+  padding: 6rem 0;
 }
 .consultation-section .get-touch-img {
   margin-bottom: 20px;
@@ -2801,22 +2849,17 @@ img {
   padding: 6rem 0;
 }
 .counter-section .counter-bg {
-  padding: 6rem 0;
-  /* background: url(../images/counter-bg.png); */
-  background-repeat: no-repeat;
-  background-size: cover;
-  background-position: center center;
-  position: relative;
-  top: -65px;
   border-radius: 10px;
 }
 .counter-section .counter-bg .counter:last-child .single-counter-box::before {
   background-image: none;
 }
+.counter-section .counter-bg .counter {
+  padding: 0;
+}
 .counter-section .single-counter-box {
   text-align: center;
   position: relative;
-  margin-bottom: 25px;
 }
 .counter-section .single-counter-box::before {
   position: absolute;
@@ -2827,17 +2870,22 @@ img {
   top: 0;
   background-image: linear-gradient(0deg, #fff 10%, #0b59db 50%, #fff 100%);
 }
+.counter-section .single-counter-box .counter-content {
+  padding: 0 15px;
+}
 .counter-section .single-counter-box .counter-content h4 {
   font-size: 100px;
   color: #0a53bf;
-  font-weight: 700;
+  font-weight: 900;
   margin: 0;
   display: inline-block;
-  -webkit-text-fill-color: #0a53bf;
-  -webkit-text-stroke-width: 0px;
-  /* -webkit-text-stroke: blue; */
+  -webkit-text-fill-color: transparent;
+  -webkit-text-stroke: 1px;
   -webkit-text-stroke-color: #00305c;
-  text-shadow: 3px 3px 7px #a3a3a3;
+  /* -webkit-text-fill-color: #0a53bf; */
+  /* -webkit-text-stroke: blue; */
+  /* -webkit-text-stroke-width: 0px; */
+  /* text-shadow: 3px 3px 7px #a3a3a3; */
 }
 .counter-section .single-counter-box .counter-content h4 span {
   font-size: 50px;
