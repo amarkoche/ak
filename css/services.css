@@ -973,7 +973,7 @@ header#sticky-header {
   background-position: center center;
   padding: 150px 0 32px;
   position: relative;
-  margin-top: 10%;
+  margin-top: 6rem;
 }
 .footer-area-section .aksofttech-barnd.ak-softtech-logo {
   display: flex;
@@ -1221,7 +1221,7 @@ header#sticky-header {
 }
 
 .small-business {
-  background: #0b59d7;
+  background: #021438;
   padding: 50px;
   z-index: 9;
   position: absolute;
@@ -1229,11 +1229,12 @@ header#sticky-header {
   left: 50%;
   transform: translate(-50%);
   border-radius: 10px;
+  box-shadow: 0px 1px 3px 0px #ffffff;
 }
 .small-business h4 {
   color: #fff;
   margin: 0;
-  font-weight: 800;
+  font-weight: bold;
 }
 .small-business .form-subscribe {
   position: relative;
@@ -1255,7 +1256,7 @@ header#sticky-header {
   width: 155px;
   color: #fff;
   border-radius: 5px;
-  background-color: #151948;
+  background-color: #0a53bf;
   position: absolute;
   top: 0;
   right: 0;
@@ -1263,21 +1264,6 @@ header#sticky-header {
 .small-business .content-box {
   position: relative;
   overflow: hidden;
-}
-.small-business .content-box::after {
-  top: 0px;
-  z-index: -1;
-  content: "";
-  right: 497px;
-  width: 100px;
-  height: 100px;
-  position: absolute;
-  background-repeat: no-repeat;
-  background-image: url(/images/cta-arrow.png);
-  animation-duration: 3s;
-  animation-name: movebounce;
-  animation-iteration-count: infinite;
-  animation-timing-function: ease-in-out;
 }
 
 @media (max-width: 768px) {
@@ -1701,10 +1687,54 @@ img {
 /* End Hero-banner Section */
 /* Start Video Banner Section */
 .video-setion {
-  padding: 10% 0;
-  background: url(../images/video-bg.jpg);
+  position: relative;
+  padding: 6rem 0;
+}
+.video-setion::before {
+  background: url(../images/banner/video-bg.png);
   background-repeat: no-repeat;
   background-size: cover;
+  position: relative;
+  height: 100%;
+  width: 100%;
+  padding: 6rem 0;
+  background-position: bottom;
+  opacity: 0.5;
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  border: 0;
+  z-index: 2;
+}
+.video-setion::after {
+  background-color: rgba(10, 83, 191, 0.4117647059);
+  width: 100%;
+  height: 100%;
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  bottom: 0;
+  right: 0;
+  z-index: 2;
+}
+.video-setion .bg-img::after {
+  content: "";
+  position: absolute;
+  background: url(../images/banner/video-bg1.png);
+  background-repeat: no-repeat;
+  background-size: 100%;
+  bottom: 0;
+  background-position: center bottom;
+  height: 100%;
+  width: 100%;
+  z-index: 1;
+  max-width: 500px;
+  left: 50%;
+  transform: translateX(-50%);
+  z-index: 4;
 }
 .video-setion .title-section {
   margin-bottom: 50px;
@@ -1723,6 +1753,12 @@ img {
 .video-setion .title-section h2 {
   color: #fff;
   padding-bottom: 15px;
+}
+.video-setion .title-section p {
+  color: #fff;
+  width: 80%;
+  margin: auto;
+  font-size: 1.25rem;
 }
 .video-setion .video-button {
   text-align: center;
@@ -1843,7 +1879,7 @@ img {
 }
 .services-section .contnet-box .service-block .inner-box .inner-content {
   position: relative;
-  padding-left: 70px;
+  padding-left: 75px;
   padding-right: 70px;
   min-height: 70px;
 }
@@ -1856,7 +1892,7 @@ img {
 }
 .services-section .contnet-box .service-block .inner-box .inner-content .icon img {
   display: inline-block;
-  max-width: 50px;
+  max-width: 60px;
   height: auto;
 }
 .services-section .contnet-box .service-block .inner-box .inner-content h5.title {
