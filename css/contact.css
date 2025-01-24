@@ -2223,7 +2223,7 @@ img {
 /* Start work-process Section */
 .working-process-section {
   background: #f2f6fd;
-  padding: 6rem 0;
+  padding: 10% 0;
 }
 .working-process-section .title-section {
   margin-bottom: 50px;
@@ -2320,12 +2320,6 @@ img {
 .working-process-section .process-box:hover img {
   transform: scaleX(-1);
 }
-.working-process-section .process-box .process-content p {
-  color: #00305c;
-  font-weight: 400;
-  text-align: center;
-  transition: 0.5s;
-}
 
 @media (max-width: 768px) {
   .working-process-section .title-section {
@@ -2339,7 +2333,7 @@ img {
 /* Start Services-Section Section */
 .services-section {
   position: relative;
-  padding: 6rem 0;
+  padding: 10% 0;
   z-index: 2;
 }
 .services-section .title-section {
@@ -2425,7 +2419,7 @@ img {
 }
 .services-section .contnet-box .service-block .inner-box .inner-content {
   position: relative;
-  padding-left: 70px;
+  padding-left: 95px;
   padding-right: 70px;
   min-height: 70px;
 }
@@ -2438,7 +2432,7 @@ img {
 }
 .services-section .contnet-box .service-block .inner-box .inner-content .icon img {
   display: inline-block;
-  max-width: 50px;
+  max-width: 100%;
   height: auto;
 }
 .services-section .contnet-box .service-block .inner-box .inner-content h5.title {
@@ -2504,6 +2498,9 @@ img {
   animation-name: fadeInRight;
 }
 
+.services-section.our-services {
+  padding: 6rem 0 0;
+}
 .services-section.our-services .contnet-box {
   margin: 0;
   display: block;
