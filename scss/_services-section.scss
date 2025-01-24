@@ -1,6 +1,6 @@
 .services-section{
     position: relative;
-    padding: 10% 0;
+    padding: 6rem 0;
     z-index: 2;  
     .title-section{
         text-align: center;
@@ -87,7 +87,7 @@
                     }
                     .inner-content{
                         position: relative;
-                        padding-left: 95px;
+                        padding-left: 70px;
                         padding-right: 70px;
                         min-height: 70px;
                         .icon {
@@ -98,7 +98,7 @@
                             transition: all 200ms ease;
                             img{
                                 display: inline-block;
-                                max-width: 100%;
+                                max-width:50px;
                                 height: auto;
                             }
                         }
@@ -180,8 +180,7 @@
 
 
 .services-section{   
-    &.our-services{
-        padding: 6rem 0 0;
+    &.our-services{     
         .contnet-box{
             margin: 0;
             display: block;

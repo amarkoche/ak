@@ -2223,7 +2223,7 @@ img {
 /* Start work-process Section */
 .working-process-section {
   background: #f2f6fd;
-  padding: 10% 0;
+  padding: 6rem 0;
 }
 .working-process-section .title-section {
   margin-bottom: 50px;
@@ -2320,6 +2320,12 @@ img {
 .working-process-section .process-box:hover img {
   transform: scaleX(-1);
 }
+.working-process-section .process-box .process-content p {
+  color: #00305c;
+  font-weight: 400;
+  text-align: center;
+  transition: 0.5s;
+}
 
 @media (max-width: 768px) {
   .working-process-section .title-section {
@@ -2333,7 +2339,7 @@ img {
 /* Start Services-Section Section */
 .services-section {
   position: relative;
-  padding: 10% 0;
+  padding: 6rem 0;
   z-index: 2;
 }
 .services-section .title-section {
@@ -2419,7 +2425,7 @@ img {
 }
 .services-section .contnet-box .service-block .inner-box .inner-content {
   position: relative;
-  padding-left: 95px;
+  padding-left: 70px;
   padding-right: 70px;
   min-height: 70px;
 }
@@ -2432,7 +2438,7 @@ img {
 }
 .services-section .contnet-box .service-block .inner-box .inner-content .icon img {
   display: inline-block;
-  max-width: 100%;
+  max-width: 50px;
   height: auto;
 }
 .services-section .contnet-box .service-block .inner-box .inner-content h5.title {
@@ -2498,9 +2504,6 @@ img {
   animation-name: fadeInRight;
 }
 
-.services-section.our-services {
-  padding: 6rem 0 0;
-}
 .services-section.our-services .contnet-box {
   margin: 0;
   display: block;
@@ -2794,16 +2797,21 @@ img {
 }
 /* End Consultation Section */
 /* Start Counter Section */
+.counter-section {
+  padding: 6rem 0;
+}
 .counter-section .counter-bg {
-  padding: 5% 0;
+  padding: 6rem 0;
   /* background: url(../images/counter-bg.png); */
   background-repeat: no-repeat;
   background-size: cover;
   background-position: center center;
   position: relative;
-  background-color: #0b59db;
   top: -65px;
   border-radius: 10px;
+}
+.counter-section .counter-bg .counter:last-child .single-counter-box::before {
+  background-image: none;
 }
 .counter-section .single-counter-box {
   text-align: center;
@@ -2817,52 +2825,61 @@ img {
   height: 100px;
   right: 0;
   top: 0;
-  background-image: linear-gradient(0deg, #0b59db 0%, #0b59db 10%, #ffffff 50%, #0b59db 90%, #0b59db 100%);
+  background-image: linear-gradient(0deg, #fff 10%, #0b59db 50%, #fff 100%);
 }
 .counter-section .single-counter-box .counter-content h4 {
-  font-size: 50px;
-  color: #ffffff;
+  font-size: 100px;
+  color: #0a53bf;
   font-weight: 700;
   margin: 0;
   display: inline-block;
+  -webkit-text-fill-color: #0a53bf;
+  -webkit-text-stroke-width: 0px;
+  /* -webkit-text-stroke: blue; */
+  -webkit-text-stroke-color: #00305c;
+  text-shadow: 3px 3px 7px #a3a3a3;
 }
-.counter-section .single-counter-box .counter-content span {
+.counter-section .single-counter-box .counter-content h4 span {
   font-size: 50px;
-  color: #ffffff;
+  color: #0a53bf;
   font-weight: 700;
   margin: 0;
   display: inline-block;
 }
 .counter-section .single-counter-box .counter-content p {
   opacity: 0.8;
-  font-size: 16px;
-  color: #ffffff;
+  font-size: 1.25rem;
+  color: #00305c;
   margin: 0 0 0;
 }
 
 .counter-section-2 {
-  padding: 5% 0;
+  padding: 6rem 0;
 }
 .counter-section-2 .counter-items {
   margin-bottom: 30px;
-  background: #E2E9FF;
   height: calc(100% - 30px);
   display: flex;
   align-items: center;
   border-radius: 5px;
+  border: 1px solid #ebf0ff;
+  box-shadow: 1px 1px 2px #ebf0ff;
 }
 .counter-section-2 .counter-items .counter-icon {
   font-size: 60px;
   min-height: 100%;
   line-height: 120px;
-  background: rgba(64, 105, 255, 0.1);
   padding: 0 15px;
+}
+.counter-section-2 .counter-items .counter-icon img {
+  max-width: 60px;
 }
 .counter-section-2 .counter-items .counter-content {
   width: 100%;
   padding: 17px 0;
   text-align: center;
   color: #343a40;
+  background: rgba(64, 105, 255, 0.03);
 }
 .counter-section-2 .counter-items .counter-content .counter-number {
   font-size: 2rem;
@@ -2872,6 +2889,11 @@ img {
   border-bottom: 1px solid rgba(64, 105, 255, 0.1);
   font-weight: 800;
 }
+.counter-section-2 .counter-items .counter-content .counter-des {
+  padding: 10px;
+  margin-top: inherit;
+}
+
 /* End Counter Section */
 /* Start Counter Section */
 @media (max-width: 768px) {
