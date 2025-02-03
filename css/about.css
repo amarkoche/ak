@@ -788,6 +788,7 @@ ul.ul-list li span i {
   transition: 0.3s all ease-in-out;
   box-shadow: 0px 0px 18px 1px rgba(0, 0, 0, 0.1);
   background: radial-gradient(circle, rgb(137, 223, 255) 38%, rgb(52, 145, 255) 100%);
+  z-index: 999;
 }
 .ak-softtech .header-menu {
   text-align: right;
@@ -1083,6 +1084,9 @@ header#sticky-header {
   padding: 150px 0 32px;
   position: relative;
   margin-top: 6rem;
+}
+.footer-area-section .footer-logo img {
+  max-width: 200px;
 }
 .footer-area-section .aksofttech-barnd.ak-softtech-logo {
   display: flex;
@@ -1475,28 +1479,180 @@ header#sticky-header {
 }
 
 /* End  Video Banner Section */
+/* Start Video Banner Section */
 .about-us-section {
-  padding-top: 5%;
+  background: #f2f6fd;
+  padding: 6rem 0;
 }
-.vision-mission .build-website-section {
-  padding-top: 10%;
+.about-us-section .about-left {
+  position: relative;
 }
-.vision-mission ul.custome-list {
-  padding-top: 5%;
+.about-us-section .about-left .title-section {
+  margin-bottom: 42px;
 }
-.vision-mission ul.custome-list li p {
+.about-us-section .about-left .title-section h1 {
+  font-size: 38px;
+}
+.about-us-section .about-left .title-section p {
+  margin: 19px 0 0;
+}
+.about-us-section .about-left .icon-box {
   display: flex;
   align-items: center;
-  margin-bottom: 30px;
+  gap: 22px;
+  margin-bottom: 29px;
 }
-.vision-mission ul.custome-list li i {
-  font-size: 12px;
+.about-us-section .about-left .icon-box .icon {
+  line-height: 60px;
+  text-align: center;
+  width: 70px;
+  min-width: 70px;
+  height: 60px;
+  border-radius: 6px;
+  transition: 0.5s;
+  box-shadow: 0px 1px 3px 0px #6c757d;
+}
+.about-us-section .about-left .icon-box .icon img {
+  max-width: 50px;
+}
+.about-us-section .about-left .icon-box .icon:hover {
+  box-shadow: 0px 1px 3px 1px #6c757d;
+}
+.about-us-section .about-left .icon-box .content h5 {
+  margin: 0;
+  width: auto;
+}
+.about-us-section .about-left .about-more-button a {
+  padding: 12px 27px 12px 27px;
+  font-weight: 600;
   color: #fff;
-  margin-right: 15px;
-  background: red;
   background: #0a53bf;
-  padding: 10px;
+  display: inline-block;
+  border-radius: 4px;
+  border: 1px solid #0a53bf;
+  position: relative;
+  z-index: 1;
+  overflow: hidden;
+  margin-top: 12px;
+  transition: 0.5s;
+}
+.about-us-section .about-left .about-more-button a::before {
+  position: absolute;
+  content: "";
+  width: 0;
+  height: 100%;
+  right: 0;
+  top: 0;
+  background: #fff;
+  z-index: -1;
+  transition: 0.5s;
+}
+.about-us-section .about-left .about-more-button a i {
+  display: inline-block;
+  color: #fff;
+  font-size: 21px;
+  margin-left: 12px;
+  position: relative;
+  top: 2px;
+  transition: 0.5s;
+}
+.about-us-section .about-right {
+  position: relative;
+}
+.about-us-section .about-right .about-thumb {
+  display: flex;
+  justify-content: flex-end;
+}
+.about-us-section .about-right .about-thumb img {
+  width: 100%;
+}
+.about-us-section .about-right .about-conter-box {
+  background: #0a53bf;
+  display: inline-block;
+  text-align: center;
+  padding: 10px 30px;
+  position: absolute;
+  top: 0;
+  left: 5px;
+  border-radius: 10px;
+  overflow: hidden;
+  z-index: 1;
+}
+.about-us-section .about-right .about-conter-box::before {
+  position: absolute;
+  content: "";
+  width: 130px;
+  height: 142px;
+  left: -10px;
+  top: -40px;
+  background: #007bff;
   border-radius: 50%;
+  z-index: -1;
+}
+.about-us-section .about-right .about-conter-box .about-counter-title h4 {
+  font-size: 56px;
+  color: #ffffff;
+  font-weight: 700;
+  position: relative;
+  padding: 0 0 16px 0;
+  display: inline-block;
+}
+.about-us-section .about-right .about-conter-box .about-counter-title p {
+  line-height: 1rem;
+  color: #ffffff;
+  font-weight: 700;
+  text-align: center;
+  margin: 15px 0 0 0;
+  font-size: 1rem;
+}
+.about-us-section .about-right .about-conter-box i {
+  margin-top: 5px;
+  display: inline-block;
+  background: #0a53bf;
+  color: #fff;
+  width: 50px;
+  height: 50px;
+  text-align: center;
+  line-height: 50px;
+  font-size: 28px;
+  border-radius: 50%;
+  -webkit-animation: ripple-white 1s linear infinite;
+  animation: ripple-blue 1s linear infinite;
+  -webkit-transition: 0.5s;
+}
+.about-us-section .about-right .about-conter-box p {
+  padding-top: 30px;
+}
+
+/*---------------------------------------------------- */
+/*responsive area*/
+/*----------------------------------------------------*/
+@media (max-width: 768px) {
+  .about-us-section .title-section .float-text {
+    font-size: 50px;
+  }
+  .about-us-section .title-section .sub-title {
+    font-size: 20px;
+  }
+  .about-us-section .title-section h2 {
+    font-size: 30px;
+  }
+  .about-us-section > row {
+    gap: 30px;
+  }
+  .about-us-section .about-left .icon-box .content h4 {
+    width: 100%;
+  }
+  .about-us-section .about-right {
+    margin-top: 20px;
+  }
+  .about-us-section .about-right .about-conter-box {
+    display: none;
+  }
+}
+/* End  Video Banner Section */
+.vision-mission {
+  padding: 6rem 0;
 }
 
 /*# sourceMappingURL=about.css.map */

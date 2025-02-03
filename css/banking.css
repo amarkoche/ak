@@ -789,6 +789,7 @@ ul.ul-list li span i {
   transition: 0.3s all ease-in-out;
   box-shadow: 0px 0px 18px 1px rgba(0, 0, 0, 0.1);
   background: radial-gradient(circle, rgb(137, 223, 255) 38%, rgb(52, 145, 255) 100%);
+  z-index: 999;
 }
 .ak-softtech .header-menu {
   text-align: right;
@@ -974,6 +975,9 @@ header#sticky-header {
   padding: 150px 0 32px;
   position: relative;
   margin-top: 6rem;
+}
+.footer-area-section .footer-logo img {
+  max-width: 200px;
 }
 .footer-area-section .aksofttech-barnd.ak-softtech-logo {
   display: flex;
