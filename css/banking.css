@@ -1865,8 +1865,8 @@ section.banking-section .tab-section .nav-tabs .nav-item .nav-link.active h5 {
   color: #fff;
 }
 section.request-call {
-  background-image: url(/images/video-bg.jpg);
-  background-position: 100%;
+  background-image: url(/images/contact_bg.png);
+  background-position: bottom center;
   background-repeat: no-repeat;
   background-size: cover;
   height: fit-content;
@@ -1881,13 +1881,21 @@ section.request-call .title-section p, section.request-call .title-section h2 {
   color: #fff;
 }
 section.request-call .bankcall {
-  float: right;
-  padding: 50px;
   color: #fff;
-  background: rgba(0, 48, 92, 0.48);
+  display: flex;
+  align-items: center;
+  justify-content: end;
 }
 section.request-call .bankcall h4, section.request-call .bankcall h5 {
   color: #fff;
+}
+section.request-call .bankcall .call-details {
+  background: rgba(0, 48, 92, 0.48);
+  padding: 20px;
+  float: right;
+}
+section.request-call .bankcall .call-details h5 {
+  margin: 0;
 }
 
 .intership-section {

@@ -96,8 +96,8 @@ section {
     }  
     &.request-call{
       
-        background-image: url(/images/video-bg.jpg);
-        background-position: 100%;
+        background-image: url(/images/contact_bg.png);
+        background-position:bottom center;
         background-repeat: no-repeat;
         background-size: cover;
         height: fit-content;     
@@ -114,13 +114,21 @@ section {
             }
            
         }
-        .bankcall{
-            float: right;
-            padding: 50px;
-            color: #fff;
-            background: rgb(0 48 92 / 48%);
-            h4, h5 { color: #fff;}
-           
+        .bankcall{  
+            color: #fff;  
+            display: flex;
+            align-items: center;
+            justify-content: end;        
+            h4, h5 { color: #fff;}   
+            .call-details{
+                background: rgba(0, 48, 92, 0.48);
+                padding: 20px;
+                float: right;
+                h5{
+                    margin: 0; 
+                    
+                }
+            }        
         }
     }
 }
