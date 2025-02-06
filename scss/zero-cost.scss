@@ -106,9 +106,9 @@
     &.section-5{
       padding-bottom: 10%;  
     }
-    .content-box {
+    /* .content-box {
         width: 80%;
-    }    
+    }     */
 }
 .zerocost-video-sec{
     p{color:#fff;}
@@ -119,4 +119,30 @@
     font-size: 26px;
     color: #0160e7;
     margin-right: 15px;
+}
+
+.services-section {
+    .contnet-box {
+        margin-left: inherit;
+        .service-block {
+            visibility: visible; animation-delay: 300ms; animation-name: fadeInRight;
+            .inner-box {
+                padding: 15px;
+                .inner-content{
+                    .title{white-space: nowrap;}
+                    padding-right: 0;
+                    display: flex;
+                    align-items: center;
+                }
+            }
+            /* &:nth-child(1){margin-right: 55%;}
+            &:nth-child(2){margin-right: 32%;}
+            &:nth-child(3){margin-right: 26%;}
+            &:nth-child(4){margin-right: 23%;}
+            &:nth-child(5){margin-right: 17%;}
+            &:nth-child(6){margin-right: 20%;}
+            &:nth-child(7){margin-right: 29%;}
+            &:nth-child(8){margin-right: 43%;} */
+        }
+    }
 }

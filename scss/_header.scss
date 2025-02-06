@@ -4,7 +4,7 @@
 	position: absolute;
 	margin-bottom: 0;
 	width: 100%;
-	z-index: 9;
+	z-index:999;
 	.navbar-brand{
 		&.ak-softtech-logo{
 			display: flex;
@@ -70,8 +70,20 @@
 		}
 		button {
 			border: none;
-			background-color: $info;
-			padding: .5rem;
+			background-color: transparent;
+			padding: 10px 15px;
+			border: 2px solid $info;
+			a{
+				color: $info;
+			}
+			&:hover{
+				background-color: $primary;	
+				border: 2px solid white;
+				a {
+					color: white;
+				}
+				
+			}
 		}
 		
 		&.collapse.show{
@@ -284,6 +296,21 @@ header#sticky-header{
 	}
 
 }
+.navbar-expand-lg {
+	.navbar-nav {
+		.dropdown-menu{
+			top: 60px;
+			li:hover{
+				a {
+					background-color: #85dbff;
+					color: $info;
+				}
+				
+			}
+		}
+	}
+}
+
 @keyframes border-transform{
     
     0%, 100% {

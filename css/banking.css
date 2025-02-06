@@ -73,6 +73,9 @@ ul {
   margin: 0;
   padding: 0;
 }
+ul li {
+  list-style-type: none;
+}
 
 hr {
   margin: 60px 0;
@@ -447,10 +450,6 @@ button.custome-button a, a.custome-button a {
   transition: all 200ms linear !important;
 }
 
-li {
-  list-style-type: none;
-}
-
 .contnet-form-area h4 {
   color: #072ba7;
   font-size: 20px;
@@ -556,6 +555,112 @@ ul.ul-list li span i {
 .modal-header button span i {
   font-size: 20px;
   color: #fff;
+}
+
+.inner-hero-banner {
+  position: relative;
+  padding: 8rem 0;
+}
+.inner-hero-banner::before {
+  background: url(../images/banner/video-bg.png);
+  background-repeat: no-repeat;
+  background-size: cover;
+  position: relative;
+  height: 100%;
+  width: 100%;
+  padding: 6rem 0;
+  background-position: bottom;
+  opacity: 0.5;
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  border: 0;
+  z-index: 2;
+}
+.inner-hero-banner::after {
+  background-color: rgba(10, 83, 191, 0.68);
+  width: 100%;
+  height: 100%;
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  bottom: 0;
+  right: 0;
+  z-index: 2;
+}
+.inner-hero-banner .bg-img::after {
+  content: "";
+  position: absolute;
+  background: url(../images/banner/video-bg1.png);
+  background-repeat: no-repeat;
+  background-size: 100%;
+  bottom: 0;
+  background-position: center bottom;
+  height: 100%;
+  width: 100%;
+  z-index: 1;
+  max-width: 500px;
+  left: 50%;
+  transform: translateX(-50%);
+  z-index: 4;
+  opacity: 0.3;
+}
+.inner-hero-banner .content {
+  position: relative;
+  z-index: 4;
+}
+.inner-hero-banner .title-section {
+  margin-bottom: 50px;
+  z-index: 3;
+  position: relative;
+}
+.inner-hero-banner .title-section .float-text {
+  -webkit-text-stroke-color: rgba(255, 255, 255, 0.74);
+  font-size: 5rem;
+}
+.inner-hero-banner .title-section .sub-title {
+  margin: auto;
+  width: fit-content;
+  color: #fff;
+}
+.inner-hero-banner .title-section .sub-title::before {
+  filter: invert(1);
+}
+.inner-hero-banner .title-section h2 {
+  color: #fff;
+  padding-bottom: 15px;
+}
+.inner-hero-banner .title-section p {
+  color: #fff;
+  width: 80%;
+  margin: auto;
+  font-size: 1.25rem;
+}
+.inner-hero-banner .video-button {
+  text-align: center;
+}
+.inner-hero-banner .video-button i {
+  display: inline-block;
+  background: #0B59D7;
+  color: #fff;
+  width: 70px;
+  height: 70px;
+  text-align: center;
+  line-height: 72px;
+  font-size: 35px;
+  border-radius: 50%;
+  -webkit-animation: ripple-white 1s linear infinite;
+  animation: ripple-blue 1s linear infinite;
+  -webkit-transition: 0.5s;
+}
+.inner-hero-banner.video-bnner {
+  padding: 6% 0;
+}
+.inner-hero-banner.video-bnner h1 {
+  color: white;
 }
 
 /* Emd elements.scss */
@@ -690,7 +795,7 @@ ul.ul-list li span i {
   position: absolute;
   margin-bottom: 0;
   width: 100%;
-  z-index: 9;
+  z-index: 999;
 }
 .ak-softtech.header-area .navbar-brand.ak-softtech-logo {
   display: flex;
@@ -748,8 +853,19 @@ ul.ul-list li span i {
 }
 .ak-softtech.header-area .navbar-menu-area button {
   border: none;
-  background-color: #00305c;
-  padding: 0.5rem;
+  background-color: transparent;
+  padding: 10px 15px;
+  border: 2px solid #00305c;
+}
+.ak-softtech.header-area .navbar-menu-area button a {
+  color: #00305c;
+}
+.ak-softtech.header-area .navbar-menu-area button:hover {
+  background-color: #007bff;
+  border: 2px solid white;
+}
+.ak-softtech.header-area .navbar-menu-area button:hover a {
+  color: white;
 }
 .ak-softtech.header-area .navbar-menu-area.collapse.show {
   background: #03a1ec;
@@ -936,6 +1052,14 @@ header#sticky-header {
   font-size: 12px;
   font-weight: bold;
   color: #343a40;
+}
+
+.navbar-expand-lg .navbar-nav .dropdown-menu {
+  top: 60px;
+}
+.navbar-expand-lg .navbar-nav .dropdown-menu li:hover a {
+  background-color: #85dbff;
+  color: #00305c;
 }
 
 @keyframes border-transform {
