@@ -45,8 +45,7 @@ h2 {font-size: 2.5rem;}
 
 a {
 	-webkit-transition: all 0.3s ease-out 0s;
-	transition: all 0.3s ease-out 0s;
-	font-family: "Nunito", sans-serif;
+	transition: all 0.3s ease-out 0s;	
 	color: #012549;
 	text-decoration: none;
 }
@@ -321,7 +320,7 @@ button.custome-button, a.custome-button{
 	cursor: pointer;
 	&:hover{
 		background-color: $info;
-		border: 1px solid #003a6c;	
+		border: 2px solid #003a6c;	
 		color: #fff;
 	}
 	a {
@@ -496,11 +495,9 @@ li {
 
 ul.ul-list{
 	li {
-		transition: 0.5s;
-		font-size: 1.25rem;
-		font-weight: 300;
+		transition: 0.5s;	
 		color: #fff;
-		margin-bottom: 5px;
+		margin-bottom: 10px;
 		span{	
 			background: #3078fb;
 			display: inline-block;
