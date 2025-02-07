@@ -50,7 +50,6 @@ h2 {
 a {
   -webkit-transition: all 0.3s ease-out 0s;
   transition: all 0.3s ease-out 0s;
-  font-family: "Nunito", sans-serif;
   color: #012549;
   text-decoration: none;
 }
@@ -72,6 +71,9 @@ ul {
   padding: 0px;
   margin: 0;
   padding: 0;
+}
+ul li {
+  list-style-type: none;
 }
 
 hr {
@@ -324,7 +326,7 @@ button.custome-button, a.custome-button {
 }
 button.custome-button:hover, a.custome-button:hover {
   background-color: #00305c;
-  border: 1px solid #003a6c;
+  border: 2px solid #003a6c;
   color: #fff;
 }
 button.custome-button a, a.custome-button a {
@@ -447,10 +449,6 @@ button.custome-button a, a.custome-button a {
   transition: all 200ms linear !important;
 }
 
-li {
-  list-style-type: none;
-}
-
 .contnet-form-area h4 {
   color: #072ba7;
   font-size: 20px;
@@ -488,10 +486,8 @@ li {
 
 ul.ul-list li {
   transition: 0.5s;
-  font-size: 1.25rem;
-  font-weight: 300;
   color: #fff;
-  margin-bottom: 5px;
+  margin-bottom: 10px;
 }
 ul.ul-list li span {
   background: #3078fb;
@@ -558,6 +554,112 @@ ul.ul-list li span i {
 .modal-header button span i {
   font-size: 20px;
   color: #fff;
+}
+
+.inner-hero-banner {
+  position: relative;
+  padding: 8rem 0;
+}
+.inner-hero-banner::before {
+  background: url(../images/banner/video-bg.png);
+  background-repeat: no-repeat;
+  background-size: cover;
+  position: relative;
+  height: 100%;
+  width: 100%;
+  padding: 6rem 0;
+  background-position: bottom;
+  opacity: 0.5;
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  border: 0;
+  z-index: 2;
+}
+.inner-hero-banner::after {
+  background-color: rgba(10, 83, 191, 0.68);
+  width: 100%;
+  height: 100%;
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  bottom: 0;
+  right: 0;
+  z-index: 2;
+}
+.inner-hero-banner .bg-img::after {
+  content: "";
+  position: absolute;
+  background: url(../images/banner/video-bg1.png);
+  background-repeat: no-repeat;
+  background-size: 100%;
+  bottom: 0;
+  background-position: center bottom;
+  height: 100%;
+  width: 100%;
+  z-index: 1;
+  max-width: 500px;
+  left: 50%;
+  transform: translateX(-50%);
+  z-index: 4;
+  opacity: 0.3;
+}
+.inner-hero-banner .content {
+  position: relative;
+  z-index: 4;
+}
+.inner-hero-banner .title-section {
+  margin-bottom: 50px;
+  z-index: 3;
+  position: relative;
+}
+.inner-hero-banner .title-section .float-text {
+  -webkit-text-stroke-color: rgba(255, 255, 255, 0.74);
+  font-size: 5rem;
+}
+.inner-hero-banner .title-section .sub-title {
+  margin: auto;
+  width: fit-content;
+  color: #fff;
+}
+.inner-hero-banner .title-section .sub-title::before {
+  filter: invert(1);
+}
+.inner-hero-banner .title-section h2 {
+  color: #fff;
+  padding-bottom: 15px;
+}
+.inner-hero-banner .title-section p {
+  color: #fff;
+  width: 80%;
+  margin: auto;
+  font-size: 1.25rem;
+}
+.inner-hero-banner .video-button {
+  text-align: center;
+}
+.inner-hero-banner .video-button i {
+  display: inline-block;
+  background: #0B59D7;
+  color: #fff;
+  width: 70px;
+  height: 70px;
+  text-align: center;
+  line-height: 72px;
+  font-size: 35px;
+  border-radius: 50%;
+  -webkit-animation: ripple-white 1s linear infinite;
+  animation: ripple-blue 1s linear infinite;
+  -webkit-transition: 0.5s;
+}
+.inner-hero-banner.video-bnner {
+  padding: 6% 0;
+}
+.inner-hero-banner.video-bnner h1 {
+  color: white;
 }
 
 /* Emd elements.scss */
@@ -686,11 +788,15 @@ ul.ul-list li span i {
   animation: zooming 18s infinite both;
 }
 
-/* Emd Key-frame.scss */
+.aksofttech-logo-sec {
+  max-width: 200px;
+  margin-bottom: 10px;
+}
+
 .free-consulting {
   background-color: #e2faff;
   height: 100vh;
-  padding: 5% 0;
+  padding: 3% 0;
   max-height: 100%;
   background-image: url(../images/global-map.png);
   background-size: cover;
@@ -700,22 +806,23 @@ ul.ul-list li span i {
 .free-consulting .ak-softtech-logo {
   display: flex;
   align-items: center;
-  margin-bottom: 1.5rem;
 }
 .free-consulting .ak-softtech-logo img.brand-logo {
-  width: 60px;
-  border-radius: 5px;
-  margin-right: 5px;
+  width: 54px;
+  border-radius: 8px;
+  margin-right: 6px;
+  background: #0a53bf;
+  padding: 8px;
 }
 .free-consulting .ak-softtech-logo span {
-  font-size: 1.8em;
+  font-size: 2rem;
   font-weight: 800;
 }
 .free-consulting .ak-softtech-logo span.soft {
   color: #fff;
 }
 .free-consulting .ak-softtech-logo span.tech {
-  color: white;
+  color: #007bff;
 }
 .free-consulting .content-box p {
   color: #d5d5d5;
@@ -740,6 +847,9 @@ ul.ul-list li span i {
 .free-consulting .content-box ul.custome-list li > div p.small {
   font-weight: 400;
   font-size: 1rem;
+}
+.free-consulting .content-box ul.custome-list li > div div:first-child {
+  padding: 3px 0 3px 0;
 }
 .free-consulting .content-box ul.custome-list li i {
   font-size: 26px;
@@ -798,19 +908,32 @@ ul.ul-list li span i {
 }
 .free-consulting .free-consulting-form input:focus, .free-consulting .free-consulting-form select:focus {
   border: 1px solid gray;
+  box-shadow: none;
 }
 .free-consulting .free-consulting-form textarea {
   background: #f8f9fa;
   border: 1px solid #eceef0;
   outline: 0;
   width: 100%;
-  height: 80px;
+  /* height: 80px;            */
   margin-bottom: 16px;
   padding: 10px 19px;
   border-radius: 5px;
 }
 .free-consulting .free-consulting-form textarea:focus {
   border: 1px solid gray;
+}
+.free-consulting .free-consulting-form select option[value=""][disabled] {
+  display: none;
+}
+.free-consulting .free-consulting-form select option {
+  color: #000;
+}
+.free-consulting .free-consulting-form select:required:invalid {
+  color: gray;
+}
+.free-consulting .free-consulting-form input::placeholder, .free-consulting .free-consulting-form textarea::placeholder {
+  color: gray;
 }
 .free-consulting .free-consulting-form .button-section {
   display: flex;
@@ -836,10 +959,6 @@ ul.ul-list li span i {
   text-align: center;
   transition: 0.5s;
   border: 1px solid #0b59d7;
-}
-.free-consulting .free-consulting-form input::placeholder,
-.free-consulting .free-consulting-form textarea::placeholder {
-  color: gray;
 }
 .free-consulting .free-consulting-form .fa-solid.fa-check {
   font-size: 10px;

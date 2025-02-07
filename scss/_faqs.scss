@@ -2,6 +2,13 @@
 .faqs-section {
 		padding: 5% 0;
 		background: #F3F8FC;
+		.title-section{
+			text-align: center;
+			margin-bottom: 50px;
+			.sub-title{
+				display: inline;
+			}
+		}
 		.section-title {
 			&.left {
 				margin-bottom: 40px;
@@ -31,7 +38,7 @@
 				width: 83%;
 			}
 		}
-		.faq-singular {
+		.faq-block {
 			position: relative;
 			background: #fff;
 			margin-bottom: 20px;
@@ -39,7 +46,7 @@
 				position: relative;
 				cursor: pointer;
 				margin: 0;
-				padding: 16px 10px 15px 23px;
+				padding: 16px 55px 15px 23px;
 				font-weight: 700;
 				font-size: 18px;
 				border-radius: 5px;
@@ -52,7 +59,7 @@
 				&:before {
 					position: absolute;
 					content: "+";
-					right: 30px;
+					right: 20px;
 					top: 50%;
 					transform: translateY(-50%);
 					font-size: 30px;
@@ -64,6 +71,12 @@
 			.faq-answer{
 				padding: 21px 40px 25px;
 				display: none;
+				ul li {
+					list-style-type: disc;
+				}
+				ol li {
+					list-style:decimal;
+				}
 			}
 			&.active {
 				.faq-question {
