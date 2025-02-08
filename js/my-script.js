@@ -82,10 +82,10 @@
   }
   
 // Venubox
-  $('.venobox').venobox({
-      numeratio: true,
-      infinigall: true
-  });
+  // $('.venobox').venobox({
+  //     numeratio: true,
+  //     infinigall: true
+  // });
 
   // Loder  //
   $(function () {
@@ -99,47 +99,47 @@
   });
 
   //Wow Js 
-  new WOW().init();
+  // new WOW().init();
 
 
 
 
 
   /* Portfolio Isotope  */
-  $('.image_load').imagesLoaded(function () {
-      if ($.fn.isotope) {
-          var $portfolio = $('.image_load');
+  // $('.image_load').imagesLoaded(function () {
+  //     if ($.fn.isotope) {
+  //         var $portfolio = $('.image_load');
 
-          $portfolio.isotope({
+  //         $portfolio.isotope({
 
-              itemSelector: '.grid-item',
+  //             itemSelector: '.grid-item',
 
-              filter: '*',
+  //             filter: '*',
 
-              resizesContainer: true,
+  //             resizesContainer: true,
 
-              layoutMode: 'masonry',
+  //             layoutMode: 'masonry',
 
-              transitionDuration: '0.8s'
+  //             transitionDuration: '0.8s'
 
-          });
-          $('.menu-filtering li').on('click', function () {
+  //         });
+  //         $('.menu-filtering li').on('click', function () {
 
-              $('.menu-filtering li').removeClass('current_menu_item');
+  //             $('.menu-filtering li').removeClass('current_menu_item');
 
-              $(this).addClass('current_menu_item');
+  //             $(this).addClass('current_menu_item');
 
-              var selector = $(this).attr('data-filter');
+  //             var selector = $(this).attr('data-filter');
 
-              $portfolio.isotope({
+  //             $portfolio.isotope({
 
-                  filter: selector,
+  //                 filter: selector,
 
-              });
+  //             });
 
-          });
+  //         });
 
-      };
+  //     };
 
-  });
+  // });
 })(jQuery);
