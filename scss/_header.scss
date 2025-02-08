@@ -24,9 +24,11 @@
 				font-weight: 800;
 				&.soft{
 					color: #fff;
+					text-shadow: 0 1px black;
 				}
 				&.tech{
 					color: $secondary;
+					text-shadow: 0 1px black;
 				}
 			}
 		}	
@@ -300,12 +302,19 @@ header#sticky-header{
 	.navbar-nav {
 		.dropdown-menu{
 			top: 60px;
-			li:hover{
+			background: $secondary;
+			li{
 				a {
-					background-color: #85dbff;
-					color: $info;
+					color: white;
+					
 				}
-				
+				&:hover{
+					a {
+						background-color:$second_bg;
+						color:$info;
+					}
+					
+				}
 			}
 		}
 	}

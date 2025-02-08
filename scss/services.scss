@@ -20,7 +20,6 @@
 @import "_hero-banner.scss";
 /* End Hero-banner Section */
 
-
 /* Start Video Banner Section */
 
 @import "_video-banner.scss";
@@ -28,11 +27,8 @@
 /* End  Video Banner Section */
 
 /* Start Services-Section Section */
-
 @import "_services-section.scss";
-
 /* End Services-Section Section */
-
 
 /* Start Features Section */
 @import "_features.scss";
@@ -60,163 +56,110 @@
                
             }
         }
-    }
-    // &.why-choose-section{  
-    //     padding-top: 0; 
-    //     .title-section{
-    //         text-align: left;
-    //         .sub-title{
-    //             width: inherit;
-    //         }
-    //     }      
-    //     .contnet-box{
-    //         margin: 0;
-    //         display: block;
-    //         flex-direction: initial;
-    //         .service-block{
-    //             width: 100%;
-    //             float: left;
-    //             margin: 0;
-    //             .inner-box {
-                    
-    //                 max-width: 100%;
-    //                 margin: 15px;
-    //                 .inner-content{
-    //                     display: flex;
-    //                     align-items: center;
-    //                     padding-left: 0;
-    //                     .icon{
-    //                         position: relative;
-    //                         padding-right: 20px;
-    //                         img {
-
-    //                             height: auto;
-    //                             width: 100%;
-    //                             max-width: 70px;
-    //                         }
-    //                     }
-    //                 }
-    //             }
-               
-    //         }
-    //     }
-    // }
-
-    // .bug-fee-code{
-    
-    // }
+    }    
 }
 
-
-
-// .bug-fee-code{
-//     padding-left: 35px;
-//     .bugfree-list{
-//         margin-bottom: 10px;
-//         padding: 22px 32px 20px;
-//         border-radius: 10px;
-//         display: inline-block;
-//         transition: 0.4s all ease-in-out;
-//         position: relative;
-//         &::before{
-//             position: absolute;
-//             content: "";
-//             height: 0px;
-//             width: 5px;
-//             left: 0;
-//             top: 50%;
-//             border-radius: 50px;
-//             transform: translateY(-50%);
-//             transition: 0.3s all ease-in-out;
+section {
+    padding: 5% 0 ; 
+    &.banking-section{   
+        .tab-section{
           
-//         }
-//         .image-box{
-//             width: 95px;
-//             float: left;
-//             height: 95px;
-//             border-radius: 100%;
-//             line-height: 105px;
-//             margin-right: 30px;
-//             background-color: #d9f3de;
-//             position: relative;
-//             text-align: center;
-//             i {
-//                 font-size: 30px;
-//             }
-//             &::after{
-//                 left: 0;
-//                 right: 0;
-//                 top: 5px;
-//                 width: 90%;
-//                 height: 90%;
-//                 content: "";
-//                 margin: 0 auto;
-//                 position: absolute;
-//                 border: 5px solid #fff;
-//                 border-radius: 100%;
-//             }
-//         }
-//         .content-box{
-//             max-width: 310px;
-//             display: inline-block;
-//             h3 {
-//                 color: #010101;
-//                 font-size: 22px;
-//                 font-weight: 700;
-//                 padding-bottom: 15px;
-//             }
-//         }
-//         &:hover{
-//             color: #010101;
-//             font-size: 22px;
-//             font-weight: 700;
-//             padding-bottom: 15px;
-//             margin-left: 30px;
-//             box-shadow: 0px 3px 43px 0px rgba(0, 0, 0, 0.13);
-//             &::before{
-//                 height: 60px;
-//             }
-//         }
-//         &:nth-child(1){
-//            &::before{
-//              background-color: #d9f3de;   
-            
-//              .image-box{
-//                 background-color: #e1e1f5;
-//                 i {
-//                     color: #049507;
-//                 }
-//              }        
-//            } 
-//         }
+            .nav-tabs {
+                display: flex;
+                    justify-content: space-between;
+                    /* justify-content: stretch; */
+                    width: 100%;
+                    flex-wrap: nowrap;
+                    border: 0;
+              
+                .nav-item{
+                    width: 100%;
+                    border:none;
+                    justify-content: center;
+                    margin: 5px;
+                    text-align: center;
+                    border-radius: 5px;
+                   
 
-//         &:nth-child(2){
-//             &::before{
-//                 background-color: #6c2b95;
-//                 .image-box{
-//                     background-color: #e1e1f5;
-//                     i {
-//                         color: #6c2b95;
-//                     }
-//                  }  
-//             } 
-//          }
+                    .nav-link {
+                        display: flex;
+                        align-items: center;
+                        justify-content: center;
+                        border: 1px solid $secondary;
+                        border-radius: 5px;
+                        padding:1rem;
+                        img, i {
+                            width: 50px;
+                            font-size: 3rem;
+                        }
+                        
+                        h5 {
+                            margin: 0;
+                            padding-left: 15px;
+                        }
+                        &.active {
+                            background-color: $secondary;    
+                            color: #fff;                       
+                            h5 {
+                                color: #fff;
+                            }
+                        }
+                        
+                    }
+                }
+            }
+        }
+    }  
+    &.request-call{
+      
+        background-image: url(/images/contact_bg.png);
+        background-position:bottom center;
+        background-repeat: no-repeat;
+        background-size: cover;
+        height: fit-content;     
+        .title-section{
 
-//          &:nth-child(3){
-//             &::before{
-//                 background-color: #d912dc;
-//                 .image-box{
-//                     background-color: #e1e1f5;
-//                     i {
-//                         color: #d912dc;
-//                     }
-//                  }  
-//             } 
-//          }
-//     }
-    
-// }
+            .sub-title{
+                color: #fff;
+                &::before{
+                    filter: invert(1);
+                }
+            }
+            p, h2{
+                color: #fff;
+            }
+           
+        }
+        .bankcall{  
+            color: #fff;  
+            display: flex;
+            align-items: center;
+            justify-content: end;        
+            h4, h5 { color: #fff;}   
+            .call-details{
+                background: rgba(0, 48, 92, 0.48);
+                padding: 20px;
+                float: right;
+                h5{
+                    margin: 0; 
+                    
+                }
+            }        
+        }
+    }
+}
 
-.bug-free-cod{
-    
+.tab-section{  
+    .nav-tabs-vertical{ 
+        display: inherit;
+        border: none;
+        a.nav-link{
+            display: flex;
+            align-items: center;
+            gap: 22px;
+            margin-bottom: 30px;
+            border: none;
+
+        }
+     }   
 }
