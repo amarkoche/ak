@@ -39,11 +39,11 @@
     .footer-about-desc p {
         color: #fff;
         opacity: 0.8;
-        width: 70%;
+        width: 85%;
         margin: 28px 0 0;
       }     
       .footer-botton-social-icon {
-        margin-top: 25px;
+        margin-top: 20x;
         h4 {
           color: #fff;
           font-size: 16px;
@@ -155,29 +155,38 @@
               font-size: 22px;
               font-weight: 600;
               margin: 0 0 26px;
-            }
+            }        
 
-            .footer-menu ul li i {
-              display: inline-block;
-              color: #0D58D5;
-              font-size: 16px;
-              margin-right: 10px;
-            }
+            .footer-menu ul li {
+              a {
+                display: inline-block;
+                color: #fff;
+                line-height: 40px;
+                font-family: "Nunito";
+                transition: 0.5s;
+                position: relative;
+                padding-left: 1.5rem;
+              
+                &:hover {
+                  color: #0c5adb;
+                }
+                /* i {
+                  display: inline-block;
+                  color: #0D58D5;
+                  font-size: 16px;
+                  margin-right: 10px;
+                } */
 
-
-            .footer-menu ul li a {
-              display: inline-block;
-              color: #fff;
-              line-height: 45px;
-              font-family: "Nunito";
-              transition: 0.5s;
-            
-              &:hover {
-                color: #0c5adb;
+                &::before{
+                  position: absolute;
+                  content: "\f0a9";
+                  font-weight: 900;
+                  font-family: "Font Awesome 6 Free";
+                  font-size: 15px;
+                  left: 0;
+                }
               }
-            }
-
-          
+            }          
       } 
     
       .footer-newslatter-box {

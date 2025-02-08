@@ -46,14 +46,14 @@
         .contact-info-icon{
             i{
                 display: inline-block;
-                color: #0c5adb;
-                border: 1px solid #0c5adb;
-                width: 50px;
-                height: 50px;
+                color: $secondary;
+                border: 1px solid $secondary;
+                width: 40px;
+                height: 40px;
                 border-radius: 50%;
                 text-align: center;
-                line-height: 50px;
-                font-size: 22px;
+                line-height: 40px;
+                font-size: 20px;
                 transition: 0.5s;
             }
         }

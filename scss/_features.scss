@@ -9,7 +9,7 @@
             position: absolute;
             left: 0px;
             top: 10px;
-            width: 200px;
+            width: 150px;
             height: 472px;
             background-image: url(../images/dotted-line.svg);
             content: "";
@@ -18,7 +18,7 @@
         .bg-icon-one{
             position: absolute;
             left:-70px;
-            top: 65px; 
+            top: -70px; 
             display: inline-block;
             width: 117px;
             height: 456px;
@@ -26,7 +26,9 @@
            
         }
         .image {
-            margin-left:50px;  
+           padding-right:50px; 
+           z-index: 1;
+           position: relative; 
         }
     }
     .contnet-box{

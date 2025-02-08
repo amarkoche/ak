@@ -30,31 +30,24 @@
 
 .vision-mission{
     padding: 6rem 0;
+    .image-box{
+        img {padding-right: 50px;}
+    }
 }
-
-// .vision-mission{
-   
-//     .build-website-section{
-//         padding-top: 10%;
-//     }
-//     ul.custome-list{
-//         padding-top: 5%;
-//         li{
-//             p{
-//                 display: flex;
-//                 align-items: center;
-//                 margin-bottom: 30px;
-//             }
-           
-//             i {
-//                 font-size: 12px;
-//                 color: #fff;
-//                 margin-right: 15px;
-//                 background: red;
-//                 background: #0a53bf;
-//                 padding: 10px;
-//                 border-radius: 50%;
-//             }
-//         }
-//     }
-// }
+.about-us-section{
+    .about-left{
+        .icon-box{
+            margin-bottom: 15px;
+            .icon{
+                width: 60px;
+                min-width: 60px;
+                height: 50px;
+                line-height: 50px; 
+                img {
+                    max-width: 40px;
+                }
+            }
+          } 
+    }
+  
+}

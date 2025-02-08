@@ -464,7 +464,7 @@ button.custome-button a, a.custome-button a {
   color: #000;
   margin-bottom: 16px;
   display: inline-block;
-  padding: 0 19px;
+  padding: 0 15px;
   border-radius: 5px;
 }
 .contnet-form-area button {
@@ -530,13 +530,13 @@ ul.ul-list li span i {
   color: white;
 }
 
-.modal-header {
+.modal .modal-header {
   position: relative;
 }
-.modal-header h5 {
+.modal .modal-header h5 {
   margin: 0;
 }
-.modal-header button {
+.modal .modal-header button {
   position: absolute;
   top: -7px;
   right: -7px;
@@ -546,40 +546,49 @@ ul.ul-list li span i {
   border-radius: 5px;
   box-shadow: -1px 0px 1px 1px white;
 }
-.modal-header button span {
+.modal .modal-header button span {
   display: flex;
   align-items: center;
   padding: 6px;
 }
-.modal-header button span i {
+.modal .modal-header button span i {
   font-size: 20px;
   color: #fff;
+}
+.modal .modal-body label {
+  color: #343a40;
+  font-weight: 600;
+}
+.modal .modal-body input, .modal .modal-body select {
+  height: 40px;
+}
+.modal .modal-body ::placeholder {
+  color: gray;
 }
 
 .inner-hero-banner {
   position: relative;
-  padding: 8rem 0;
+  padding: 9rem 0;
 }
 .inner-hero-banner::before {
-  background: url(../images/banner/video-bg.png);
-  background-repeat: no-repeat;
-  background-size: cover;
-  position: relative;
-  height: 100%;
-  width: 100%;
-  padding: 6rem 0;
-  background-position: bottom;
-  opacity: 0.5;
   content: "";
   position: absolute;
   top: 0;
   left: 0;
   right: 0;
+  background: url(../images/banner/inner-hero-banner.png);
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: bottom;
+  height: 100%;
+  width: 100%;
+  padding: 6rem 0;
+  opacity: 0.5;
   border: 0;
   z-index: 2;
 }
 .inner-hero-banner::after {
-  background-color: rgba(10, 83, 191, 0.68);
+  background-color: rgba(10, 83, 191, 0.8);
   width: 100%;
   height: 100%;
   content: "";
@@ -813,9 +822,11 @@ ul.ul-list li span i {
 }
 .ak-softtech.header-area .navbar-brand.ak-softtech-logo span.soft {
   color: #fff;
+  text-shadow: 0 1px black;
 }
 .ak-softtech.header-area .navbar-brand.ak-softtech-logo span.tech {
   color: #0a53bf;
+  text-shadow: 0 1px black;
 }
 .ak-softtech.header-area .header-logo img {
   max-width: 200px;
@@ -1055,9 +1066,13 @@ header#sticky-header {
 
 .navbar-expand-lg .navbar-nav .dropdown-menu {
   top: 60px;
+  background: #0a53bf;
+}
+.navbar-expand-lg .navbar-nav .dropdown-menu li a {
+  color: white;
 }
 .navbar-expand-lg .navbar-nav .dropdown-menu li:hover a {
-  background-color: #85dbff;
+  background-color: #38b6ff;
   color: #00305c;
 }
 
@@ -1109,7 +1124,7 @@ header#sticky-header {
   z-index: 2;
 }
 .video-setion::after {
-  background-color: rgba(10, 83, 191, 0.68);
+  background-color: rgba(10, 83, 191, 0.8);
   width: 100%;
   height: 100%;
   content: "";
@@ -1176,11 +1191,12 @@ header#sticky-header {
   height: 70px;
   text-align: center;
   line-height: 72px;
-  font-size: 35px;
+  font-size: 28px;
   border-radius: 50%;
   -webkit-animation: ripple-white 1s linear infinite;
   animation: ripple-blue 1s linear infinite;
   -webkit-transition: 0.5s;
+  padding-left: 7px;
 }
 .video-setion.video-bnner {
   padding: 6% 0;
@@ -1232,11 +1248,11 @@ header#sticky-header {
 .footer-area-section .footer-about-desc p {
   color: #fff;
   opacity: 0.8;
-  width: 70%;
+  width: 85%;
   margin: 28px 0 0;
 }
 .footer-area-section .footer-botton-social-icon {
-  margin-top: 25px;
+  margin-top: 20x;
 }
 .footer-area-section .footer-botton-social-icon h4 {
   color: #fff;
@@ -1337,21 +1353,31 @@ header#sticky-header {
   font-weight: 600;
   margin: 0 0 26px;
 }
-.footer-area-section .footer-content .footer-menu ul li i {
-  display: inline-block;
-  color: #0D58D5;
-  font-size: 16px;
-  margin-right: 10px;
-}
 .footer-area-section .footer-content .footer-menu ul li a {
   display: inline-block;
   color: #fff;
-  line-height: 45px;
+  line-height: 40px;
   font-family: "Nunito";
   transition: 0.5s;
+  position: relative;
+  padding-left: 1.5rem;
+  /* i {
+    display: inline-block;
+    color: #0D58D5;
+    font-size: 16px;
+    margin-right: 10px;
+  } */
 }
 .footer-area-section .footer-content .footer-menu ul li a:hover {
   color: #0c5adb;
+}
+.footer-area-section .footer-content .footer-menu ul li a::before {
+  position: absolute;
+  content: "\f0a9";
+  font-weight: 900;
+  font-family: "Font Awesome 6 Free";
+  font-size: 15px;
+  left: 0;
 }
 .footer-area-section .footer-newslatter-box input {
   background: transparent;
@@ -1774,6 +1800,22 @@ header#sticky-header {
 /* End  Video Banner Section */
 .vision-mission {
   padding: 6rem 0;
+}
+.vision-mission .image-box img {
+  padding-right: 50px;
+}
+
+.about-us-section .about-left .icon-box {
+  margin-bottom: 15px;
+}
+.about-us-section .about-left .icon-box .icon {
+  width: 60px;
+  min-width: 60px;
+  height: 50px;
+  line-height: 50px;
+}
+.about-us-section .about-left .icon-box .icon img {
+  max-width: 40px;
 }
 
 /*# sourceMappingURL=about.css.map */

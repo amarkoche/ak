@@ -102,13 +102,16 @@
 /* End Counter Section */
 
 .build-website-section{
-    padding: 10% 0 0;
+    padding: 6rem 0;
     &.section-5{
       padding-bottom: 10%;  
     }
     /* .content-box {
         width: 80%;
     }     */
+    &.section-2, &.section-4 {
+        background: #f2f6fd;
+    }
 }
 .zerocost-video-sec{
     p{color:#fff;}
@@ -128,11 +131,13 @@
             visibility: visible; animation-delay: 300ms; animation-name: fadeInRight;
             .inner-box {
                 padding: 15px;
-                .inner-content{
-                    .title{white-space: nowrap;}
+                .inner-content{                   
                     padding-right: 0;
                     display: flex;
                     align-items: center;
+                    .title{
+                        white-space: nowrap;
+                    }
                 }
             }
             /* &:nth-child(1){margin-right: 55%;}
