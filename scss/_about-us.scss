@@ -159,39 +159,31 @@
     
 }
 
+
+.vision-mission{
+    padding: 6rem 0;
+    .image-box{
+        img {padding-right: 50px;}
+    }
+}
+.about-us-section{
+    .about-left{
+        .icon-box{
+            margin-bottom: 15px;
+            .icon{
+                width: 60px;
+                min-width: 60px;
+                height: 50px;
+                line-height: 50px; 
+                img {
+                    max-width: 40px;
+                }
+            }
+          } 
+    }
+  
+}
 /*---------------------------------------------------- */
 /*responsive area*/
 /*----------------------------------------------------*/
 
-@media (max-width:768px){
-    .about-us-section {
-        .title-section {
-            .float-text{
-                font-size: 50px;
-            }
-            .sub-title{
-                font-size: 20px;
-            }
-            h2 {
-                font-size: 30px;
-            }    
-        }
-      
-            > row {
-                gap: 30px;
-            }
-            .about-left {
-                .icon-box {
-                    .content h4{width: 100%;}
-                }
-            }
-           
-       
-        .about-right{
-            margin-top: 20px;
-            .about-conter-box{
-                display: none;
-            }
-        } 
-    }    
-}

@@ -1,82 +1,35 @@
 
 
 /* Start elements.scss */
-
 @import "_common-style.scss";
-
 /* Emd elements.scss */
 
 /* Start Key-frame.scss */
-
 @import "_key-frame.scss";
-
 /* Emd Key-frame.scss */
 
 /* Start Header Section */
-
 @import "_header.scss";
-
 /* End Header Section */
 
 /* Start Footer Section */
-
 @import "_footer.scss";
-
 /* End Footer Section */
 
 /* Start Hero-banner Section */
-
 @import "_hero-banner.scss";
-
 /* End Hero-banner Section */
 
 
 /* Start Video Banner Section */
-
-@import "_video-banner.scss";
-
+/* @import "_video-banner.scss"; */
 /* End  Video Banner Section */
 
 
 
-
-/* Start Counter Section */
-@import "_responsive.scss";
-/* End Counter Section */
-
 .intership-section{
     padding: 5% 0;
-    
-    // .title{
-    //     margin-bottom: 84px;
-    //     .careers-content{
-    //         h4 {
-    //             color: #041424;
-    //             font-size: 24px;
-    //             margin: 0;
-    //             font-weight: 600;
-    //         }
-    //         a {
-    //             display: inline-block;
-    //             color: #0c5adb;
-    //             font-weight: 600;
-    //             font-family: "Rajdhani";
-    //         }
-    //     }
-    //     .careers-desc{
-    //         p {
-    //             width: 67%;
-    //             float: right;
-    //             margin: 0;
-    //         }
-    //         a {
-    //             display: inline-block;
-    //             color: #0c5adb;
-    //             font-weight: 600;
-    //             font-family: "Rajdhani";
-    //         }
-    //     }
-    // }
+   
     .add-border {
         border-top: 2px solid #E7E7E7;
         padding: 5% 0 4%;      
@@ -96,14 +49,7 @@
            
         }
     }
-    // .job-desc{     
-    //     line-height: 26px;
-    //     color:$dark;
-    //     font-weight: 400;
-    //     transition: 0.5s;
-    //     margin: 0;
-    //     width: 100%;
-    // }
+
     .job-apply-button{
         text-align: right;
         button {
@@ -118,6 +64,10 @@
         }
     }
 }
+
+/* Start Counter Section */
+@import "_responsive.scss";
+/* End Counter Section */
 
 /*form section */
 
