@@ -1,6 +1,29 @@
 
 
 @media (max-width:768px){
+    .inner-hero-banner  {
+        padding: 4rem 0;
+        .title-section {
+            .float-text{
+                font-size: 50px;
+                margin: 0;
+                text-align: center;
+                line-height: 50px;
+            }
+            .sub-title{
+                font-size: 20px;
+                margin: 0;
+                text-align: left;
+            }
+            h2 {
+                font-size: 30px;
+                margin: 0;
+                text-align: left;
+            }    
+        }
+    }
+
+    .services-section .title-section,
     .title-section {
         .float-text{
             font-size: 50px;
@@ -25,9 +48,245 @@
             margin: initial;
         }
     }
+
+   /* Home Page section */
     .home-page-banne{
         .title-section h1 {
             font-size: 2.5rem;
+        }
+        .right-imges{
+            order: -1;
+        }
+    }
+
+    /* We have section */
+    .we-have-section{
+        padding: 2rem 0; 
+        .inner-box{
+            padding: 10px 0px;  
+        }
+    }
+
+      /* We About section */
+      .about-us-section{
+        padding: 2rem 0;
+        .title-section h2 {
+            font-size: 1.5rem;
+            .sub-title{
+                margin-bottom: 10px;
+            }
+        }
+        
+        .images-area {
+            order: -1;
+            margin-bottom: 40px;
+        }
+        .vision-mission{
+            padding: 2rem 0;
+            .image-box {
+                img {
+                    padding-right: 0;
+                    padding-bottom: 20px;
+                }
+            }
+        }
+      }
+
+      /* We Features section */
+      .features-section{
+        padding: 2rem 0;
+        .images-area {
+            order: -1;
+            margin-bottom: 20px;
+            .bg-icon-one {display: none;}
+            .image{
+                padding: 0;
+            }
+            .images-box::before {
+                content: none;
+            }
+        }
+       
+        .contnet-box {
+            .feature-block {
+                .inner-box{padding: 15px;}
+            }
+        }
+        
+      }
+
+      /* Wy Choose section */
+      .why-choose-section{
+        padding: 2rem 0;
+        .images-area{
+            order: -1;
+          .choose-us-thumb img {max-width: 100%;}
+        }
+      }
+
+    /* Wy Services section */
+      .services-section {
+        padding: 2rem 0;
+        .title-section{
+            margin-bottom: 20px;
+        }
+        .contnet-are{
+            .contnet-box{
+                .service-block {
+                    width: 100%;
+                }
+            }
+        }
+
+      }
+
+    /*Working Process section */
+      .working-process-section{
+        padding: 2rem 0;
+        .title-section{
+           .float-text, sub-title, h2 {
+                margin: auto;
+                text-align: center;
+            }
+        }
+         .process-box:before,  .process-box:after{
+            content: none;
+         }
+      }
+
+    /* counter-section section */
+      .counter-section{
+        padding: 2rem 0;
+      }
+
+      /* video-setion section */
+      .video-setion{
+        padding: 2rem 0;
+        .title-section{
+            .float-text{text-align: center;}
+            .sub-title{
+                margin: auto;
+            }
+            h4, h2 {
+                text-align: center;
+            }
+        }
+      }
+
+    /* consultation section */
+    .consultation-section{
+        padding: 2rem 0;
+    }
+
+    .financial-section{
+        .images-area{
+            order: -1;
+            padding-bottom: 20px;
+        }
+        .tab-section .nav-tabs {
+            overflow: scroll;
+            a.nav-link {
+                white-space: nowrap;
+            }
+        }
+       
+    }
+
+      /* Request Call section */
+      section.request-call{
+        background-position: top left;
+        padding: 2rem 0;
+        .bankcall{
+            justify-content: flex-start;
+            .call-details{
+                background: rgb(0 133 255 / 85%);
+                width: 100%;
+                margin-top: 15px;
+                border-radius: 10px;
+            }
+           
+        }
+    }
+
+    /* Intership section */
+    .intership-section{
+       .images-area{
+            order: -1;
+            padding-bottom: 20px;
+        }
+        .job-apply-button {
+            text-align: left;
+            margin-left: 0;
+        }
+    }
+
+    .contact-section{
+        .contnet-details{
+           padding-right: 15px;
+           h5 {
+            font-size: 1rem;
+            }
+        }
+        .contnet-form-area{
+            padding-left: 15px;
+            
+        }
+    }
+     /* Footer section */
+    .footer-area-section{
+        padding-top: 15px;
+        .small-business{
+            padding: 15px;
+            margin-bottom: -60px;
+            position: relative;
+            h4 {
+                br {display: none;}
+            }
+           .form-subscribe {
+            margin-top: 15px;
+            input {padding-left: 15px;}
+           }
+        }
+        .footer-logo, .footer-about-desc{
+            display: none;
+        }
+        .footer-bottom-area{
+            margin-top: 15px;
+            .footer-bottom-content p, 
+            .footer-menu{
+                justify-content: start;
+                text-align: left;
+            }
+        }
+        
+        .footer-content{
+            margin-bottom: 17px;
+            .footer-contact-info-box{
+                background: rgba(0, 133, 255, 0.85);
+                width: 100%;
+                margin-top: 15px;
+                padding: 15px;
+                border-radius: 10px;
+                .contact-info-box{
+                    .contact-info-icon{
+                        i {
+                            font-size: 2rem;
+                            color: #fff;
+                        }
+                    }
+                    .contact-info-content{
+                        p{font-size: 1rem;}
+                        h4 {font-size: 1.5rem;}
+                    }
+                }
+            }
+            .footer-title h4 {
+                margin: 0 0 5px;
+            }
+            .footer-botton-social-icon {
+                font-size: 22px;
+                font-weight: 600;
+            }
         }
     }
 }
@@ -35,10 +294,11 @@
 @media (max-width: 576px) {
     .home-page-banne{
         .title-section h1 {
-            font-size: 2.5rem;
+            font-size: 3rem;
         }
     } 
      .custome-button {    
         width: 100%;
     }
+   
 }
