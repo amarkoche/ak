@@ -1,6 +1,41 @@
+@media (min-width: 768px) and (max-width:1024px) { 
+    .ak-softtech.header-area .navbar-brand.ak-softtech-logo{
+        margin: initial;
+    }
+    /* Home Page section */
+    .home-page-banner{     
+        .right-imges{
+            display: none;
+        }
+        .left-text{
+            width: 100%;
+            position: relative; 
+            padding-right: 35%;            
+            &::before{
+                content: "";
+                background: url(../images/banner/banner-img.png);
+                width: 100%;
+                height: 100%;
+                display: block;
+                position: absolute;
+                top: 0;
+                right: 0;
+                background-size: 100%;
+                max-width: 50%;
+                background-repeat: no-repeat;
+            } 
+        }       
+    }
+    .we-have-section{
+        padding: 2rem 0;
+        .inner-box{
+            
+        }
+    }
+   
+}
 
-
-@media (max-width:768px){
+@media (max-width:767px){
     .inner-hero-banner  {
         padding: 4rem 0;
         .title-section {
@@ -39,6 +74,9 @@
             font-size: 30px;
             margin: 0;
             text-align: left;
+            br {
+                display: none;
+            }
         }    
     }
     .ak-softtech.header-area{
