@@ -1562,6 +1562,11 @@ header#sticky-header {
 }
 
 /* Start Counter Section */
+@media (min-width: 1025px) {
+  .about-us-section .contnet-area {
+    padding-bottom: 0px;
+  }
+}
 @media (min-width: 768px) and (max-width: 1024px) {
   .ak-softtech.header-area .navbar-brand.ak-softtech-logo {
     margin: initial;
@@ -1590,6 +1595,9 @@ header#sticky-header {
   }
   .we-have-section {
     padding: 2rem 0;
+  }
+  .about-us-section .contnet-area {
+    padding-bottom: 25px;
   }
 }
 @media (max-width: 767px) {
@@ -1664,6 +1672,9 @@ header#sticky-header {
   }
   .about-us-section .title-section h2 .sub-title {
     margin-bottom: 10px;
+  }
+  .about-us-section .shape-one {
+    display: none;
   }
   .about-us-section .images-area {
     order: -1;

@@ -1,3 +1,9 @@
+@media (min-width:1025px){
+    .about-us-section .contnet-area {
+        padding-bottom: 0px;
+    }
+}
+
 @media (min-width: 768px) and (max-width:1024px) { 
     .ak-softtech.header-area .navbar-brand.ak-softtech-logo{
         margin: initial;
@@ -32,6 +38,13 @@
             
         }
     }
+    .about-us-section {
+        .contnet-area{
+            padding-bottom: 25px;
+        }
+        
+    }
+ 
    
 }
 
@@ -114,6 +127,7 @@
                 margin-bottom: 10px;
             }
         }
+        .shape-one{display: none;}
         
         .images-area {
             order: -1;

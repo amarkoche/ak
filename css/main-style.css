@@ -1901,25 +1901,23 @@ img {
   background: #f2f6fd;
   padding: 6rem 0;
 }
-.about-us-section .about-left {
+.about-us-section .contnet-area {
   position: relative;
+  padding-bottom: 25px;
 }
-.about-us-section .about-left .title-section {
-  margin-bottom: 42px;
-}
-.about-us-section .about-left .title-section h1 {
+.about-us-section .contnet-area .title-section h1 {
   font-size: 38px;
 }
-.about-us-section .about-left .title-section p {
+.about-us-section .contnet-area .title-section p {
   margin: 19px 0 0;
 }
-.about-us-section .about-left .icon-box {
+.about-us-section .contnet-area .icon-box {
   display: flex;
   align-items: center;
   gap: 22px;
   margin-bottom: 29px;
 }
-.about-us-section .about-left .icon-box .icon {
+.about-us-section .contnet-area .icon-box .icon {
   line-height: 60px;
   text-align: center;
   width: 70px;
@@ -1929,17 +1927,17 @@ img {
   transition: 0.5s;
   box-shadow: 0px 1px 3px 0px #6c757d;
 }
-.about-us-section .about-left .icon-box .icon img {
+.about-us-section .contnet-area .icon-box .icon img {
   max-width: 50px;
 }
-.about-us-section .about-left .icon-box .icon:hover {
+.about-us-section .contnet-area .icon-box .icon:hover {
   box-shadow: 0px 1px 3px 1px #6c757d;
 }
-.about-us-section .about-left .icon-box .content h5 {
+.about-us-section .contnet-area .icon-box .content h5 {
   margin: 0;
   width: auto;
 }
-.about-us-section .about-left .about-more-button a {
+.about-us-section .contnet-area .about-more-button a {
   padding: 12px 27px 12px 27px;
   font-weight: 600;
   color: #fff;
@@ -1953,7 +1951,7 @@ img {
   margin-top: 12px;
   transition: 0.5s;
 }
-.about-us-section .about-left .about-more-button a::before {
+.about-us-section .contnet-area .about-more-button a::before {
   position: absolute;
   content: "";
   width: 0;
@@ -1964,7 +1962,7 @@ img {
   z-index: -1;
   transition: 0.5s;
 }
-.about-us-section .about-left .about-more-button a i {
+.about-us-section .contnet-area .about-more-button a i {
   display: inline-block;
   color: #fff;
   font-size: 21px;
@@ -1973,17 +1971,17 @@ img {
   top: 2px;
   transition: 0.5s;
 }
-.about-us-section .about-right {
+.about-us-section .images-area {
   position: relative;
 }
-.about-us-section .about-right .about-thumb {
+.about-us-section .images-area .about-thumb {
   display: flex;
   justify-content: flex-end;
 }
-.about-us-section .about-right .about-thumb img {
+.about-us-section .images-area .about-thumb img {
   width: 100%;
 }
-.about-us-section .about-right .about-conter-box {
+.about-us-section .images-area .about-conter-box {
   background: #0a53bf;
   display: inline-block;
   text-align: center;
@@ -1995,7 +1993,7 @@ img {
   overflow: hidden;
   z-index: 1;
 }
-.about-us-section .about-right .about-conter-box::before {
+.about-us-section .images-area .about-conter-box::before {
   position: absolute;
   content: "";
   width: 130px;
@@ -2006,7 +2004,7 @@ img {
   border-radius: 50%;
   z-index: -1;
 }
-.about-us-section .about-right .about-conter-box .about-counter-title h4 {
+.about-us-section .images-area .about-conter-box .about-counter-title h4 {
   font-size: 56px;
   color: #ffffff;
   font-weight: 700;
@@ -2014,7 +2012,7 @@ img {
   padding: 0 0 16px 0;
   display: inline-block;
 }
-.about-us-section .about-right .about-conter-box .about-counter-title p {
+.about-us-section .images-area .about-conter-box .about-counter-title p {
   line-height: 1rem;
   color: #ffffff;
   font-weight: 700;
@@ -2022,7 +2020,7 @@ img {
   margin: 15px 0 0 0;
   font-size: 1rem;
 }
-.about-us-section .about-right .about-conter-box i {
+.about-us-section .images-area .about-conter-box i {
   margin-top: 5px;
   display: inline-block;
   background: #0a53bf;
@@ -2037,8 +2035,34 @@ img {
   animation: ripple-blue 1s linear infinite;
   -webkit-transition: 0.5s;
 }
-.about-us-section .about-right .about-conter-box p {
+.about-us-section .images-area .about-conter-box p {
   padding-top: 30px;
+}
+.about-us-section .list-section .icon-box {
+  display: flex;
+  align-items: center;
+  gap: 22px;
+  margin-bottom: 15px;
+}
+.about-us-section .list-section .icon-box .icon {
+  text-align: center;
+  width: 60px;
+  min-width: 60px;
+  height: 50px;
+  line-height: 50px;
+  border-radius: 6px;
+  transition: 0.5s;
+  box-shadow: 0px 1px 3px 0px #6c757d;
+}
+.about-us-section .list-section .icon-box .icon img {
+  max-width: 40px;
+}
+.about-us-section .list-section .icon-box .icon:hover {
+  box-shadow: 0px 1px 3px 1px #6c757d;
+}
+.about-us-section .list-section .icon-box .content h5 {
+  margin: 0;
+  width: auto;
 }
 
 .vision-mission {
@@ -2046,19 +2070,6 @@ img {
 }
 .vision-mission .image-box img {
   padding-right: 50px;
-}
-
-.about-us-section .about-left .icon-box {
-  margin-bottom: 15px;
-}
-.about-us-section .about-left .icon-box .icon {
-  width: 60px;
-  min-width: 60px;
-  height: 50px;
-  line-height: 50px;
-}
-.about-us-section .about-left .icon-box .icon img {
-  max-width: 40px;
 }
 
 /*---------------------------------------------------- */
@@ -3040,6 +3051,11 @@ img {
 
 /* End Counter Section */
 /* Start Counter Section */
+@media (min-width: 1025px) {
+  .about-us-section .contnet-area {
+    padding-bottom: 0px;
+  }
+}
 @media (min-width: 768px) and (max-width: 1024px) {
   .ak-softtech.header-area .navbar-brand.ak-softtech-logo {
     margin: initial;
@@ -3068,6 +3084,9 @@ img {
   }
   .we-have-section {
     padding: 2rem 0;
+  }
+  .about-us-section .contnet-area {
+    padding-bottom: 25px;
   }
 }
 @media (max-width: 767px) {
@@ -3142,6 +3161,9 @@ img {
   }
   .about-us-section .title-section h2 .sub-title {
     margin-bottom: 10px;
+  }
+  .about-us-section .shape-one {
+    display: none;
   }
   .about-us-section .images-area {
     order: -1;
