@@ -46,18 +46,19 @@
 @import "_faqs.scss";
 /* End Counter Section */
 
-/* Start Counter Section */
-@import "_responsive.scss";
-/* End Counter Section */
-
 .build-website-section{
     padding: 6rem 0;
     &.section-5{
       padding-bottom: 10%;  
     }
-    /* .content-box {
-        width: 80%;
-    }     */
+    .content-box {
+        p.dark-para{
+            background: $secondary;
+            padding: 15px;
+            border-radius: 10px;
+            color: #fff;
+        }
+    }    
     &.section-2, &.section-4 {
         background: #f2f6fd;
     }
@@ -100,7 +101,107 @@
     }
 }
 
+@media (min-width: 768px) and (max-width:1024px) { 
+    .hero-banner-section{
+        height: 100%;  
+        padding-bottom: 0;
+    }
+    .build-website-section {
+        padding: 2rem 0;
+        .image-area{
+            margin-bottom: 20px; 
+        }
+        
+        &.section-2 .image-area, 
+        &.section-4 .image-area, 
+        &.section-5 .image-area, 
+        &.section-6 .image-area, 
+        .faqs-section .image-area {
+            order: inherit;
+        }
+        &.expand {
+            .image-area{
+                display: none;
+            }
+            .contnet-area{
+                width: 100%;
+                .content-box{
+                    .title-section{
+                      > p:first-of-type{
+                          padding-right: 50%;
+                          position: relative;
+                          &::after{
+                            content: "";
+                            background: url(../images/zero-cost/expand-audience.png);
+                            width: 100%;
+                            height: 100%;
+                            display: block;
+                            position: absolute;
+                            top: 0;
+                            right: 0;
+                            background-size: 100%;
+                            max-width: 35%;
+                            background-repeat: no-repeat;
+                          }
+                        }
+                    }
+                }
+            }
+        }
+    }
+    .faqs-section {
+        text-align: left !important;
+        .image-area {
+            order: -1;
+            display: none;
+        } 
+    }
+    .consultation-section{       
+       .contnet-area > .row {
+        gap: inherit;
+       }
+       .get-touch-img{
+        margin-bottom: 5px;
+       } 
+    }
+   
+
+    .footer-area-section {
+        .small-business{
+            left: 47%;
+        }
+        .about-footer{
+            display: none;
+        }
+        .footer-content{
+            .footer-contact-info-box{
+                background: transparent !important;
+             margin-top: 15px !important; 
+                width: 50% !important;
+                float: left;
+                 .contact-info-icon{
+                     border: none;
+                 }
+            } 
+            .footer-botton-social-icon{
+                margin-top: 15px;
+            }
+         }
+    }
+  
+    
+}
+
+
 @media (max-width:768px) {
+    .hero-banner-section{
+        &.zero-cost-banner{
+            padding-bottom: 0%;
+            .banner-content {
+             padding: 2rem 0;   
+            }
+        }
+    }
     .build-website-section {
         padding: 2rem 0;
         .image-area{
@@ -119,4 +220,6 @@
         order: -1;
     }
 }
-
+/* Start Counter Section */
+@import "_responsive.scss";
+/* End Counter Section */

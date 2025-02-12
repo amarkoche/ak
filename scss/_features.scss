@@ -106,7 +106,7 @@
                 }
             }
         }
-    }
+    }   
 }
 
 
@@ -114,18 +114,3 @@
 /*responsive area*/
 /*----------------------------------------------------*/
 
-@media (max-width:768px){
-    .images-area {
-        order: 1;
-        .images-box{
-            &::before{
-                left: 0px;
-                top: 40px;
-            }
-            .bg-icon-one{
-                left: 0;
-                top: 0; 
-            }
-        }
-    } 
-}

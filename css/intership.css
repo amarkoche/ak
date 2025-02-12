@@ -1,7 +1,6 @@
 /* Start elements.scss */
 @import url("https://fonts.googleapis.com/css2?family=Nunito&display=swap");
 @import url("https://fonts.googleapis.com/css2?family=Nunito:ital,wght@0,200..1000;1,200..1000&family=Rajdhani:wght@300;400;500;600;700&display=swap");
-@import url("https://fonts.googleapis.com/css?family=Poppins:100,200,300,400,600,500,700|Roboto:100,300,400,500,700&display=swap");
 html,
 body {
   overflow-x: hidden;
@@ -1523,7 +1522,6 @@ img {
 .hero-banner-section .banner-content .banner-text h1 span.zero-cost:after {
   position: absolute;
   content: "";
-  background-image: url(../images/zerocost-border.png);
   width: 100%;
   height: auto;
   left: 0;
@@ -1578,30 +1576,30 @@ img {
   border: 1px solid #003a6c;
 }
 
-.home-page-banne {
+.home-page-banner {
   padding: 6% 0;
   background: rgb(137, 223, 255);
   background: radial-gradient(circle, rgb(137, 223, 255) 38%, rgb(52, 145, 255) 100%);
 }
-.home-page-banne .title-section {
+.home-page-banner .title-section {
   align-items: center;
 }
-.home-page-banne .title-section h1, .home-page-banne .title-section p {
+.home-page-banner .title-section h1, .home-page-banner .title-section p {
   color: #0a53bf;
 }
-.home-page-banne .title-section h1 {
+.home-page-banner .title-section h1 {
   font-size: 3.5rem;
 }
-.home-page-banne .title-section p {
+.home-page-banner .title-section p {
   font-size: 1.5rem;
 }
-.home-page-banne .custome-button {
+.home-page-banner .custome-button {
   background: #0a53bf;
 }
-.home-page-banne .zerocost-button {
+.home-page-banner .zerocost-button {
   color: #fff;
 }
-.home-page-banne .zerocost-button span {
+.home-page-banner .zerocost-button span {
   background: #0a53bf;
   padding: 5px 10px;
   border-radius: 50px;

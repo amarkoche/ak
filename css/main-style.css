@@ -2220,19 +2220,6 @@ img {
 /*---------------------------------------------------- */
 /*responsive area*/
 /*----------------------------------------------------*/
-@media (max-width: 768px) {
-  .images-area {
-    order: 1;
-  }
-  .images-area .images-box::before {
-    left: 0px;
-    top: 40px;
-  }
-  .images-area .images-box .bg-icon-one {
-    left: 0;
-    top: 0;
-  }
-}
 /* End Features Section */
 /* Start Working-process Section */
 .working-proces-section {

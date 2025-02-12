@@ -255,6 +255,17 @@
     }
 }
 
+.bug-free-code{
+    background: #f2f6fd;   
+    .images-area {
+        .images-box{
+            &::before{
+                background-image: none;
+             }  
+        }
+             
+    }
+}
 
 
 // .tab-section{  
