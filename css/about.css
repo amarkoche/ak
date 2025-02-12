@@ -1721,7 +1721,133 @@ header#sticky-header {
 /*----------------------------------------------------*/
 /* End  Video Banner Section */
 /* Start Video Banner Section */
-@media (max-width: 768px) {
+@media (min-width: 1025px) {
+  .contnet-area.tablet-view {
+    display: none;
+  }
+  .empty-para {
+    display: none;
+  }
+}
+@media (min-width: 768px) and (max-width: 1024px) {
+  .ak-softtech.header-area .navbar-brand.ak-softtech-logo {
+    margin: initial;
+  }
+  .float-text {
+    font-size: 70px;
+  }
+  /* Home Page section */
+  .home-page-banner {
+    padding: 6rem 0;
+  }
+  .home-page-banner .right-imges {
+    display: none;
+  }
+  .home-page-banner .left-text {
+    width: 100%;
+    position: relative;
+    padding-right: 35%;
+  }
+  .home-page-banner .left-text::before {
+    content: "";
+    background: url(../images/banner/banner-img.png);
+    width: 100%;
+    height: 100%;
+    display: block;
+    position: absolute;
+    top: 0;
+    right: 0;
+    background-size: 100%;
+    max-width: 50%;
+    background-repeat: no-repeat;
+  }
+  /* We have Page section */
+  .we-have-section {
+    padding: 2rem 0;
+  }
+  .we-have-section .inner-box {
+    padding: 15px;
+  }
+  .we-have-section .inner-box .icon-img img {
+    max-height: 80px;
+  }
+  /* About section */
+  .about-us-section .images-area {
+    display: none;
+  }
+  .about-us-section .contnet-area {
+    width: 100%;
+    position: relative;
+    padding-right: 45%;
+  }
+  .about-us-section .contnet-area::before {
+    content: "";
+    background: url(../images/about-us.png);
+    width: 100%;
+    height: 100%;
+    display: block;
+    position: absolute;
+    top: 0;
+    right: 0;
+    background-size: 100%;
+    max-width: 50%;
+    background-repeat: no-repeat;
+  }
+  /* features section */
+  .features-section .images-area {
+    display: none;
+  }
+  .features-section .contnet-area {
+    width: 100%;
+    position: relative;
+    padding-right: 40%;
+  }
+  .features-section .contnet-area::before {
+    content: "";
+    background: url(../images/features.png);
+    width: 100%;
+    height: 100%;
+    display: block;
+    position: absolute;
+    top: 0;
+    right: 0;
+    background-size: contain;
+    background-repeat: no-repeat;
+    background-position: right;
+  }
+  .features-section .desktop-view {
+    display: none;
+  }
+  .features-section .contnet-area.tablet-view {
+    padding-right: inherit;
+    margin-top: 15px;
+  }
+  .features-section .contnet-area.tablet-view::before {
+    content: none;
+  }
+  .features-section.bug-free-code .contnet-area::before {
+    content: "";
+    background: url(../images/bug-free-code.png);
+    width: 43%;
+    height: 100%;
+    display: block;
+    position: absolute;
+    top: 0;
+    right: 0;
+    background-size: contain;
+    background-repeat: no-repeat;
+    background-position: top right;
+  }
+  /* Why-Choose section */
+  .why-choose-section .images-area .choose-us-thumb img {
+    max-width: 100%;
+  }
+  /* Why-Choose section */
+  .working-process-section .process-box:before {
+    content: none;
+  }
+}
+@media (max-width: 767px) {
   .inner-hero-banner {
     padding: 4rem 0;
   }
@@ -1758,6 +1884,10 @@ header#sticky-header {
     font-size: 30px;
     margin: 0;
     text-align: left;
+  }
+  .services-section .title-section h2 br,
+  .title-section h2 br {
+    display: none;
   }
   .ak-softtech.header-area {
     position: relative;
@@ -1821,6 +1951,9 @@ header#sticky-header {
   .features-section .contnet-box .feature-block .inner-box {
     padding: 15px;
   }
+  .features-section .contnet-area.tablet-view {
+    display: none;
+  }
   /* Wy Choose section */
   .why-choose-section {
     padding: 2rem 0;
@@ -1830,6 +1963,9 @@ header#sticky-header {
   }
   .why-choose-section .images-area .choose-us-thumb img {
     max-width: 100%;
+  }
+  .why-choose-section .shape-two {
+    display: none;
   }
   /* Wy Services section */
   .services-section {

@@ -1,6 +1,157 @@
 
+@media(min-width:1025px){
+    .contnet-area.tablet-view {
+        display: none;
+    }
+    .empty-para{
+        display: none;
+    }
+}
 
-@media (max-width:768px){
+@media (min-width: 768px) and (max-width:1024px) { 
+    .ak-softtech.header-area .navbar-brand.ak-softtech-logo{
+        margin: initial;
+    }
+    .float-text {font-size: 70px;}
+    /* Home Page section */
+    .home-page-banner{    
+        padding: 6rem 0; 
+        .right-imges{
+            display: none;
+        }
+        .left-text{
+            width: 100%;
+            position: relative; 
+            padding-right: 35%;            
+            &::before{
+                content: "";
+                background: url(../images/banner/banner-img.png);
+                width: 100%;
+                height: 100%;
+                display: block;
+                position: absolute;
+                top: 0;
+                right: 0;
+                background-size: 100%;
+                max-width: 50%;
+                background-repeat: no-repeat;
+            } 
+        }       
+    }
+
+    /* We have Page section */
+    .we-have-section{
+        padding: 2rem 0;
+        .inner-box{
+            padding: 15px;
+            .icon-img img{
+                max-height: 80px;
+            }
+        }
+    }
+
+    /* About section */
+    .about-us-section {
+        .images-area {
+            display: none;
+        }
+        .contnet-area{
+            width: 100%;
+            position: relative; 
+            padding-right: 45%;            
+            &::before{
+                content: "";
+                background: url(../images/about-us.png);
+                width: 100%;
+                height: 100%;
+                display: block;
+                position: absolute;
+                top: 0;
+                right: 0;
+                background-size: 100%;
+                max-width: 50%;
+                background-repeat: no-repeat;
+            } 
+        }  
+    }
+
+    /* features section */
+   .features-section {    
+    .images-area {
+        display: none;
+    }
+    .contnet-area{
+        width: 100%;
+        position: relative; 
+        padding-right: 40%;            
+        &::before{
+            content: "";
+            background: url(../images/features.png);
+            width: 100%;
+            height: 100%;
+            display: block;
+            position: absolute;
+            top: 0;
+            right: 0;
+            background-size: contain;         
+            background-repeat: no-repeat;
+            background-position: right;
+        } 
+    } 
+    .desktop-view {
+        display: none;
+    } 
+    .contnet-area.tablet-view {
+        padding-right: inherit;
+        margin-top: 15px;
+        &::before{
+            content: none;
+        }        
+    }
+   
+    &.bug-free-code {
+        .contnet-area{                    
+             &::before{
+               content: "";
+                    background: url(../images/bug-free-code.png);
+                    width: 43%;
+                    height: 100%;
+                    display: block;
+                    position: absolute;
+                    top: 0;
+                    right: 0;
+                    background-size: contain;
+                    background-repeat: no-repeat;
+                    background-position: top right;
+               
+           } 
+       } 
+    }
+   
+   }
+ 
+
+
+    /* Why-Choose section */    
+   .why-choose-section {
+    .images-area {
+        .choose-us-thumb{
+            img{
+                max-width: 100%;
+            }
+        }
+    }
+   }
+
+    /* Why-Choose section */   
+   .working-process-section{
+    .process-box:before{
+    content: none;
+    }
+   }
+}
+
+@media (max-width:767px){
     .inner-hero-banner  {
         padding: 4rem 0;
         .title-section {
@@ -39,6 +190,9 @@
             font-size: 30px;
             margin: 0;
             text-align: left;
+            br {
+                display: none;
+            }
         }    
     }
     .ak-softtech.header-area{
@@ -112,7 +266,9 @@
                 .inner-box{padding: 15px;}
             }
         }
-        
+        .contnet-area.tablet-view {
+           display: none;       
+        }
       }
 
       /* Wy Choose section */
@@ -122,6 +278,7 @@
             order: -1;
           .choose-us-thumb img {max-width: 100%;}
         }
+        .shape-two {display: none;}
       }
 
     /* Wy Services section */
