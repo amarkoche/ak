@@ -501,15 +501,15 @@ ul.ul-list{
 		color: #fff;
 		margin-bottom: 10px;
 		span{	
-			background: #3078fb;
+			background: #fff;
 			display: inline-block;
 			border-radius: 50%;
-			padding: 6px;
+			padding: 4px;
 			text-align: center;
 			margin-right: 6px;
 			i {
 				display: inline-block;
-				color: #fff;    
+				color: $secondary;    
 				display: flex; 
 				font-size: 12px;
 			}
@@ -681,7 +681,7 @@ ul.ul-list{
 			  border-radius: 50%;
 			  -webkit-animation: ripple-white 1s linear infinite;
 			  animation: ripple-blue 1s linear infinite;
-			  -webkit-transition: 0.5s;
+			//   -webkit-transition: 0.5s;
 		  }
 		}
 		&.video-bnner{

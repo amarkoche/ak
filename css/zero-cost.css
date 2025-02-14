@@ -1,7 +1,6 @@
 /* Start elements.scss */
 @import url("https://fonts.googleapis.com/css2?family=Nunito&display=swap");
 @import url("https://fonts.googleapis.com/css2?family=Nunito:ital,wght@0,200..1000;1,200..1000&family=Rajdhani:wght@300;400;500;600;700&display=swap");
-@import url("https://fonts.googleapis.com/css?family=Poppins:100,200,300,400,600,500,700|Roboto:100,300,400,500,700&display=swap");
 html,
 body {
   overflow-x: hidden;
@@ -491,16 +490,16 @@ ul.ul-list li {
   margin-bottom: 10px;
 }
 ul.ul-list li span {
-  background: #3078fb;
+  background: #fff;
   display: inline-block;
   border-radius: 50%;
-  padding: 6px;
+  padding: 4px;
   text-align: center;
   margin-right: 6px;
 }
 ul.ul-list li span i {
   display: inline-block;
-  color: #fff;
+  color: #0a53bf;
   display: flex;
   font-size: 12px;
 }
@@ -663,7 +662,6 @@ ul.ul-list li span i {
   border-radius: 50%;
   -webkit-animation: ripple-white 1s linear infinite;
   animation: ripple-blue 1s linear infinite;
-  -webkit-transition: 0.5s;
 }
 .inner-hero-banner.video-bnner {
   padding: 6% 0;
@@ -798,6 +796,52 @@ ul.ul-list li span i {
   animation: zooming 18s infinite both;
 }
 
+@-webkit-keyframes border-transform {
+  0%, to {
+    border-radius: 63% 37% 54% 46%/55% 48% 52% 45%;
+  }
+  14% {
+    border-radius: 40% 60% 54% 46%/49% 60% 40% 51%;
+  }
+  28% {
+    border-radius: 54% 46% 38% 62%/49% 70% 30% 51%;
+  }
+  42% {
+    border-radius: 61% 39% 55% 45%/61% 38% 62% 39%;
+  }
+  56% {
+    border-radius: 61% 39% 67% 33%/70% 50% 50% 30%;
+  }
+  70% {
+    border-radius: 50% 50% 34% 66%/56% 68% 32% 44%;
+  }
+  84% {
+    border-radius: 46% 54% 50% 50%/35% 61% 39% 65%;
+  }
+}
+@keyframes border-transform {
+  0%, to {
+    border-radius: 63% 37% 54% 46%/55% 48% 52% 45%;
+  }
+  14% {
+    border-radius: 40% 60% 54% 46%/49% 60% 40% 51%;
+  }
+  28% {
+    border-radius: 54% 46% 38% 62%/49% 70% 30% 51%;
+  }
+  42% {
+    border-radius: 61% 39% 55% 45%/61% 38% 62% 39%;
+  }
+  56% {
+    border-radius: 61% 39% 67% 33%/70% 50% 50% 30%;
+  }
+  70% {
+    border-radius: 50% 50% 34% 66%/56% 68% 32% 44%;
+  }
+  84% {
+    border-radius: 46% 54% 50% 50%/35% 61% 39% 65%;
+  }
+}
 /* Emd Key-frame.scss */
 /* Start Header Section */
 .ak-softtech.header-area {
@@ -833,13 +877,14 @@ ul.ul-list li span i {
   max-width: 200px;
 }
 .ak-softtech.header-area .navbar-toggler {
-  color: #fff;
-  border: 1px solid #fff;
-  border: 1px solid #fff;
+  color: #0a53bf;
+  border: 1px solid #0a53bf;
   align-items: center;
+  padding: 7px 12px;
 }
 .ak-softtech.header-area .navbar-toggler i.fa-bars {
-  color: #fff;
+  color: #0a53bf;
+  font-size: 1.5rem;
 }
 .ak-softtech.header-area .navbar-toggler:focus {
   box-shadow: none;
@@ -1442,11 +1487,6 @@ header#sticky-header {
 }
 /* End Footer Section */
 /* Start Hero-banner Section */
-img {
-  max-width: 100%;
-  height: auto;
-}
-
 .hero-banner-section {
   overflow: visible;
   background-image: url(../images/hero-banner/bn-bg.png);
@@ -1523,7 +1563,6 @@ img {
 .hero-banner-section .banner-content .banner-text h1 span.zero-cost:after {
   position: absolute;
   content: "";
-  background-image: url(../images/zerocost-border.png);
   width: 100%;
   height: auto;
   left: 0;
@@ -2088,10 +2127,10 @@ img {
   transition: all 300ms ease;
 }
 
-.financial-section, .financial-section, .legal-section {
+.financial-section, .business-section, .legal-section {
   padding: 5% 0;
 }
-.financial-section .tab-section .nav-tabs, .financial-section .tab-section .nav-tabs, .legal-section .tab-section .nav-tabs {
+.financial-section .tab-section .nav-tabs, .business-section .tab-section .nav-tabs, .legal-section .tab-section .nav-tabs {
   display: flex;
   justify-content: space-between;
   /* justify-content: stretch; */
@@ -2099,7 +2138,7 @@ img {
   flex-wrap: nowrap;
   border: 0;
 }
-.financial-section .tab-section .nav-tabs .nav-item, .financial-section .tab-section .nav-tabs .nav-item, .legal-section .tab-section .nav-tabs .nav-item {
+.financial-section .tab-section .nav-tabs .nav-item, .business-section .tab-section .nav-tabs .nav-item, .legal-section .tab-section .nav-tabs .nav-item {
   width: 100%;
   border: none;
   justify-content: center;
@@ -2107,7 +2146,7 @@ img {
   text-align: center;
   border-radius: 5px;
 }
-.financial-section .tab-section .nav-tabs .nav-item .nav-link, .financial-section .tab-section .nav-tabs .nav-item .nav-link, .legal-section .tab-section .nav-tabs .nav-item .nav-link {
+.financial-section .tab-section .nav-tabs .nav-item .nav-link, .business-section .tab-section .nav-tabs .nav-item .nav-link, .legal-section .tab-section .nav-tabs .nav-item .nav-link {
   display: flex;
   align-items: center;
   justify-content: center;
@@ -2115,21 +2154,21 @@ img {
   border-radius: 5px;
   padding: 1rem;
 }
-.financial-section .tab-section .nav-tabs .nav-item .nav-link img, .financial-section .tab-section .nav-tabs .nav-item .nav-link i, .financial-section .tab-section .nav-tabs .nav-item .nav-link img, .financial-section .tab-section .nav-tabs .nav-item .nav-link i, .legal-section .tab-section .nav-tabs .nav-item .nav-link img, .legal-section .tab-section .nav-tabs .nav-item .nav-link i {
+.financial-section .tab-section .nav-tabs .nav-item .nav-link img, .financial-section .tab-section .nav-tabs .nav-item .nav-link i, .business-section .tab-section .nav-tabs .nav-item .nav-link img, .business-section .tab-section .nav-tabs .nav-item .nav-link i, .legal-section .tab-section .nav-tabs .nav-item .nav-link img, .legal-section .tab-section .nav-tabs .nav-item .nav-link i {
   width: 50px;
   font-size: 3rem;
   min-width: 50px;
 }
-.financial-section .tab-section .nav-tabs .nav-item .nav-link h5, .financial-section .tab-section .nav-tabs .nav-item .nav-link h5, .legal-section .tab-section .nav-tabs .nav-item .nav-link h5 {
+.financial-section .tab-section .nav-tabs .nav-item .nav-link h5, .business-section .tab-section .nav-tabs .nav-item .nav-link h5, .legal-section .tab-section .nav-tabs .nav-item .nav-link h5 {
   margin: 0;
   padding-left: 15px;
   white-space: nowrap;
 }
-.financial-section .tab-section .nav-tabs .nav-item .nav-link.active, .financial-section .tab-section .nav-tabs .nav-item .nav-link.active, .legal-section .tab-section .nav-tabs .nav-item .nav-link.active {
+.financial-section .tab-section .nav-tabs .nav-item .nav-link.active, .business-section .tab-section .nav-tabs .nav-item .nav-link.active, .legal-section .tab-section .nav-tabs .nav-item .nav-link.active {
   background-color: #0a53bf;
   color: #fff;
 }
-.financial-section .tab-section .nav-tabs .nav-item .nav-link.active h5, .financial-section .tab-section .nav-tabs .nav-item .nav-link.active h5, .legal-section .tab-section .nav-tabs .nav-item .nav-link.active h5 {
+.financial-section .tab-section .nav-tabs .nav-item .nav-link.active h5, .business-section .tab-section .nav-tabs .nav-item .nav-link.active h5, .legal-section .tab-section .nav-tabs .nav-item .nav-link.active h5 {
   color: #fff;
 }
 
@@ -2166,6 +2205,14 @@ img {
 }
 .request-call .bankcall .call-details h5 {
   margin: 0;
+}
+
+.features-section.bug-free-code {
+  background: #f2f6fd;
+}
+.features-section.bug-free-code .images-box::before {
+  right: 0;
+  left: inherit;
 }
 
 /* End Services-Section Section */
@@ -2284,9 +2331,6 @@ img {
 .consultation-section {
   padding: 6rem 0;
 }
-.consultation-section .get-touch-img {
-  margin-bottom: 20px;
-}
 .consultation-section .get-touch-img a {
   display: block;
   color: #0a53bf;
@@ -2401,16 +2445,10 @@ img {
   transition: 0.5s;
   border: 1px solid #0B59D7;
 }
-
-@media (max-width: 768px) {
-  .consultation-section .contnet-area > .row {
-    gap: 20px;
-  }
-  .consultation-section .single-contact-box {
-    padding: 20px;
-    margin-top: 20px;
-  }
+.consultation-section .need-help-section > div {
+  padding-bottom: 20px;
 }
+
 /* End Consultation Section */
 /* Start Counter Section */
 .counter-section {
@@ -2617,7 +2655,7 @@ img {
   border-radius: 10px;
   color: #fff;
 }
-.build-website-section.section-2, .build-website-section.section-4 {
+.build-website-section.section-2, .build-website-section.section-4, .build-website-section.section-6 {
   background: #f2f6fd;
 }
 
@@ -2631,34 +2669,6 @@ img {
   margin-right: 15px;
 }
 
-.services-section .contnet-box {
-  margin-left: inherit;
-}
-.services-section .contnet-box .service-block {
-  visibility: visible;
-  animation-delay: 300ms;
-  animation-name: fadeInRight;
-  /* &:nth-child(1){margin-right: 55%;}
-  &:nth-child(2){margin-right: 32%;}
-  &:nth-child(3){margin-right: 26%;}
-  &:nth-child(4){margin-right: 23%;}
-  &:nth-child(5){margin-right: 17%;}
-  &:nth-child(6){margin-right: 20%;}
-  &:nth-child(7){margin-right: 29%;}
-  &:nth-child(8){margin-right: 43%;} */
-}
-.services-section .contnet-box .service-block .inner-box {
-  padding: 15px;
-}
-.services-section .contnet-box .service-block .inner-box .inner-content {
-  padding-right: 0;
-  display: flex;
-  align-items: center;
-}
-.services-section .contnet-box .service-block .inner-box .inner-content .title {
-  white-space: nowrap;
-}
-
 @media (min-width: 768px) and (max-width: 1024px) {
   .hero-banner-section {
     height: 100%;
@@ -2670,66 +2680,8 @@ img {
   .build-website-section .image-area {
     margin-bottom: 20px;
   }
-  .build-website-section.section-2 .image-area, .build-website-section.section-4 .image-area, .build-website-section.section-5 .image-area, .build-website-section.section-6 .image-area,
-  .build-website-section .faqs-section .image-area {
-    order: inherit;
-  }
-  .build-website-section.expand .image-area {
-    display: none;
-  }
-  .build-website-section.expand .contnet-area {
-    width: 100%;
-  }
-  .build-website-section.expand .contnet-area .content-box .title-section > p:first-of-type {
-    padding-right: 50%;
-    position: relative;
-  }
-  .build-website-section.expand .contnet-area .content-box .title-section > p:first-of-type::after {
-    content: "";
-    background: url(../images/zero-cost/expand-audience.png);
-    width: 100%;
-    height: 100%;
-    display: block;
-    position: absolute;
-    top: 0;
-    right: 0;
-    background-size: 100%;
-    max-width: 35%;
-    background-repeat: no-repeat;
-  }
-  .faqs-section {
-    text-align: left !important;
-  }
-  .faqs-section .image-area {
-    order: -1;
-    display: none;
-  }
-  .consultation-section .contnet-area > .row {
-    gap: inherit;
-  }
-  .consultation-section .get-touch-img {
-    margin-bottom: 5px;
-  }
-  .footer-area-section .small-business {
-    left: 47%;
-  }
-  .footer-area-section .about-footer {
-    display: none;
-  }
-  .footer-area-section .footer-content .footer-contact-info-box {
-    background: transparent !important;
-    margin-top: 15px !important;
-    width: 50% !important;
-    float: left;
-  }
-  .footer-area-section .footer-content .footer-contact-info-box .contact-info-icon {
-    border: none;
-  }
-  .footer-area-section .footer-content .footer-botton-social-icon {
-    margin-top: 15px;
-  }
 }
-@media (max-width: 768px) {
+@media (max-width: 767px) {
   .hero-banner-section.zero-cost-banner {
     padding-bottom: 0%;
   }
@@ -2751,16 +2703,51 @@ img {
   }
 }
 /* Start Counter Section */
-@media (min-width: 1025px) {
-  .about-us-section .contnet-area {
-    padding-bottom: 0px;
+@media (min-width: 1200px) {
+  .about-us-section .card-area {
+    margin-top: -4rem;
+  }
+  .features-section .card-area {
+    margin-top: -9rem;
+  }
+  .why-choose-section .card-area {
+    margin-top: -18rem;
+  }
+  .features-section.bug-free-code .card-area {
+    margin-top: -3rem;
+  }
+  .why-choose-section .shape-two::before {
+    left: 50%;
   }
 }
-@media (min-width: 768px) and (max-width: 1024px) {
+@media (min-width: 992px) and (max-width: 1200px) {
+  .features-section .card-area {
+    margin-top: -2rem;
+  }
+  .why-choose-section .card-area {
+    margin-top: -12rem;
+  }
+  .features-section.bug-free-code .card-area {
+    margin-top: 2rem;
+  }
+  .counter-section .single-counter-box .counter-content h4, .counter-section .single-counter-box .counter-content span {
+    font-size: 80px;
+  }
+}
+@media (min-width: 768px) and (max-width: 1023px) {
+  .shape-one {
+    display: none;
+  }
   .ak-softtech.header-area .navbar-brand.ak-softtech-logo {
     margin: initial;
   }
+  .float-text {
+    font-size: 70px;
+  }
   /* Home Page section */
+  .home-page-banner {
+    padding: 6rem 0;
+  }
   .home-page-banner .right-imges {
     display: none;
   }
@@ -2782,14 +2769,57 @@ img {
     max-width: 50%;
     background-repeat: no-repeat;
   }
+  /* We have Page section */
   .we-have-section {
-    padding: 2rem 0;
+    padding: 1rem 0;
   }
-  .about-us-section .contnet-area {
-    padding-bottom: 25px;
+  .we-have-section .inner-box {
+    padding: 10px;
+  }
+  /* Bug Free section */
+  .features-section .card-area {
+    margin-top: 1rem;
+  }
+  .features-section.bug-free-code .card-area {
+    margin-top: 0rem;
+  }
+  .financial-section .tab-section .nav-tabs, .financial-section .tab-section .nav-tabs, .legal-section .tab-section .nav-tabs {
+    overflow: auto;
+  }
+  .counter-section .single-counter-box .counter-content h4, .counter-section .single-counter-box .counter-content span {
+    font-size: 80px;
+  }
+}
+@media (min-width: 768px) and (max-width: 991.98px) {
+  .title-section br, .small-business .content-box h4 br {
+    display: none;
+  }
+  .inner-hero-banner {
+    padding: 6rem 0;
+  }
+  .title-section .float-text {
+    line-height: 80px;
+  }
+  .why-choose-section .card-area {
+    margin-top: 0rem;
+  }
+  .working-process-section .process-box:before {
+    content: none;
+  }
+  .features-section .images-box .thumb-image {
+    padding-right: 0;
+  }
+  .features-section.bug-free-code .card-area {
+    margin-top: 0rem;
+  }
+  .build-website-section.section-6 .image-area {
+    order: -1;
   }
 }
 @media (max-width: 767px) {
+  .shape-one {
+    display: none;
+  }
   .inner-hero-banner {
     padding: 4rem 0;
   }
@@ -2839,11 +2869,15 @@ img {
     margin: initial;
   }
   /* Home Page section */
-  .home-page-banne .title-section h1 {
+  .home-page-banner .left-text h1 {
+    text-shadow: 1px 0px 0px #fff;
     font-size: 2.5rem;
+    color: #0a53bf;
+    font-weight: 800;
   }
-  .home-page-banne .right-imges {
+  .home-page-banner .right-imges {
     order: -1;
+    height: 10rem;
   }
   /* We have section */
   .we-have-section {
@@ -2862,17 +2896,14 @@ img {
   .about-us-section .title-section h2 .sub-title {
     margin-bottom: 10px;
   }
-  .about-us-section .shape-one {
-    display: none;
-  }
   .about-us-section .images-area {
     order: -1;
     margin-bottom: 40px;
   }
-  .about-us-section .vision-mission {
+  .vision-mission {
     padding: 2rem 0;
   }
-  .about-us-section .vision-mission .image-box img {
+  .vision-mission .image-box img {
     padding-right: 0;
     padding-bottom: 20px;
   }
@@ -2887,7 +2918,7 @@ img {
   .features-section .images-area .bg-icon-one {
     display: none;
   }
-  .features-section .images-area .image {
+  .features-section .images-area .thumb-image {
     padding: 0;
   }
   .features-section .images-area .images-box::before {
@@ -2897,14 +2928,8 @@ img {
     padding: 15px;
   }
   /* Wy Choose section */
-  .why-choose-section {
-    padding: 2rem 0;
-  }
   .why-choose-section .images-area {
     order: -1;
-  }
-  .why-choose-section .images-area .choose-us-thumb img {
-    max-width: 100%;
   }
   /* Wy Services section */
   .services-section {
@@ -2948,14 +2973,17 @@ img {
   .consultation-section {
     padding: 2rem 0;
   }
-  .financial-section .images-area {
-    order: -1;
-    padding-bottom: 20px;
+  .consultation-section .single-contact-box {
+    padding: 30px 20px;
   }
-  .financial-section .tab-section .nav-tabs {
+  .financial-section .images-area, .business-section .images-area, .legal-section .images-area {
+    order: -1;
+    padding-bottom: 30px;
+  }
+  .financial-section .tab-section .nav-tabs, .business-section .tab-section .nav-tabs, .legal-section .tab-section .nav-tabs {
     overflow: scroll;
   }
-  .financial-section .tab-section .nav-tabs a.nav-link {
+  .financial-section .tab-section .nav-tabs a.nav-link, .business-section .tab-section .nav-tabs a.nav-link, .legal-section .tab-section .nav-tabs a.nav-link {
     white-space: nowrap;
   }
   /* Request Call section */

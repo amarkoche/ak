@@ -1,11 +1,11 @@
-@import url("https://fonts.googleapis.com/css?family=Poppins:100,200,300,400,600,500,700|Roboto:100,300,400,500,700&display=swap");
+// @import url("https://fonts.googleapis.com/css?family=Poppins:100,200,300,400,600,500,700|Roboto:100,300,400,500,700&display=swap");
 
 
 
-img {
-  max-width: 100%;
-    height: auto;
-}
+// img {
+//   max-width: 100%;
+//     height: auto;
+// }
 .hero-banner-section {
 	overflow: visible;
 	background-image: url(../images/hero-banner/bn-bg.png); 
@@ -68,14 +68,7 @@ img {
       animation-duration: 1000ms;
       animation-delay: 0ms;
       animation-name: fadeInUp;
-      // span {
-      //   color: #fff;			
-      //   font-size: 18px;
-      //   font-weight: 700;
-      //   padding-bottom: 10px;
-      //         display: flex;
-      //         justify-content: center;
-      // }
+     
       h1 {
         color: #fff;      
         font-weight: 700;
@@ -88,7 +81,7 @@ img {
           &:after{
           position: absolute;
           content: "";
-          background-image: url(../images/zerocost-border.png);
+          // background-image: url(../images/zerocost-border.png);
           width: 100%;
           height: auto;
           left: 0;

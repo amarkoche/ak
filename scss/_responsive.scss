@@ -1,15 +1,64 @@
-@media (min-width:1025px){
-    .about-us-section .contnet-area {
-        padding-bottom: 0px;
+@media (min-width:1200px){
+    .about-us-section {
+        .card-area{      
+            margin-top: -4rem;
+        }
+    }
+
+    .features-section{
+        .card-area{      
+            margin-top: -9rem;
+        }
+    }
+
+    .why-choose-section {
+        .card-area{ 
+            margin-top: -18rem; 
+         }   
+    }
+
+    .features-section.bug-free-code{
+        .card-area{      
+            margin-top: -3rem;
+        }
+    }
+    .why-choose-section{
+        .shape-two::before{
+            left: 50%;
+        }
+    }
+}
+@media (min-width: 992px) and (max-width:1200px){   
+    .features-section {   
+        .card-area{
+            margin-top:-2rem;
+        }  
+    } 
+    .why-choose-section {
+        .card-area{ 
+            margin-top: -12rem; 
+         }   
+    }
+
+    .features-section.bug-free-code {   
+        .card-area{
+            margin-top: 2rem;
+        }  
+    } 
+    .counter-section .single-counter-box .counter-content h4, .counter-section .single-counter-box .counter-content span{
+        font-size: 80px;
     }
 }
 
-@media (min-width: 768px) and (max-width:1024px) { 
+@media (min-width: 768px) and (max-width:1023px) { 
+    .shape-one{display: none;}
     .ak-softtech.header-area .navbar-brand.ak-softtech-logo{
         margin: initial;
     }
+    .float-text {font-size: 70px;}
     /* Home Page section */
-    .home-page-banner{     
+    .home-page-banner{    
+        padding: 6rem 0; 
         .right-imges{
             display: none;
         }
@@ -32,18 +81,87 @@
             } 
         }       
     }
+
+    /* We have Page section */
     .we-have-section{
-        padding: 2rem 0;        
+        padding: 1rem 0; 
+        .inner-box{
+            padding: 10px;
+        }       
     }
-    .about-us-section {
-        .contnet-area{
-            padding-bottom: 25px;
-        }        
+    /* Bug Free section */    
+
+  
+
+    .features-section {   
+        .card-area{
+            margin-top:1rem;
+        }  
+    } 
+
+    .features-section.bug-free-code {   
+        .card-area{
+            margin-top:0rem;
+        }  
+    } 
+    .financial-section .tab-section .nav-tabs, .financial-section .tab-section .nav-tabs, .legal-section .tab-section .nav-tabs{
+        overflow: auto;
     }
-   
+
+    .counter-section .single-counter-box .counter-content h4, .counter-section .single-counter-box .counter-content span{
+        font-size: 80px;
+    }
 }
 
+@media (min-width: 768px) and (max-width: 991.98px) { 
+    .title-section br, .small-business .content-box h4 br {
+       display: none;
+    }  
+    .inner-hero-banner {      
+        padding: 6rem 0;
+    }
+   
+    .title-section {
+        .float-text{
+            line-height: 80px;
+        }        
+    }
+
+    .why-choose-section {
+        .card-area{ 
+            margin-top: 0rem; 
+        }   
+    }
+
+    .working-process-section {
+        .process-box:before{
+            content: none;
+        }
+    }
+
+    .features-section {
+        .images-box {
+            .thumb-image{
+                padding-right: 0;
+            }
+        }
+    }
+
+    .features-section.bug-free-code {   
+        .card-area{
+            margin-top:0rem;
+        }  
+    } 
+    .build-website-section.section-6 .image-area{
+        order: -1;       
+    }
+
+ }
+
 @media (max-width:767px){
+    .shape-one{
+        display: none;
+    }
     .inner-hero-banner  {
         padding: 4rem 0;
         .title-section {
@@ -62,10 +180,10 @@
                 font-size: 30px;
                 margin: 0;
                 text-align: left;
-            }    
+            }             
         }
-    }
-
+        
+    }  
     .services-section .title-section,
     .title-section {
         .float-text{
@@ -96,15 +214,18 @@
     }
 
    /* Home Page section */
-    .home-page-banne{
-        .title-section h1 {
+    .home-page-banner{        
+        .left-text h1{         
+            text-shadow: 1px 0px 0px #fff;
             font-size: 2.5rem;
-        }
+            color: $secondary;
+            font-weight: 800;
+        } 
         .right-imges{
             order: -1;
-        }
+            height: 10rem;
+        } 
     }
-
     /* We have section */
     .we-have-section{
         padding: 2rem 0; 
@@ -112,9 +233,8 @@
             padding: 10px 0px;  
         }
     }
-
-      /* We About section */
-      .about-us-section{
+    /* We About section */
+    .about-us-section{
         padding: 2rem 0;
         .title-section h2 {
             font-size: 1.5rem;
@@ -122,113 +242,105 @@
                 margin-bottom: 10px;
             }
         }
-        .shape-one{display: none;}
-        
         .images-area {
             order: -1;
             margin-bottom: 40px;
         }
-        .vision-mission{
-            padding: 2rem 0;
-            .image-box {
-                img {
-                    padding-right: 0;
-                    padding-bottom: 20px;
-                }
+    }
+    .vision-mission{
+        padding: 2rem 0;
+        .image-box {
+            img {
+                padding-right: 0;
+                padding-bottom: 20px;
             }
         }
-      }
-
-      /* We Features section */
-      .features-section{
+    }
+    /* We Features section */
+    .features-section{
         padding: 2rem 0;
         .images-area {
             order: -1;
             margin-bottom: 20px;
             .bg-icon-one {display: none;}
-            .image{
+            .thumb-image{
                 padding: 0;
             }
             .images-box::before {
                 content: none;
             }
         }
-       
+    
         .contnet-box {
             .feature-block {
                 .inner-box{padding: 15px;}
             }
-        }
-        
-      }
-
-      /* Wy Choose section */
-      .why-choose-section{
-        padding: 2rem 0;
+        }       
+    }
+    /* Wy Choose section */
+    .why-choose-section{
         .images-area{
             order: -1;
-          .choose-us-thumb img {max-width: 100%;}
         }
-      }
-
+    }
+  
     /* Wy Services section */
-      .services-section {
-        padding: 2rem 0;
-        .title-section{
-            margin-bottom: 20px;
-        }
-        .contnet-are{
-            .contnet-box{
-                .service-block {
-                    width: 100%;
-                }
+    .services-section {
+    padding: 2rem 0;
+    .title-section{
+        margin-bottom: 20px;
+    }
+    .contnet-are{
+        .contnet-box{
+            .service-block {
+                width: 100%;
             }
         }
-
-      }
-
+    }
+    }
     /*Working Process section */
-      .working-process-section{
-        padding: 2rem 0;
-        .title-section{
-           .float-text, sub-title, h2 {
-                margin: auto;
-                text-align: center;
-            }
+    .working-process-section{
+    padding: 2rem 0;
+    .title-section{
+        .float-text, sub-title, h2 {
+            margin: auto;
+            text-align: center;
         }
-         .process-box:before,  .process-box:after{
-            content: none;
-         }
-      }
-
+    }
+        .process-box:before,  .process-box:after{
+        content: none;
+        }
+    }
     /* counter-section section */
-      .counter-section{
+    .counter-section{
         padding: 2rem 0;
-      }
-
-      /* video-setion section */
-      .video-setion{
-        padding: 2rem 0;
-        .title-section{
-            .float-text{text-align: center;}
-            .sub-title{
-                margin: auto;
-            }
-            h4, h2 {
-                text-align: center;
-            }
+    }
+    /* video-setion section */
+    .video-setion{
+    padding: 2rem 0;
+    .title-section{
+        .float-text{text-align: center;}
+        .sub-title{
+            margin: auto;
         }
-      }
-
+        h4, h2 {
+            text-align: center;
+        }
+    }
+    }
     /* consultation section */
     .consultation-section{
         padding: 2rem 0;
+        .single-contact-box {
+            padding: 30px 20px;
+        }
     }
+   
 
-    .financial-section{
+    .financial-section, .business-section, .legal-section  {
         .images-area{
             order: -1;
-            padding-bottom: 20px;
+            padding-bottom: 30px;
         }
         .tab-section .nav-tabs {
             overflow: scroll;
@@ -238,8 +350,7 @@
         }
        
     }
-
-      /* Request Call section */
+    /* Request Call section */
       section.request-call{
         background-position: top left;
         padding: 2rem 0;
@@ -254,7 +365,6 @@
            
         }
     }
-
     /* Intership section */
     .intership-section{
        .images-area{
@@ -266,7 +376,6 @@
             margin-left: 0;
         }
     }
-
     .contact-section{
         .contnet-details{
            padding-right: 15px;
@@ -335,7 +444,7 @@
                 font-weight: 600;
             }
         }
-    }
+    }      
 }
 
 @media (max-width: 576px) {
@@ -346,6 +455,5 @@
     } 
      .custome-button {    
         width: 100%;
-    }
-   
+    }   
 }

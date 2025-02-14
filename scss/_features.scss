@@ -2,7 +2,6 @@
     position: relative;
     padding: 6rem 0;
     z-index: 2;
-
     .images-box{
         position: relative;
         &::before{
@@ -25,13 +24,13 @@
             background-image: url(../images/bg-icon-one.png);
            
         }
-        .image {
+        .thumb-image {
            padding-right:50px; 
            z-index: 1;
            position: relative; 
         }
     }
-    .contnet-box{
+    .card-area{      
         .feature-block{
             position: relative;
             margin-bottom: 30px;
@@ -106,7 +105,7 @@
                 }
             }
         }
-    }
+    }   
 }
 
 
@@ -114,18 +113,3 @@
 /*responsive area*/
 /*----------------------------------------------------*/
 
-@media (max-width:768px){
-    .images-area {
-        order: 1;
-        .images-box{
-            &::before{
-                left: 0px;
-                top: 40px;
-            }
-            .bg-icon-one{
-                left: 0;
-                top: 0; 
-            }
-        }
-    } 
-}
