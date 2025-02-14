@@ -490,16 +490,16 @@ ul.ul-list li {
   margin-bottom: 10px;
 }
 ul.ul-list li span {
-  background: #3078fb;
+  background: #fff;
   display: inline-block;
   border-radius: 50%;
-  padding: 6px;
+  padding: 4px;
   text-align: center;
   margin-right: 6px;
 }
 ul.ul-list li span i {
   display: inline-block;
-  color: #fff;
+  color: #0a53bf;
   display: flex;
   font-size: 12px;
 }
@@ -662,7 +662,6 @@ ul.ul-list li span i {
   border-radius: 50%;
   -webkit-animation: ripple-white 1s linear infinite;
   animation: ripple-blue 1s linear infinite;
-  -webkit-transition: 0.5s;
 }
 .inner-hero-banner.video-bnner {
   padding: 6% 0;
@@ -797,6 +796,52 @@ ul.ul-list li span i {
   animation: zooming 18s infinite both;
 }
 
+@-webkit-keyframes border-transform {
+  0%, to {
+    border-radius: 63% 37% 54% 46%/55% 48% 52% 45%;
+  }
+  14% {
+    border-radius: 40% 60% 54% 46%/49% 60% 40% 51%;
+  }
+  28% {
+    border-radius: 54% 46% 38% 62%/49% 70% 30% 51%;
+  }
+  42% {
+    border-radius: 61% 39% 55% 45%/61% 38% 62% 39%;
+  }
+  56% {
+    border-radius: 61% 39% 67% 33%/70% 50% 50% 30%;
+  }
+  70% {
+    border-radius: 50% 50% 34% 66%/56% 68% 32% 44%;
+  }
+  84% {
+    border-radius: 46% 54% 50% 50%/35% 61% 39% 65%;
+  }
+}
+@keyframes border-transform {
+  0%, to {
+    border-radius: 63% 37% 54% 46%/55% 48% 52% 45%;
+  }
+  14% {
+    border-radius: 40% 60% 54% 46%/49% 60% 40% 51%;
+  }
+  28% {
+    border-radius: 54% 46% 38% 62%/49% 70% 30% 51%;
+  }
+  42% {
+    border-radius: 61% 39% 55% 45%/61% 38% 62% 39%;
+  }
+  56% {
+    border-radius: 61% 39% 67% 33%/70% 50% 50% 30%;
+  }
+  70% {
+    border-radius: 50% 50% 34% 66%/56% 68% 32% 44%;
+  }
+  84% {
+    border-radius: 46% 54% 50% 50%/35% 61% 39% 65%;
+  }
+}
 .aksofttech-logo-sec {
   max-width: 200px;
   margin-bottom: 10px;

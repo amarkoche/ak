@@ -38,13 +38,14 @@
 	}
 
 	.navbar-toggler{
-		color: #fff;
-		border: 1px solid #fff;
-		border: 1px solid #fff;
+		color: $secondary;		
+		border: 1px solid  $secondary;		
 		// display: flex;
 		align-items: center;
+		padding: 7px 12px;
 		i.fa-bars {
-			color: #fff;
+			color:  $secondary;
+			font-size: 1.5rem;	
 		}
 		&:focus{
 			box-shadow: none;	

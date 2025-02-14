@@ -1,10 +1,11 @@
 .about-us-section {
     background: #f2f6fd;
     padding: 6rem  0;
-    .about-left{
+    .contnet-area{
         position: relative;
+        padding-bottom: 25px;
          .title-section{
-            margin-bottom: 42px;
+            // margin-bottom: 42px;
             h1 {
                 font-size: 38px;
             }
@@ -80,12 +81,10 @@
                                 }
             }
         }             
-    }
-    
-    
-    .about-right{
+    } 
+    .images-area{
         position: relative;
-        .about-thumb {
+        .thumb-image {
             display: flex;
             justify-content: flex-end;
             img {
@@ -151,12 +150,43 @@
                 border-radius: 50%;
                 -webkit-animation: ripple-white 1s linear infinite;
                 animation: ripple-blue 1s linear infinite;
-                -webkit-transition: 0.5s;
+                // -webkit-transition: 0.5s;
             }
             p {padding-top: 30px;}
         }
     }
-    
+    .card-area{      
+        .icon-box{
+            display: flex;
+            align-items: center;
+            gap: 22px;
+            margin-bottom: 20px;
+            .icon {              
+                text-align: center;
+                width: 60px;
+                min-width: 60px;
+                height: 50px;
+                line-height: 50px; 
+                border-radius: 6px;
+                transition: 0.5s;
+                // filter: drop-shadow(0px 10px 10px rgba(207, 218, 235, 0.2));
+                // background-color: rgb(12 89 219 / 7%);
+                box-shadow: 0px 1px 3px 0px #6c757d;
+                img {
+                    max-width: 40px;
+                }
+                &:hover{
+                    box-shadow: 0px 1px 3px 1px #6c757d;
+                }
+            }
+            .content{
+                h5{
+                    margin: 0;  
+                    width: auto;                  
+                }
+            }
+        }
+    }  
 }
 
 
@@ -166,23 +196,9 @@
         img {padding-right: 50px;}
     }
 }
-.about-us-section{
-    .about-left{
-        .icon-box{
-            margin-bottom: 15px;
-            .icon{
-                width: 60px;
-                min-width: 60px;
-                height: 50px;
-                line-height: 50px; 
-                img {
-                    max-width: 40px;
-                }
-            }
-          } 
-    }
-  
-}
+
+
+
 /*---------------------------------------------------- */
 /*responsive area*/
 /*----------------------------------------------------*/

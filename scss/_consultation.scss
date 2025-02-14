@@ -1,8 +1,7 @@
 .consultation-section{
-    padding: 6rem 0;
+    padding: 6rem 0;  
     .get-touch-img{
-        margin-bottom: 20px;
-        a{
+           a{
             display: block;
             color:$secondary;
             font-size: 24px;
@@ -124,21 +123,9 @@
             }
         }
     }
-}
-
-@media (max-width:768px){
-   .consultation-section{
-    .contnet-area {
-       > .row{
-        gap:20px;
-       
-       } 
-      
-       
+    .need-help-section{
+       > div {
+            padding-bottom: 20px;
+        }
     }
-    .single-contact-box{
-        padding: 20px;
-        margin-top: 20px;
-       }
-   } 
 }
