@@ -288,13 +288,14 @@ header#sticky-header{
 
     } */
 	&::after{
-		right: 3px;
-		bottom: -4px;	
+		right: 0;
+		bottom: -4px;
 		content: "Consultancy Services";
 		position: absolute;
 		font-size: 12px;
 		font-weight: bold;
-		color: $dark;
+		color: #ffffff;
+		letter-spacing: 0.6px;
 
 	}
 
