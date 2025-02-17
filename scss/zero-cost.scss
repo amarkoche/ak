@@ -46,6 +46,33 @@
 @import "_faqs.scss";
 /* End Counter Section */
 
+.hero-banner-section.zero-cost-banner {
+    .banner-content {
+        .banner-text {
+            h1 {
+                span.zero-cost{
+                    display: inline-block;
+                    font-size: 5rem;
+                    position: relative;
+                    &::after{
+                        position: absolute;
+                        content: "";
+                        background-image: url(../images/zerocost-border.png);
+                        width: 100%;
+                        height: auto;
+                        left: 0;
+                        bottom: -18px;
+                        min-height: 25px;
+                        background-size: cover;
+                        background-repeat: no-repeat;
+                    }
+                }
+            }
+        }
+    } 
+}
+
+
 .build-website-section{
     padding: 6rem 0;
     &.section-5{
@@ -63,43 +90,36 @@
         background: #f2f6fd;
     }
 }
+
 .zerocost-video-sec{
     p{color:#fff;}    
 }
 
-.fa-square-check{
-    font-size: 26px;
-    color: #0160e7;
-    margin-right: 15px;
+
+.services-section{
+    &.zero-cost-services{
+        .contnet-box {
+            .service-block {
+                .inner-box {
+                    padding: 0;
+                    .inner-content{                        
+                        display: flex;
+                        align-items: center;
+                        padding: 15px 20px; 
+                        .icon{
+                            position: inherit;
+                            left: inherit;
+                            top: inherit;
+                            padding-right: 15px;
+                        }                    
+                    }
+                }
+            }
+        }
+    }   
 }
 
-// .services-section {
-//     .contnet-box {
-//         margin-left: inherit;
-//         .service-block {
-//             visibility: visible; animation-delay: 300ms; animation-name: fadeInRight;
-//             .inner-box {
-//                 padding: 15px;
-//                 .inner-content{                   
-//                     padding-right: 0;
-//                     display: flex;
-//                     align-items: center;
-//                     .title{
-//                         white-space: nowrap;
-//                     }
-//                 }
-//             }
-//             /* &:nth-child(1){margin-right: 55%;}
-//             &:nth-child(2){margin-right: 32%;}
-//             &:nth-child(3){margin-right: 26%;}
-//             &:nth-child(4){margin-right: 23%;}
-//             &:nth-child(5){margin-right: 17%;}
-//             &:nth-child(6){margin-right: 20%;}
-//             &:nth-child(7){margin-right: 29%;}
-//             &:nth-child(8){margin-right: 43%;} */
-//         }
-//     }
-// }
+
 
 @media (min-width: 768px) and (max-width:1024px) { 
     .hero-banner-section{
@@ -112,29 +132,21 @@
             margin-bottom: 20px; 
         } 
     }
-    // .footer-area-section {
-    //     .about-footer{
-    //         display: none;
-    //     }
-    //     .footer-content{
-    //         .footer-contact-info-box{
-    //             background: transparent !important;
-    //             margin-top: 15px !important; 
-    //             width: 50% !important;
-    //             float: left;
-    //              .contact-info-icon{
-    //                  border: none;
-    //              }
-    //         } 
-    //         .footer-botton-social-icon{
-    //             margin-top: 15px;
-    //         }
-    //      }
-    // }
+
+    .faqs-container{
+        height: 400px;
+        overflow: hidden;
+        overflow-y: auto;
+        float: left;
+        direction: rtl;
+        padding-left: 20px;
+        
+    }
 }
 
 
 @media (max-width:767px) {
+    
     .hero-banner-section{
         &.zero-cost-banner{
             padding-bottom: 0%;
@@ -157,9 +169,10 @@
             order: -1;
         }
     }
-    .faqs-section .image-area {
-        order: -1;
+    .hero-banner-section.zero-cost-banner .banner-content .banner-text h1 span.zero-cost{
+        font-size: 4rem;
     }
+  
 }
 
 
