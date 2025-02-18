@@ -569,36 +569,8 @@ ul.ul-list li span i {
 
 .inner-hero-banner {
   position: relative;
-  padding: 9rem 0;
-}
-.inner-hero-banner::before {
-  content: "";
-  position: absolute;
-  top: 0;
-  left: 0;
-  right: 0;
-  background: url(../images/banner/inner-hero-banner.png);
-  background-repeat: no-repeat;
-  background-size: cover;
-  background-position: bottom;
-  height: 100%;
-  width: 100%;
-  padding: 6rem 0;
-  opacity: 0.5;
-  border: 0;
-  z-index: 2;
-}
-.inner-hero-banner::after {
-  background-color: rgba(10, 83, 191, 0.8);
-  width: 100%;
-  height: 100%;
-  content: "";
-  position: absolute;
-  top: 0;
-  left: 0;
-  bottom: 0;
-  right: 0;
-  z-index: 2;
+  padding: 10rem 0 2rem;
+  background: linear-gradient(1deg, #00305c, #0a53bf);
 }
 .inner-hero-banner .bg-img::after {
   content: "";
@@ -627,7 +599,7 @@ ul.ul-list li span i {
   position: relative;
 }
 .inner-hero-banner .title-section .float-text {
-  -webkit-text-stroke-color: rgba(255, 255, 255, 0.74);
+  -webkit-text-stroke-color: #fff;
   font-size: 4rem;
 }
 .inner-hero-banner .title-section .sub-title {
@@ -669,6 +641,10 @@ ul.ul-list li span i {
 }
 .inner-hero-banner.video-bnner h1 {
   color: white;
+}
+
+button, button.a {
+  cursor: pointer;
 }
 
 /* Emd elements.scss */
@@ -845,11 +821,58 @@ ul.ul-list li span i {
 }
 /* Emd Key-frame.scss */
 /* Start Header Section */
+.top-header-section {
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  height: 46px;
+  background: #00305c;
+  display: flex;
+  z-index: 2;
+}
+.top-header-section .container {
+  display: flex;
+  justify-content: space-between;
+}
+.top-header-section .container .my-accont {
+  padding: 8px 15px;
+  background: transparent;
+  height: auto;
+  line-height: 40px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin: 0;
+  border: none;
+  cursor: pointer;
+}
+.top-header-section .container .getintoch {
+  display: flex;
+  align-items: center;
+  top: 0;
+  padding: 5px;
+  gap: 30px;
+}
+.top-header-section .container .getintoch span {
+  font-size: 1rem;
+  font-weight: 600;
+  color: #fff;
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
+.top-header-section .container .getintoch span i {
+  font-size: 1.5rem;
+}
+
 .ak-softtech.header-area {
   position: absolute;
   margin-bottom: 0;
   width: 100%;
   z-index: 999;
+  background: #fff;
+  margin-top: 46px;
 }
 .ak-softtech.header-area .navbar-brand.ak-softtech-logo {
   display: flex;
@@ -868,11 +891,14 @@ ul.ul-list li span i {
 }
 .ak-softtech.header-area .navbar-brand.ak-softtech-logo span.soft {
   color: #fff;
-  text-shadow: 0 1px black;
+  text-shadow: 1px 1px 5px black;
+  margin-top: -3px;
 }
 .ak-softtech.header-area .navbar-brand.ak-softtech-logo span.tech {
   color: #0a53bf;
   text-shadow: 0 1px black;
+  margin-top: -8px;
+  margin-left: -2px;
 }
 .ak-softtech.header-area .header-logo img {
   max-width: 200px;
@@ -904,18 +930,20 @@ ul.ul-list li span i {
   text-transform: capitalize;
   color: #00305c;
   transition: 0.5s;
+  border-bottom: 2px solid transparent;
 }
 .ak-softtech.header-area .navbar-menu-area .navbar-nav .nav-item.ak-nav-item a.nav-link:hover {
-  color: #00305c;
+  color: #0a53bf;
+  border-bottom: 2px solid #00305c;
 }
 .ak-softtech.header-area .navbar-menu-area button {
   border: none;
-  background-color: transparent;
+  background-color: #0a53bf;
   padding: 10px 15px;
   border: 2px solid #00305c;
 }
 .ak-softtech.header-area .navbar-menu-area button a {
-  color: #00305c;
+  color: white;
 }
 .ak-softtech.header-area .navbar-menu-area button:hover {
   background-color: #007bff;
@@ -925,7 +953,7 @@ ul.ul-list li span i {
   color: white;
 }
 .ak-softtech.header-area .navbar-menu-area.collapse.show {
-  background: #03a1ec;
+  background: #00305c;
   padding: 0px;
   border-radius: 10px;
 }
@@ -933,12 +961,16 @@ ul.ul-list li span i {
   padding: 0;
 }
 .ak-softtech.header-area .navbar-menu-area.collapse.show .navbar-nav li.nav-item.ak-nav-item {
-  border-bottom: 1px solid #0160e7;
+  border-bottom: 1px solid #004483;
   margin-right: 0;
 }
 .ak-softtech.header-area .navbar-menu-area.collapse.show .navbar-nav li.nav-item.ak-nav-item a {
   width: 100%;
   padding: 10px 15px;
+  color: #fff;
+}
+.ak-softtech.header-area .navbar-menu-area.collapse.show .navbar-nav li:hover {
+  background-color: #007bff;
 }
 .ak-softtech.header-area .navbar-menu-area.collapse.show .custome-button {
   width: 100%;
@@ -960,6 +992,8 @@ ul.ul-list li span i {
   box-shadow: 0px 0px 18px 1px rgba(0, 0, 0, 0.1);
   background: radial-gradient(circle, rgb(137, 223, 255) 38%, rgb(52, 145, 255) 100%);
   z-index: 999;
+  margin-top: 0;
+  background: #fff;
 }
 .ak-softtech .header-menu {
   text-align: right;
@@ -1108,20 +1142,21 @@ header#sticky-header {
   position: absolute;
   font-size: 12px;
   font-weight: bold;
-  color: #ffffff;
+  color: #00305c;
   letter-spacing: 0.6px;
 }
 
 .navbar-expand-lg .navbar-nav .dropdown-menu {
-  top: 60px;
-  background: #0a53bf;
+  top: 72px;
+  background: #00305c;
+  border-radius: 0 0 5px 5px;
 }
 .navbar-expand-lg .navbar-nav .dropdown-menu li a {
   color: white;
 }
 .navbar-expand-lg .navbar-nav .dropdown-menu li:hover a {
   background-color: #38b6ff;
-  color: #00305c;
+  color: white;
 }
 
 @keyframes border-transform {
@@ -1151,7 +1186,7 @@ header#sticky-header {
 /* Start Footer Section */
 .footer-area-section {
   /* background: url(../images/footer-bg.jpg); */
-  background: #021438;
+  background: #00305c;
   background-repeat: no-repeat;
   background-size: cover;
   background-position: center center;
@@ -1212,7 +1247,7 @@ header#sticky-header {
   width: 40px;
   height: 40px;
   line-height: 40px;
-  border: 1px solid #3078fb;
+  border: 1px solid #fff;
   border-radius: 2px;
   background: #3078fb;
   transition: 0.4s;
@@ -1355,15 +1390,17 @@ header#sticky-header {
   width: 40px;
   height: 40px;
   line-height: 40px;
-  border: 1px solid #3078fb;
+  border: 1px solid #fff;
   border-radius: 2px;
   /* background: #3078fb; */
   transition: 0.4s;
 }
 .footer-area-section .footer-contact-info-box .contact-info-icon:hover {
-  color: #3078fb;
   background: #fff;
   transition: 0.4s;
+}
+.footer-area-section .footer-contact-info-box .contact-info-icon:hover i {
+  color: #3078fb;
 }
 .footer-area-section .footer-contact-info-box .contact-info-icon i {
   display: inline-block;
@@ -1372,7 +1409,7 @@ header#sticky-header {
   text-rendering: auto;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
-  color: #3078fb;
+  color: #fff;
 }
 .footer-area-section .footer-contact-info-box .contact-info-content p {
   font-size: 12px;
@@ -1419,7 +1456,7 @@ header#sticky-header {
 }
 
 .small-business {
-  background: #021438;
+  background: #00305c;
   padding: 50px;
   z-index: 9;
   position: absolute;
@@ -1490,12 +1527,12 @@ header#sticky-header {
 /* End Footer Section */
 /* Start Hero-banner Section */
 .hero-banner-section {
+  padding: 130px 0 0;
   overflow: visible;
   background-image: url(../images/hero-banner/bn-bg.png);
   position: relative;
   background: linear-gradient(45deg, #0160e7 0%, #04bdef 100%);
-  padding-bottom: 50%;
-  height: 100vh;
+  height: 100%;
 }
 .hero-banner-section::before {
   position: absolute;
@@ -1519,52 +1556,71 @@ header#sticky-header {
   background: linear-gradient(217deg, #04b4ee 0%, #0276e9 100%);
   animation: floatX 10s ease-in-out infinite;
 }
-.hero-banner-section .aksosttech-banner-vector {
-  right: 0;
-  left: 120px;
-  bottom: -180px;
-  position: absolute;
-  animation: man-updown 2s infinite alternate;
-}
-.hero-banner-section .banner-shape {
-  top: 0;
-  left: 0;
-  position: absolute;
-}
-.hero-banner-section .banner-shape.shape1 {
-  animation: floatY 3s ease-in-out infinite;
-}
-.hero-banner-section .banner-shape.shape2 {
-  left: 150px;
-  animation: floatX 10s ease-in-out infinite;
-}
-.hero-banner-section .banner-content {
+.hero-banner-section .title-section {
   z-index: 1;
   margin: 0 auto;
-  max-width: 85%;
   position: relative;
-  padding: 150px 0% 10%;
 }
-.hero-banner-section .banner-content .banner-text {
-  visibility: visible;
-  animation-duration: 1000ms;
-  animation-delay: 0ms;
-  animation-name: fadeInUp;
+.hero-banner-section .title-section .contact-area {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
 }
-.hero-banner-section .banner-content .banner-text h1 {
+.hero-banner-section .title-section .contact-area h1 {
   color: #fff;
   font-weight: 700;
-  font-family: Poppins;
-  padding-bottom: 30px;
+  font-size: 4rem;
 }
-.hero-banner-section .banner-content .banner-text h1 span.zero-cost {
+.hero-banner-section .title-section .contact-area p {
+  color: #fff;
+  font-size: 1.5rem;
+}
+.hero-banner-section .title-section .contact-area .button-group {
+  display: flex;
+  gap: 30px;
+}
+.hero-banner-section .title-section .contact-area .button-group a {
+  color: #fff;
+  width: 200px;
+  height: auto;
+  border: none;
+  margin-left: 8px;
+  font-weight: 700;
+  border-radius: 5px;
+  background-color: transparent;
+  border: 2px solid #fff;
+  transition: 0.3s all ease-in-out;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.hero-banner-section .title-section .contact-area .button-group a i {
+  margin-left: 5px;
+}
+.hero-banner-section .title-section .contact-area .button-group a:hover {
+  background-color: #00305c;
+  border: 1px solid #003a6c;
+}
+.hero-banner-section.zero-cost-banner .container {
+  padding: 4rem 0;
+}
+.hero-banner-section.zero-cost-banner .container .title-section {
+  text-align: center;
+}
+.hero-banner-section.zero-cost-banner .container .title-section h1 {
+  font-family: Poppins;
+  font-weight: 700;
+  padding-bottom: 20px;
+}
+.hero-banner-section.zero-cost-banner .container .title-section h1 .zero-cost {
   display: inline-block;
   font-size: 5rem;
   position: relative;
 }
-.hero-banner-section .banner-content .banner-text h1 span.zero-cost:after {
+.hero-banner-section.zero-cost-banner .container .title-section h1 .zero-cost:after {
   position: absolute;
   content: "";
+  background-image: url(../images/zerocost-border.png);
   width: 100%;
   height: auto;
   left: 0;
@@ -1573,83 +1629,8 @@ header#sticky-header {
   background-size: cover;
   background-repeat: no-repeat;
 }
-.hero-banner-section .banner-content .banner-text p {
-  color: #fff;
-  font-size: 1.5rem;
-}
-.hero-banner-section .banner-content .banner-buttons .banner-input-field {
-  margin-top: 25px;
+.hero-banner-section.zero-cost-banner .container .title-section .button-group {
   justify-content: center;
-}
-.hero-banner-section .banner-content .banner-buttons .banner-input-field .aksosttech-form-input {
-  margin: 0px 8px;
-}
-.hero-banner-section .banner-content .banner-buttons .banner-input-field .aksosttech-form-input span {
-  top: 23px;
-  left: 35px;
-  color: #fff;
-  position: absolute;
-}
-.hero-banner-section .banner-content .banner-buttons .banner-input-field .aksosttech-form-input input {
-  border: none;
-  height: 70px;
-  width: 290px;
-  color: #fff;
-  padding-left: 65px;
-  border-radius: 35px;
-  background-color: #35a3ec;
-}
-.hero-banner-section .banner-content .banner-buttons .banner-input-field .aksosttech-form-input input::placeholder {
-  color: #a3daff;
-}
-.hero-banner-section .banner-content .banner-buttons .banner-input-field button {
-  color: #fff;
-  width: 200px;
-  height: 70px;
-  border: none;
-  margin-left: 8px;
-  font-weight: 700;
-  border-radius: 5px;
-  background-color: transparent;
-  border: 2px solid #fff;
-  transition: 0.3s all ease-in-out;
-}
-.hero-banner-section .banner-content .banner-buttons .banner-input-field button:hover {
-  background-color: #00305c;
-  border: 1px solid #003a6c;
-}
-
-.home-page-banner {
-  padding: 6% 0;
-  background: rgb(137, 223, 255);
-  background: radial-gradient(circle, rgb(137, 223, 255) 38%, rgb(52, 145, 255) 100%);
-}
-.home-page-banner .title-section {
-  align-items: center;
-}
-.home-page-banner .title-section h1, .home-page-banner .title-section p {
-  color: #0a53bf;
-}
-.home-page-banner .title-section h1 {
-  font-size: 3.5rem;
-}
-.home-page-banner .title-section p {
-  font-size: 1.5rem;
-}
-.home-page-banner .custome-button {
-  background: #0a53bf;
-}
-.home-page-banner .zerocost-button {
-  color: #fff;
-}
-.home-page-banner .zerocost-button span {
-  background: #0a53bf;
-  padding: 5px 10px;
-  border-radius: 50px;
-}
-.home-page-banner .button-group {
-  display: flex;
-  gap: 20px;
 }
 
 .arrow-btn {
@@ -1710,20 +1691,20 @@ header#sticky-header {
 /*----------------------------------------------------*/
 /* 
   @media screen and (max-width: 850px) {
-    .banner-content .banner-text h1 {
+    .title-section .banner-text h1 {
       font-size: 60px;
     }
 
-    .banner-content .banner-input-field {
+    .title-section .banner-input-field {
       flex-wrap: wrap;
     }
 
-    .banner-content .banner-input-field .aksosttech-form-input {
+    .title-section .banner-input-field .aksosttech-form-input {
       margin-bottom: 20px;
     }
   }
   @media screen and (max-width: 767px) {  
-    .banner-content {
+    .title-section {
       padding: 175px 0px 60px;
     }
 
@@ -1735,20 +1716,20 @@ header#sticky-header {
     }
   }
   @media screen and (max-width: 680px) {
-    .banner-content .aksosttech-banner-text h1 {
+    .title-section .aksosttech-banner-text h1 {
       font-size: 50px;
     }
 
-    .banner-content .banner-input-field .aksosttech-form-input input {
+    .title-section .banner-input-field .aksosttech-form-input input {
       height: 50px;
       line-height: 50px;
     }
 
-    .banner-content .banner-input-field .aksosttech-form-input span {
+    .title-section .banner-input-field .aksosttech-form-input span {
       top: 13px;
     }
 
-    .banner-content .banner-input-field button {
+    .title-section .banner-input-field button {
       width: 150px;
       height: 50px;
     }
@@ -1777,7 +1758,7 @@ header#sticky-header {
     }
   }
   @media screen and (max-width: 480px) {
-    .banner-content .aksosttech-banner-text h1 {
+    .title-section .aksosttech-banner-text h1 {
       font-size: 32px;
     }
 
@@ -1829,7 +1810,7 @@ header#sticky-header {
     }
   }
   @media screen and (max-width: 380px) {
-    .banner-content .aksosttech-banner-text h1 {
+    .title-section .aksosttech-banner-text h1 {
       font-size: 30px;
     }
 
@@ -1845,24 +1826,6 @@ header#sticky-header {
       padding-left: 0;
     }
   } */
-@media (max-width: 768px) {
-  .hero-banner-section {
-    padding-bottom: 10%;
-    height: 100%;
-  }
-  .hero-banner-section .banner-content {
-    padding: 100px 0% 10%;
-    max-width: 100%;
-  }
-  .hero-banner-section .banner-content .banner-text h1 {
-    font-size: 2em;
-  }
-  .hero-banner-section .banner-content .banner-text h1 .zero-cost {
-    font-size: 70px;
-    line-height: 70px;
-    margin-top: 20px;
-  }
-}
 /* End Hero-banner Section */
 /* Start Video Banner Section */
 /* @import "_video-banner.scss"; */
@@ -1904,7 +1867,7 @@ header#sticky-header {
     margin-top: -2rem;
   }
   .features-section .card-area {
-    margin-top: -9rem;
+    margin-top: -7rem;
   }
   .why-choose-section .card-area {
     margin-top: -18rem;
@@ -1969,7 +1932,7 @@ header#sticky-header {
   }
   /* Home Page section */
   .home-page-banner {
-    padding: 6rem 0;
+    padding: 10rem 0 2rem;
   }
   .home-page-banner .right-imges {
     display: none;
@@ -2018,7 +1981,7 @@ header#sticky-header {
     display: none;
   }
   .inner-hero-banner {
-    padding: 6rem 0;
+    padding: 10rem 0 2rem;
   }
   .title-section .float-text {
     line-height: 80px;
@@ -2040,6 +2003,42 @@ header#sticky-header {
   }
 }
 @media (max-width: 767px) {
+  .top-header-section .my-accont {
+    display: none;
+  }
+  .top-header-section .getintoch span {
+    white-space: nowrap;
+  }
+  .hero-banner-section {
+    padding: 0;
+  }
+  .hero-banner-section .image-area {
+    order: -1;
+  }
+  .hero-banner-section .title-section {
+    padding: 2rem 1rem;
+  }
+  .hero-banner-section .title-section .contact-area h1 {
+    font-size: 2rem;
+  }
+  .hero-banner-section .title-section .contact-area .button-group {
+    gap: 15px;
+  }
+  .hero-banner-section .title-section .contact-area .button-group a {
+    width: auto;
+    height: auto;
+    padding: 15px 10px;
+    min-width: auto;
+  }
+  .hero-banner-section.zero-cost-banner .container {
+    padding: 0;
+  }
+  .hero-banner-section.zero-cost-banner .container .title-section {
+    padding: 2rem 1rem;
+  }
+  .hero-banner-section.zero-cost-banner .container .title-section .contact-area h1 .zero-cost {
+    font-size: 3rem;
+  }
   .shape-one {
     display: none;
   }
@@ -2086,7 +2085,6 @@ header#sticky-header {
   }
   .ak-softtech.header-area {
     position: relative;
-    background: radial-gradient(circle, rgb(137, 223, 255) 38%, rgb(52, 145, 255) 100%);
   }
   .ak-softtech.header-area .navbar-brand.ak-softtech-logo {
     margin: initial;
@@ -2281,6 +2279,9 @@ header#sticky-header {
     padding: 15px;
     border-radius: 10px;
   }
+  .footer-area-section .footer-content .footer-contact-info-box .contact-info-box .contact-info-icon {
+    border: none;
+  }
   .footer-area-section .footer-content .footer-contact-info-box .contact-info-box .contact-info-icon i {
     font-size: 2rem;
     color: #fff;
@@ -2300,9 +2301,6 @@ header#sticky-header {
   }
 }
 @media (max-width: 576px) {
-  .home-page-banne .title-section h1 {
-    font-size: 3rem;
-  }
   .custome-button {
     width: 100%;
   }

@@ -7,7 +7,7 @@
 
     .features-section{
         .card-area{      
-            margin-top: -9rem;
+            margin-top: -7rem;
         }
     }
 
@@ -92,7 +92,7 @@
     .float-text {font-size: 70px;}
     /* Home Page section */
     .home-page-banner{    
-        padding: 6rem 0; 
+        padding: 10rem 0 2rem;
         .right-imges{
             display: none;
         }
@@ -152,7 +152,7 @@
        display: none;
     }  
     .inner-hero-banner {      
-        padding: 6rem 0;
+        padding: 10rem 0 2rem;
     }
    
     .title-section {
@@ -193,6 +193,57 @@
 }
 
 @media (max-width:767px){
+    .top-header-section{
+        .my-accont{display: none;}
+        .getintoch{
+            span {
+                white-space: nowrap;
+            }
+        }
+    }
+   .hero-banner-section  {   
+        padding: 0;
+        .image-area{
+            order: -1;
+        }       
+        .title-section {
+            padding: 2rem 1rem;
+            .contact-area{
+                h1 {
+                    font-size: 2rem;
+                }
+                .button-group{
+                    gap:15px;
+                    a {
+                     width: auto;
+                     height: auto;
+                     padding: 15px 10px;
+                     min-width: auto;
+                    } 
+                 } 
+            }  
+                   
+        }
+        &.zero-cost-banner {      
+            .container{  
+                padding: 0;            
+                .title-section {                  
+                    padding: 2rem 1rem;
+                    .contact-area{
+                        h1 {                           
+                            .zero-cost{
+                                font-size: 3rem;
+                            }
+                        }                 
+                    }  
+                           
+                }
+            }
+          
+        }
+   }
+
+
     .shape-one{
         display: none;
     }
@@ -239,13 +290,12 @@
             }
         }    
     }
-    .ak-softtech.header-area{
-        position: relative;
-        background: radial-gradient(circle, rgb(137, 223, 255) 38%, rgb(52, 145, 255) 100%);
+   .ak-softtech.header-area{
+        position: relative;       
         .navbar-brand.ak-softtech-logo {
             margin: initial;
         }
-    }
+    } 
 
    /* Home Page section */
     .home-page-banner{        
@@ -369,8 +419,6 @@
             padding: 30px 20px;
         }
     }
-   
-
     .financial-section, .business-section, .legal-section  {
         .images-area{
             order: -1;
@@ -460,6 +508,7 @@
                 border-radius: 10px;
                 .contact-info-box{
                     .contact-info-icon{
+                        border: none;
                         i {
                             font-size: 2rem;
                             color: #fff;
@@ -482,12 +531,7 @@
     }      
 }
 
-@media (max-width: 576px) {
-    .home-page-banne{
-        .title-section h1 {
-            font-size: 3rem;
-        }
-    } 
+@media (max-width: 576px) {   
      .custome-button {    
         width: 100%;
     }   

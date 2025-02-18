@@ -1,3 +1,50 @@
+
+.top-header-section{
+	position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    height: 46px;
+    background: $info;
+	display: flex;
+	z-index: 2;
+	.container {
+		display: flex;
+    	justify-content: space-between;
+		.my-accont{
+			padding: 8px 15px;
+			background: transparent;
+			height: auto;
+			line-height: 40px;
+			display: flex;
+			align-items: center;
+			justify-content: center;
+			margin: 0;
+			border: none;
+			cursor: pointer;
+		}
+		.getintoch{
+			display: flex;
+			align-items: center;
+			top: 0;
+			padding: 5px;
+			gap: 30px;
+			span{
+				font-size: 1rem;
+				font-weight: 600;
+				color: #fff;
+				display: flex;
+				align-items: center;
+				gap: 10px;
+				i{
+					font-size: 1.5rem;
+				}
+			}
+			
+		}
+	}
+	
+}
 .ak-softtech{
 
 &.header-area {	
@@ -5,6 +52,8 @@
 	margin-bottom: 0;
 	width: 100%;
 	z-index:999;
+	background: #fff;
+    margin-top: 46px;
 	.navbar-brand{
 		&.ak-softtech-logo{
 			display: flex;
@@ -24,11 +73,14 @@
 				font-weight: 800;
 				&.soft{
 					color: #fff;
-					text-shadow: 0 1px black;
+					text-shadow: 1px 1px 5px black;
+					margin-top: -3px;
 				}
 				&.tech{
-					color: $secondary;
+					color:$secondary;
 					text-shadow: 0 1px black;
+					margin-top: -8px;
+					margin-left: -2px;
 				}
 			}
 		}	
@@ -65,19 +117,21 @@
 					text-transform: capitalize;
 					color:$info;
 					transition: 0.5s;
+					border-bottom: 2px solid transparent;
 					&:hover {
-						color: $info;
+						color: $secondary;
+						border-bottom: 2px solid $info;
 					}
 				}
 			}
 		}
 		button {
 			border: none;
-			background-color: transparent;
+			background-color:$secondary;
 			padding: 10px 15px;
 			border: 2px solid $info;
 			a{
-				color: $info;
+				color:white;
 			}
 			&:hover{
 				background-color: $primary;	
@@ -90,21 +144,23 @@
 		}
 		
 		&.collapse.show{
-			background: #03a1ec;
+			background: $info;
 			padding: 0px;
 			border-radius: 10px;
 			.navbar-nav{
 				padding: 0;
 				li.nav-item.ak-nav-item {
-					border-bottom:1px solid #0160e7;
+					border-bottom:1px solid #004483;
 					margin-right: 0;
 					a {
 						width: 100%;					
-						padding: 10px 15px
-					
+						padding: 10px 15px;
+						color: #fff;					
 					}
 				}
-				
+				li:hover{
+					background-color:#007bff;
+				}				
 			}	
 			.custome-button{
 			    width: 100%;
@@ -132,6 +188,11 @@
 		// z-index: 999;
 		background: radial-gradient(circle, rgb(137, 223, 255) 38%, rgb(52, 145, 255) 100%);
 		z-index: 999;
+		margin-top: 0;
+		background: #fff;
+		// button {
+		// 	background-color:$info;
+		// }
 	}
 
 }
@@ -294,7 +355,7 @@ header#sticky-header{
 		position: absolute;
 		font-size: 12px;
 		font-weight: bold;
-		color: #ffffff;
+		color: $info;
 		letter-spacing: 0.6px;
 
 	}
@@ -303,8 +364,9 @@ header#sticky-header{
 .navbar-expand-lg {
 	.navbar-nav {
 		.dropdown-menu{
-			top: 60px;
-			background: $secondary;
+			top: 72px;
+			background: $info;
+			border-radius: 0 0 5px 5px;
 			li{
 				a {
 					color: white;
@@ -313,7 +375,7 @@ header#sticky-header{
 				&:hover{
 					a {
 						background-color:$second_bg;
-						color:$info;
+						color:white;
 					}
 					
 				}

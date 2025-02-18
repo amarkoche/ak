@@ -568,36 +568,8 @@ ul.ul-list li span i {
 
 .inner-hero-banner {
   position: relative;
-  padding: 9rem 0;
-}
-.inner-hero-banner::before {
-  content: "";
-  position: absolute;
-  top: 0;
-  left: 0;
-  right: 0;
-  background: url(../images/banner/inner-hero-banner.png);
-  background-repeat: no-repeat;
-  background-size: cover;
-  background-position: bottom;
-  height: 100%;
-  width: 100%;
-  padding: 6rem 0;
-  opacity: 0.5;
-  border: 0;
-  z-index: 2;
-}
-.inner-hero-banner::after {
-  background-color: rgba(10, 83, 191, 0.8);
-  width: 100%;
-  height: 100%;
-  content: "";
-  position: absolute;
-  top: 0;
-  left: 0;
-  bottom: 0;
-  right: 0;
-  z-index: 2;
+  padding: 10rem 0 2rem;
+  background: linear-gradient(1deg, #00305c, #0a53bf);
 }
 .inner-hero-banner .bg-img::after {
   content: "";
@@ -626,7 +598,7 @@ ul.ul-list li span i {
   position: relative;
 }
 .inner-hero-banner .title-section .float-text {
-  -webkit-text-stroke-color: rgba(255, 255, 255, 0.74);
+  -webkit-text-stroke-color: #fff;
   font-size: 4rem;
 }
 .inner-hero-banner .title-section .sub-title {
@@ -668,6 +640,10 @@ ul.ul-list li span i {
 }
 .inner-hero-banner.video-bnner h1 {
   color: white;
+}
+
+button, button.a {
+  cursor: pointer;
 }
 
 /* Emd elements.scss */

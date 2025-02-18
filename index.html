@@ -24,21 +24,17 @@
 
 	<!-- bootstrap min CSS -->
 	<!-- <link rel="stylesheet" href="css/all.min.css" type="text/css" media="all"> -->
-	<!-- bootstrap min -->  
-	 
-
+	<!-- bootstrap min --> 
 	
 	<!-- font-awesome CSS -->
 	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css"
   />
 	<!-- End -awesome CSS -->
 
-	<link
-    rel="stylesheet"
-    href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"
-  />
+
 	<!-- Coustom Animation CSS -->
-	<link rel="stylesheet" href="css/coustom-animation.css" type="text/css" media="all">
+	<link  rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css" />
+	<!-- <link rel="stylesheet" href="css/coustom-animation.css" type="text/css" media="all"> -->
 	<!-- Coustom Animation CSS -->	
 	
 	<!-- Main-style CSS -->
@@ -47,9 +43,28 @@
 </head>
 
 <body>	
+	
+
 
 <!-- Start Header secton-->
-<nav class="navbar navbar-expand-lg ak-softtech header-area"  id="sticky-header">
+<header class="top-header-section">
+	<div class="container">
+		<div class="getintoch">	
+				<span class="">
+					<i class="fa-solid fa-phone"></i>
+					+91 8668235080				
+				</span>
+			
+				<span class="">
+					<i class="fa-regular fa-envelope"></i>
+					info@aksofttech.in			
+				</span>
+		</div>
+		<button class="btn btn-primary my-accont">My Account</button>
+	</div>
+</header>
+
+<nav class="navbar navbar-expand-lg ak-softtech header-area sticky-top"  id="sticky-header">
 	<div class="container">
 		<a class="navbar-brand ak-softtech-logo" href="index.html">
 			<img src="images/aklogo.svg" alt="Logo" class="brand-logo">
@@ -86,7 +101,9 @@
 		  </li>
 		</ul>
 		<button type="button" class="btn custome-button">			
-			<a href="zero-cost.html"> Zero Cost Web Solutions </a> 
+			<a href="zero-cost.html" class="animate__animated animate__pulse animate__infinite	infinite"> Zero Cost Web Solutions </a> 
+
+			<!-- <a href="zero-cost.html" class="animate__animated animate__flash animate__infinite	infinite animate__slower 3s"> Zero Cost Web Solutions </a>  -->
 		</button>	
 	  </div>
 	</div>
@@ -94,33 +111,37 @@
 <!-- End Header secton-->
 
 <!-- Start hero banner section-->
-<section id="ak-hero-banner" class="home-page-banner">
+<section id="ak-hero-banner" class="hero-banner-section">
 	<div class="container">
 		<div class="title-section row">
-		<div class="left-text col-lg-6 col-md-6 col-sm-12">
-			<h1 class="animate__animated animate__fadeInLeft">We Provide Smart Business Solutions</h1>
-			<p class="mb-4 animate__animated animate__fadeInLeft animate__faster animate__delay-1s">Reach more customers with your online presence</p>
-			<div class="button-group">
-				<a type="button" href="#getInTouch" class="btn custome-button ms-0 animate__animated animate__fadeInLeft animate__delay-2s animate__faster">
-					Free Consultation  <i class="fa-solid fa-arrow-right"></i>
-				</a>
+			<div class="contact-area col-lg-7 col-md-6 col-sm-12">
+				<h1 class="animate__animated animate__fadeInLeft">We Provide Smart Business Solutions</h1>
+				<p class="mb-4 animate__animated animate__fadeInLeft animate__faster animate__delay-1s">Reach more customers with your online presence</p>
+				
+				<div class="button-group">
+					<a type="button" href="#getInTouch" class="btn custome-button ms-0 animate__animated animate__fadeInLeft animate__delay-1s animate__faster">
+						Free Consultation  <i class="fa-solid fa-arrow-right"></i>
+					</a>
 
-				<a type="button" href="free-consulting.html" class="btn custome-button ms-0 animate__animated animate__fadeInRight animate__delay-2s animate__faste">
-					<span class="animate__animated animate__heartBeat"> Start For Free </span>
-					  <i class="fa-solid fa-arrow-right"></i>
-				</a>
-				
-				<!-- 				
-				<a type="button" href="zero-cost.html" class="btn arrow-btn ms-4">Zero Cost Web Solution</a> -->
-				
-			</div>			
-		</div>
-		<div class="right-imges col-mg-6 col-md-6 col-sm-12">
-			<img src="images/banner/banner-img.png" class="images-thumb animate__animated animate__fadeInUp animate__delay-1s animate__faster" alt="zerocost web solution" >
+					<a type="button" href="free-consulting.html" class="btn custome-button ms-0 animate__animated animate__fadeInRight animate__delay-1s animate__faste">
+						 Start For Free
+						<i class="fa-solid fa-arrow-right"></i>
+					</a>
+					
+					<!-- 				
+					<a type="button" href="zero-cost.html" class="btn arrow-btn ms-4">Zero Cost Web Solution</a> -->
+					
+				</div>			
 			</div>
-			<!-- <div class="col-lg-12">
+			<div class="image-area col-lg-5 col-md-6 col-sm-12">
+				<img src="images/banner/banner-img1.png" class="images-thumb p-lg-5 p-md-2 animate__animated animate__fadeInRight animate__faster" alt="zerocost web solution" >
+			</div>
+			<!-- <div class="col-lg-12 down-arrow">
 				<div class="video-button">
 					<a class="video-vemo-icon venobox vbox-item" data-vbtype="youtube" data-autoplay="true" href="https://www.youtube.com/watch?v=e6R6VsgD8yQ&amp;amp;t=179s"><i class="bi bi-play-fill"></i></a>
+				</div> 
+				<div class="downarrow">					
+					<i class="fa-solid fa-arrow-down"></i>
 				</div>
 			</div> -->
 		</div>

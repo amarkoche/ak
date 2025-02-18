@@ -50,7 +50,7 @@
     .banner-content {
         .banner-text {
             h1 {
-                span.zero-cost{
+                .zero-cost{
                     display: inline-block;
                     font-size: 5rem;
                     position: relative;
@@ -67,6 +67,12 @@
                         background-repeat: no-repeat;
                     }
                 }
+            }
+            .button-group {
+                display: flex;
+                flex-wrap: wrap;
+                gap: 20px;
+                justify-content: center;
             }
         }
     } 
@@ -169,7 +175,7 @@
             order: -1;
         }
     }
-    .hero-banner-section.zero-cost-banner .banner-content .banner-text h1 span.zero-cost{
+    .hero-banner-section.zero-cost-banner .banner-content .banner-text h1 .zero-cost{
         font-size: 4rem;
     }
   
