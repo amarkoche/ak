@@ -1,6 +1,6 @@
 .footer-area-section {
     /* background: url(../images/footer-bg.jpg); */
-    background: #021438;
+    background: $info;
     background-repeat: no-repeat;
     background-size: cover;
     background-position: center center;
@@ -64,7 +64,7 @@
                 width: 40px;
                 height: 40px;
                 line-height: 40px;
-                border: 1px solid #3078fb;
+                border: 1px solid #fff;
                 border-radius: 2px;
                 background: #3078fb;
                 transition: 0.4s;
@@ -234,14 +234,17 @@
                 width: 40px;
                 height: 40px;
                 line-height: 40px;
-                border: 1px solid #3078fb;
+                border: 1px solid #fff;
                 border-radius: 2px;
                 /* background: #3078fb; */
                 transition: 0.4s;
                 &:hover{
-                  color: #3078fb;
+                
                   background: #fff;
                   transition: 0.4s;
+                  i {
+                    color: #3078fb;
+                  }
                 }
           i{
             display: inline-block;
@@ -250,7 +253,7 @@
             text-rendering: auto;
             -webkit-font-smoothing: antialiased;
             -moz-osx-font-smoothing: grayscale;
-            color: #3078fb;
+            color: #fff;
           }
         }
         .contact-info-content{

@@ -1,18 +1,12 @@
  @import url("https://fonts.googleapis.com/css?family=Poppins:100,200,300,400,600,500,700|Roboto:100,300,400,500,700&display=swap");
 
-
-
-// img {
-//   max-width: 100%;
-//     height: auto;
-// }
 .hero-banner-section {
+  padding: 130px 0 0;
 	overflow: visible;
 	background-image: url(../images/hero-banner/bn-bg.png); 
 	position: relative;
-  background: linear-gradient(45deg, #0160e7 0%, #04bdef 100%);
-  padding-bottom: 50%;
-   height: 100vh;
+  background: linear-gradient(45deg, #0160e7 0%, #04bdef 100%); 
+  height: 100%;
    &::before{
     position: absolute;
     content: "";
@@ -37,51 +31,84 @@
     animation: floatX 10s ease-in-out infinite;
   }
   
-   .aksosttech-banner-vector {
-		right: 0;
-		left: 120px;
-		bottom: -180px;
-		position: absolute;
-		animation: man-updown 2s infinite alternate;
-	}
-	.banner-shape {
-		top: 0;
-		left: 0;
-		position: absolute;
-		&.shape1 {
-			animation: floatY 3s ease-in-out infinite;
-		}
-		&.shape2 {
-			left: 150px;
-			animation: floatX 10s ease-in-out infinite;
-		}
-	}
+	// .banner-shape {
+	// 	top: 0;
+	// 	left: 0;
+	// 	position: absolute;
+	// 	&.shape1 {
+	// 		animation: floatY 3s ease-in-out infinite;
+	// 	}
+	// 	&.shape2 {
+	// 		left: 150px;
+	// 		animation: floatX 10s ease-in-out infinite;
+	// 	}
+	// }
   
-  .banner-content {
-    z-index: 1;
-    margin: 0 auto;
-    max-width: 85%;
-    position: relative;
-    padding: 150px 0% 10%;
-    .banner-text {
-      visibility: visible;
-      animation-duration: 1000ms;
-      animation-delay: 0ms;
-      animation-name: fadeInUp;
-     
+  .title-section {
+      z-index: 1;
+      margin: 0 auto;   
+      position: relative; 
+      .contact-area{
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+
+        h1 {
+          color: #fff;      
+          font-weight: 700;
+          // font-family: Poppins; 
+          font-size: 4rem; 
+        }
+        p {
+          color: #fff;
+          font-size: 1.5rem;
+        }
+        .button-group{
+          display: flex;
+          gap: 30px;
+          a {
+            color: #fff;
+            width: 200px;
+            height: auto;
+            border: none;
+            margin-left: 8px;
+            font-weight: 700;
+            border-radius: 5px;
+            background-color: transparent;
+            border: 2px solid #fff;
+            transition: 0.3s all ease-in-out;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            i {
+              margin-left: 5px;
+            }
+            &:hover {
+              background-color:$info;
+              border: 1px solid #003a6c;
+            }
+            
+          }
+        }      
+      }
+  }
+&.zero-cost-banner {
+  .container {
+    padding: 4rem 0;
+    .title-section{
+      text-align: center;
       h1 {
-        color: #fff;      
+        font-family: Poppins; 
         font-weight: 700;
-        font-family: Poppins;
-        padding-bottom: 30px;
-        span.zero-cost{
+        padding-bottom: 20px;
+        .zero-cost{
           display: inline-block;
           font-size:5rem;              
           position: relative;
           &:after{
           position: absolute;
           content: "";
-          // background-image: url(../images/zerocost-border.png);
+          background-image: url(../images/zerocost-border.png);
           width: 100%;
           height: auto;
           left: 0;
@@ -102,94 +129,70 @@
           // }
         }
       }
-      p {
-        color: #fff;
-        font-size: 1.5rem;
-      }
-    }
-    .banner-buttons{
-      .banner-input-field {
-        margin-top: 25px;
+      .button-group{
         justify-content: center;
-        .aksosttech-form-input {
-          margin: 0px 8px;
-          span {
-            top: 23px;
-            left: 35px;
-            color: #fff;
-            position: absolute;
-          }
-          input {
-            border: none;
-            height: 70px;
-            width: 290px;
-            color: #fff;
-            padding-left: 65px;
-            border-radius: 35px;
-            background-color: #35a3ec;
-            &::placeholder {
-              color: #a3daff;
-            }
-          }
-        }
-        button {
-          color: #fff;
-          width: 200px;
-          height: 70px;
-          border: none;
-          margin-left: 8px;
-          font-weight: 700;
-          border-radius: 5px;
-          background-color: transparent;
-          border: 2px solid #fff;
-          transition: 0.3s all ease-in-out;
-          &:hover {
-            background-color:$info;
-            border: 1px solid #003a6c;
-          }
-        }
       }
     }
-   
   }
 }
 
-
-.home-page-banner {
-  padding:6% 0;
-  // background: url(../images/video-bg.jpg);
-  // background-repeat: no-repeat;
-  // background-size: cover; 
-  background: rgb(137,223,255);
-  background: radial-gradient(circle, rgba(137,223,255,1) 38%, rgba(52,145,255,1) 100%);
-  .title-section{
-    align-items: center;
-   h1, p {
-    color: $secondary;
-   }
-   h1 {
-    font-size: 3.5rem;
-   }
-  p {
-      font-size: 1.5rem;
-    }
-  }
-  .custome-button{
-    background: $secondary;
-  }
-  .zerocost-button{   
-    color: #fff;
-    span{
-      background: $secondary;
-      padding: 5px 10px;
-      border-radius: 50px;
-    }
-  }
-  .button-group{
-    display: flex;
-    gap: 20px;
-  }
 }
+
+
+// .home-page-banner {
+//   padding: 8% 0 1rem;
+//   // background: url(../images/video-bg.jpg);
+//   // background-repeat: no-repeat;
+//   // background-size: cover; 
+//   background: rgb(137,223,255);
+//   // background: radial-gradient(circle, rgba(137,223,255,1) 38%, rgba(52,145,255,1) 100%);
+//   background: radial-gradient(circle, rgb(255 255 255) 35%, rgb(52, 145, 255) 100%);
+//   .title-section{
+//     align-items: center;
+//    h1, p {
+//     color: $info;
+//    }
+//    h1 {
+//     font-size: 3.5rem;
+//    }
+//   p {
+//       font-size: 1.5rem;
+//       font-weight: 600;
+//     }
+//   }
+//   button.custome-button, a.custome-button{
+//     background: $info;
+//     border: 2px solid #003a6c;
+//     &:hover{
+//       background-color:$secondary;
+//       border: 2px solid #fff;
+//       color: #fff;
+//     }
+//   }
+//   .zerocost-button{   
+//     color: #fff;
+//     span{
+//       background: $secondary;
+//       padding: 5px 10px;
+//       border-radius: 50px;
+//     }
+//   }
+//   .button-group{
+//     display: flex;
+//     gap: 20px;
+//   }  
+//   .down-arrow{
+//     display: flex;
+//     align-items: center;
+//     justify-content: center;
+//     span.downarrow {
+//       border-radius: 50%;
+//       background-color:red;
+//       width: 3rem;
+//       height:3rem;
+//     }
+//   }
+// }
 
 
 
@@ -264,20 +267,20 @@
 
 /* 
   @media screen and (max-width: 850px) {
-    .banner-content .banner-text h1 {
+    .title-section .banner-text h1 {
       font-size: 60px;
     }
   
-    .banner-content .banner-input-field {
+    .title-section .banner-input-field {
       flex-wrap: wrap;
     }
   
-    .banner-content .banner-input-field .aksosttech-form-input {
+    .title-section .banner-input-field .aksosttech-form-input {
       margin-bottom: 20px;
     }
   }
   @media screen and (max-width: 767px) {  
-    .banner-content {
+    .title-section {
       padding: 175px 0px 60px;
     }
   
@@ -289,20 +292,20 @@
     }
   }
   @media screen and (max-width: 680px) {
-    .banner-content .aksosttech-banner-text h1 {
+    .title-section .aksosttech-banner-text h1 {
       font-size: 50px;
     }
   
-    .banner-content .banner-input-field .aksosttech-form-input input {
+    .title-section .banner-input-field .aksosttech-form-input input {
       height: 50px;
       line-height: 50px;
     }
   
-    .banner-content .banner-input-field .aksosttech-form-input span {
+    .title-section .banner-input-field .aksosttech-form-input span {
       top: 13px;
     }
   
-    .banner-content .banner-input-field button {
+    .title-section .banner-input-field button {
       width: 150px;
       height: 50px;
     }
@@ -331,7 +334,7 @@
     }
   }
   @media screen and (max-width: 480px) {
-    .banner-content .aksosttech-banner-text h1 {
+    .title-section .aksosttech-banner-text h1 {
       font-size: 32px;
     }
   
@@ -383,7 +386,7 @@
     }
   }
   @media screen and (max-width: 380px) {
-    .banner-content .aksosttech-banner-text h1 {
+    .title-section .aksosttech-banner-text h1 {
       font-size: 30px;
     }
   
@@ -400,21 +403,21 @@
     }
   } */
 
-  @media (max-width:768px){
-    .hero-banner-section {
-      padding-bottom: 10%;
-      height: 100%;
-      .banner-content{
-        padding: 100px 0% 10%;
-        max-width: 100%;
-        .banner-text h1{
-          font-size: 2em;
-          .zero-cost{
-            font-size: 70px;
-            line-height: 70px;
-            margin-top: 20px;
-          }
-        }
-      }
-    }
-  }
+//   @media (max-width:768px){
+//     .hero-banner-section {
+//       padding-bottom: 10%;
+//       height: 100%;
+//       .title-section{
+//         padding: 100px 0% 10%;
+//         max-width: 100%;
+//         .banner-text h1{
+//           font-size: 2em;
+//           .zero-cost{
+//             font-size: 70px;
+//             line-height: 70px;
+//             margin-top: 20px;
+//           }
+//         }
+//       }
+//     }
+// }
