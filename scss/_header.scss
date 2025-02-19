@@ -45,344 +45,389 @@
 	}
 	
 }
-.ak-softtech{
+.navbar.ak-softtech{
+	&.header-area {	
+		position: absolute;
+		margin-bottom: 0;
+		width: 100%;
+		z-index:999;
+		background: #fff;
+		margin-top: 46px;
+		padding: 0;
+		.navbar-brand{
+			&.ak-softtech-logo{
+				display: flex;
+				align-items: center;
+				position: relative;
+				img.brand-logo {
+					width:54px;
+					// box-shadow: 0px 0px 10px 3px #ffffff;
+					// border-radius: 5px;
+					// margin-right: 5px;
+					border-radius: 8px;
+					margin-right: 6px;
+					background: $secondary;
+					padding: 8px;
+				}
+				span{
+					font-size: 2rem;				
+					font-weight: 800;
+					&.soft{
+						color: #fff;
+						text-shadow: 1px 1px 5px black;
+						margin-top: -3px;
+					}
+					&.tech{
+						color:$secondary;
+						text-shadow: 0 1px black;
+						margin-top: -8px;
+						margin-left: -2px;
+					}
+				}
+				&::after{
+					right: 0px;
+					bottom: -4px;
+					content: "Consultancy Services";
+					position: absolute;
+					font-size: 12px;
+					font-weight: bold;
+					color: #343a40;
+					letter-spacing: 0.6px;
+				}
+			}	
+		}
+		// .header-logo{
+		// 	img {max-width: 200px;}
+		// }
 
-&.header-area {	
-	position: absolute;
-	margin-bottom: 0;
-	width: 100%;
-	z-index:999;
-	background: #fff;
-    margin-top: 46px;
-	.navbar-brand{
-		&.ak-softtech-logo{
-			display: flex;
+		.navbar-toggler{
+			color: $secondary;		
+			border: 1px solid  $secondary;		
+			// display: flex;
 			align-items: center;
-			img.brand-logo {
-				width:54px;
-				// box-shadow: 0px 0px 10px 3px #ffffff;
-				// border-radius: 5px;
-				// margin-right: 5px;
-				border-radius: 8px;
-				margin-right: 6px;
-				background: $secondary;
-				padding: 8px;
+			padding: 7px 12px;
+			i.fa-bars {
+				color:  $secondary;
+				font-size: 1.5rem;	
 			}
-			span{
-				font-size: 2rem;				
-				font-weight: 800;
-				&.soft{
-					color: #fff;
-					text-shadow: 1px 1px 5px black;
-					margin-top: -3px;
-				}
-				&.tech{
-					color:$secondary;
-					text-shadow: 0 1px black;
-					margin-top: -8px;
-					margin-left: -2px;
-				}
+			&:focus{
+				box-shadow: none;	
 			}
-		}	
-	}
-	.header-logo{
-		img {max-width: 200px;}
-	}
-
-	.navbar-toggler{
-		color: $secondary;		
-		border: 1px solid  $secondary;		
-		// display: flex;
-		align-items: center;
-		padding: 7px 12px;
-		i.fa-bars {
-			color:  $secondary;
-			font-size: 1.5rem;	
 		}
-		&:focus{
-			box-shadow: none;	
-		}
-	}
 
-	.navbar-menu-area{
-		justify-content: end;
-		.navbar-nav{
-			.nav-item.ak-nav-item{
-				margin-right: 1.5rem;
-				a.nav-link {
-					display: inline-block;
-					font-weight: 600;
-					font-size: 1.1rem;
-					padding:20px 0;
-					text-transform: capitalize;
-					color:$info;
-					transition: 0.5s;
+		.navbar-menu-area{
+			justify-content: end;
+			padding: 0;
+			.navbar-nav{
+				padding: 10px;			
+				.nav-item.ak-nav-item{
+					// margin-right: 20px;	
+					padding: 0;	
 					border-bottom: 2px solid transparent;
 					&:hover {
 						color: $secondary;
 						border-bottom: 2px solid $info;
+					}					
+					a.nav-link {
+						display: inline-block;
+						font-weight: 600;
+						font-size: 1.1rem;
+						padding:0;
+						text-transform: capitalize;
+						color:$info;
+						transition: 0.5s;
+						border-bottom: 2px solid transparent;
+						padding: 10px 20px;
+						
 					}
-				}
-			}
-		}
-		button {
-			border: none;
-			background-color:$secondary;
-			padding: 10px 15px;
-			border: 2px solid $info;
-			a{
-				color:white;
-			}
-			&:hover{
-				background-color: $primary;	
-				border: 2px solid white;
-				a {
-					color: white;
-				}
-				
-			}
-		}
-		
-		&.collapse.show{
-			background: $info;
-			padding: 0px;
-			border-radius: 10px;
-			.navbar-nav{
-				padding: 0;
-				li.nav-item.ak-nav-item {
-					border-bottom:1px solid #004483;
-					margin-right: 0;
-					a {
-						width: 100%;					
-						padding: 10px 15px;
-						color: #fff;					
-					}
-				}
-				li:hover{
-					background-color:#007bff;
-				}				
-			}	
-			.custome-button{
-			    width: 100%;
-				padding: 6px;
-				margin: 0;
-			}
-		}
-	}
 
-	.header-menu ul li a{
-		padding: 5px 0;
-	}
+					&.dropdown{
+						.dropdown-menu{						
+							background-color: $info;
+							border: none;
+							margin-top: -1px;
 
-	&.sticky{
-		top: 0px;
-		position: fixed;
-		padding: 10px 0px;
-		animation-duration: 0.7s;
-		animation-fill-mode: both;
-		animation-name: fadeInDown;
-		animation-timing-function: ease;
-		transition: 0.3s all ease-in-out;
-		box-shadow: 0px 0px 18px 1px rgba(0, 0, 0, 0.1);
-		// background: linear-gradient(45deg, #0160e7 0%, #04bdef 100%);
-		// z-index: 999;
-		background: radial-gradient(circle, rgb(137, 223, 255) 38%, rgb(52, 145, 255) 100%);
-		z-index: 999;
-		margin-top: 0;
-		background: #fff;
-		// button {
-		// 	background-color:$info;
-		// }
-	}
-
-}
-	.header-menu {
-		text-align: right;
-		ul {
-			display: inline-block;
-			li {
-				display: inline-block;
-				margin-right: 35px;
-				a {
-					display: inline-block;
-					font-weight: 600;
-					font-size: 1rem;
-					padding: 20px 0;
-					text-transform: capitalize;
-					color: #fff;
-					transition: 0.5s;
-					// &:hover {
-					// 	color: #0c5adb;
-					// 	i {
-					// 		color: #0c5adb;
-					// 	}
-					// }
-				}
-				i {
-					font-size: 12px;
-					color: #fff;
-					position: relative;
-					left: 6px;
-					top: -1px;
-					transition: 0.5s;
-				}
-				&.menu-item-has-children {
-					position: relative;
-				}
-				.sub-menu {
-					position: absolute;
-					width: 200px;
-					display: block;
-					text-align: left;
-					background: #fff;
-					opacity: 0;
-					visibility: hidden;
-					transition: 0.5s;
-					top: 150%;
-					z-index: 2;
-					box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.3);
-					border-top: 5px solid #0c5adb;
-					border-radius: 3px 3px 0 0;
-					li {
-						a {
-							display: block;
-							padding: 8px 19px !important;
-							color: #1e1e1e;
-							width: 200px;
-							text-transform: capitalize;
-							font-size: 16px;
-							font-weight: 600;
-							transition: 0.5s;
-							position: relative;
-							z-index: 1;
-							&:hover {
-								color: #fff !important;
-								&:before {
-									height: 100%;
-									top: 0;
+							li{
+								a.dropdown-item{
+									background: transparent;
+									color: #fff;
+								}
+								&:hover{
+									background: $secondary;
+									color: #fff;
 								}
 							}
-							&:before {
-								position: absolute;
-								content: "";
-								width: 100%;
-								height: 0;
-								left: 0;
-								bottom: 0;
-								background: #0c5adb;
-								z-index: -1;
-								transition: 0.5s;
-							}
+						}
+						&:hover{						
+							// border-bottom: 2px solid $info;	
+							.dropdown-menu{	
+								display: block;
+							}						
 						}
 					}
-				}
-				&:hover {
-					.sub-menu {
-						opacity: 1;
-						top: 100%;
-						visibility: visible;
-					}
-				}
-			}
-		}
-	}
-
-	.header-button {
-		display: inline-block;
-		a {
-			padding: 14px 34px;
-			color: #fff;
-			background: transparent;
-			border: 1px solid #fff;
-			border-radius: 4px;
-			display: inline-block;
-			position: relative;
-			z-index: 1;
-			transition: .5s;
-			text-transform: capitalize;
-			font-weight: 600;
-			&:hover {
-				background-color: #003a6c;
-				border: 1px solid #003a6c;
-			}
-		}
-	}
-
-	.header-search-icon {
-		display: inline-block;
-		margin-right: 34px;
-		i {
-			display: inline-block;
-			color: #ffff;
-			transition: 0.5s;
-			&:hover {
-				background-color: #003a6c;
-				border: 2px solid #003a6c;
-			}
-		}
-	}
-}
-
-header#sticky-header{
-	margin-top: 150px;
-}
-
-.ak-softtech.header-area .navbar-brand.ak-softtech-logo{
-    z-index: 1;
-    height:auto;
-    margin: 0 auto;   
-    position: relative !important;
-	/*
-    &::before{  
-        top: 0;
-        left: 3px;
-        content: "";
-        z-index: -2;
-        width: 50px;
-        height: 55px;
-        position: absolute;
-        border-radius: 100%;
-        -webkit-animation: border-transform 10s linear infinite alternate forwards;
-        animation: border-transform 10s ease-in-out infinite alternate forwards;
-        background-image: -webkit-gradient(linear, left top, right top, from(#01356a), to(#0d57f3));
-        background-image: linear-gradient(275deg, #01356a 0%, #0d57f3 100%);
-
-    } */
-	&::after{
-		right: 0;
-		bottom: -4px;
-		content: "Consultancy Services";
-		position: absolute;
-		font-size: 12px;
-		font-weight: bold;
-		color: $info;
-		letter-spacing: 0.6px;
-
-	}
-
-}
-.navbar-expand-lg {
-	.navbar-nav {
-		.dropdown-menu{
-			top: 72px;
-			background: $info;
-			border-radius: 0 0 5px 5px;
-			li{
-				a {
-					color: white;
 					
+				}
+			}
+			button {
+				border: none;
+				background-color:$secondary;
+				padding: 10px 15px;
+				border: 2px solid $info;
+				// margin-left: 20px;
+				a{
+					color:white;
 				}
 				&:hover{
+					background-color: $primary;	
+					border: 2px solid white;
 					a {
-						background-color:$second_bg;
-						color:white;
+						color: white;
 					}
 					
 				}
 			}
+			
+			&.collapse.show{
+				background: $info;
+				padding: 0px;
+				border-radius: 10px;
+				.navbar-nav{
+					// padding: 0;
+					li.nav-item.ak-nav-item {
+						border-bottom:1px solid #004483;
+						margin-right: 0;
+						a {
+							width: 100%;					
+							// padding: 10px 15px;
+							color: #fff;					
+						}
+					}
+					li:hover{
+						background-color:#007bff;
+					}				
+				}	
+				.custome-button{
+					width: 100%;
+					padding: 6px;
+					margin: 0;
+				}
+			}
 		}
+
+		.header-menu ul li a{
+			padding: 5px 0;
+		}
+
+		&.sticky{
+			top: 0px;
+			position: fixed;
+			padding: 10px 0px;
+			animation-duration: 0.7s;
+			animation-fill-mode: both;
+			animation-name: fadeInDown;
+			animation-timing-function: ease;
+			transition: 0.3s all ease-in-out;
+			box-shadow: 0px 0px 18px 1px rgba(0, 0, 0, 0.1);
+			// background: linear-gradient(45deg, #0160e7 0%, #04bdef 100%);
+			// z-index: 999;
+			background: radial-gradient(circle, rgb(137, 223, 255) 38%, rgb(52, 145, 255) 100%);
+			z-index: 999;
+			margin-top: 0;
+			background: #fff;
+			// button {
+			// 	background-color:$info;
+			// }
+		}
+
 	}
+	// .header-menu {
+	// 	text-align: right;
+	// 	ul {
+	// 		display: inline-block;
+	// 		li {
+	// 			display: inline-block;
+	// 			margin-right: 35px;
+	// 			a {
+	// 				display: inline-block;
+	// 				font-weight: 600;
+	// 				font-size: 1rem;
+	// 				padding: 20px 0;
+	// 				text-transform: capitalize;
+	// 				color: #fff;
+	// 				transition: 0.5s;
+	// 				// &:hover {
+	// 				// 	color: #0c5adb;
+	// 				// 	i {
+	// 				// 		color: #0c5adb;
+	// 				// 	}
+	// 				// }
+	// 			}
+	// 			i {
+	// 				font-size: 12px;
+	// 				color: #fff;
+	// 				position: relative;
+	// 				left: 6px;
+	// 				top: -1px;
+	// 				transition: 0.5s;
+	// 			}
+	// 			&.menu-item-has-children {
+	// 				position: relative;
+	// 			}
+	// 			.sub-menu {
+	// 				position: absolute;
+	// 				width: 200px;
+	// 				display: block;
+	// 				text-align: left;
+	// 				background: #fff;
+	// 				opacity: 0;
+	// 				visibility: hidden;
+	// 				transition: 0.5s;
+	// 				top: 150%;
+	// 				z-index: 2;
+	// 				box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.3);
+	// 				border-top: 5px solid #0c5adb;
+	// 				border-radius: 3px 3px 0 0;
+	// 				li {
+	// 					a {
+	// 						display: block;
+	// 						padding: 8px 19px !important;
+	// 						color: #1e1e1e;
+	// 						width: 200px;
+	// 						text-transform: capitalize;
+	// 						font-size: 16px;
+	// 						font-weight: 600;
+	// 						transition: 0.5s;
+	// 						position: relative;
+	// 						z-index: 1;
+	// 						&:hover {
+	// 							color: #fff !important;
+	// 							&:before {
+	// 								height: 100%;
+	// 								top: 0;
+	// 							}
+	// 						}
+	// 						&:before {
+	// 							position: absolute;
+	// 							content: "";
+	// 							width: 100%;
+	// 							height: 0;
+	// 							left: 0;
+	// 							bottom: 0;
+	// 							background: #0c5adb;
+	// 							z-index: -1;
+	// 							transition: 0.5s;
+	// 						}
+	// 					}
+	// 				}
+	// 			}
+	// 			&:hover {
+	// 				.sub-menu {
+	// 					opacity: 1;
+	// 					top: 100%;
+	// 					visibility: visible;
+	// 				}
+	// 			}
+	// 		}
+	// 	}
+	// }
+
+	// .header-button {
+	// 	display: inline-block;
+	// 	a {
+	// 		padding: 14px 34px;
+	// 		color: #fff;
+	// 		background: transparent;
+	// 		border: 1px solid #fff;
+	// 		border-radius: 4px;
+	// 		display: inline-block;
+	// 		position: relative;
+	// 		z-index: 1;
+	// 		transition: .5s;
+	// 		text-transform: capitalize;
+	// 		font-weight: 600;
+	// 		&:hover {
+	// 			background-color: #003a6c;
+	// 			border: 1px solid #003a6c;
+	// 		}
+	// 	}
+	// }
+
+	// .header-search-icon {
+	// 	display: inline-block;
+	// 	margin-right: 34px;
+	// 	i {
+	// 		display: inline-block;
+	// 		color: #ffff;
+	// 		transition: 0.5s;
+	// 		&:hover {
+	// 			background-color: #003a6c;
+	// 			border: 2px solid #003a6c;
+	// 		}
+	// 	}
+	// }
 }
+
+// header#sticky-header{
+// 	margin-top: 150px;
+// }
+
+// .ak-softtech.header-area .navbar-brand.ak-softtech-logo{
+//     z-index: 1;
+//     height:auto;
+//     margin: 0 auto;   
+//     position: relative !important;
+// 	/*
+//     &::before{  
+//         top: 0;
+//         left: 3px;
+//         content: "";
+//         z-index: -2;
+//         width: 50px;
+//         height: 55px;
+//         position: absolute;
+//         border-radius: 100%;
+//         -webkit-animation: border-transform 10s linear infinite alternate forwards;
+//         animation: border-transform 10s ease-in-out infinite alternate forwards;
+//         background-image: -webkit-gradient(linear, left top, right top, from(#01356a), to(#0d57f3));
+//         background-image: linear-gradient(275deg, #01356a 0%, #0d57f3 100%);
+
+//     } */
+// 	&::after{
+// 		right: 0;
+// 		bottom: -4px;
+// 		content: "Consultancy Services";
+// 		position: absolute;
+// 		font-size: 12px;
+// 		font-weight: bold;
+// 		color: $info;
+// 		letter-spacing: 0.6px;
+
+// 	}
+
+// }
+// .navbar-expand-lg {
+// 	.navbar-nav {		
+// 		.dropdown-menu{
+// 			top: 66px;
+// 			background: $info;
+// 			border-radius: 0 0 5px 5px;
+// 			li{
+// 				margin-right: 20px;
+// 				a {
+// 					color: white;
+					
+// 				}
+// 				&:hover{
+// 					a {
+// 						background-color:$second_bg;
+// 						color:white;
+// 					}
+					
+// 				}
+// 			}
+// 		}
+// 	}
+// }
 
 @keyframes border-transform{
     

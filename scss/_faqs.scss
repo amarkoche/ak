@@ -34,6 +34,9 @@
 				&:not(.collapsed){
 					background-color: $primary;
 					color: #fff;
+					&::before{
+						color: white;
+					}
 				}
 				&::before{
 					left: 20px;
@@ -45,6 +48,7 @@
 					font-weight: 900;
 					font-size: 23px;
 					transform: translate(-10px, -50%);
+					color: $secondary;
 				}
 				&.collapsed{						
 					border-radius: 5px;							
@@ -57,6 +61,7 @@
 						width: 20px;						
 						font-family: "Font Awesome 6 Free";
 						transform: translate(-50%, -50%);
+						color: $secondary;
 					}	
 				}
 

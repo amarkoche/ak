@@ -865,121 +865,148 @@ button, button.a {
   font-size: 1.5rem;
 }
 
-.ak-softtech.header-area {
+.navbar.ak-softtech.header-area {
   position: absolute;
   margin-bottom: 0;
   width: 100%;
   z-index: 999;
   background: #fff;
   margin-top: 46px;
+  padding: 0;
 }
-.ak-softtech.header-area .navbar-brand.ak-softtech-logo {
+.navbar.ak-softtech.header-area .navbar-brand.ak-softtech-logo {
   display: flex;
   align-items: center;
+  position: relative;
 }
-.ak-softtech.header-area .navbar-brand.ak-softtech-logo img.brand-logo {
+.navbar.ak-softtech.header-area .navbar-brand.ak-softtech-logo img.brand-logo {
   width: 54px;
   border-radius: 8px;
   margin-right: 6px;
   background: #0a53bf;
   padding: 8px;
 }
-.ak-softtech.header-area .navbar-brand.ak-softtech-logo span {
+.navbar.ak-softtech.header-area .navbar-brand.ak-softtech-logo span {
   font-size: 2rem;
   font-weight: 800;
 }
-.ak-softtech.header-area .navbar-brand.ak-softtech-logo span.soft {
+.navbar.ak-softtech.header-area .navbar-brand.ak-softtech-logo span.soft {
   color: #fff;
   text-shadow: 1px 1px 5px black;
   margin-top: -3px;
 }
-.ak-softtech.header-area .navbar-brand.ak-softtech-logo span.tech {
+.navbar.ak-softtech.header-area .navbar-brand.ak-softtech-logo span.tech {
   color: #0a53bf;
   text-shadow: 0 1px black;
   margin-top: -8px;
   margin-left: -2px;
 }
-.ak-softtech.header-area .header-logo img {
-  max-width: 200px;
+.navbar.ak-softtech.header-area .navbar-brand.ak-softtech-logo::after {
+  right: 0px;
+  bottom: -4px;
+  content: "Consultancy Services";
+  position: absolute;
+  font-size: 12px;
+  font-weight: bold;
+  color: #343a40;
+  letter-spacing: 0.6px;
 }
-.ak-softtech.header-area .navbar-toggler {
+.navbar.ak-softtech.header-area .navbar-toggler {
   color: #0a53bf;
   border: 1px solid #0a53bf;
   align-items: center;
   padding: 7px 12px;
 }
-.ak-softtech.header-area .navbar-toggler i.fa-bars {
+.navbar.ak-softtech.header-area .navbar-toggler i.fa-bars {
   color: #0a53bf;
   font-size: 1.5rem;
 }
-.ak-softtech.header-area .navbar-toggler:focus {
+.navbar.ak-softtech.header-area .navbar-toggler:focus {
   box-shadow: none;
 }
-.ak-softtech.header-area .navbar-menu-area {
+.navbar.ak-softtech.header-area .navbar-menu-area {
   justify-content: end;
+  padding: 0;
 }
-.ak-softtech.header-area .navbar-menu-area .navbar-nav .nav-item.ak-nav-item {
-  margin-right: 1.5rem;
+.navbar.ak-softtech.header-area .navbar-menu-area .navbar-nav {
+  padding: 10px;
 }
-.ak-softtech.header-area .navbar-menu-area .navbar-nav .nav-item.ak-nav-item a.nav-link {
+.navbar.ak-softtech.header-area .navbar-menu-area .navbar-nav .nav-item.ak-nav-item {
+  padding: 0;
+  border-bottom: 2px solid transparent;
+}
+.navbar.ak-softtech.header-area .navbar-menu-area .navbar-nav .nav-item.ak-nav-item:hover {
+  color: #0a53bf;
+  border-bottom: 2px solid #00305c;
+}
+.navbar.ak-softtech.header-area .navbar-menu-area .navbar-nav .nav-item.ak-nav-item a.nav-link {
   display: inline-block;
   font-weight: 600;
   font-size: 1.1rem;
-  padding: 20px 0;
+  padding: 0;
   text-transform: capitalize;
   color: #00305c;
   transition: 0.5s;
   border-bottom: 2px solid transparent;
+  padding: 10px 20px;
 }
-.ak-softtech.header-area .navbar-menu-area .navbar-nav .nav-item.ak-nav-item a.nav-link:hover {
-  color: #0a53bf;
-  border-bottom: 2px solid #00305c;
+.navbar.ak-softtech.header-area .navbar-menu-area .navbar-nav .nav-item.ak-nav-item.dropdown .dropdown-menu {
+  background-color: #00305c;
+  border: none;
+  margin-top: -1px;
 }
-.ak-softtech.header-area .navbar-menu-area button {
+.navbar.ak-softtech.header-area .navbar-menu-area .navbar-nav .nav-item.ak-nav-item.dropdown .dropdown-menu li a.dropdown-item {
+  background: transparent;
+  color: #fff;
+}
+.navbar.ak-softtech.header-area .navbar-menu-area .navbar-nav .nav-item.ak-nav-item.dropdown .dropdown-menu li:hover {
+  background: #0a53bf;
+  color: #fff;
+}
+.navbar.ak-softtech.header-area .navbar-menu-area .navbar-nav .nav-item.ak-nav-item.dropdown:hover .dropdown-menu {
+  display: block;
+}
+.navbar.ak-softtech.header-area .navbar-menu-area button {
   border: none;
   background-color: #0a53bf;
   padding: 10px 15px;
   border: 2px solid #00305c;
 }
-.ak-softtech.header-area .navbar-menu-area button a {
+.navbar.ak-softtech.header-area .navbar-menu-area button a {
   color: white;
 }
-.ak-softtech.header-area .navbar-menu-area button:hover {
+.navbar.ak-softtech.header-area .navbar-menu-area button:hover {
   background-color: #007bff;
   border: 2px solid white;
 }
-.ak-softtech.header-area .navbar-menu-area button:hover a {
+.navbar.ak-softtech.header-area .navbar-menu-area button:hover a {
   color: white;
 }
-.ak-softtech.header-area .navbar-menu-area.collapse.show {
+.navbar.ak-softtech.header-area .navbar-menu-area.collapse.show {
   background: #00305c;
   padding: 0px;
   border-radius: 10px;
 }
-.ak-softtech.header-area .navbar-menu-area.collapse.show .navbar-nav {
-  padding: 0;
-}
-.ak-softtech.header-area .navbar-menu-area.collapse.show .navbar-nav li.nav-item.ak-nav-item {
+.navbar.ak-softtech.header-area .navbar-menu-area.collapse.show .navbar-nav li.nav-item.ak-nav-item {
   border-bottom: 1px solid #004483;
   margin-right: 0;
 }
-.ak-softtech.header-area .navbar-menu-area.collapse.show .navbar-nav li.nav-item.ak-nav-item a {
+.navbar.ak-softtech.header-area .navbar-menu-area.collapse.show .navbar-nav li.nav-item.ak-nav-item a {
   width: 100%;
-  padding: 10px 15px;
   color: #fff;
 }
-.ak-softtech.header-area .navbar-menu-area.collapse.show .navbar-nav li:hover {
+.navbar.ak-softtech.header-area .navbar-menu-area.collapse.show .navbar-nav li:hover {
   background-color: #007bff;
 }
-.ak-softtech.header-area .navbar-menu-area.collapse.show .custome-button {
+.navbar.ak-softtech.header-area .navbar-menu-area.collapse.show .custome-button {
   width: 100%;
   padding: 6px;
   margin: 0;
 }
-.ak-softtech.header-area .header-menu ul li a {
+.navbar.ak-softtech.header-area .header-menu ul li a {
   padding: 5px 0;
 }
-.ak-softtech.header-area.sticky {
+.navbar.ak-softtech.header-area.sticky {
   top: 0px;
   position: fixed;
   padding: 10px 0px;
@@ -993,169 +1020,6 @@ button, button.a {
   z-index: 999;
   margin-top: 0;
   background: #fff;
-}
-.ak-softtech .header-menu {
-  text-align: right;
-}
-.ak-softtech .header-menu ul {
-  display: inline-block;
-}
-.ak-softtech .header-menu ul li {
-  display: inline-block;
-  margin-right: 35px;
-}
-.ak-softtech .header-menu ul li a {
-  display: inline-block;
-  font-weight: 600;
-  font-size: 1rem;
-  padding: 20px 0;
-  text-transform: capitalize;
-  color: #fff;
-  transition: 0.5s;
-}
-.ak-softtech .header-menu ul li i {
-  font-size: 12px;
-  color: #fff;
-  position: relative;
-  left: 6px;
-  top: -1px;
-  transition: 0.5s;
-}
-.ak-softtech .header-menu ul li.menu-item-has-children {
-  position: relative;
-}
-.ak-softtech .header-menu ul li .sub-menu {
-  position: absolute;
-  width: 200px;
-  display: block;
-  text-align: left;
-  background: #fff;
-  opacity: 0;
-  visibility: hidden;
-  transition: 0.5s;
-  top: 150%;
-  z-index: 2;
-  box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.3);
-  border-top: 5px solid #0c5adb;
-  border-radius: 3px 3px 0 0;
-}
-.ak-softtech .header-menu ul li .sub-menu li a {
-  display: block;
-  padding: 8px 19px !important;
-  color: #1e1e1e;
-  width: 200px;
-  text-transform: capitalize;
-  font-size: 16px;
-  font-weight: 600;
-  transition: 0.5s;
-  position: relative;
-  z-index: 1;
-}
-.ak-softtech .header-menu ul li .sub-menu li a:hover {
-  color: #fff !important;
-}
-.ak-softtech .header-menu ul li .sub-menu li a:hover:before {
-  height: 100%;
-  top: 0;
-}
-.ak-softtech .header-menu ul li .sub-menu li a:before {
-  position: absolute;
-  content: "";
-  width: 100%;
-  height: 0;
-  left: 0;
-  bottom: 0;
-  background: #0c5adb;
-  z-index: -1;
-  transition: 0.5s;
-}
-.ak-softtech .header-menu ul li:hover .sub-menu {
-  opacity: 1;
-  top: 100%;
-  visibility: visible;
-}
-.ak-softtech .header-button {
-  display: inline-block;
-}
-.ak-softtech .header-button a {
-  padding: 14px 34px;
-  color: #fff;
-  background: transparent;
-  border: 1px solid #fff;
-  border-radius: 4px;
-  display: inline-block;
-  position: relative;
-  z-index: 1;
-  transition: 0.5s;
-  text-transform: capitalize;
-  font-weight: 600;
-}
-.ak-softtech .header-button a:hover {
-  background-color: #003a6c;
-  border: 1px solid #003a6c;
-}
-.ak-softtech .header-search-icon {
-  display: inline-block;
-  margin-right: 34px;
-}
-.ak-softtech .header-search-icon i {
-  display: inline-block;
-  color: white;
-  transition: 0.5s;
-}
-.ak-softtech .header-search-icon i:hover {
-  background-color: #003a6c;
-  border: 2px solid #003a6c;
-}
-
-header#sticky-header {
-  margin-top: 150px;
-}
-
-.ak-softtech.header-area .navbar-brand.ak-softtech-logo {
-  z-index: 1;
-  height: auto;
-  margin: 0 auto;
-  position: relative !important;
-  /*
-     &::before{  
-         top: 0;
-         left: 3px;
-         content: "";
-         z-index: -2;
-         width: 50px;
-         height: 55px;
-         position: absolute;
-         border-radius: 100%;
-         -webkit-animation: border-transform 10s linear infinite alternate forwards;
-         animation: border-transform 10s ease-in-out infinite alternate forwards;
-         background-image: -webkit-gradient(linear, left top, right top, from(#01356a), to(#0d57f3));
-         background-image: linear-gradient(275deg, #01356a 0%, #0d57f3 100%);
-
-     } */
-}
-.ak-softtech.header-area .navbar-brand.ak-softtech-logo::after {
-  right: 0;
-  bottom: -4px;
-  content: "Consultancy Services";
-  position: absolute;
-  font-size: 12px;
-  font-weight: bold;
-  color: #00305c;
-  letter-spacing: 0.6px;
-}
-
-.navbar-expand-lg .navbar-nav .dropdown-menu {
-  top: 72px;
-  background: #00305c;
-  border-radius: 0 0 5px 5px;
-}
-.navbar-expand-lg .navbar-nav .dropdown-menu li a {
-  color: white;
-}
-.navbar-expand-lg .navbar-nav .dropdown-menu li:hover a {
-  background-color: #38b6ff;
-  color: white;
 }
 
 @keyframes border-transform {
@@ -1196,31 +1060,54 @@ header#sticky-header {
 .footer-area-section .footer-logo img {
   max-width: 200px;
 }
-.footer-area-section .aksofttech-barnd.ak-softtech-logo {
+.footer-area-section .footer-aksofttech-logo {
+  width: fit-content;
+  transform: scale(0.8);
+  position: relative;
+  left: -20px;
+}
+.footer-area-section .footer-aksofttech-logo .navbar-brand.ak-softtech-logo {
   display: flex;
   align-items: center;
+  position: relative;
 }
-.footer-area-section .aksofttech-barnd.ak-softtech-logo img.brand-logo {
-  width: 50px;
-  border-radius: 5px;
-  margin-right: 5px;
+.footer-area-section .footer-aksofttech-logo .navbar-brand.ak-softtech-logo img.brand-logo {
+  width: 54px;
+  border-radius: 8px;
+  margin-right: 6px;
+  background: #007bff;
+  padding: 8px;
 }
-.footer-area-section .aksofttech-barnd.ak-softtech-logo span.text-logo {
-  color: #fff;
-  font-size: 2em;
+.footer-area-section .footer-aksofttech-logo .navbar-brand.ak-softtech-logo span {
+  font-size: 2rem;
   font-weight: 800;
 }
-.footer-area-section .aksofttech-barnd.ak-softtech-logo span.text-logo .soft {
+.footer-area-section .footer-aksofttech-logo .navbar-brand.ak-softtech-logo span.soft {
   color: #fff;
+  text-shadow: 1px 1px 5px black;
+  margin-top: -12px;
 }
-.footer-area-section .aksofttech-barnd.ak-softtech-logo span.text-logo .tech {
-  color: #3078fb;
+.footer-area-section .footer-aksofttech-logo .navbar-brand.ak-softtech-logo span.tech {
+  color: #007bff;
+  text-shadow: 0 1px black;
+  margin-top: -14px;
+  margin-left: -2px;
+}
+.footer-area-section .footer-aksofttech-logo .navbar-brand.ak-softtech-logo::after {
+  right: 0px;
+  bottom: -5px;
+  content: "Consultancy Services";
+  position: absolute;
+  font-size: 12px;
+  font-weight: bold;
+  color: #ffffff;
+  letter-spacing: 0.6px;
 }
 .footer-area-section .footer-about-desc p {
   color: #fff;
   opacity: 0.8;
   width: 85%;
-  margin: 28px 0 0;
+  margin: 15px 0 0;
 }
 .footer-area-section .footer-botton-social-icon {
   margin-top: 20px;
@@ -1429,7 +1316,7 @@ header#sticky-header {
 
 .footer-bottom-area {
   border-top: 1px solid rgba(255, 255, 255, 0.1294117647);
-  margin-top: 60px;
+  margin-top: 40px;
   padding-top: 30px;
 }
 .footer-bottom-area .footer-bottom-content p {
@@ -1500,29 +1387,6 @@ header#sticky-header {
   overflow: hidden;
 }
 
-@media (max-width: 768px) {
-  /* .footer-area-section{
-    padding-top: 50px;
-      .footer-botton-social-icon{
-      margin-bottom: 30px;
-      h4 {
-        font-size: 28px;
-        }
-      }
-    .footer-content{
-      margin-bottom: 20px;
-      .footer-title h4{
-        margin: 0;
-      }
-      .footer-contact-info-box{
-        margin-top: 15px;
-      }
-    }
-    .footer-bottom-area .footer-menu{
-      justify-content: flex-start;
-    }
-  } */
-}
 /* End Footer Section */
 @keyframes movebounce {
   0% {
@@ -1661,6 +1525,9 @@ header#sticky-header {
   }
   .why-choose-section .shape-two::before {
     left: 50%;
+  }
+  .small-business {
+    max-width: 1118px;
   }
 }
 @media (max-width: 1200px) {
@@ -1815,13 +1682,16 @@ header#sticky-header {
     min-width: auto;
   }
   .hero-banner-section.zero-cost-banner .container {
-    padding: 0;
+    padding: 100px 0 0;
   }
   .hero-banner-section.zero-cost-banner .container .title-section {
     padding: 2rem 1rem;
   }
   .hero-banner-section.zero-cost-banner .container .title-section .contact-area h1 .zero-cost {
     font-size: 3rem;
+  }
+  .inner-hero-banner {
+    display: none;
   }
   .shape-one {
     display: none;
@@ -1892,9 +1762,6 @@ header#sticky-header {
     padding: 10px 0px;
   }
   /* We About section */
-  .about-us-section {
-    padding: 2rem 0;
-  }
   .about-us-section .title-section h2 {
     font-size: 1.5rem;
   }
@@ -2042,7 +1909,7 @@ header#sticky-header {
   .footer-area-section .small-business .form-subscribe input {
     padding-left: 15px;
   }
-  .footer-area-section .footer-logo, .footer-area-section .footer-about-desc {
+  .footer-area-section .footer-aksofttech-logo, .footer-area-section .footer-about-desc {
     display: none;
   }
   .footer-area-section .footer-bottom-area {
@@ -2082,6 +1949,40 @@ header#sticky-header {
   .footer-area-section .footer-content .footer-botton-social-icon {
     font-size: 22px;
     font-weight: 600;
+  }
+  .about-us-section,
+  .services-section,
+  .financial-section.section-1,
+  .legal-section.section-1,
+  .business-section.section-1,
+  .intership-section,
+  .contact-section {
+    padding: 8rem 0 2rem;
+  }
+  .services-section.zero-cost-services {
+    padding: 2rem 0 2rem;
+  }
+  .business-section.section-2 .tab-area,
+  .financial-section.section-2 .tab-area,
+  .legal-section.section-2 .tab-area {
+    order: -1;
+    margin: 1rem 0;
+  }
+  .financial-section .tab-section .nav-tabs, .business-section .tab-section .nav-tabs, .legal-section .tab-section .nav-tabs {
+    padding-bottom: 10px;
+  }
+  .financial-section .tab-section .nav-tabs .nav-item, .business-section .tab-section .nav-tabs .nav-item, .legal-section .tab-section .nav-tabs .nav-item {
+    margin: 0;
+    margin-right: 10px;
+  }
+  .financial-section .tab-section .nav-tabs .nav-item .nav-link, .business-section .tab-section .nav-tabs .nav-item .nav-link, .legal-section .tab-section .nav-tabs .nav-item .nav-link {
+    padding: 10px;
+  }
+  .financial-section .tab-section .nav-tabs .nav-item .nav-link img, .business-section .tab-section .nav-tabs .nav-item .nav-link img, .legal-section .tab-section .nav-tabs .nav-item .nav-link img {
+    max-height: 50px;
+  }
+  .financial-section .tab-section .nav-tabs .nav-item .nav-link h5, .business-section .tab-section .nav-tabs .nav-item .nav-link h5, .legal-section .tab-section .nav-tabs .nav-item .nav-link h5 {
+    padding-left: 5px;
   }
 }
 @media (max-width: 576px) {

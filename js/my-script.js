@@ -35,16 +35,16 @@
     }
 
 // sticky
-  // var wind = $(window);
-  // var sticky = $('#sticky-header');
-  // wind.on('scroll', function () {
-  //     var scroll = wind.scrollTop();
-  //     if (scroll < 100) {
-  //         sticky.removeClass('sticky');
-  //     } else {
-  //         sticky.addClass('sticky');
-  //     }
-  // });
+  var wind = $(window);
+  var sticky = $('#sticky-header');
+  wind.on('scroll', function () {
+      var scroll = wind.scrollTop();
+      if (scroll < 100) {
+          sticky.removeClass('sticky');
+      } else {
+          sticky.addClass('sticky');
+      }
+  });
 
   /*faqs*/
   // $(".faqs-container .faq-singular:first-child").addClass("active").children(".faq-answer").slideDown();//Remove this line if you dont want the first item to be opened 
@@ -100,13 +100,6 @@
 
   //Wow Js 
   // new WOW().init();
-  $('ul.nav li.dropdown').hover(function() {
-    $(this).find('.dropdown-menu').stop(true, true).delay(200).fadeIn(200);
-  }, function() {
-    $(this).find('.dropdown-menu').stop(true, true).delay(200).fadeOut(200);
-  });  
-
-
 
   /* Portfolio Isotope  */
   // $('.image_load').imagesLoaded(function () {
