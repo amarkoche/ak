@@ -27,6 +27,9 @@
             left: 50%;
         }
     }
+    .small-business{
+        max-width: 1118px;
+    }
 }
 
 @media (max-width:1200px){
@@ -226,7 +229,7 @@
         }
         &.zero-cost-banner {      
             .container{  
-                padding: 0;            
+                padding: 100px 0 0;         
                 .title-section {                  
                     padding: 2rem 1rem;
                     .contact-area{
@@ -243,10 +246,14 @@
         }
    }
 
+    .inner-hero-banner{
+        display: none;
+    }
 
     .shape-one{
         display: none;
     }
+
     .inner-hero-banner  {
         padding: 4rem 0;
         .title-section {
@@ -319,7 +326,6 @@
     }
     /* We About section */
     .about-us-section{
-        padding: 2rem 0;
         .title-section h2 {
             font-size: 1.5rem;
             .sub-title{
@@ -486,7 +492,7 @@
             input {padding-left: 15px;}
            }
         }
-        .footer-logo, .footer-about-desc{
+        .footer-aksofttech-logo, .footer-about-desc{
             display: none;
         }
         .footer-bottom-area{
@@ -528,7 +534,52 @@
                 font-weight: 600;
             }
         }
-    }      
+    } 
+    
+    .about-us-section,
+    .services-section, 
+    .financial-section.section-1, 
+    .legal-section.section-1, 
+    .business-section.section-1,
+    .intership-section,
+    .contact-section  {
+        padding: 8rem 0 2rem;
+    }
+
+    .services-section.zero-cost-services {
+        padding: 2rem 0 2rem;
+    }
+
+    .business-section.section-2, 
+    .financial-section.section-2,
+    .legal-section.section-2 {
+        .tab-area{
+            order: -1;
+            margin: 1rem 0;
+        }
+    }
+
+    .financial-section, .business-section, .legal-section{
+        .tab-section{          
+            .nav-tabs{
+                padding-bottom: 10px;
+                .nav-item{
+                    margin: 0;
+                    margin-right: 10px;
+                    .nav-link{
+                        padding: 10px;
+                        img{
+                            max-height: 50px;
+                        } 
+                        h5 {
+                            padding-left: 5px;
+                        }
+                    }
+                }
+            }  
+        }
+    }
+
 }
 
 @media (max-width: 576px) {   
