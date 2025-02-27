@@ -1,0 +1,66 @@
+.subscribe-section{
+    position: relative;
+    padding-top: 15%;
+}
+.small-business{
+    background :$footer_bg;
+    padding: 50px;
+    z-index: 9;
+    position: absolute;
+    top: -80px;
+    left: 50%;
+    transform: translate(-50%);
+    border-radius: 10px;
+    box-shadow: 0px 1px 3px 0px #ffffff;
+  
+    h4 {
+        color: #fff;
+        margin: 0;
+        font-weight:bold;
+    }
+    .form-subscribe {
+        position: relative;
+        display: flex;
+        align-items: center;
+        justify-content: flex-start;
+        input {
+            height: 62px;
+            width: 100%;
+            border: none;
+            max-width: 100%;
+            padding-left: 30px;
+            border-radius: 5px;
+        }
+        button{
+            border: none;
+            height: 62px;
+            width: 155px;
+            color: #fff;
+            border-radius: 0 5px 5px 0;
+            background-color:$secondary;
+            position: absolute;
+            top: 0;
+            right: 0; 
+        }
+    }
+   
+  .content-box{
+    position: relative;
+    overflow: hidden;
+    // &::after{
+    //     top:0px;
+    //     z-index: -1;
+    //     content: "";
+    //     right: 497px;
+    //     width: 100px;
+    //     height:100px;
+    //     position: absolute;
+    //     background-repeat: no-repeat;
+    //     background-image: url(/images/cta-arrow.png);
+    //     animation-duration: 3s;
+    //     animation-name: movebounce;
+    //     animation-iteration-count: infinite;
+    //     animation-timing-function: ease-in-out;
+    // }
+  }
+}

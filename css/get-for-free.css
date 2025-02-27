@@ -1,15 +1,25 @@
 /* Start elements.scss */
 @import url("https://fonts.googleapis.com/css2?family=Nunito&display=swap");
 @import url("https://fonts.googleapis.com/css2?family=Nunito:ital,wght@0,200..1000;1,200..1000&family=Rajdhani:wght@300;400;500;600;700&display=swap");
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+html {
+  font-size: 100%;
+}
+
 html,
 body {
   overflow-x: hidden;
 }
 
 body {
-  font-size: 16px;
   line-height: 26px;
   color: #343a40;
+  font-size: 16px;
   font-weight: 400;
   text-align: left;
   font-family: "Nunito", sans-serif;
@@ -21,7 +31,7 @@ p {
   color: #343a40;
   transition: 0.5s;
   font-size: 1.15rem;
-  font-weight: 300;
+  font-weight: 400;
   line-height: 26px;
 }
 
@@ -460,12 +470,17 @@ button.custome-button a, a.custome-button a {
   border: 1px solid #bcd6ff;
   outline: 0;
   width: 100%;
-  height: 50px;
+  line-height: 45px;
   color: #000;
   margin-bottom: 16px;
   display: inline-block;
   padding: 0 15px;
   border-radius: 5px;
+  background: transparent;
+}
+.contnet-form-area input:focus, .contnet-form-area textarea:focus {
+  border: 1px solid #00305c;
+  box-shadow: none;
 }
 .contnet-form-area button {
   padding: 13px 15px;
@@ -599,7 +614,7 @@ ul.ul-list li span i {
 }
 .inner-hero-banner .title-section .float-text {
   -webkit-text-stroke-color: #fff;
-  font-size: 4rem;
+  font-size: 3rem;
 }
 .inner-hero-banner .title-section .sub-title {
   margin: auto;
@@ -644,6 +659,117 @@ ul.ul-list li span i {
 
 button, button.a {
   cursor: pointer;
+}
+
+.images-box {
+  position: relative;
+  margin-top: 10%;
+}
+.images-box::before {
+  position: absolute;
+  top: 10px;
+  width: 150px;
+  height: 472px;
+  background-image: url(../images/dotted-line.svg);
+  content: "";
+  filter: opacity(0.2);
+}
+.images-box.right::before {
+  right: 0;
+}
+.images-box.left::before {
+  left: 0;
+}
+.images-box .thumb-image {
+  position: relative;
+}
+
+.getintouch .error {
+  color: red;
+}
+
+.submission-contact {
+  /* position: absolute;
+     top: 30%;
+     left: 50%;
+     right: 0;
+     width: 50%;
+     height: auto;
+     transform: translate(-50%, -50%);
+     background: transparent; */
+  width: 100%;
+  height: 100vh;
+  background-color: rgba(0, 48, 92, 0.8901960784);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  z-index: 999;
+  /* .alert-success{
+  	display: flex;
+  	justify-content: space-between;
+  	position: relative;
+  	align-items: center;
+  	button {
+  		background-color: #d1e7dd;
+  		position: absolute;
+  		right: -16px;
+  		top: -17px;
+  		border-radius: 50%;
+  		box-shadow: none;
+  		width: 6px;
+  		height: 10px;
+  		color: #fff;
+  		border: 1px solid #92aca0;   
+  		font-size: 13px;
+  		opacity: 1;
+  	}
+  } */
+}
+.submission-contact .popup {
+  width: 400px;
+  background: #fff;
+  border-radius: 6px;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  text-align: center;
+  padding: 0 30px 30px;
+  color: #333;
+}
+.submission-contact .popup h2 {
+  font-size: 2rem;
+  color: #00305c;
+}
+.submission-contact .popup p {
+  color: #00305c;
+}
+.submission-contact .popup i {
+  font-size: 5rem;
+  margin-top: -25px;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2);
+  border-radius: 50%;
+  color: green;
+}
+.submission-contact .popup button {
+  max-width: 100%;
+  width: 100%;
+  background-image: none;
+  box-sizing: border-box;
+  opacity: 1;
+  padding: 10px;
+  height: auto;
+  background: green;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2);
+}
+
+.consultation-section .contnet-form-area .contact-inner-box .input-box input, .consultation-section .contnet-form-area .contact-inner-box .input-box textarea {
+  background-color: #fff;
 }
 
 /* Emd elements.scss */
@@ -818,13 +944,8 @@ button, button.a {
     border-radius: 46% 54% 50% 50%/35% 61% 39% 65%;
   }
 }
-.aksofttech-logo-sec {
-  max-width: 200px;
-  margin-bottom: 10px;
-}
-
 .free-consulting {
-  background-color: #e2faff;
+  background-color: #102fa5;
   height: 100vh;
   padding: 3% 0;
   max-height: 100%;
@@ -832,27 +953,6 @@ button, button.a {
   background-size: cover;
   background-repeat: no-repeat;
   max-height: 100%;
-}
-.free-consulting .ak-softtech-logo {
-  display: flex;
-  align-items: center;
-}
-.free-consulting .ak-softtech-logo img.brand-logo {
-  width: 54px;
-  border-radius: 8px;
-  margin-right: 6px;
-  background: #0a53bf;
-  padding: 8px;
-}
-.free-consulting .ak-softtech-logo span {
-  font-size: 2rem;
-  font-weight: 800;
-}
-.free-consulting .ak-softtech-logo span.soft {
-  color: #fff;
-}
-.free-consulting .ak-softtech-logo span.tech {
-  color: #007bff;
 }
 .free-consulting .content-box p {
   color: #d5d5d5;
@@ -889,19 +989,7 @@ button, button.a {
   border-radius: 50%;
 }
 .free-consulting .contact-inner-box {
-  position: relative;
   padding: 20px;
-}
-.free-consulting .contact-inner-box::before {
-  position: absolute;
-  content: "";
-  top: 0;
-  left: 0px;
-  height: 100%;
-  background-color: #0a53bf;
-  border-radius: 15px;
-  height: 81%;
-  width: 80%;
 }
 .free-consulting .free-consulting-form {
   width: 100%;
@@ -962,9 +1050,6 @@ button, button.a {
 .free-consulting .free-consulting-form select:required:invalid {
   color: gray;
 }
-.free-consulting .free-consulting-form input::placeholder, .free-consulting .free-consulting-form textarea::placeholder {
-  color: gray;
-}
 .free-consulting .free-consulting-form .button-section {
   display: flex;
   align-items: center;
@@ -997,6 +1082,189 @@ button, button.a {
   background: #0ec31d;
   padding: 6px;
   border-radius: 50%;
+}
+.free-consulting .footer-aksofttech-logo {
+  width: fit-content;
+}
+.free-consulting .footer-aksofttech-logo .navbar-brand.ak-softtech-logo {
+  display: flex;
+  align-items: center;
+  position: relative;
+}
+.free-consulting .footer-aksofttech-logo .navbar-brand.ak-softtech-logo img.brand-logo {
+  width: 54px;
+  border-radius: 8px;
+  margin-right: 6px;
+  background: #007bff;
+  padding: 8px;
+}
+.free-consulting .footer-aksofttech-logo .navbar-brand.ak-softtech-logo span {
+  font-size: 2rem;
+  font-weight: 800;
+}
+.free-consulting .footer-aksofttech-logo .navbar-brand.ak-softtech-logo span.soft {
+  color: #fff;
+  text-shadow: 1px 1px 5px black;
+  margin-top: -12px;
+}
+.free-consulting .footer-aksofttech-logo .navbar-brand.ak-softtech-logo span.tech {
+  color: #007bff;
+  text-shadow: 0 1px black;
+  margin-top: -14px;
+  margin-left: -2px;
+}
+.free-consulting .footer-aksofttech-logo .navbar-brand.ak-softtech-logo::after {
+  right: 0px;
+  bottom: -5px;
+  content: "Consultancy Services";
+  position: absolute;
+  font-size: 12px;
+  font-weight: bold;
+  color: #ffffff;
+  letter-spacing: 0.6px;
+}
+
+.contnet-form-area .getintouch {
+  z-index: 9;
+  position: relative;
+}
+.contnet-form-area .getintouch::before {
+  position: absolute;
+  content: "";
+  top: -16px;
+  left: -15px;
+  height: 100%;
+  background-color: #0a53bf;
+  border-radius: 15px;
+  height: 81%;
+  width: 80%;
+  z-index: 9;
+}
+.contnet-form-area .getintouch::after {
+  position: absolute;
+  content: "";
+  top: 0;
+  left: 0px;
+  height: 100%;
+  background-color: #fff;
+  border-radius: 15px;
+  height: 100%;
+  width: 100%;
+  z-index: 99;
+}
+.contnet-form-area .getintouch .row {
+  z-index: 999;
+  position: relative;
+}
+.contnet-form-area input, .contnet-form-area select, .contnet-form-area textarea {
+  border: 1px solid #bcd6ff;
+  outline: 0;
+  width: 100%;
+  line-height: 45px;
+  color: #000;
+  margin-bottom: 16px;
+  display: inline-block;
+  padding: 0 15px;
+  border-radius: 5px;
+  background: transparent;
+}
+.contnet-form-area input:focus, .contnet-form-area textarea:focus {
+  border: 1px solid #00305c;
+  box-shadow: none;
+}
+.contnet-form-area button {
+  padding: 13px 15px;
+  background-color: #0a53bf;
+  display: block;
+  color: #fff;
+  border-radius: 7px;
+  width: 100%;
+  cursor: pointer;
+  text-align: center;
+  transition: 0.5s;
+  border: 1px solid #0a53bf;
+}
+
+.submission-contact {
+  width: 100%;
+  height: 100vh;
+  background-color: rgba(0, 48, 92, 0.8901960784);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  z-index: 999;
+}
+.submission-contact .popup {
+  width: 400px;
+  background: #fff;
+  border-radius: 6px;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  text-align: center;
+  padding: 0 30px 30px;
+  color: #333;
+}
+.submission-contact .popup h2 {
+  font-size: 2rem;
+  color: #00305c;
+}
+.submission-contact .popup p {
+  color: #00305c;
+}
+.submission-contact .popup i {
+  font-size: 5rem;
+  margin-top: -25px;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2);
+  border-radius: 50%;
+  color: green;
+}
+.submission-contact .popup button {
+  max-width: 100%;
+  width: 100%;
+  background-image: none;
+  box-sizing: border-box;
+  opacity: 1;
+  padding: 10px;
+  height: auto;
+  background: green;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2);
+}
+
+@media (min-width: 768px) and (max-width: 991.98px) {
+  .free-consulting {
+    height: 100%;
+  }
+  .free-consulting .free-consulting-form .button-section .confidential, .free-consulting .free-consulting-form .button-section .signnda {
+    display: none;
+  }
+  .free-consulting .contnet-form-area .input-box {
+    width: 100%;
+  }
+}
+@media (max-width: 767px) {
+  .free-consulting {
+    height: 100%;
+    padding: 7% 0;
+  }
+  .free-consulting .content-box {
+    display: none;
+  }
+  .free-consulting .free-consulting-form .button-section .confidential, .free-consulting .free-consulting-form .button-section .signnda {
+    display: none;
+  }
+  .free-consulting .contnet-form-area {
+    margin-top: 25px;
+  }
+  .free-consulting .contnet-form-area .input-box {
+    width: 100%;
+  }
 }
 
 /*# sourceMappingURL=get-for-free.css.map */

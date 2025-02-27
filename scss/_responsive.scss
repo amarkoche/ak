@@ -13,7 +13,7 @@
 
     .why-choose-section {
         .card-area{ 
-            margin-top: -18rem; 
+            margin-top: -21rem; 
          }   
     }
 
@@ -29,6 +29,17 @@
     }
     .small-business{
         max-width: 1118px;
+    }
+    .hero-banner-section.zero-cost-banner {
+        .container {
+            .title-section {
+                h1{
+                    font-family: Poppins;
+                    font-weight: 700;
+                    padding-bottom: 20px;
+                }
+            }
+        }
     }
 }
 
@@ -62,6 +73,19 @@
         background: $secondary;
         border-radius: 10px;
     }
+
+    .hero-banner-section{
+        .container {
+            .title-section {
+                h1{
+                    font-size: 2.5rem;
+                    .zero-cost{
+                            font-size: 4rem;
+                    }
+                }
+            }
+        }
+    }
 }
 
 @media (min-width: 992px) and (max-width:1200px){   
@@ -84,7 +108,7 @@
     .counter-section .single-counter-box .counter-content h4, .counter-section .single-counter-box .counter-content span{
         font-size: 80px;
     }
-   
+      
 }
 
 @media (min-width: 768px) and (max-width:1023px) { 
@@ -118,18 +142,8 @@
             } 
         }       
     }
-
-    /* We have Page section */
-    .we-have-section{
-        padding: 1rem 0; 
-        .inner-box{
-            padding: 10px;
-        }       
-    }
-    /* Bug Free section */    
-
   
-
+    /* Bug Free section */  
     .features-section {   
         .card-area{
             margin-top:1rem;
@@ -148,20 +162,61 @@
     .counter-section .single-counter-box .counter-content h4, .counter-section .single-counter-box .counter-content span{
         font-size: 80px;
     }
+    .inner-hero-banner {
+        .title-section {
+            .float-text{
+                font-size: 3rem;
+                line-height: 50px;
+            }
+        }
+    }
+  
 }
 
 @media (min-width: 768px) and (max-width: 991.98px) { 
     .title-section br, .small-business .content-box h4 br {
        display: none;
-    }  
+    } 
+    .navbar.ak-softtech{
+        .header-area{
+            padding: 5px 0; 
+        } 
+    }
+    .hero-banner-section {
+        .title-section {
+            .contact-area {
+                h1{
+                    font-size: 3rem;
+                }
+                p {
+                    font-size: 1rem;
+                }
+              .button-group a{
+                padding: 15px;
+                width: auto;
+              }
+            }
+        }
+    }
     .inner-hero-banner {      
-        padding: 10rem 0 2rem;
+        padding: 7rem 0 0rem;
+    }
+    .video-setion{
+        padding: 1rem 0 3rem; 
     }
    
     .title-section {
         .float-text{
             line-height: 80px;
         }        
+    }
+
+    /* We have Page section */
+    .we-have-section{
+        padding: 1rem 0; 
+        .inner-box{
+            padding: 10px;
+        }       
     }
 
     .why-choose-section {
@@ -193,6 +248,76 @@
         order: -1;       
     }
 
+    .about-us-section, 
+    .features-section, 
+    .why-choose-section, 
+    .services-section, 
+    .working-process-section,
+    .consultation-section,
+    .vision-mission,
+    .financial-section, 
+    .business-section, 
+    .legal-section{
+        padding: 3rem 0;
+    }
+    .images-box{
+        margin-top: 0%; 
+    }
+    .small-business {
+        padding: 2rem;
+        h4{
+            font-size: 1.2rem; 
+        }
+    }
+    .financial-section .tab-section .nav-tabs .nav-item .nav-link, 
+    .business-section .tab-section .nav-tabs .nav-item .nav-link, 
+    .legal-section .tab-section .nav-tabs .nav-item .nav-link{
+        padding: 5px 10px;
+        h5 {
+            font-size: 1rem;
+            padding-left: 10px;
+        } 
+        img {
+            width: 40px;
+            max-width: 40px;
+        }  
+    }
+    .footer-area-section{
+        padding: 80px 0 30px; 
+    }
+    .intership-section .job-apply-button button {
+        width: auto;
+        min-width: fit-content;
+        padding: 10px;
+    }
+    
+    .subscribe-section{
+        .subscribe-contnet-area{
+            margin-bottom: 2rem;
+            padding:2rem;
+            border-radius: 8px;
+            h4 {
+                font-size: 20px;
+                br {
+                    display: none;
+                }
+            }
+            .form-subscribe {
+                input{
+                    height: 50px;
+                }
+                button {
+                    height: 50px;
+                    width: auto;
+                    padding: 10px;
+                }
+            }
+        }
+
+        
+       
+    }
+
 }
 
 @media (max-width:767px){
@@ -204,23 +329,45 @@
             }
         }
     }
+    .navbar.ak-softtech.header-area{
+        padding: 5px;
+        box-shadow: 0px 1px 14px #00305c14;
+       .navbar-brand.ak-softtech-logo{
+            width: 100%;
+            max-width: 180px;
+             img.brand-logo{
+                width: auto;
+                max-width: 50px;
+             }
+             span{
+                font-size: 3.2rem;
+             }
+             &::after{
+                right: 0;
+                bottom: -7px;
+                font-size: 11px;
+             }
+       }
+    }
+
    .hero-banner-section  {   
         padding: 0;
         .image-area{
             order: -1;
+            img {
+                max-width: 60%;
+            }
         }       
-        .title-section {
-            padding: 2rem 1rem;
-            .contact-area{
-                h1 {
-                    font-size: 2rem;
-                }
+        .title-section {  
+            text-align: center;        
+            .contact-area{               
                 .button-group{
+                    justify-content: center;
                     gap:15px;
                     a {
                      width: auto;
                      height: auto;
-                     padding: 15px 10px;
+                     padding: 15px;
                      min-width: auto;
                     } 
                  } 
@@ -246,10 +393,21 @@
         }
    }
 
+   .hero-banner-section.zero-cost-banner{
+    .container {
+        .title-section {
+            h1{
+                font-size: 2.5rem;
+                .zero-cost{
+                        font-size: 4rem;
+                }
+            }
+        }
+    }
+}
     .inner-hero-banner{
         display: none;
     }
-
     .shape-one{
         display: none;
     }
@@ -297,6 +455,7 @@
             }
         }    
     }
+
    .ak-softtech.header-area{
         position: relative;       
         .navbar-brand.ak-softtech-logo {
@@ -479,7 +638,7 @@
     }
      /* Footer section */
     .footer-area-section{
-        padding-top: 15px;
+        padding-top: 7rem;
         .small-business{
             padding: 15px;
             margin-bottom: -60px;
@@ -580,9 +739,33 @@
         }
     }
 
+    .subscribe-section{
+        .subscribe-contnet-area{         
+            padding:1rem;
+            border-radius: 8px;
+            h4 {
+                font-size: 20px;
+                margin-bottom: 1rem;
+                br {
+                    display: none;
+                }
+            }
+            .form-subscribe {
+                input{
+                    height: 50px;
+                }
+                button {
+                    height: 50px;
+                    width: auto;
+                    padding: 10px;
+                }
+            }
+        }
+    }
+
 }
 
-@media (max-width: 576px) {   
+@media (max-width: 576px) { 
      .custome-button {    
         width: 100%;
     }   

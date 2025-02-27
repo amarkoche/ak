@@ -2,15 +2,25 @@
 @import url("https://fonts.googleapis.com/css2?family=Nunito&display=swap");
 @import url("https://fonts.googleapis.com/css2?family=Nunito:ital,wght@0,200..1000;1,200..1000&family=Rajdhani:wght@300;400;500;600;700&display=swap");
 @import url("https://fonts.googleapis.com/css?family=Poppins:100,200,300,400,600,500,700|Roboto:100,300,400,500,700&display=swap");
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+html {
+  font-size: 100%;
+}
+
 html,
 body {
   overflow-x: hidden;
 }
 
 body {
-  font-size: 16px;
   line-height: 26px;
   color: #343a40;
+  font-size: 16px;
   font-weight: 400;
   text-align: left;
   font-family: "Nunito", sans-serif;
@@ -22,7 +32,7 @@ p {
   color: #343a40;
   transition: 0.5s;
   font-size: 1.15rem;
-  font-weight: 300;
+  font-weight: 400;
   line-height: 26px;
 }
 
@@ -461,12 +471,17 @@ button.custome-button a, a.custome-button a {
   border: 1px solid #bcd6ff;
   outline: 0;
   width: 100%;
-  height: 50px;
+  line-height: 45px;
   color: #000;
   margin-bottom: 16px;
   display: inline-block;
   padding: 0 15px;
   border-radius: 5px;
+  background: transparent;
+}
+.contnet-form-area input:focus, .contnet-form-area textarea:focus {
+  border: 1px solid #00305c;
+  box-shadow: none;
 }
 .contnet-form-area button {
   padding: 13px 15px;
@@ -600,7 +615,7 @@ ul.ul-list li span i {
 }
 .inner-hero-banner .title-section .float-text {
   -webkit-text-stroke-color: #fff;
-  font-size: 4rem;
+  font-size: 3rem;
 }
 .inner-hero-banner .title-section .sub-title {
   margin: auto;
@@ -645,6 +660,117 @@ ul.ul-list li span i {
 
 button, button.a {
   cursor: pointer;
+}
+
+.images-box {
+  position: relative;
+  margin-top: 10%;
+}
+.images-box::before {
+  position: absolute;
+  top: 10px;
+  width: 150px;
+  height: 472px;
+  background-image: url(../images/dotted-line.svg);
+  content: "";
+  filter: opacity(0.2);
+}
+.images-box.right::before {
+  right: 0;
+}
+.images-box.left::before {
+  left: 0;
+}
+.images-box .thumb-image {
+  position: relative;
+}
+
+.getintouch .error {
+  color: red;
+}
+
+.submission-contact {
+  /* position: absolute;
+     top: 30%;
+     left: 50%;
+     right: 0;
+     width: 50%;
+     height: auto;
+     transform: translate(-50%, -50%);
+     background: transparent; */
+  width: 100%;
+  height: 100vh;
+  background-color: rgba(0, 48, 92, 0.8901960784);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  z-index: 999;
+  /* .alert-success{
+  	display: flex;
+  	justify-content: space-between;
+  	position: relative;
+  	align-items: center;
+  	button {
+  		background-color: #d1e7dd;
+  		position: absolute;
+  		right: -16px;
+  		top: -17px;
+  		border-radius: 50%;
+  		box-shadow: none;
+  		width: 6px;
+  		height: 10px;
+  		color: #fff;
+  		border: 1px solid #92aca0;   
+  		font-size: 13px;
+  		opacity: 1;
+  	}
+  } */
+}
+.submission-contact .popup {
+  width: 400px;
+  background: #fff;
+  border-radius: 6px;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  text-align: center;
+  padding: 0 30px 30px;
+  color: #333;
+}
+.submission-contact .popup h2 {
+  font-size: 2rem;
+  color: #00305c;
+}
+.submission-contact .popup p {
+  color: #00305c;
+}
+.submission-contact .popup i {
+  font-size: 5rem;
+  margin-top: -25px;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2);
+  border-radius: 50%;
+  color: green;
+}
+.submission-contact .popup button {
+  max-width: 100%;
+  width: 100%;
+  background-image: none;
+  box-sizing: border-box;
+  opacity: 1;
+  padding: 10px;
+  height: auto;
+  background: green;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2);
+}
+
+.consultation-section .contnet-form-area .contact-inner-box .input-box input, .consultation-section .contnet-form-area .contact-inner-box .input-box textarea {
+  background-color: #fff;
 }
 
 /* Emd elements.scss */
@@ -886,6 +1012,7 @@ button, button.a {
   margin-right: 6px;
   background: #0a53bf;
   padding: 8px;
+  max-height: 42px;
 }
 .navbar.ak-softtech.header-area .navbar-brand.ak-softtech-logo span {
   font-size: 2rem;
@@ -949,7 +1076,7 @@ button, button.a {
   color: #00305c;
   transition: 0.5s;
   border-bottom: 2px solid transparent;
-  padding: 10px 20px;
+  padding: 10px 15px;
 }
 .navbar.ak-softtech.header-area .navbar-menu-area .navbar-nav .nav-item.ak-nav-item.dropdown .dropdown-menu {
   background-color: #00305c;
@@ -1010,7 +1137,7 @@ button, button.a {
 .navbar.ak-softtech.header-area.sticky {
   top: 0px;
   position: fixed;
-  padding: 10px 0px;
+  padding: 0px;
   animation-duration: 0.7s;
   animation-fill-mode: both;
   animation-name: fadeInDown;
@@ -1056,7 +1183,6 @@ button, button.a {
   background-position: center center;
   padding: 150px 0 32px;
   position: relative;
-  margin-top: 6rem;
 }
 .footer-area-section .footer-logo img {
   max-width: 200px;
@@ -1339,40 +1465,35 @@ button, button.a {
 
 .subscribe-section {
   position: relative;
-  padding-top: 15%;
+  z-index: 2;
+  margin-bottom: -80px;
 }
-
-.small-business {
+.subscribe-section .subscribe-contnet-area {
   background: #00305c;
   padding: 50px;
-  z-index: 9;
-  position: absolute;
-  top: -80px;
-  left: 50%;
-  transform: translate(-50%);
   border-radius: 10px;
   box-shadow: 0px 1px 3px 0px #ffffff;
 }
-.small-business h4 {
+.subscribe-section .subscribe-contnet-area h4 {
   color: #fff;
   margin: 0;
   font-weight: bold;
 }
-.small-business .form-subscribe {
+.subscribe-section .subscribe-contnet-area .form-subscribe {
   position: relative;
   display: flex;
   align-items: center;
   justify-content: flex-start;
 }
-.small-business .form-subscribe input {
+.subscribe-section .subscribe-contnet-area .form-subscribe input {
   height: 62px;
   width: 100%;
   border: none;
   max-width: 100%;
-  padding-left: 30px;
+  padding-left: 15px;
   border-radius: 5px;
 }
-.small-business .form-subscribe button {
+.subscribe-section .subscribe-contnet-area .form-subscribe button {
   border: none;
   height: 62px;
   width: 155px;
@@ -1382,8 +1503,9 @@ button, button.a {
   position: absolute;
   top: 0;
   right: 0;
+  cursor: pointer;
 }
-.small-business .content-box {
+.subscribe-section .subscribe-contnet-area .content-box {
   position: relative;
   overflow: hidden;
 }
@@ -1391,7 +1513,7 @@ button, button.a {
 /* End Footer Section */
 /* Start Hero-banner Section */
 .hero-banner-section {
-  padding: 130px 0 0;
+  padding: 130px 0 2rem;
   overflow: visible;
   background-image: url(../images/hero-banner/bn-bg.png);
   position: relative;
@@ -1445,7 +1567,6 @@ button, button.a {
 }
 .hero-banner-section .title-section .contact-area .button-group a {
   color: #fff;
-  width: 200px;
   height: auto;
   border: none;
   margin-left: 8px;
@@ -1457,6 +1578,7 @@ button, button.a {
   display: flex;
   align-items: center;
   justify-content: center;
+  font-size: 1rem;
 }
 .hero-banner-section .title-section .contact-area .button-group a i {
   margin-left: 5px;
@@ -1799,9 +1921,6 @@ button, button.a {
 .about-us-section .images-area .thumb-image {
   display: flex;
   justify-content: flex-end;
-}
-.about-us-section .images-area .thumb-image img {
-  width: 100%;
 }
 .about-us-section .images-area .about-conter-box {
   background: #0a53bf;
@@ -2312,7 +2431,7 @@ button, button.a {
 .services-section {
   position: relative;
   padding: 6rem 0;
-  z-index: 2;
+  /* z-index: 2;   */
 }
 .services-section .title-section {
   text-align: center;
@@ -2501,49 +2620,89 @@ button, button.a {
   white-space: nowrap;
 }
 .financial-section .tab-section .nav-tabs .nav-item .nav-link.active, .business-section .tab-section .nav-tabs .nav-item .nav-link.active, .legal-section .tab-section .nav-tabs .nav-item .nav-link.active {
-  background-color: #0a53bf;
-  color: #fff;
-}
-.financial-section .tab-section .nav-tabs .nav-item .nav-link.active h5, .business-section .tab-section .nav-tabs .nav-item .nav-link.active h5, .legal-section .tab-section .nav-tabs .nav-item .nav-link.active h5 {
-  color: #fff;
+  box-shadow: 0px 0px 1px 2px #0a53bf;
 }
 
 .request-call {
   padding: 5rem 0;
-  background-image: url(/images/contact_bg.png);
-  background-position: bottom center;
-  background-repeat: no-repeat;
-  background-size: cover;
-  height: fit-content;
   /* .container{
       background: radial-gradient(circle, rgb(137, 223, 255) 38%, rgb(52, 145, 255) 100%);
   }    */
 }
-.request-call .title-section .sub-title {
-  color: #fff;
+.request-call .need-help-section {
+  background: rgb(242, 246, 253);
+  padding: 30px 40px;
+  border-radius: 10px;
 }
-.request-call .title-section .sub-title::before {
-  filter: invert(1);
+.request-call .need-help-section .row {
+  gap: 2em;
 }
-.request-call .title-section p, .request-call .title-section h2 {
-  color: #fff;
+.request-call .need-help-section .get-touch-img a {
+  display: block;
+  color: #0a53bf;
+  font-size: 24px;
+  line-height: 36px;
+  font-weight: 600;
 }
-.request-call .bankcall {
-  color: #fff;
+.request-call ul.ul-list li {
+  color: inherit;
+  font-size: 1.15rem;
+}
+.request-call ul.ul-list li span {
+  background-color: #0a53bf;
+}
+.request-call ul.ul-list li span i {
+  color: white;
+}
+.request-call .contact-info-box {
+  background: #fff;
+  padding: 15px;
+  border-radius: 5px;
   display: flex;
   align-items: center;
-  justify-content: end;
+  border: 1px solid #0B59D7;
+  transition: 0.5s;
+  position: relative;
+  z-index: 1;
+  overflow: hidden;
+  gap: 14px;
 }
-.request-call .bankcall h4, .request-call .bankcall h5 {
-  color: #fff;
+.request-call .contact-info-box::before {
+  position: absolute;
+  content: "";
+  width: 0;
+  height: 100%;
+  left: 0;
+  top: 0;
+  background: #0B59D7;
+  border-radius: 5px;
+  transition: 0.5s;
+  z-index: -1;
 }
-.request-call .bankcall .call-details {
-  background: rgba(0, 48, 92, 0.48);
-  padding: 20px;
-  float: right;
+.request-call .contact-info-box:hover .request-call .contact-info-box::before {
+  width: 100%;
 }
-.request-call .bankcall .call-details h5 {
+.request-call .contact-info-box .contact-info-icon i {
+  display: inline-block;
+  color: #0a53bf;
+  border: 1px solid #0a53bf;
+  width: 40px;
+  height: 40px;
+  border-radius: 50%;
+  text-align: center;
+  line-height: 40px;
+  font-size: 20px;
+  transition: 0.5s;
+}
+.request-call .contact-info-box .contact-info-content h5 {
   margin: 0;
+}
+.request-call .contact-info-box .contact-info-content p {
+  color: #0a53bf;
+  margin: 0;
+  padding: 0;
+  transition: 0.5s;
+  font-weight: 600;
 }
 
 .features-section.bug-free-code {
@@ -2552,6 +2711,14 @@ button, button.a {
 .features-section.bug-free-code .images-box::before {
   right: 0;
   left: inherit;
+}
+
+.it-consulting-page .features-section .contnet-box .float-text {
+  display: none;
+}
+
+.business-section.section-2 {
+  background: #f2f6fd;
 }
 
 /* End Services-Section Section */
@@ -2733,20 +2900,20 @@ button, button.a {
   transition: 0.5s;
   font-weight: 600;
 }
-.consultation-section .single-contact-box {
+.consultation-section .contact-inner-box {
   background: #f2f6fd;
   padding: 30px 40px;
   border-radius: 10px;
 }
-.consultation-section .single-contact-box .sub-title {
+.consultation-section .contact-inner-box .sub-title {
   margin-bottom: 5px;
 }
-.consultation-section .single-contact-box .single-input-box h4 {
+.consultation-section .contact-inner-box .single-input-box h4 {
   color: #fff;
   font-size: 38px;
   margin: 0 0 27px;
 }
-.consultation-section .single-contact-box .single-input-box input {
+.consultation-section .contact-inner-box .single-input-box input {
   /* background: #3a7ae4; */
   border: 1px solid #0a53bf;
   outline: 0;
@@ -2756,7 +2923,7 @@ button, button.a {
   padding: 0 19px;
   border-radius: 5px;
 }
-.consultation-section .single-contact-box .single-input-box textarea {
+.consultation-section .contact-inner-box .single-input-box textarea {
   /* background: #3a7ae4; */
   border: 1px solid #0a53bf;
   outline: 0;
@@ -2767,10 +2934,10 @@ button, button.a {
   padding: 10px 19px;
   border-radius: 5px;
 }
-.consultation-section .single-contact-box .single-input-box input::placeholder, .consultation-section .single-contact-box .single-input-box textarea::placeholder {
+.consultation-section .contact-inner-box .single-input-box input::placeholder, .consultation-section .contact-inner-box .single-input-box textarea::placeholder {
   color: gray;
 }
-.consultation-section .single-contact-box .single-input-box button {
+.consultation-section .contact-inner-box .single-input-box button {
   padding: 13px 15px;
   /* background: transparent; */
   background-color: #0a53bf;
@@ -2897,7 +3064,7 @@ button, button.a {
     margin-top: -7rem;
   }
   .why-choose-section .card-area {
-    margin-top: -18rem;
+    margin-top: -21rem;
   }
   .features-section.bug-free-code .card-area {
     margin-top: -3rem;
@@ -2907,6 +3074,11 @@ button, button.a {
   }
   .small-business {
     max-width: 1118px;
+  }
+  .hero-banner-section.zero-cost-banner .container .title-section h1 {
+    font-family: Poppins;
+    font-weight: 700;
+    padding-bottom: 20px;
   }
 }
 @media (max-width: 1200px) {
@@ -2934,6 +3106,12 @@ button, button.a {
   ::-webkit-scrollbar-thumb:horizontal {
     background: #0a53bf;
     border-radius: 10px;
+  }
+  .hero-banner-section .container .title-section h1 {
+    font-size: 2.5rem;
+  }
+  .hero-banner-section .container .title-section h1 .zero-cost {
+    font-size: 4rem;
   }
 }
 @media (min-width: 992px) and (max-width: 1200px) {
@@ -2985,13 +3163,6 @@ button, button.a {
     max-width: 50%;
     background-repeat: no-repeat;
   }
-  /* We have Page section */
-  .we-have-section {
-    padding: 1rem 0;
-  }
-  .we-have-section .inner-box {
-    padding: 10px;
-  }
   /* Bug Free section */
   .features-section .card-area {
     margin-top: 1rem;
@@ -3005,16 +3176,43 @@ button, button.a {
   .counter-section .single-counter-box .counter-content h4, .counter-section .single-counter-box .counter-content span {
     font-size: 80px;
   }
+  .inner-hero-banner .title-section .float-text {
+    font-size: 3rem;
+    line-height: 50px;
+  }
 }
 @media (min-width: 768px) and (max-width: 991.98px) {
   .title-section br, .small-business .content-box h4 br {
     display: none;
   }
+  .navbar.ak-softtech .header-area {
+    padding: 5px 0;
+  }
+  .hero-banner-section .title-section .contact-area h1 {
+    font-size: 3rem;
+  }
+  .hero-banner-section .title-section .contact-area p {
+    font-size: 1rem;
+  }
+  .hero-banner-section .title-section .contact-area .button-group a {
+    padding: 15px;
+    width: auto;
+  }
   .inner-hero-banner {
-    padding: 10rem 0 2rem;
+    padding: 7rem 0 0rem;
+  }
+  .video-setion {
+    padding: 1rem 0 3rem;
   }
   .title-section .float-text {
     line-height: 80px;
+  }
+  /* We have Page section */
+  .we-have-section {
+    padding: 1rem 0;
+  }
+  .we-have-section .inner-box {
+    padding: 10px;
   }
   .why-choose-section .card-area {
     margin-top: 0rem;
@@ -3031,6 +3229,71 @@ button, button.a {
   .build-website-section.section-6 .image-area {
     order: -1;
   }
+  .about-us-section,
+  .features-section,
+  .why-choose-section,
+  .services-section,
+  .working-process-section,
+  .consultation-section,
+  .vision-mission,
+  .financial-section,
+  .business-section,
+  .legal-section {
+    padding: 3rem 0;
+  }
+  .images-box {
+    margin-top: 0%;
+  }
+  .small-business {
+    padding: 2rem;
+  }
+  .small-business h4 {
+    font-size: 1.2rem;
+  }
+  .financial-section .tab-section .nav-tabs .nav-item .nav-link,
+  .business-section .tab-section .nav-tabs .nav-item .nav-link,
+  .legal-section .tab-section .nav-tabs .nav-item .nav-link {
+    padding: 5px 10px;
+  }
+  .financial-section .tab-section .nav-tabs .nav-item .nav-link h5,
+  .business-section .tab-section .nav-tabs .nav-item .nav-link h5,
+  .legal-section .tab-section .nav-tabs .nav-item .nav-link h5 {
+    font-size: 1rem;
+    padding-left: 10px;
+  }
+  .financial-section .tab-section .nav-tabs .nav-item .nav-link img,
+  .business-section .tab-section .nav-tabs .nav-item .nav-link img,
+  .legal-section .tab-section .nav-tabs .nav-item .nav-link img {
+    width: 40px;
+    max-width: 40px;
+  }
+  .footer-area-section {
+    padding: 80px 0 30px;
+  }
+  .intership-section .job-apply-button button {
+    width: auto;
+    min-width: fit-content;
+    padding: 10px;
+  }
+  .subscribe-section .subscribe-contnet-area {
+    margin-bottom: 2rem;
+    padding: 2rem;
+    border-radius: 8px;
+  }
+  .subscribe-section .subscribe-contnet-area h4 {
+    font-size: 20px;
+  }
+  .subscribe-section .subscribe-contnet-area h4 br {
+    display: none;
+  }
+  .subscribe-section .subscribe-contnet-area .form-subscribe input {
+    height: 50px;
+  }
+  .subscribe-section .subscribe-contnet-area .form-subscribe button {
+    height: 50px;
+    width: auto;
+    padding: 10px;
+  }
 }
 @media (max-width: 767px) {
   .top-header-section .my-accont {
@@ -3039,25 +3302,46 @@ button, button.a {
   .top-header-section .getintoch span {
     white-space: nowrap;
   }
+  .navbar.ak-softtech.header-area {
+    padding: 5px;
+    box-shadow: 0px 1px 14px rgba(0, 48, 92, 0.0784313725);
+  }
+  .navbar.ak-softtech.header-area .navbar-brand.ak-softtech-logo {
+    width: 100%;
+    max-width: 180px;
+  }
+  .navbar.ak-softtech.header-area .navbar-brand.ak-softtech-logo img.brand-logo {
+    width: auto;
+    max-width: 50px;
+  }
+  .navbar.ak-softtech.header-area .navbar-brand.ak-softtech-logo span {
+    font-size: 3.2rem;
+  }
+  .navbar.ak-softtech.header-area .navbar-brand.ak-softtech-logo::after {
+    right: 0;
+    bottom: -7px;
+    font-size: 11px;
+  }
   .hero-banner-section {
     padding: 0;
   }
   .hero-banner-section .image-area {
     order: -1;
   }
-  .hero-banner-section .title-section {
-    padding: 2rem 1rem;
+  .hero-banner-section .image-area img {
+    max-width: 60%;
   }
-  .hero-banner-section .title-section .contact-area h1 {
-    font-size: 2rem;
+  .hero-banner-section .title-section {
+    text-align: center;
   }
   .hero-banner-section .title-section .contact-area .button-group {
+    justify-content: center;
     gap: 15px;
   }
   .hero-banner-section .title-section .contact-area .button-group a {
     width: auto;
     height: auto;
-    padding: 15px 10px;
+    padding: 15px;
     min-width: auto;
   }
   .hero-banner-section.zero-cost-banner .container {
@@ -3068,6 +3352,12 @@ button, button.a {
   }
   .hero-banner-section.zero-cost-banner .container .title-section .contact-area h1 .zero-cost {
     font-size: 3rem;
+  }
+  .hero-banner-section.zero-cost-banner .container .title-section h1 {
+    font-size: 2.5rem;
+  }
+  .hero-banner-section.zero-cost-banner .container .title-section h1 .zero-cost {
+    font-size: 4rem;
   }
   .inner-hero-banner {
     display: none;
@@ -3272,7 +3562,7 @@ button, button.a {
   }
   /* Footer section */
   .footer-area-section {
-    padding-top: 15px;
+    padding-top: 7rem;
   }
   .footer-area-section .small-business {
     padding: 15px;
@@ -3362,6 +3652,25 @@ button, button.a {
   }
   .financial-section .tab-section .nav-tabs .nav-item .nav-link h5, .business-section .tab-section .nav-tabs .nav-item .nav-link h5, .legal-section .tab-section .nav-tabs .nav-item .nav-link h5 {
     padding-left: 5px;
+  }
+  .subscribe-section .subscribe-contnet-area {
+    padding: 1rem;
+    border-radius: 8px;
+  }
+  .subscribe-section .subscribe-contnet-area h4 {
+    font-size: 20px;
+    margin-bottom: 1rem;
+  }
+  .subscribe-section .subscribe-contnet-area h4 br {
+    display: none;
+  }
+  .subscribe-section .subscribe-contnet-area .form-subscribe input {
+    height: 50px;
+  }
+  .subscribe-section .subscribe-contnet-area .form-subscribe button {
+    height: 50px;
+    width: auto;
+    padding: 10px;
   }
 }
 @media (max-width: 576px) {

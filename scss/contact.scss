@@ -79,53 +79,7 @@
     }
 
     .contact-inner-box{        
-        .sub-title{margin-bottom: 5px;}
-        .input-box{
-            h4{
-                color: #fff;
-                font-size: 38px;
-                margin: 0 0 27px;  
-            }
-            input{           
-                background:$input-bg;
-                border: 1px solid #bcd6ff;
-                outline: 0;
-                width: 100%;
-                height: 50px;
-                color: #000;
-                margin-bottom: 16px;
-                padding: 0 19px;
-                border-radius: 5px; 
-            }
-            input::placeholder, textarea::placeholder{
-                color:#000;
-            }
-            textarea{
-                background: $input-bg;
-                border: 1px solid #bcd6ff;
-                outline: 0;
-                width: 100%;
-                height: 120px;
-                color: #fff;
-                margin-bottom: 16px;
-                padding: 10px 19px;
-                border-radius: 5px;  
-            }
-            button {
-                padding: 13px 15px;
-                /* background: transparent; */
-                background-color: #0B59D7;
-                display: block;
-                color: #fff;
-                border-radius: 7px;
-                width: 100%;
-                /* font-family: 'Fira Sans'; */
-                cursor: pointer;
-                text-align: center;
-                transition: .5s;
-                border: 1px solid #0B59D7;
-            }
-        }
+        .sub-title{margin-bottom: 5px;}       
     }
 
     .get-touch-img{

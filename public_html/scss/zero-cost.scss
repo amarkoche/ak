@@ -1,0 +1,181 @@
+
+
+/* Start elements.scss */
+@import "_common-style.scss";
+/* Emd elements.scss */
+
+/* Start Key-frame.scss */
+@import "_key-frame.scss";
+/* Emd Key-frame.scss */
+
+/* Start Header Section */
+@import "_header.scss";
+/* End Header Section */
+
+/* Start Footer Section */
+@import "_footer.scss";
+/* End Footer Section */
+
+/* Start Hero-banner Section */
+@import "_hero-banner.scss";
+/* End Hero-banner Section */
+
+
+/* Start work-process Section */
+@import "_work-process.scss";
+/* End work-process Section */
+
+/* Start Services-Section Section */
+@import "_services-section.scss";
+/* End Services-Section Section */
+
+/* Start Video Banner Section */
+@import "_video-banner.scss";
+/* End  Video Banner Section */
+
+/* Start Consultations Section */
+@import "_consultation.scss";
+
+/* End Consultation Section */
+
+/* Start Counter Section */
+@import "_counter.scss";
+/* End Counter Section */ 
+
+/* Start Counter Section */
+@import "_faqs.scss";
+/* End Counter Section */
+
+.hero-banner-section.zero-cost-banner {
+    .banner-content {
+        .banner-text {
+            h1 {
+                span.zero-cost{
+                    display: inline-block;
+                    font-size: 5rem;
+                    position: relative;
+                    &::after{
+                        position: absolute;
+                        content: "";
+                        background-image: url(../images/zerocost-border.png);
+                        width: 100%;
+                        height: auto;
+                        left: 0;
+                        bottom: -18px;
+                        min-height: 25px;
+                        background-size: cover;
+                        background-repeat: no-repeat;
+                    }
+                }
+            }
+        }
+    } 
+}
+
+
+.build-website-section{
+    padding: 6rem 0;
+    &.section-5{
+      padding-bottom: 10%;  
+    }
+    .content-box {
+        p.dark-para{
+            background: $secondary;
+            padding: 15px;
+            border-radius: 10px;
+            color: #fff;
+        }
+    }    
+    &.section-2, &.section-4, &.section-6 {
+        background: #f2f6fd;
+    }
+}
+
+.zerocost-video-sec{
+    p{color:#fff;}    
+}
+
+
+.services-section{
+    &.zero-cost-services{
+        .contnet-box {
+            .service-block {
+                .inner-box {
+                    padding: 0;
+                    .inner-content{                        
+                        display: flex;
+                        align-items: center;
+                        padding: 15px 20px; 
+                        .icon{
+                            position: inherit;
+                            left: inherit;
+                            top: inherit;
+                            padding-right: 15px;
+                        }                    
+                    }
+                }
+            }
+        }
+    }   
+}
+
+
+
+@media (min-width: 768px) and (max-width:1024px) { 
+    .hero-banner-section{
+        height: 100%;  
+        padding-bottom: 0;
+    }
+    .build-website-section {
+        padding: 2rem 0;
+        .image-area{
+            margin-bottom: 20px; 
+        } 
+    }
+
+    .faqs-container{
+        height: 400px;
+        overflow: hidden;
+        overflow-y: auto;
+        float: left;
+        direction: rtl;
+        padding-left: 20px;
+        
+    }
+}
+
+
+@media (max-width:767px) {
+    
+    .hero-banner-section{
+        &.zero-cost-banner{
+            padding-bottom: 0%;
+            .banner-content {
+             padding: 2rem 0;   
+            }
+        }
+    }
+    .build-website-section {
+        padding: 2rem 0;
+        .image-area{
+            margin-bottom: 20px; 
+        }
+        
+        &.section-2 .image-area, 
+        &.section-4 .image-area, 
+        &.section-5 .image-area, 
+        &.section-6 .image-area, 
+        .faqs-section .image-area {
+            order: -1;
+        }
+    }
+    .hero-banner-section.zero-cost-banner .banner-content .banner-text h1 span.zero-cost{
+        font-size: 4rem;
+    }
+  
+}
+
+
+/* Start Counter Section */
+@import "_responsive.scss";
+/* End Counter Section */

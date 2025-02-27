@@ -68,6 +68,7 @@
 					margin-right: 6px;
 					background: $secondary;
 					padding: 8px;
+					max-height: 42px;
 				}
 				span{
 					font-size: 2rem;				
@@ -137,7 +138,7 @@
 						color:$info;
 						transition: 0.5s;
 						border-bottom: 2px solid transparent;
-						padding: 10px 20px;
+						padding: 10px 15px;
 						
 					}
 
@@ -221,7 +222,7 @@
 		&.sticky{
 			top: 0px;
 			position: fixed;
-			padding: 10px 0px;
+			padding:0px;
 			animation-duration: 0.7s;
 			animation-fill-mode: both;
 			animation-name: fadeInDown;

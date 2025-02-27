@@ -5,15 +5,23 @@
 
 @import url('https://fonts.googleapis.com/css2?family=Nunito:ital,wght@0,200..1000;1,200..1000&family=Rajdhani:wght@300;400;500;600;700&display=swap');
 
+*{
+	box-sizing: border-box;
+	margin: 0;
+	padding: 0;
+}
+html{
+	font-size: 100%;
+}
 
 html,
 body {
 	overflow-x: hidden;
 }
-body {
-	font-size: 16px;
+body {	
 	line-height: 26px;
-	color: $dark;	
+	color: $dark;
+	font-size:16px;	
 	font-weight: 400;
 	text-align: left;
     font-family: "Nunito", sans-serif;
@@ -24,7 +32,7 @@ p {
 	color: $dark;		
 	transition: 0.5s;
 	font-size: 1.15rem;
-    font-weight: 300;
+    font-weight: 400;
 	line-height: 26px;
 }
 h1,
@@ -467,12 +475,17 @@ button.custome-button, a.custome-button{
         border: 1px solid #bcd6ff;
         outline: 0;
         width: 100%;
-        height: 50px;
+        line-height:45px;
         color: #000;
         margin-bottom: 16px; display: inline-block;
         padding: 0 15px;
         border-radius: 5px;
+		background: transparent;
     }
+	input:focus, textarea:focus{
+		border: 1px solid $info;
+		box-shadow: none;
+	}
   
     button {
         padding: 13px 15px;          
@@ -674,9 +687,8 @@ ul.ul-list{
 			//   -webkit-text-stroke-color: rgb(255 255 255 / 74%);
 			// -webkit-text-stroke-color: #00305c;
 			 -webkit-text-stroke-color: #fff;
-			  
-			  font-size: 4rem;
-		  }
+			 font-size: 3rem;
+		 }
 		  .sub-title{
 			margin: auto;
 			width: fit-content;
@@ -725,3 +737,130 @@ ul.ul-list{
 	cursor: pointer;
   }
 
+.images-box{
+	position: relative;
+	margin-top: 10%;
+	&::before{
+		position: absolute;			
+		top: 10px;
+		width: 150px;
+		height: 472px;
+		background-image: url(../images/dotted-line.svg);
+		content: "";
+		filter: opacity(0.2);
+	}
+
+	&.right{
+		&::before{
+		right: 0;
+		}	
+	}
+
+	&.left{
+		&::before{
+		left: 0;
+		}
+	}
+	.thumb-image{
+		position: relative;
+	}
+  }
+
+
+  .getintouch{
+	.error{
+		color: red;
+	}
+}
+.submission-contact {
+	/* position: absolute;
+    top: 30%;
+    left: 50%;
+    right: 0;
+    width: 50%;
+    height: auto;
+    transform: translate(-50%, -50%);
+    background: transparent; */
+    width: 100%;
+    height: 100vh;
+    background-color: #00305ce3;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    z-index: 999;
+	/* .alert-success{
+		display: flex;
+		justify-content: space-between;
+		position: relative;
+		align-items: center;
+		button {
+			background-color: #d1e7dd;
+			position: absolute;
+			right: -16px;
+			top: -17px;
+			border-radius: 50%;
+			box-shadow: none;
+			width: 6px;
+			height: 10px;
+			color: #fff;
+			border: 1px solid #92aca0;   
+			font-size: 13px;
+			opacity: 1;
+		}
+	} */
+ 
+	.popup{
+		width: 400px;
+		background:#fff;
+		border-radius: 6px;
+		position: absolute;
+		top: 50%;
+		left: 50%;
+		transform: translate(-50%, -50%);
+		text-align: center;
+		padding: 0 30px 30px;
+		color: #333;
+		h2 {
+			font-size: 2rem;
+    		color: $info;
+		}
+		p {
+			color: $info;
+		}
+		i {
+			font-size: 5rem;
+			margin-top: -25px;
+			box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2);
+			border-radius: 50%;
+			color: green;
+		}
+		button {
+			max-width: 100%;
+			width: 100%;
+			background-image: none;
+			box-sizing: border-box;		
+			opacity: 1;
+			padding: 10px;
+			height: auto;
+			background: green;
+			box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2);
+		}
+	}
+}
+
+  .consultation-section{
+	.contnet-form-area{
+		.contact-inner-box{
+			.input-box {
+				input, textarea {
+					background-color: #fff;
+				} 
+			}
+		}
+	}
+  }

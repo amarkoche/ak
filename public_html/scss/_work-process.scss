@@ -1,0 +1,146 @@
+
+    .working-process-section {
+      background: #f2f6fd;
+      padding: 6rem 0;
+      .title-section{
+        margin-bottom: 50px;
+        .sub-title{
+          margin: auto;
+          width: fit-content;
+        }
+      }
+
+      .process-box {
+        text-align: center;
+        padding: 0 9px 0;
+        position: relative;
+        margin-bottom: 30px;
+        z-index: 1;    
+        &:before {
+          position: absolute;
+          content: "";
+          width: 100%;
+          height: 100%;
+          left: -64px;
+          top: 47px;
+          background: url(../images/process-shape1.png);
+          background-repeat: no-repeat;
+          z-index: -1;
+        }
+        &:after {
+          position: absolute;
+          content: "";
+          width: 100%;
+          height: 100%;
+          left: -64px;
+          top: 47px;
+          background: url(../images/process-shape2.png);
+          background-repeat: no-repeat;
+          z-index: -1;
+        }
+        &.before-transprant:before {
+          background: transparent !important;
+        }
+        &.after-transprant:after {
+          background: transparent;
+        }
+
+        .process-box-thumb {
+          // width: 145px;
+          // height: 145px;
+          // line-height: 138px;
+          // border-radius: 150px;
+          // display: inline-block;
+          // color: #0c5adb;
+          // font-size: 65px;
+          //  border: 2px dashed #0c5adb;
+ 
+          // transition: all 500ms ease;
+          // text-align: center;
+          // position: relative;
+          position: relative;
+          margin-bottom: 44px;
+          display: flex;
+          align-items: center;
+          justify-content: center;
+          height: 145px;
+          width: 100%;
+        
+          &:before {
+            position: absolute;
+            content: "";
+            width:145px;
+            height: 145px;
+            // left: 25%;
+            top: 0px;
+            border: 2px dashed #0c5adb;
+            border-radius: 50%;
+            animation: rotateme 20s linear infinite;
+          }
+          img {
+              transition: 0.5s;
+              width: 60px;
+          }        
+          .process-number span {
+              position: absolute;
+              left:65%;
+              top: 0px;
+              z-index: 1;
+              width: 38px;
+              height: 38px;
+              line-height: 38px;
+              border-radius: 50px;
+              display: inline-block;
+              font-size: 18px;
+              color: #fff;
+              background-color: #0c5adb;
+              transition: .5s;
+          }
+        }
+      
+        &:hover .process-box-thumb {
+          position: relative;
+          margin-bottom: 44px;
+          display: flex;
+          align-items: center;
+          justify-content: center;
+          height: 145px;
+        
+          &:before {
+            background-color: rgba(12, 91, 219, 0.164);
+              transition: .5s;
+              animation: rotateme 100s linear infinite;
+          }
+         
+        }      
+       
+        &:hover img {
+          transform: scaleX(-1);
+        }
+        .process-content {  
+          p {   
+            opacity: 0.8;        
+            // color:$info;
+            // font-weight: 400;          
+            // text-align: center;
+            // transition: .5s;
+          }   
+        }
+      }
+    }
+  
+    
+@media (max-width:768px){
+  /* .working-process-section{
+    .title-section {
+      margin: 0;
+      .sub-title{
+        margin: 0;
+      }
+    }
+  } */
+}
+  
+  
+ 
+  

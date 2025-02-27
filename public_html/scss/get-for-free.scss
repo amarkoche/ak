@@ -1,0 +1,223 @@
+/* Start elements.scss */
+
+@import "_common-style.scss";
+
+/* Emd elements.scss */
+
+/* Start Key-frame.scss */
+
+@import "_key-frame.scss";
+.aksofttech-logo-sec{max-width: 200px; margin-bottom: 10px;}
+
+.free-consulting{
+    background-color: #e2faff;
+    height: 100vh;
+    padding: 3% 0;
+    max-height: 100%;
+    background-image: url(../images/global-map.png);
+    background-size: cover;
+    background-repeat: no-repeat;
+    max-height: 100%;
+
+    .ak-softtech-logo{
+        display: flex;
+        align-items: center;
+        img.brand-logo {
+            width:54px;
+            // box-shadow: 0px 0px 10px 3px #ffffff;
+            // border-radius: 5px;
+            // margin-right: 5px;
+            border-radius: 8px;
+            margin-right: 6px;
+            background: $secondary;
+            padding: 8px;
+        }
+        span{
+            font-size: 2rem;				
+            font-weight: 800;
+            &.soft{
+                color: #fff;
+            }
+            &.tech{
+                color: $primary;
+            }
+        }
+    }	
+
+    .content-box{
+        p {color: #d5d5d5; margin-bottom: 0;}
+   
+    ul.custome-list{
+        padding-top: 5%;
+        list-style-type: none;   
+        margin-top: 30px;    
+       
+        li{
+            > div{
+                display: flex;
+                align-items: center;
+                margin-bottom: 30px;
+                font-size: 1.5rem;
+                p.strong{
+                    font-weight: 700;
+                    color: #fff;
+                    font-size: 1.5rem;
+                }
+                p.small {
+                    font-weight: 400;
+                    font-size: 1rem;
+                }
+              div:first-child {              
+                padding: 3px 0 3px 0;
+              }
+              
+            }
+           
+            i {
+                font-size: 26px;
+                color: #fff;
+                margin-right: 15px;              
+              
+                padding: 10px;
+                border-radius: 50%;
+            }
+        }
+    }
+}
+
+    .contact-inner-box{
+        position: relative;
+        padding: 20px;
+        &::before{
+            position: absolute;
+            content: "";
+            top: 0;
+            left: 0px;
+            height: 100%;
+            background-color:#0a53bf;
+            border-radius: 15px;
+            height: 81%;  
+            width: 80%;
+        }
+    }      
+   
+
+   
+
+    .free-consulting-form{
+        width: 100%;
+        margin: auto;
+        background: #ffffff;
+        padding: 20px;
+        border-radius: 10px; 
+        position: relative;  
+        h4 {
+            color: #070707;
+            font-size:1.5rem;
+            margin: 0 0 27px;           
+            font-weight: bold;
+            text-transform: capitalize;
+            margin-bottom: 5px;
+        }
+        + p {
+            font-size: 1rem;
+            font-weight: 700; 
+        }
+        label{
+            font-size: 1rem;
+            font-weight: 700;
+        }
+        input, select {
+            font-size: 15px;
+            padding: 0 15px;
+            height:40px;
+            border-radius: 8px;
+            background: #f8f9fa;
+            border: 1px solid #eceef0;
+            width: 100%;
+            &:focus{
+                border: 1px solid gray;
+                box-shadow: none;
+            }
+        }
+        textarea {
+            background: #f8f9fa;
+            border: 1px solid #eceef0;
+            outline: 0;
+            width: 100%;
+            /* height: 80px;            */
+            margin-bottom: 16px;
+            padding: 10px 19px;
+            border-radius: 5px;
+            &:focus{
+                border: 1px solid gray;
+            }
+        }
+
+        select {
+            option[value=""][disabled] {
+                display: none;
+            }
+            option {
+                color: #000;
+            }
+        }
+        select:required:invalid {
+            color: gray;
+          }
+
+        input, textarea {
+            &::placeholder{
+                color:gray;
+            }
+            
+         }
+        
+        
+         
+          
+              
+          
+
+        .button-section{
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+            div {
+                display: flex;
+                align-items: center;
+                span {
+                    font-size: 14px;
+                    font-weight: 600;
+                }
+            }
+        }
+
+        button {
+            padding: 9px 15px;
+            background-color: #0b59d7;
+            display: block;
+            color: #fff;
+            border-radius: 5px;
+            width: 100%;
+            cursor: pointer;
+            text-align: center;
+            transition: 0.5s;
+            border: 1px solid #0b59d7;
+        }
+           
+         
+         .fa-solid.fa-check{
+            font-size: 10px;
+            color: #fff;
+            margin-right: 2px;
+            background: #0ec31d;
+            padding: 6px;
+            border-radius: 50%;
+         }
+      
+    }
+}
+
+
+
