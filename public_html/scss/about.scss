@@ -1,0 +1,31 @@
+
+
+/* Start elements.scss */
+@import "_common-style.scss";
+/* Emd elements.scss */
+
+/* Start Key-frame.scss */
+@import "_key-frame.scss";
+/* Emd Key-frame.scss */
+
+/* Start Header Section */
+@import "_header.scss";
+/* End Header Section */
+
+/* Start Key-frame.scss */
+@import "_video-banner.scss";
+/* Emd Key-frame.scss */
+
+/* Start Footer Section */
+@import "_footer.scss";
+/* End Footer Section */
+
+
+/* Start Video Banner Section */
+@import "_about-us";
+/* End  Video Banner Section */
+
+
+/* Start Video Banner Section */
+    @import "_responsive.scss";
+/* End  Video Banner Section */

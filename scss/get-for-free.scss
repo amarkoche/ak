@@ -7,10 +7,11 @@
 /* Start Key-frame.scss */
 
 @import "_key-frame.scss";
-.aksofttech-logo-sec{max-width: 200px; margin-bottom: 10px;}
+
+
 
 .free-consulting{
-    background-color: #e2faff;
+    background-color: #102fa5;
     height: 100vh;
     padding: 3% 0;
     max-height: 100%;
@@ -18,33 +19,7 @@
     background-size: cover;
     background-repeat: no-repeat;
     max-height: 100%;
-
-    .ak-softtech-logo{
-        display: flex;
-        align-items: center;
-        img.brand-logo {
-            width:54px;
-            // box-shadow: 0px 0px 10px 3px #ffffff;
-            // border-radius: 5px;
-            // margin-right: 5px;
-            border-radius: 8px;
-            margin-right: 6px;
-            background: $secondary;
-            padding: 8px;
-        }
-        span{
-            font-size: 2rem;				
-            font-weight: 800;
-            &.soft{
-                color: #fff;
-            }
-            &.tech{
-                color: $primary;
-            }
-        }
-    }	
-
-    .content-box{
+     .content-box{
         p {color: #d5d5d5; margin-bottom: 0;}
    
     ul.custome-list{
@@ -86,24 +61,11 @@
 }
 
     .contact-inner-box{
-        position: relative;
+        // position: relative;
         padding: 20px;
-        &::before{
-            position: absolute;
-            content: "";
-            top: 0;
-            left: 0px;
-            height: 100%;
-            background-color:#0a53bf;
-            border-radius: 15px;
-            height: 81%;  
-            width: 80%;
-        }
-    }      
-   
-
-   
-
+        
+    } 
+     
     .free-consulting-form{
         width: 100%;
         margin: auto;
@@ -166,19 +128,6 @@
             color: gray;
           }
 
-        input, textarea {
-            &::placeholder{
-                color:gray;
-            }
-            
-         }
-        
-        
-         
-          
-              
-          
-
         .button-section{
             display: flex;
             align-items: center;
@@ -217,7 +166,214 @@
          }
       
     }
+
+    .footer-aksofttech-logo{
+        width: fit-content;  
+        .navbar-brand{
+          &.ak-softtech-logo{
+            display: flex;
+            align-items: center;
+            position: relative;
+            img.brand-logo {
+              width:54px;
+              // box-shadow: 0px 0px 10px 3px #ffffff;
+              // border-radius: 5px;
+              // margin-right: 5px;
+              border-radius: 8px;
+              margin-right: 6px;
+              background: $primary;
+              padding: 8px;
+            }
+            span{
+              font-size: 2rem;				
+              font-weight: 800;
+              &.soft{
+                color: #fff;
+                text-shadow: 1px 1px 5px black;
+                margin-top: -12px;
+              }
+              &.tech{
+                color:$primary;
+                text-shadow: 0 1px black;
+                margin-top: -14px;
+                margin-left: -2px;
+              }
+            }
+            &::after{
+              right: 0px;
+              bottom: -5px;
+              content: "Consultancy Services";
+              position: absolute;
+              font-size: 12px;
+              font-weight: bold;
+              color: #ffffff;
+              letter-spacing: 0.6px;
+            }
+          }	
+        }
+    }
 }
 
+.contnet-form-area{  
+    .getintouch{
+        z-index: 9;
+        position: relative;
+        &::before{
+            position: absolute;
+            content: "";
+            top: -16px;
+            left: -15px;        
+            height: 100%;
+            background-color:#0a53bf;
+            border-radius: 15px;
+            height: 81%;  
+            width: 80%;
+            z-index: 9;
+        }
+
+        &::after{
+            position: absolute;
+            content: "";
+            top: 0;
+            left: 0px;
+            height: 100%;
+            background-color:#fff;
+            border-radius: 15px;
+            height: 100%;
+            width: 100%;
+            z-index: 99;
+        }
+        .row{
+            z-index: 999;
+            position: relative;
+        }
+    }
+    input, select,  textarea {
+        border: 1px solid #bcd6ff;
+        outline: 0;
+        width: 100%;
+        line-height:45px;
+        color: #000;
+        margin-bottom: 16px; display: inline-block;
+        padding: 0 15px;
+        border-radius: 5px;
+		background: transparent;
+    }
+	input:focus, textarea:focus{
+		border: 1px solid $info;
+		box-shadow: none;
+	}  
+    button {
+        padding: 13px 15px;          
+        background-color:$secondary;
+        display: block;
+        color: #fff;
+        border-radius: 7px;
+        width: 100%;
+         cursor: pointer;
+        text-align: center;
+        transition: 0.5s;
+        border: 1px solid $secondary;
+    }
+
+    // input::placeholder,  
+    // textarea::placeholder {
+    //     color:$dark;
+    //  }
+}  
+
+.submission-contact {	
+    width: 100%;
+    height: 100vh;
+    background-color: #00305ce3;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    z-index: 999;
+	.popup{
+		width: 400px;
+		background:#fff;
+		border-radius: 6px;
+		position: absolute;
+		top: 50%;
+		left: 50%;
+		transform: translate(-50%, -50%);
+		text-align: center;
+		padding: 0 30px 30px;
+		color: #333;
+		h2 {
+			font-size: 2rem;
+    		color: $info;
+		}
+		p {
+			color: $info;
+		}
+		i {
+			font-size: 5rem;
+			margin-top: -25px;
+			box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2);
+			border-radius: 50%;
+			color: green;
+		}
+		button {
+			max-width: 100%;
+			width: 100%;
+			background-image: none;
+			box-sizing: border-box;		
+			opacity: 1;
+			padding: 10px;
+			height: auto;
+			background: green;
+			box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2);
+		}
+	}
+}
+
+@media (min-width: 768px) and (max-width: 991.98px) { 
+    .free-consulting{
+        height: 100%;
+        .free-consulting-form{
+            .button-section{
+                .confidential, .signnda{
+                    display: none;
+                }
+            }           
+        }       
+        .contnet-form-area{         
+            .input-box {
+                width: 100%;
+            }
+        }
+    } 
+}
+@media (max-width:767px) {
+    .free-consulting{
+        height: 100%;
+        padding: 7% 0;
+        .content-box{
+            display: none;
+        }
+
+        .free-consulting-form{
+            .button-section{
+                .confidential, .signnda{
+                    display: none;
+                }
+            }           
+        }       
+        .contnet-form-area{   
+            margin-top: 25px;      
+            .input-box {
+                width: 100%;
+            }
+        }
+
+    }
+}
 
 

@@ -1,0 +1,77 @@
+.breadcumb-section {  
+  position: relative;
+    background-repeat: no-repeat !important;
+    background-position: center !important;
+    background-size: cover !important;
+    padding: 10% 0;
+    min-height: 250px;
+    background: #0092e4;
+    z-index: 0;
+    
+    &::before{
+      position: absolute;
+      left: 0;
+      top: 0;
+      height: 100%;
+      width: 100%;
+      background: #0d5df570;
+      opacity: 0.8;
+      content: "";
+    }
+    .banner-title{
+      text-align: center;
+      position: relative;
+      z-index: 9;
+      .title{
+        font-size: 64px;
+        color: #ffffff;
+        margin-bottom: 17px;
+        span{
+          display: block;
+          font-weight: 100;
+        }
+      }
+    }
+    .page-breadcrumb {
+      ul.breadcrumb{
+        position: relative;
+        margin-top: 5px;
+      }
+  
+      li{
+        position: relative;
+        display: inline-block;
+        margin-right: 12px;
+        padding-right: 13px;
+        color: #ffffff;
+        font-size: 14px;
+        font-weight: 400;
+        text-transform: capitalize;
+        a{
+          color: #186ef2;
+          font-weight: 500;
+          text-transform: capitalize;
+          transition: all 0.3s ease;
+          -moz-transition: all 0.3s ease;
+          -webkit-transition: all 0.3s ease;
+          -ms-transition: all 0.3s ease;
+          -o-transition: all 0.3s ease;
+          &::after{
+            position: absolute;
+            content: "\f105";
+            right: -6px;
+            top: 1px;
+            color: #ffffff;
+            font-size: 14px;
+            font-weight: 900;
+            font-family: "Font Awesome 6 Pro";
+            color: #ffffff;
+          }
+        }
+      }
+    }
+    &.about-banner{
+      /* background: url(../images/about-page.jpg); */
+    }
+   
+}

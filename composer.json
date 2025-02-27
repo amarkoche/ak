@@ -1,0 +1,12 @@
+{
+    "name": "ak/soft-tech",
+    "authors": [
+        {
+            "name": "Amar Koche",
+            "email": "amarkoche100@gmail.com"
+        }
+    ],
+    "require": {
+        "phpmailer/phpmailer": "^6.9"
+    }
+}
