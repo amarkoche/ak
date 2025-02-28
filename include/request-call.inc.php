@@ -11,41 +11,19 @@
                         "Request a call back for expert guidance on loans, <br>investments, and insurance solutions tailored to your needs!"
                     </p>
                     <!-- <p> A smartphone displaying a woman with dark skin and black hair wearing headphones, gesturing right of the device are four icons representing contact methods: a phone, an email symbol, an envelope, and a chat symbol, all in blue. The background is blue shade with light colors.</p> -->
-                    <ul class="ul-list">
-                        <li>
-                            <span>
-                                <i class="fa-solid fa-check"></i>
-                            </span>
-                            Strategic Planning
-                        </li>
-
-                        <li>
-                            <span>
-                                <i class="fa-solid fa-check"></i>
-                            </span>
-                            Marketing Solutions
-                        </li>
-
-                        <li>
-                            <span>
-                                <i class="fa-solid fa-check"></i>
-                            </span>
-                            Financial Consulting
-                        </li>
-
-                        <li>
-                            <span>
-                                <i class="fa-solid fa-check"></i>
-                            </span>
-                            Business Optimization
-                        </li>
-
-                        <li>
-                            <span>
-                                <i class="fa-solid fa-check"></i>
-                            </span>
-                            Data-Driven Insights
-                        </li>
+                    <ul class="ul-list">                        
+                        <?php 			
+                            foreach($requestSec as $requestList){
+                            echo "
+                                <li data-id='{$requestList[0]}'>
+                                    <span>
+                                        <i class='fa-solid fa-check'></i>
+                                    </span>
+                                        {$requestList[1]}
+                                </li>
+                            ";
+                            }		
+                        ?>
                     </ul>
                 </div>
             </div>
@@ -71,7 +49,7 @@
                             </div>
                             <div class="contact-info-content">
                                 <p>Send E-Mail</p>
-                                <h5>suport@aksofttech.in</h5>
+                                <h5>support@aksofttech.in</h5>
                             </div>
                         </div>
                     </div>

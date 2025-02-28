@@ -391,7 +391,7 @@
 					<div class="inner-box">
 						<a href="services.php" class="inner-content">
 							<div class="icon">
-							<img src="images/icons/brand-Identity-c.svg" alt="">
+							<img src="images/icons/brand-identity-c.svg" alt="">
 							</div>
 							<h5 class="title">
 							Brand Identity						   

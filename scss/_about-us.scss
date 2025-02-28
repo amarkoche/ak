@@ -1,17 +1,12 @@
 .about-us-section {
     background: #f2f6fd;
     padding: 6rem  0;
-    .contnet-area{
-        position: relative;
-        padding-bottom: 25px;
+    .contnet-area{          
          .title-section{
             // margin-bottom: 42px;
             h1 {
                 font-size: 38px;
-            }
-            p{
-                margin: 19px 0 0;
-            }
+            }          
         }
         .icon-box{
             display: flex;
@@ -83,15 +78,14 @@
         }             
     } 
     .images-area{
-        position: relative;
+        position: relative;       
         .thumb-image {
             display: flex;
-            justify-content: flex-end;
-            
+            justify-content: flex-end;            
         }
        
         .about-conter-box {
-               background: $secondary;
+            background: $secondary;
             display: inline-block;
             text-align: center;
             padding: 10px 30px;
@@ -152,7 +146,7 @@
             p {padding-top: 30px;}
         }
     }
-    .card-area{      
+    .card-area{     
         .icon-box{
             display: flex;
             align-items: center;

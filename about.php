@@ -6,6 +6,7 @@
 		include './include/head.inc.php';		
 	?>
 <body>
+	
 <!-- Start Header and Navbar Secton-->
 <?php 
 	include './include/top-header.inc.php';
@@ -26,7 +27,7 @@
 <section id="about" class="about-us-section">
 	<div class="container">
 		<div class="row">
-			<div class="col-md-7 contnet-area">			
+			<div class="col-lg-7 col-md-7 col-12 contnet-area" id="aboutContainer">			
 				<div class="title-section">
 					<!-- <span class="float-text">ABOUT</span> -->
 					<span class="sub-title"> ABOUT US </span>
@@ -38,18 +39,8 @@
 						Let us be the catalysts for your digital success, guiding your business toward a smarter, more connected future.
 					</p>
 				</div>
-			</div>
 
-			<div class="col-md-5 images-area">	
-				<div class="images-box right">
-					<div class="thumb-image">
-						<img src="images/about-us.png" alt="About us akSofttech">
-					</div>	
-				</div>							
-			</div>
-
-			<div class="col-lg-8 col-md-10 col-sm-12 col-12 card-area">
-				<div class="row">
+				<div class="row card-area" id="aboutElement">
 					<?php 
 						include './include/about-section.inc.php';
 						foreach($aboutSec as $aboutList){
@@ -69,7 +60,17 @@
 						?>					
 				</div>
 			</div>
-			
+
+			<div class="col-lg-5 col-md-5 col-12 images-area right">	
+				<div class="images-box">
+					<div class="thumb-image">
+						<img src="images/about-us.png" alt="About us akSofttech">
+					</div>	
+				</div>							
+			</div>
+			<div class="col-12">
+					<div id="aboutTarget"></div>
+			</div>
 		</div>
 	</div>
 </section> 
@@ -79,10 +80,9 @@
  <section class="vision-mission">
 	<div class="build-website-section">
 		<div class="container">
-			<div class="row ">
-				
-				<div class="col-md-5 col-sm-12 image-area">
-					<div class="images-box left">
+			<div class="row">				
+				<div class="col-md-5 col-sm-12 col-12 images-area left">
+					<div class="images-box">
 						<div class="thumb-image">
 							<img src="images/vison-mision.png" alt="">
 						</div>						
@@ -109,8 +109,6 @@
 					</div>
 								
 				</div>
-
-					
 			</div>
 		</div>
 	</div>			
@@ -140,5 +138,6 @@
  <?php 
 	include './include/footer-secrip-inc.php';
 ?>
+
 </body>
 </html>

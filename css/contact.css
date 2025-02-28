@@ -522,7 +522,7 @@ ul.ul-list li span i {
 .service-list li {
   margin-bottom: 10px;
   padding: 10px;
-  border: 2px solid #343a40;
+  border: 1px solid #343a40;
   color: #343a40;
   margin: 5px;
   font-weight: 700;
@@ -661,27 +661,35 @@ button, button.a {
   cursor: pointer;
 }
 
-.images-box {
+.images-area {
   position: relative;
-  margin-top: 10%;
 }
-.images-box::before {
+.images-area::before {
   position: absolute;
   top: 10px;
   width: 150px;
-  height: 472px;
+  height: 100%;
   background-image: url(../images/dotted-line.svg);
+  background-repeat: repeat-y;
   content: "";
   filter: opacity(0.2);
 }
-.images-box.right::before {
+.images-area.right::before {
   right: 0;
 }
-.images-box.left::before {
+.images-area.left::before {
   left: 0;
 }
-.images-box .thumb-image {
+.images-area .thumb-image {
   position: relative;
+}
+
+.contnet-area {
+  position: relative;
+}
+
+.card-area {
+  padding-top: 1rem;
 }
 
 .getintouch .error {
@@ -1589,18 +1597,28 @@ button, button.a {
 
 /* Start Counter Section */
 @media (min-width: 1200px) {
-  .about-us-section .card-area {
-    margin-top: -2rem;
-  }
-  .features-section .card-area {
-    margin-top: -7rem;
-  }
-  .why-choose-section .card-area {
-    margin-top: -21rem;
-  }
-  .features-section.bug-free-code .card-area {
-    margin-top: -3rem;
-  }
+  /* .about-us-section {
+      .card-area{      
+          margin-top: 2rem;
+      }
+  } */
+  /* 
+      .features-section{
+          .card-area{      
+              margin-top: -7rem;
+          }
+      } */
+  /* 
+      .why-choose-section {
+          .card-area{ 
+              margin-top: -21rem; 
+           }   
+      } */
+  /* .features-section.bug-free-code{
+      .card-area{      
+          margin-top: -3rem;
+      }
+  } */
   .why-choose-section .shape-two::before {
     left: 50%;
   }
@@ -1647,15 +1665,21 @@ button, button.a {
   }
 }
 @media (min-width: 992px) and (max-width: 1200px) {
-  .features-section .card-area {
-    margin-top: -2rem;
-  }
-  .why-choose-section .card-area {
-    margin-top: -12rem;
-  }
-  .features-section.bug-free-code .card-area {
-    margin-top: 2rem;
-  }
+  /* .features-section {   
+      .card-area{
+          margin-top:-2rem;
+      }  
+  }  */
+  /* .why-choose-section {
+      .card-area{ 
+          margin-top: -12rem; 
+       }   
+  } */
+  /* .features-section.bug-free-code {   
+      .card-area{
+          margin-top: 2rem;
+      }  
+  }  */
   .counter-section .single-counter-box .counter-content h4, .counter-section .single-counter-box .counter-content span {
     font-size: 80px;
   }
@@ -1696,12 +1720,16 @@ button, button.a {
     background-repeat: no-repeat;
   }
   /* Bug Free section */
-  .features-section .card-area {
-    margin-top: 1rem;
-  }
-  .features-section.bug-free-code .card-area {
-    margin-top: 0rem;
-  }
+  /* .features-section {   
+      .card-area{
+          margin-top:1rem;
+      }  
+  }  */
+  /* .features-section.bug-free-code {   
+      .card-area{
+          margin-top:0rem;
+      }  
+  }  */
   .financial-section .tab-section .nav-tabs, .financial-section .tab-section .nav-tabs, .legal-section .tab-section .nav-tabs {
     overflow: auto;
   }
@@ -1746,18 +1774,22 @@ button, button.a {
   .we-have-section .inner-box {
     padding: 10px;
   }
-  .why-choose-section .card-area {
-    margin-top: 0rem;
-  }
+  /* .why-choose-section {
+      .card-area{ 
+          margin-top: 0rem; 
+      }   
+  } */
   .working-process-section .process-box:before {
     content: none;
   }
   .features-section .images-box .thumb-image {
     padding-right: 0;
   }
-  .features-section.bug-free-code .card-area {
-    margin-top: 0rem;
-  }
+  /* .features-section.bug-free-code {   
+      .card-area{
+          margin-top:0rem;
+      }  
+  }  */
   .build-website-section.section-6 .image-area {
     order: -1;
   }
@@ -1847,12 +1879,13 @@ button, button.a {
     max-width: 50px;
   }
   .navbar.ak-softtech.header-area .navbar-brand.ak-softtech-logo span {
-    font-size: 3.2rem;
+    font-size: 2rem;
   }
   .navbar.ak-softtech.header-area .navbar-brand.ak-softtech-logo::after {
-    right: 0;
+    right: -7px;
     bottom: -7px;
     font-size: 11px;
+    letter-spacing: 1px;
   }
   .hero-banner-section {
     padding: 0;
