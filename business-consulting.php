@@ -1,3 +1,14 @@
+<?php 
+$requestSec = array (
+	array("1", "Strategic Planning"),
+    array("2", "Marketing Solutions"),
+	array("3", "Financial Consulting"),	
+	array("4", "Business Optimization"),
+	array("5", "Data-Driven Insights")
+);
+?>
+
+
 <!DOCTYPE HTML>
 <html lang="en-US">
 	

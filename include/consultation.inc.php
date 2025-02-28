@@ -39,18 +39,6 @@
                             </div>
                         </div>
                     </div>
-
-                    <!-- <div class="col-xl-6 col-lg-12 col-md-6 col-12">
-                        <div class="contact-info-box">
-                            <div class="contact-info-icon">
-                                <i class="fa-regular fa-envelope"></i>
-                            </div>
-                            <div class="contact-info-content">
-                                <p>Send E-Mail</p>
-                                <h5>info@aksofttech.in</h5>
-                            </div>
-                        </div>
-                    </div> -->
                 </div>
 
             </div>
@@ -61,40 +49,7 @@
                         $buttonName = "Free Consultancy";
                         include './include/getintouch.inc.php';
                     ?>
-                    <!-- End counter-section -->
-                    <!-- <form action="#">
-                        <div class="row">
-                            <div class="col-lg-12">
-                                <div class="single-input-box">
-                                    <input type="text" name="name" placeholder="Name" required>
-                                </div>
-                            </div>
-
-                            <div class="col-lg-12"></div>
-                            <div class="single-input-box">
-                                <input type="text" name="Email" placeholder="Email" required>
-                            </div>
-                        </div>
-
-                        <div class="col-lg-12">
-                            <div class="single-input-box">
-                                <input type="number" name="phone" placeholder="Phone" required>
-                            </div>
-                        </div>
-                       
-
-                        <div class="col-lg-12">
-                            <div class="single-input-box">
-                                <textarea name="Massage" placeholder="Write Message" required></textarea>
-                            </div>
-                        </div>
-
-                        <div class="col-lg-12">
-                            <div class="single-input-box">
-                                <button type="submit">Free Consultancy</button>
-                            </div>
-                        </div>
-                    </div> -->
+                   
                 </form>
             </div>
         </div>

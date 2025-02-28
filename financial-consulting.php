@@ -1,3 +1,15 @@
+<?php 
+$requestSec = array (
+	array("1", "All Types of Loan Consultancy"),
+    array("2", "Investment Advisory"),
+	array("3", "Insurance Consulting"),	
+	array("4", "Tailored Financial Strategies"),
+	array("5", " Hassle-Free Process")
+);
+?>
+
+
+
 <!DOCTYPE HTML>
 <html lang="en-US">
 

@@ -1,3 +1,14 @@
+<?php 
+$requestSec = array (
+	array("1", "All Types of Legal Consultancy"),
+    array("2", "Contracts & Agreements"),
+	array("3", "Legal Dispute Resolution"),	
+	array("4", "Regulatory Compliance"),
+	array("5", "Reliable & Trusted Advice")
+);
+?>
+
+
 <!DOCTYPE HTML>
 <html lang="en-US">
 

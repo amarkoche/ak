@@ -38,8 +38,8 @@
 					<h4>Inspire and Get Inspired by <a href="#">Professional</a> Experts</h4>
 				</div> -->
 			</div>
-			<div class="col-lg-5 col-md-5 col-12 images-area">
-				<div class="images-box right">					
+			<div class="col-lg-5 col-md-5 col-12 images-area  right">
+				<div class="images-box">					
 					<div class="thumb-image">
 							<img src="images/internship-program.png" alt="">
 					</div>

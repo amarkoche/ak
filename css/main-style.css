@@ -523,7 +523,7 @@ ul.ul-list li span i {
 .service-list li {
   margin-bottom: 10px;
   padding: 10px;
-  border: 2px solid #343a40;
+  border: 1px solid #343a40;
   color: #343a40;
   margin: 5px;
   font-weight: 700;
@@ -662,27 +662,35 @@ button, button.a {
   cursor: pointer;
 }
 
-.images-box {
+.images-area {
   position: relative;
-  margin-top: 10%;
 }
-.images-box::before {
+.images-area::before {
   position: absolute;
   top: 10px;
   width: 150px;
-  height: 472px;
+  height: 100%;
   background-image: url(../images/dotted-line.svg);
+  background-repeat: repeat-y;
   content: "";
   filter: opacity(0.2);
 }
-.images-box.right::before {
+.images-area.right::before {
   right: 0;
 }
-.images-box.left::before {
+.images-area.left::before {
   left: 0;
 }
-.images-box .thumb-image {
+.images-area .thumb-image {
   position: relative;
+}
+
+.contnet-area {
+  position: relative;
+}
+
+.card-area {
+  padding-top: 1rem;
 }
 
 .getintouch .error {
@@ -1845,15 +1853,8 @@ button, button.a {
   background: #f2f6fd;
   padding: 6rem 0;
 }
-.about-us-section .contnet-area {
-  position: relative;
-  padding-bottom: 25px;
-}
 .about-us-section .contnet-area .title-section h1 {
   font-size: 38px;
-}
-.about-us-section .contnet-area .title-section p {
-  margin: 19px 0 0;
 }
 .about-us-section .contnet-area .icon-box {
   display: flex;
@@ -2100,16 +2101,6 @@ button, button.a {
 }
 .features-section .images-box {
   position: relative;
-}
-.features-section .images-box::before {
-  position: absolute;
-  left: 0px;
-  top: 10px;
-  width: 150px;
-  height: 472px;
-  background-image: url(../images/dotted-line.svg);
-  content: "";
-  filter: opacity(0.2);
 }
 .features-section .images-box .bg-icon-one {
   position: absolute;
@@ -2607,7 +2598,9 @@ button, button.a {
   justify-content: center;
   border: 1px solid #0a53bf;
   border-radius: 5px;
-  padding: 1rem;
+  padding: 9px;
+  max-height: 70px;
+  min-height: 70px;
 }
 .financial-section .tab-section .nav-tabs .nav-item .nav-link img, .financial-section .tab-section .nav-tabs .nav-item .nav-link i, .business-section .tab-section .nav-tabs .nav-item .nav-link img, .business-section .tab-section .nav-tabs .nav-item .nav-link i, .legal-section .tab-section .nav-tabs .nav-item .nav-link img, .legal-section .tab-section .nav-tabs .nav-item .nav-link i {
   width: 50px;
@@ -2985,7 +2978,8 @@ button, button.a {
 .counter-section .single-counter-box .counter-content {
   padding: 0 15px;
 }
-.counter-section .single-counter-box .counter-content h4, .counter-section .single-counter-box .counter-content span {
+.counter-section .single-counter-box .counter-content h4,
+.counter-section .single-counter-box .counter-content span {
   font-size: 100px;
   color: #0a53bf;
   font-weight: 900;
@@ -2999,7 +2993,8 @@ button, button.a {
   /* -webkit-text-stroke-width: 0px; */
   /* text-shadow: 3px 3px 7px #a3a3a3; */
 }
-.counter-section .single-counter-box .counter-content h4 span, .counter-section .single-counter-box .counter-content span span {
+.counter-section .single-counter-box .counter-content h4 span,
+.counter-section .single-counter-box .counter-content span span {
   font-size: 50px;
   color: #0a53bf;
   font-weight: 700;
@@ -3057,18 +3052,28 @@ button, button.a {
 /* End Counter Section */
 /* Start Counter Section */
 @media (min-width: 1200px) {
-  .about-us-section .card-area {
-    margin-top: -2rem;
-  }
-  .features-section .card-area {
-    margin-top: -7rem;
-  }
-  .why-choose-section .card-area {
-    margin-top: -21rem;
-  }
-  .features-section.bug-free-code .card-area {
-    margin-top: -3rem;
-  }
+  /* .about-us-section {
+      .card-area{      
+          margin-top: 2rem;
+      }
+  } */
+  /* 
+      .features-section{
+          .card-area{      
+              margin-top: -7rem;
+          }
+      } */
+  /* 
+      .why-choose-section {
+          .card-area{ 
+              margin-top: -21rem; 
+           }   
+      } */
+  /* .features-section.bug-free-code{
+      .card-area{      
+          margin-top: -3rem;
+      }
+  } */
   .why-choose-section .shape-two::before {
     left: 50%;
   }
@@ -3115,15 +3120,21 @@ button, button.a {
   }
 }
 @media (min-width: 992px) and (max-width: 1200px) {
-  .features-section .card-area {
-    margin-top: -2rem;
-  }
-  .why-choose-section .card-area {
-    margin-top: -12rem;
-  }
-  .features-section.bug-free-code .card-area {
-    margin-top: 2rem;
-  }
+  /* .features-section {   
+      .card-area{
+          margin-top:-2rem;
+      }  
+  }  */
+  /* .why-choose-section {
+      .card-area{ 
+          margin-top: -12rem; 
+       }   
+  } */
+  /* .features-section.bug-free-code {   
+      .card-area{
+          margin-top: 2rem;
+      }  
+  }  */
   .counter-section .single-counter-box .counter-content h4, .counter-section .single-counter-box .counter-content span {
     font-size: 80px;
   }
@@ -3164,12 +3175,16 @@ button, button.a {
     background-repeat: no-repeat;
   }
   /* Bug Free section */
-  .features-section .card-area {
-    margin-top: 1rem;
-  }
-  .features-section.bug-free-code .card-area {
-    margin-top: 0rem;
-  }
+  /* .features-section {   
+      .card-area{
+          margin-top:1rem;
+      }  
+  }  */
+  /* .features-section.bug-free-code {   
+      .card-area{
+          margin-top:0rem;
+      }  
+  }  */
   .financial-section .tab-section .nav-tabs, .financial-section .tab-section .nav-tabs, .legal-section .tab-section .nav-tabs {
     overflow: auto;
   }
@@ -3214,18 +3229,22 @@ button, button.a {
   .we-have-section .inner-box {
     padding: 10px;
   }
-  .why-choose-section .card-area {
-    margin-top: 0rem;
-  }
+  /* .why-choose-section {
+      .card-area{ 
+          margin-top: 0rem; 
+      }   
+  } */
   .working-process-section .process-box:before {
     content: none;
   }
   .features-section .images-box .thumb-image {
     padding-right: 0;
   }
-  .features-section.bug-free-code .card-area {
-    margin-top: 0rem;
-  }
+  /* .features-section.bug-free-code {   
+      .card-area{
+          margin-top:0rem;
+      }  
+  }  */
   .build-website-section.section-6 .image-area {
     order: -1;
   }
@@ -3315,12 +3334,13 @@ button, button.a {
     max-width: 50px;
   }
   .navbar.ak-softtech.header-area .navbar-brand.ak-softtech-logo span {
-    font-size: 3.2rem;
+    font-size: 2rem;
   }
   .navbar.ak-softtech.header-area .navbar-brand.ak-softtech-logo::after {
-    right: 0;
+    right: -7px;
     bottom: -7px;
     font-size: 11px;
+    letter-spacing: 1px;
   }
   .hero-banner-section {
     padding: 0;

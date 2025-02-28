@@ -38,9 +38,4 @@
 	<!-- Main-style CSS -->
     <link rel="stylesheet" href="css/<?php echo $style ?>" type="text/css" media="all">
    <!-- Main-style CSS -->
-<style>
-	.error {
-		color: red;
-	}
-</style>
 </head>
